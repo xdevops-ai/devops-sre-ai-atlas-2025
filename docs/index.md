@@ -6,9 +6,9 @@ nav_order: 1
 
 # 🚀 DevOps & SRE AI Platforms Atlas 2025
 
-> **A vendor-neutral, community-driven wiki** · **Last updated:** {{ site.time | date: '%B %d, %Y' }}
+> **A vendor-neutral, community-driven wiki** · **Last updated: {{ site.time | date: '%B %d, %Y' }}**
 
-[![Version](https://img.shields.io/badge/version-2025.10-blue)](#{}) [![Platforms](https://img.shields.io/badge/platforms-25%2B-green)](#{}) [![Status](https://img.shields.io/badge/status-active-brightgreen)](#{})
+![GitHub](https://img.shields.io/badge/version-2025.10-blue) ![GitHub](https://img.shields.io/badge/platforms-25+-green) ![GitHub](https://img.shields.io/badge/status-active-brightgreen)
 
 ## 🌟 What This Is
 
@@ -22,11 +22,17 @@ This atlas provides comprehensive, evidence-based analysis of AI agent platforms
 
 ## 📒 Quick Navigation
 
-- **[Platform Archetypes]({{ '/docs/archetypes' | relative_url }})** — Categories of AI platforms with strengths/limits.
-- **[Platform Directory]({{ '/docs/platforms/' | relative_url }})** — Individual platform pages with capability scoring.
-- **[Capability Framework]({{ '/docs/capabilities' | relative_url }})** — How we evaluate and compare platforms.
-- **[Community Resources]({{ '/docs/community' | relative_url }})** — Contribution guidelines and discussion links.
+### [Platform Archetypes]({{ '/archetypes' | relative_url }})
+Understand the different categories of AI platforms and their strengths/weaknesses.
 
+### [Platform Directory]({{ '/platforms/' | relative_url }})
+Detailed analysis of individual AI platforms with capability scoring.
+
+### [Capability Framework]({{ '/capabilities' | relative_url }})
+Our methodology for evaluating and comparing platforms.
+
+### [Community Resources]({{ '/community' | relative_url }})
+Contribution guidelines, discussion forums, and use cases.
 
 ## 🧭 Executive Summary — DevOps & SRE AI Platforms (Oct 11, 2025)
 
