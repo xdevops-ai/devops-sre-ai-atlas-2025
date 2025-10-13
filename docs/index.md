@@ -25,6 +25,9 @@ This atlas provides comprehensive, evidence-based analysis of AI agent platforms
 ### [Platform Archetypes]({{ '/archetypes' | relative_url }})
 Understand the different categories of AI platforms and their strengths/weaknesses.
 
+### [Overview Platforms]({{ '/overview_platforms' | relative_url }})
+Contribution guidelines, discussion forums, and use cases.
+
 ### [Platform Directory]({{ '/platforms/' | relative_url }})
 Detailed analysis of individual AI platforms with capability scoring.
 
