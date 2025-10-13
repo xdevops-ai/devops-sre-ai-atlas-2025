@@ -14,28 +14,25 @@ nav_order: 1
 
 This atlas provides comprehensive, evidence-based analysis of AI agent platforms across the DevOps/SRE/ITOps ecosystem. 
 
+## 🌟 What This Is
+
+This atlas provides comprehensive, evidence-based analysis of AI agent platforms across the DevOps/SRE/ITOps ecosystem.
+
 **Key Features:**
-- 🔍 **Vendor-neutral analysis** - No hype, just capabilities
-- 🤝 **Community-driven** - Contributions welcome
-- 📊 **Structured data** - Machine-readable platform information
-- 🎯 **Actionable insights** - Real implementation guidance
+- 🔍 **Vendor-neutral analysis** — No hype, just capabilities
+- 🤝 **Community-driven** — Contributions welcome
+- 📊 **Structured data** — Machine-readable platform information
+- 🎯 **Actionable insights** — Real implementation guidance
 
 ## 📒 Quick Navigation
 
-### [Platform Archetypes]({{ '/archetypes' | relative_url }})
-Understand the different categories of AI platforms and their strengths/weaknesses.
+- **[Platform Archetypes]({{ '/archetypes/' | relative_url }})** — Strengths/weaknesses by category  
+- **[Platform Overview]({{ '/platform-overview/' | relative_url }})** — One‑page summary of all platforms  
+- **[Platform Directory]({{ '/platforms/' | relative_url }})** — Deep dives with capability scoring  
+- **[Capability Framework]({{ '/capabilities/' | relative_url }})** — How we score vendors  
+- **[Community Resources]({{ '/community/' | relative_url }})** — Contribute, discuss, roadmap
 
-### [platform overview]({{ '/platform-overview' | relative_url }})
-Overview of the platforms.
-
-### [Platform Directory]({{ '/platforms/' | relative_url }})
-Detailed analysis of individual AI platforms with capability scoring.
-
-### [Capability Framework]({{ '/capabilities' | relative_url }})
-Our methodology for evaluating and comparing platforms.
-
-### [Community Resources]({{ '/community' | relative_url }})
-Contribution guidelines, discussion forums, and use cases.
+## 🧭 Executive Summary — DevOps & SRE AI Platforms (Oct 11, 2025)
 
 ## 🧭 Executive Summary — DevOps & SRE AI Platforms (Oct 11, 2025)
 
