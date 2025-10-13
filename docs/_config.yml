@@ -25,6 +25,7 @@ highlighter: rouge
 
 # Plugins supported by GitHub Pages
 plugins:
+  - jekyll-github-metadata
   - jekyll-last-modified-at
   - jekyll-seo-tag
   - jekyll-sitemap
