@@ -22,18 +22,52 @@ No single product spans triage → RCA → remediation → post‑incident learn
 
 ## 🔎 Quick comparison matrix
 
-| Archetype | Best fit | Representative platforms | Core strength | Typical limits | Typical U‑model highs |
-|---|---|---|---|---|---|
-| **🔭 Observability‑First** | Rapid triage, RCA, incident comms | Dynatrace Davis AI; Cisco (Splunk) AI Agents; **Datadog Bits AI & Agents**; **Elastic AI Assistant**; **New Relic AI** | Multi‑signal correlation; causal/hypothesis reasoning; live dashboards; post‑mortems | Usually **no direct apply** beyond playbooks; change control via integrations | **UDM**, **UOM** (high); **UAM**/**UEOM** (med‑high); **UPM** (low) |
-| **⚙️ Provisioning‑Focused** | Safe infra/app changes with guardrails | **Azure Copilot (Agent Mode)**; DuploCloud; Qovery; Kuberns | IaC diff/plan → approve → apply → verify → rollback | Lighter AIOps; limited evidence for RCA; relies on external obs | **UPM** (high); **UAM** (med); **UOM/UDM** (low‑med) |
-| **💻 Developer‑Centric & Frameworks** | Code/PR changes; build bespoke agents | AWS Strands SDK; Atlassian Rovo Dev; GitHub Copilot Coding Agent; Zencoder; JFrog Fly; **Azure AI Agent Service (Foundry)** | Planning/orchestration, CI fixes, AgentOps (traces/evals) | Not a runtime ops console; limited direct infra apply | **UAM** (med‑high); **UKM/UEOM** (varies); **UPM** (low‑med) |
-| **🏢 Enterprise Orchestrators** | Cross‑team workflows, approvals, CMDB | ServiceNow Agent Orchestrator; Salesforce Agentforce (OpsAI); **PagerDuty AIOps** | Ticket/change graph; HIL approvals; runbooks; comms | Deep telemetry depends on obs stack; limited native apply | **UAM/UDM** (high); **UKM/UEOM** (med‑high); **UPM** (med) |
-| **📊 Data & MLOps** | AI quality, lineage, pipeline ops | Databricks Agent Bricks; Snowflake Cortex Agents; Dataiku AI Agents | Evals/guardrails, lineage, cost/quality governance | Infra AIOps out of scope; limited live ops | **UKM/UEOM/UAM** (med‑high); **UOM/UDM/UPM** (low‑med) |
-| **🎯 Specialized Domain** | Deep accuracy for a niche | IBM AskIAM (IAM); Solo.io **Kagent** (K8s) | Precision in a narrow domain; strong playbooks | Intentional breadth limits | High in one model (e.g., **UPM** for IAM; **UDM/UOM** for K8s) |
+
+
+### 🔭 Observability‑First
+- **Best fit:** Rapid triage, RCA, incident comms
+- **Representative platforms:** Dynatrace Davis AI; Cisco (Splunk) AI Agents; **Datadog Bits AI & Agents**; **Elastic AI Assistant**; **New Relic AI**
+- **Core strength:** Multi‑signal correlation; causal/hypothesis reasoning; live dashboards; post‑mortems
+- **Typical limits:** Usually **no direct apply** beyond playbooks; change control via integrations
+- **Typical U‑model highs:** **UDM**, **UOM** (high); **UAM/UEOM** (med‑high); **UPM** (low)
+
+### ⚙️ Provisioning‑Focused
+- **Best fit:** Safe infra/app changes with guardrails
+- **Representative platforms:** **Azure Copilot (Agent Mode)**; DuploCloud; Qovery; Kuberns
+- **Core strength:** IaC diff/plan → approve → apply → verify → rollback
+- **Typical limits:** Lighter AIOps; limited evidence for RCA; relies on external obs
+- **Typical U‑model highs:** **UPM** (high); **UAM** (med); **UOM/UDM** (low‑med)
+
+### 👨‍💻 Developer‑Centric & Frameworks
+- **Best fit:** Code/PR changes; build bespoke agents
+- **Representative platforms:** AWS Strands SDK; Atlassian Rovo Dev; GitHub Copilot Coding Agent; Zencoder; JFrog Fly; **Azure AI Agent Service (Foundry)**
+- **Core strength:** Planning/orchestration, CI fixes, AgentOps (traces/evals)
+- **Typical limits:** Not a runtime ops console; limited direct infra apply
+- **Typical U‑model highs:** **UAM** (med‑high); **UKM/UEOM** (varies); **UPM** (low‑med)
+
+### 🏢 Enterprise Orchestrators
+- **Best fit:** Cross‑team workflows, approvals, CMDB
+- **Representative platforms:** ServiceNow Agent Orchestrator; Salesforce Agentforce (OpsAI); **PagerDuty AIOps**
+- **Core strength:** Ticket/change graph; HIL approvals; runbooks; comms
+- **Typical limits:** Deep telemetry depends on obs stack; limited native apply
+- **Typical U‑model highs:** **UAM/UDM** (high); **UKM/UEOM** (med‑high); **UPM** (med)
+
+### 📊 Data & MLOps
+- **Best fit:** AI quality, lineage, pipeline ops
+- **Representative platforms:** Databricks Agent Bricks; Snowflake Cortex Agents; Dataiku AI Agents
+- **Core strength:** Evals/guardrails, lineage, cost/quality governance
+- **Typical limits:** Infra AIOps out of scope; limited live ops
+- **Typical U‑model highs:** **UKM/UEOM/UAM** (med‑high); **UOM/UDM/UPM** (low‑med)
+
+### 🎯 Specialized Domain
+- **Best fit:** Deep accuracy for a niche
+- **Representative platforms:** IBM AskIAM (IAM); Solo.io **Kagent** (K8s)
+- **Core strength:** Precision in a narrow domain; strong playbooks
+- **Typical limits:** Intentional breadth limits
+- **Typical U‑model highs:** High in one model (e.g., **UPM** for IAM; **UDM/UOM** for K8s)
 
 > **Reading “U‑model highs”** — which baseline models a given archetype tends to score highest on: **UOM** (Observability), **UDM** (Diagnostics), **UAM** (Activities), **UPM** (Provisioning), **UEOM** (Ontology), **UKM** (Knowledge).
-
----
+-
 
 ## Decision helper — pick by job‑to‑be‑done
 
