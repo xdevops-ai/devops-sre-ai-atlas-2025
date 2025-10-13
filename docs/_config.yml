@@ -40,11 +40,13 @@ plugins:
   - jekyll-last-modified-at   # shows last modified timestamps (requires git history)
   - jekyll-seo-tag
   - jekyll-sitemap
+    - jekyll-include-cache
 
 # jekyll-last-modified-at configuration
 last_modified_at:
   use_git_last_modified_date: true
   fallback_to_build_time: false
+
 
 # --------------------
 # Defaults
