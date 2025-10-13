@@ -31,7 +31,7 @@ This atlas provides comprehensive, evidence-based analysis of AI agent platforms
 
 ## Executive Summary -- DevOps & SRE AI Platforms (Oct 11, 2025)
 
-**The headline:** AI agents for DevOps/SRE have progressed from "chat over dashboards" to actionable co-workers spanning triage → RCA → guided remediation → post‑incident learning. No single vendor covers the full lifecycle; the 2025 winning pattern is composable adoption: anchor on an observability‑first triage brain, add a workflow orchestrator for approvals/audit, and layer in guardrailed provisioning for safe apply/rollback.
+**The headline:** AI agents for DevOps/SRE have progressed from "chat over dashboards" to actionable co‑workers spanning triage → RCA → guided remediation → post‑incident learning. No single vendor covers the full lifecycle; the 2025 winning pattern is composable adoption: anchor on an observability‑first triage brain, add a workflow orchestrator for approvals/audit, and layer in guardrailed provisioning for safe apply/rollback.
 
 ### Market map at a glance
 
@@ -103,10 +103,11 @@ This atlas provides comprehensive, evidence-based analysis of AI agent platforms
 This is a living document! Help us keep it current:
 
 - Contribute updates via [GitHub](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025)
-- Join discussions in [GitHub Discussions](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025/discussions)
-- Report issues via [GitHub Issues](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025/issues)
+- **Join conversations via [GitHub Issues](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025/issues)** (GitHub Discussions is not enabled)
+- Report bugs or feature requests via the same Issues link above.
 - Meet the team & community at our [Bucharest XDevOps Meetup](https://www.meetup.com/bucharest-xdevops-meetup-group/)
 
 ---
 
-*This project is [open source](MIT) and maintained by the xDevOps community.*
+*This project is [open source](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025/blob/main/LICENSE) and maintained by the xDevOps community.*
+
