@@ -495,19 +495,20 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 - **Resilience:** Behavior under partial outages (API down, timeouts, throttling).
 
 ---
-## 🧭 Executive Summary — DevOps & SRE AI Platforms (Oct 11, 2025)
+## Executive Summary -- DevOps & SRE AI Platforms (Oct 11, 2025)
 
-**The headline:** AI agents for DevOps/SRE have progressed from “chat over dashboards” to **actionable co‑workers** spanning **triage → RCA → guided remediation → post‑incident learning**. No single vendor covers the full lifecycle; the 2025 winning pattern is **composable adoption**: anchor on an **observability‑first triage brain**, add a **workflow orchestrator** for approvals/audit, and layer in **guardrailed provisioning** for safe apply/rollback.
+**The headline:** AI agents for DevOps/SRE have progressed from "chat over dashboards" to actionable co‑workers spanning triage → RCA → guided remediation → post‑incident learning. No single vendor covers the full lifecycle; the 2025 winning pattern is composable adoption: anchor on an observability‑first triage brain, add a workflow orchestrator for approvals/audit, and layer in guardrailed provisioning for safe apply/rollback.
 
 ### Market map at a glance
+
 | Archetype | Best fit | Representative platforms | Core strength | Typical limits |
-|---|---|---|---|---|
-| **🔭 Observability‑First** | Fast triage, RCA, incident comms | Dynatrace Davis AI; Cisco (Splunk) AI Agents; **Datadog Bits AI & Agents**; **Elastic AI Assistant**; **New Relic AI** | Multi‑signal correlation, causal/hypothesis reasoning, narrative updates | Usually **no direct apply** beyond playbooks; relies on external approvals |
-| **⚙️ Provisioning‑Focused** | Safe, repeatable infra changes | **Azure Copilot (Agent Mode)**; DuploCloud; Qovery; Kuberns | Generate/apply IaC with approvals and rollback | Lighter AIOps correlation; observability via integrations |
-| **👨‍💻 Developer‑Centric & Frameworks** | Code/PR changes; build your own agents | AWS Strands SDK; Atlassian Rovo Dev; GitHub Copilot Coding Agent; Zencoder; JFrog Fly; **Azure AI Agent Service (Foundry)** | Planning/tool orchestration, CI/CD fixes, AgentOps | Not a runtime ops console; direct infra apply limited |
-| **🏢 Enterprise Orchestrators** | Cross‑team workflows, audit, CMDB | ServiceNow AI Agent Orchestrator; Salesforce Agentforce (OpsAI); **PagerDuty AIOps** | Ticket/change graph, approvals, runbooks | Deep telemetry depends on observability tools |
-| **📊 Data & MLOps** | AI quality, data pipelines | Databricks Agent Bricks; Snowflake Cortex Agents; Dataiku AI Agents | Evals/guardrails, lineage, model ops | Infra ops out of scope |
-| **🎯 Specialized Domain** | Deep expertise for a niche | IBM AskIAM (IAM); Solo.io Kagent (K8s) | Accuracy within narrow scope | Limited breadth by design |
+| --- | --- | --- | --- | --- |
+| Observability‑First | Fast triage, RCA, incident comms | Dynatrace Davis AI; Cisco (Splunk) AI Agents; Datadog Bits AI & Agents; Elastic AI Assistant; New Relic AI | Multi‑signal correlation, causal/hypothesis reasoning, narrative updates | Usually no direct apply beyond playbooks; relies on external approvals |
+| Provisioning‑Focused | Safe, repeatable infra changes | Azure Copilot (Agent Mode); DuploCloud; Qovery; Kuberns | Generate/apply IaC with approvals and rollback | Lighter AIOps correlation; observability via integrations |
+| Developer‑Centric & Frameworks | Code/PR changes; build your own agents | AWS Strands SDK; Atlassian Rovo Dev; GitHub Copilot Coding Agent; Zencoder; JFrog Fly; Azure AI Agent Service (Foundry) | Planning/tool orchestration, CI/CD fixes, AgentOps | Not a runtime ops console; direct infra apply limited |
+| Enterprise Orchestrators | Cross‑team workflows, audit, CMDB | ServiceNow AI Agent Orchestrator; Salesforce Agentforce (OpsAI); PagerDuty AIOps | Ticket/change graph, approvals, runbooks | Deep telemetry depends on observability tools |
+| Data & MLOps | AI quality, data pipelines | Databricks Agent Bricks; Snowflake Cortex Agents; Dataiku AI Agents | Evaluations/guardrails, lineage, model operations | Infra ops out of scope |
+| Specialized Domain | Deep expertise for a niche | IBM AskIAM (IAM); Solo.io Kagent (K8s) | Accuracy within narrow scope | Limited breadth by design |
 
 ### Top 6 takeaways for 2025
 1. **From chat to action:** Leaders pair **explanations with verifiable evidence** (queries/logs/traces) and **suggest the next safe step** (runbook, PR, or controlled apply).  
