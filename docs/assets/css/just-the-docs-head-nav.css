@@ -1,0 +1,162 @@
+/* -------------------------------------------------------------------
+   just-the-docs-head-nav.css
+   Custom header and navigation styles for the Just‑the‑Docs theme.
+   This stylesheet is inspired by the XDevOps landing page’s header.
+   It overrides the theme’s default nav styles and adds a centered,
+   drop‑down menu similar to the product site.
+   ------------------------------------------------------------------- */
+
+:root {
+  /* Custom colour variables copied from xdevops.ai */
+  --bg: #0b0f17;
+  --muted: #1f2937;
+  --ink: #e5e7eb;
+  --ink-dim: #9ca3af;
+  --brand: #6ee7b7;
+  --ring: rgba(110, 231, 183, 0.35);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 14px 0;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.brand .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 24px var(--ring);
+}
+
+/* Center the primary navigation in the header */
+.primary-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav a,
+.nav button {
+  color: var(--ink);
+  opacity: 0.9;
+  background: none;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.nav a.active,
+.nav button.active {
+  color: var(--brand);
+  opacity: 1;
+}
+
+.nav a:focus-visible,
+.nav button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  border-radius: 8px;
+  color: var(--brand);
+}
+
+.nav a:active,
+.nav button:active {
+  color: var(--brand);
+}
+
+/* Dropdown styling for product section */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid var(--ink-dim);
+  transition: transform 0.18s ease;
+}
+
+.dropdown.open .caret {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  margin-top: 8px;
+  padding: 8px;
+  background: #0f172a;
+  border: 1px solid #1e2a45;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(4, 10, 20, 0.35);
+  display: none;
+  z-index: 50;
+}
+
+.dropdown.open .menu {
+  display: block;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  color: #e5e7eb;
+  border-radius: 8px;
+  opacity: 1;
+  margin: 2px 0;
+}
+
+.menu a:hover {
+  background: #111f33;
+}
+
+.menu a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  background: #102036;
+  color: #6ee7b7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1100px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .primary-nav {
+    position: static;
+    transform: none;
+    margin-top: 6px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
