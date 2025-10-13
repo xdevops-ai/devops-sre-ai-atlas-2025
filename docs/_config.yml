@@ -1,5 +1,82 @@
-title: "DevOps & SRE AI Platforms Atlas 2025"
-description: "Community-driven analysis of AI agent platforms for DevOps, SRE, and Platform Engineering"
-theme: jekyll-theme-cayman
-show_downloads: false
-google_analytics: # Optional: Add your GA tracking ID
+# ---
+# Jekyll / GitHub Pages configuration for the DevOps & SRE AI Atlas
+# This enables Liquid rendering and shows each page's last-modified date
+# based on Git commit history.
+
+# Site metadata
+title: "DevOps & SRE AI Platforms — 2025 Atlas"
+description: "A vendor-neutral, community-driven wiki about DevOps/SRE AI platforms"
+url: ""   # set to your GitHub Pages URL if you have a custom domain
+baseurl: ""
+
+# Timezone for dates shown on pages
+timezone: Europe/Bucharest
+
+# Build options
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+
+# Theme (uncomment one of the following or keep your current theme)
+# theme: minima
+# remote_theme: pages-themes/cayman@v0.2.0
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# jekyll-last-modified-at configuration
+last_modified_at:
+  use_git_last_modified_date: true
+  fallback_to_build_time: false
+
+# Defaults: apply layout/front matter automatically to .md files
+defaults:
+  - scope:
+      path: ""        # all files
+      type: "pages"
+    values:
+      layout: "default"
+      # Expose human-friendly last updated (example usage in page):
+      # Last updated: {{ page.last_modified_at | date: "%B %-d, %Y" }}
+      # If you prefer build time: {{ site.time | date: "%B %-d, %Y" }}
+
+# Exclusions from the site output
+exclude:
+  - README.md
+  - LICENSE
+  - node_modules
+  - vendor
+  - .github
+  - .gitignore
+  - package.json
+  - package-lock.json
+
+# Optional: Collections (uncomment if you organize content this way)
+# collections:
+#   docs:
+#     output: true
+#     permalink: /:collection/:path/
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "docs"
+#     values:
+#       layout: "default"
+
+# SEO tag defaults
+seo:
+  name: "DevOps & SRE AI Platforms — 2025 Atlas"
+  type: "Website"
+
+# Sitemap options
+# sitemap:
+#   exclude:
+#     - /assets/
+#     - /vendor/
+#   include_posts: false
+# ---
