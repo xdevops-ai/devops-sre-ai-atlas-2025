@@ -1,5 +1,3 @@
-/* _sass/custom/custom.scss */
-
 /* Push content below the fixed header and announcement bar */
 :root {
   --atlas-header-height: 60px;
@@ -9,9 +7,9 @@ body {
   padding-top: calc(var(--atlas-header-height) + var(--atlas-announcement-height) + 1rem);
 }
 
-/* Widen the main content container and tables */
+/* Widen the content area and allow tables to use the full width */
 .wrap {
-  max-width: 1400px; /* increase width to reduce table scroll */
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
