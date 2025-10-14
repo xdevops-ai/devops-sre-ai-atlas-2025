@@ -1,25 +1,45 @@
-/* Push content below the fixed header and announcement bar */
+/* Custom styles for DevOps & SRE AI Platforms Atlas.
+   - Push content below the fixed header and announcement bar.
+   - Widen the content container on large screens.
+   - Allow table cells to wrap so wide tables fit without horizontal scrolling.
+   - Ensure code blocks wrap lines instead of overflowing.
+*/
+
+/* Keep top padding so the fixed header doesn't overlap page content */
 :root {
   --atlas-header-height: 60px;
   --atlas-announcement-height: 44px;
 }
+
 body {
   padding-top: calc(var(--atlas-header-height) + var(--atlas-announcement-height) + 1rem);
 }
 
-/* Widen the content area and allow tables to use the full width */
+/* Widen the content area for larger screens. Adjust the max-width as needed. */
 .wrap {
-  max-width: 1400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/* Make tables fully responsive */
 table {
   width: 100%;
   table-layout: auto;
+  margin-bottom: 1.5em;
 }
+
+/* Allow table header and data cells to wrap long content */
+table th,
+table td {
+  white-space: normal;
+  word-break: normal;
+}
+
+/* Allow preformatted text to wrap and avoid horizontal scrolling */
 pre {
   white-space: pre-wrap;
-  word-wrap: break-word;
+  word-break: break-word;
 }
