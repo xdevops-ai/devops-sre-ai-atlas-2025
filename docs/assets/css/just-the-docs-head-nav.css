@@ -1,29 +1,48 @@
-/* -------------------------------------------------------------------
-   just-the-docs-head-nav.css (updated)
-   Custom header and navigation styles for the Just‑the‑Docs theme.
-   This stylesheet is inspired by the XDevOps landing page’s header.
-   It overrides the theme’s default nav styles and adds a centered,
-   drop‑down menu similar to the product site.
-
-   Additional changes:
-   - Added top padding to the <body> element to prevent content from being hidden behind the fixed header.
-   - Increased the maximum width of the main content container (.wrap) to reduce horizontal scroll on tables.
-   - Ensured tables span the full width of the content area.
-   ------------------------------------------------------------------- */
+/* Custom header and navigation styles for the Just‑the‑Docs theme.
+   - Adds top padding so content is not hidden behind the header.
+   - Widens the content area to reduce horizontal scrolling.
+   - Applies your brand colours and custom menu layout.
+*/
 
 :root {
-  /* Custom colour variables copied from xdevops.ai */
+  --atlas-header-height: 60px;
+  --atlas-announcement-height: 44px;
   --bg: #0b0f17;
   --muted: #1f2937;
   --ink: #e5e7eb;
   --ink-dim: #9ca3af;
   --brand: #6ee7b7;
   --ring: rgba(110, 231, 183, 0.35);
-  /* Header and announcement heights used for padding calculations */
-  --atlas-header-height: 60px;
-  --atlas-announcement-height: 44px;
 }
 
+/* Add padding below the fixed header and announcement bar */
+body {
+  padding-top: calc(var(--atlas-header-height) + var(--atlas-announcement-height) + 1rem);
+}
+
+/* Increase content container width */
+.wrap {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Ensure tables span full width */
+table {
+  width: 100%;
+  table-layout: auto;
+  margin-bottom: 1.5em;
+}
+
+/* Make code blocks wrap lines rather than overflow horizontally */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Nav styles based on original theme */
 .nav {
   display: flex;
   align-items: center;
@@ -47,7 +66,6 @@
   box-shadow: 0 0 24px var(--ring);
 }
 
-/* Center the primary navigation in the header */
 .primary-nav {
   position: absolute;
   left: 50%;
@@ -86,7 +104,6 @@
   color: var(--brand);
 }
 
-/* Dropdown styling for product section */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -138,7 +155,6 @@
   padding: 8px 10px;
   color: #e5e7eb;
   border-radius: 8px;
-  opacity: 1;
   margin: 2px 0;
 }
 
@@ -153,7 +169,7 @@
   color: #6ee7b7;
 }
 
-/* Responsive adjustments */
+/* Mobile adjustments */
 @media (max-width: 1100px) {
   .nav {
     flex-direction: column;
@@ -167,36 +183,4 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-}
-
-/* -------------------------------
-   Layout adjustments
-   ------------------------------- */
-
-/* Add top padding to ensure content isn’t hidden behind the fixed header and announcement bar */
-body {
-  padding-top: calc(var(--atlas-header-height) + var(--atlas-announcement-height) + 1rem);
-}
-
-/* Increase the maximum width of the main content container to reduce horizontal scrolling of wide tables.
-   Adjust this value as needed (e.g., 1200px, 1400px) to suit your layout. */
-.wrap {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Ensure tables span the full width of the content area and avoid horizontal overflow */
-table {
-  width: 100%;
-  margin: 0 0 1.5em;
-  table-layout: auto;
-}
-
-/* Optional: reduce the need for horizontal scrollbars on code blocks */
-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
 }
