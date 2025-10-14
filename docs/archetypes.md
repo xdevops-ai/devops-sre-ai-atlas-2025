@@ -2,6 +2,7 @@
 layout: default
 title: Platform Archetypes
 nav_order: 2
+nav_exclude: true  
 ---
 
 # Platform Archetypes Overview
