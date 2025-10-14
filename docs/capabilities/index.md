@@ -84,67 +84,67 @@ This file summarizes capability maturity across **UKM, UAM, UDM, UOM, UEOM, UPM*
 ## Leaders by Capability (Top 5)
 
 ### UKM
-| Platform                         | UKM |
+| Platform                         |  UKM |
 | :------------------------------  | ---: |
-| Cisco Splunk AI Agents           | 4 |
-| ServiceNow AI Agent Orchestrator | 4 |
-| Salesforce Agentforce (OpsAI)    | 4 |
-| Dynatrace Davis AI               | 4 |
-| Atlassian Rovo Dev               | 3 |
+| Cisco Splunk AI Agents           |  4  |
+| ServiceNow AI Agent Orchestrator |  4  |
+| Salesforce Agentforce (OpsAI)    |  4  |
+| Dynatrace Davis AI               |  4  |
+| Atlassian Rovo Dev               |  3  |
 
 ### UAM
-| Platform                         | UAM |
+| Platform                         |  UAM |
 | :------------------------------  | ---: |
-| Cisco Splunk AI Agents           | 4  |
-| Datadog Bits AI & Agents         | 4  |
-| ServiceNow AI Agent Orchestrator | 4  |
-| Dynatrace Davis AI               | 4  |
-| Atlassian Rovo Dev               | 3  |
+| Cisco Splunk AI Agents           |  4  |
+| Datadog Bits AI & Agents         |  4  |
+| ServiceNow AI Agent Orchestrator |  4  |
+| Dynatrace Davis AI               |  4  |
+| Atlassian Rovo Dev               |  3  |
 
 ### UDM
-| Platform                         | UDM |
+| Platform                         |  UDM |
 | :------------------------------  | ---: |
-| Kagent (Solo.io)                 | 4  |
-| Cisco Splunk AI Agents           | 4  |
-| ServiceNow AI Agent Orchestrator | 4  |
-| Datadog Bits AI & Agents         | 4  |
-| Salesforce Agentforce (OpsAI)    | 4  |
+| Kagent (Solo.io)                 |  4  |
+| Cisco Splunk AI Agents           |  4  |
+| ServiceNow AI Agent Orchestrator |  4  |
+| Datadog Bits AI & Agents         |  4  |
+| Salesforce Agentforce (OpsAI)    |  4  |
 
 ### UOM
-| Platform                 | UOM |
-| :----------------------- | ---: |
-| Kagent (Solo.io)         | 4  |
-| Cisco Splunk AI Agents   | 4  |
-| Datadog Bits AI & Agents | 4  |
-| New Relic AI             | 4  |
-| Dynatrace Davis AI       | 4  |
+| Platform                 |  UOM  |
+| :----------------------- | ---:  |
+| Kagent (Solo.io)         |  4  |
+| Cisco Splunk AI Agents   |  4  |
+| Datadog Bits AI & Agents |  4  |
+| New Relic AI             |  4  |
+| Dynatrace Davis AI       |  4  |
 
 ### UEOM
-| Platform                      | UEOM |
-| :---------------------------  | ----: |
-| Salesforce Agentforce (OpsAI) | 4  |
-| Cisco Splunk AI Agents        | 4  |
-| Dynatrace Davis AI            | 4  |
-| Snowflake Cortex Agents       | 4  |
-| Databricks Agent Bricks       | 3  |
+| Platform                      | UEOM  |
+| :---------------------------  | ----:  |
+| Salesforce Agentforce (OpsAI) |  4  |
+| Cisco Splunk AI Agents        |  4  |
+| Dynatrace Davis AI            |  4  |
+| Snowflake Cortex Agents       |  4  |
+| Databricks Agent Bricks       |  3  |
 
 ### UPM
-| Platform                  | UPM |
+| Platform                  | UPM  |
 | :-----------------------  | ---:|
-| Kuberns Platform          | 4  |
-| DuploCloud AI Help Desk   | 4  |
-| Qovery AI Migration Agent | 4  |
-| IBM AskIAM                | 4  |
-| Kagent (Solo.io)          | 3  |
+| Kuberns Platform          |  4  |
+| DuploCloud AI Help Desk   |  4  |
+| Qovery AI Migration Agent |  4  |
+| IBM AskIAM                |  4  |
+| Kagent (Solo.io)          |  3  |
 
 ### Composite (Avg of 6)
 | Platform                         | Composite_Avg_0_4 |
-| :------------------------------  | ------------------: |
-| ServiceNow AI Agent Orchestrator | 3.5  |
-| Salesforce Agentforce (OpsAI)    | 3.5  |
-| Cisco Splunk AI Agents           | 3.33  |
-| Dynatrace Davis AI               | 3.33  |
-| Kagent (Solo.io)                 | 3.17  |
+| :------------------------------  | ------------------:  |
+| ServiceNow AI Agent Orchestrator |  3.5  |
+| Salesforce Agentforce (OpsAI)    |  3.5  |
+| Cisco Splunk AI Agents           |  3.33  |
+| Dynatrace Davis AI               |  3.33  |
+| Kagent (Solo.io)                 |  3.17  |
 
 ---
 
