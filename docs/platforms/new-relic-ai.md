@@ -1,4 +1,4 @@
------
+---
 layout: default
 title: New Relic AI
 parent: Platform Directory
