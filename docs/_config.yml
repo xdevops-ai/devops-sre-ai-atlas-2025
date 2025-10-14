@@ -1,50 +1,67 @@
-# ---
 # Jekyll / GitHub Pages configuration for the DevOps & SRE AI Atlas
-# This enables Liquid rendering and shows each page's last-modified date
-# based on Git commit history.
 
+# --------------------
 # Site metadata
+# --------------------
 title: "DevOps & SRE AI Platforms — 2025 Atlas"
 description: "A vendor-neutral, community-driven wiki about DevOps/SRE AI platforms"
-url: "https://xdevops-ai.github.io"
-baseurl: "/devops-sre-ai-atlas-2025"
-# Timezone for dates shown on pages
+url: "https://xdevops-ai.github.io"          # org/user site URL
+baseurl: "/devops-sre-ai-atlas-2025"         # repo name for project pages
 timezone: Europe/Bucharest
 
+# Optional fallbacks used in pages (Community links) if site.github is unavailable
+repo_url: https://github.com/xdevops-ai/devops-sre-ai-atlas-2025
+org_url:  https://github.com/xdevops-ai
+
+# --------------------
 # Build options
+# --------------------
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
 highlighter: rouge
+# Pretty URLs so links like /archetypes/ work (no .html needed)
+permalink: pretty
 
-# Theme (uncomment one of the following or keep your current theme)
-# theme: minima
-# remote_theme: pages-themes/cayman@v0.2.0
+# --------------------
+# Theme
+# --------------------
+# Use a GitHub Pages supported remote theme (provides `layout: default`)
+remote_theme: just-the-docs/just-the-docs
 
-# Plugins supported by GitHub Pages
+# --------------------
+# Plugins (all supported by GitHub Pages)
+# --------------------
 plugins:
-  - jekyll-last-modified-at
+  - jekyll-remote-theme       # required for remote_theme
+  - jekyll-github-metadata    # enables site.github.*
+  - jekyll-last-modified-at   # shows last modified timestamps (requires git history)
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
 
 # jekyll-last-modified-at configuration
 last_modified_at:
   use_git_last_modified_date: true
   fallback_to_build_time: false
 
-# Defaults: apply layout/front matter automatically to .md files
+# --------------------
+# Defaults
+# --------------------
 defaults:
   - scope:
-      path: ""        # all files
+      path: ""        # all files in docs/
       type: "pages"
     values:
       layout: "default"
-      # Expose human-friendly last updated (example usage in page):
+      # Example usage on a page:
       # Last updated: {{ page.last_modified_at | date: "%B %-d, %Y" }}
-      # If you prefer build time: {{ site.time | date: "%B %-d, %Y" }}
+      # Or build time: {{ site.time | date: "%B %-d, %Y" }}
 
-# Exclusions from the site output
+# --------------------
+# Exclusions
+# --------------------
 exclude:
   - README.md
   - LICENSE
@@ -55,27 +72,18 @@ exclude:
   - package.json
   - package-lock.json
 
-# Optional: Collections (uncomment if you organize content this way)
-# collections:
-#   docs:
-#     output: true
-#     permalink: /:collection/:path/
-# defaults:
-#   - scope:
-#       path: ""
-#       type: "docs"
-#     values:
-#       layout: "default"
-
-# SEO tag defaults
+# --------------------
+# SEO defaults
+# --------------------
 seo:
   name: "DevOps & SRE AI Platforms — 2025 Atlas"
   type: "Website"
 
-# Sitemap options
+# --------------------
+# (Optional) Sitemap options
+# --------------------
 # sitemap:
 #   exclude:
 #     - /assets/
 #     - /vendor/
 #   include_posts: false
-# ---
