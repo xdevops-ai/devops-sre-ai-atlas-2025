@@ -2,6 +2,7 @@
 layout: default
 title: Community
 nav_order: 5
+nav_exclude: true 
 ---
 
 # 🤝 Community Resources
