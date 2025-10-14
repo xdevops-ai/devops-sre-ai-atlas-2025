@@ -1,9 +1,14 @@
 /* -------------------------------------------------------------------
-   just-the-docs-head-nav.css
+   just-the-docs-head-nav.css (updated)
    Custom header and navigation styles for the Just‑the‑Docs theme.
    This stylesheet is inspired by the XDevOps landing page’s header.
    It overrides the theme’s default nav styles and adds a centered,
    drop‑down menu similar to the product site.
+
+   Additional changes:
+   - Added top padding to the <body> element to prevent content from being hidden behind the fixed header.
+   - Increased the maximum width of the main content container (.wrap) to reduce horizontal scroll on tables.
+   - Ensured tables span the full width of the content area.
    ------------------------------------------------------------------- */
 
 :root {
@@ -14,6 +19,9 @@
   --ink-dim: #9ca3af;
   --brand: #6ee7b7;
   --ring: rgba(110, 231, 183, 0.35);
+  /* Header and announcement heights used for padding calculations */
+  --atlas-header-height: 60px;
+  --atlas-announcement-height: 44px;
 }
 
 .nav {
@@ -159,4 +167,36 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+}
+
+/* -------------------------------
+   Layout adjustments
+   ------------------------------- */
+
+/* Add top padding to ensure content isn’t hidden behind the fixed header and announcement bar */
+body {
+  padding-top: calc(var(--atlas-header-height) + var(--atlas-announcement-height) + 1rem);
+}
+
+/* Increase the maximum width of the main content container to reduce horizontal scrolling of wide tables.
+   Adjust this value as needed (e.g., 1200px, 1400px) to suit your layout. */
+.wrap {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Ensure tables span the full width of the content area and avoid horizontal overflow */
+table {
+  width: 100%;
+  margin: 0 0 1.5em;
+  table-layout: auto;
+}
+
+/* Optional: reduce the need for horizontal scrollbars on code blocks */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
