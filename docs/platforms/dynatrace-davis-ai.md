@@ -1,12 +1,38 @@
 ---
 layout: default
-title: Dynatrace Davis Ai
+title: Dynatrace Davis AI
 parent: Platform Directory
 ---
 
-# Dynatrace Davis Ai
+# Dynatrace Davis AI
 
-> **Status:** Draft stub. This page will summarize capabilities, evidence links, and scoring for **Dynatrace Davis Ai**.
+Activities: Y/H  · Diagnostics: Y/H  · Provisioning: N/L  
+Event ontology: Y/H  · Observability: Y/H  · Confidence: High
 
-- See the [Platform Overview]({ '/platform-overview' | relative_url }) for a comparative snapshot.
-- Contribute updates via [Issues]({ site.github.repository_url }/issues) or [PRs]({ site.github.repository_url }/pulls).
+**Build style / interface** — Low-code workflows and Davis apps.
+
+**What it actually does** — Automatic anomaly detection and causal root cause analysis; correlates into "Davis problems" with evidence.
+
+**Data / telemetry** — Full-stack APM/Infrastructure/Logs/RUM in Grail; uses DQL.
+
+**Interoperability** — Integrations and workflows.
+
+**Deployment model** — Dynatrace SaaS.
+
+**Notes** — Remediation guided or via workflows; direct infra apply is limited.
+
+**UKM Snapshot:** Ingest Y/H, Index Y/H, Retrieval Y/H, Governance Y/M, Overall High.
+
+**UAM Snapshot:** Ingest Y/H, Index Y/H, Retrieval Y/H, Governance Y/H, Overall High.
+
+**UDM Snapshot:** Ingest Y/H, Index Y/H, Retrieval Y/H, Governance Y/H, Overall High.
+
+**UOM Snapshot:** Ingest Y/H, Index Y/H, Retrieval Y/H, Governance Y/H, Overall High.
+
+**UEOM Snapshot:** Ingest Y/H, Index Y/H, Retrieval Y/H, Governance Y/H, Overall High.
+
+**UPM Snapshot:** Ingest N/L, Index N/L, Retrieval N/L, Governance N/L, Overall Low.
+
+**Latest updates:** Docs: Davis problem correlation; RCA configuration in recent releases.
+
+Links: https://docs.dynatrace.com (Davis, RCA guides)
