@@ -2,6 +2,7 @@
 layout: default
 title: Capability Framework
 nav_order: 3
+nav_exclude: true  
 ---
 
 # Capability Framework & Scoring
