@@ -30,6 +30,11 @@ permalink: pretty
 # Use a GitHub Pages supported remote theme (provides `layout: default`)
 remote_theme: just-the-docs/just-the-docs
 
+# Tell Just the Docs to load your custom stylesheet.
+# The path is relative to the `docs/` directory.
+just_the_docs:
+  stylesheets:
+    - /assets/css/just-the-docs-head-nav.css
 # --------------------
 # Plugins (all supported by GitHub Pages)
 # --------------------
