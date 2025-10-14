@@ -54,12 +54,6 @@ exclude:
   - .gitignore
   - package.json
   - package-lock.json
-  # Exclude root-level pages that have equivalent index pages in sub-folders.
-  # Without excluding these files Just the Docs will generate duplicate
-  # navigation entries for Platform Archetypes, Capability Framework and Community.
-  - docs/archetypes.md
-  - docs/capabilities.md
-  - docs/community.md
 
 # Optional: Collections (uncomment if you organize content this way)
 # collections:
