@@ -9,25 +9,19 @@ parent: Platform Directory
 Activities: Y/M | Diagnostics: Y/M | Provisioning: P/L  
 Event ontology: N/L | Observability: P/L | Confidence: Medium
 
-Build style / interface: Code‑first; agents run via CI webhook or CLI and appear as GitHub comments.
+Build style / interface — Code-first assistant that integrates with CI workflows; agents run via CI webhooks or CLI and appear as GitHub comments.
+What it actually does — Autonomous coding agents fix failing tests, patch vulnerabilities, add documentation and tests, and open pull requests; they help triage CI failures and suggest improvements across repositories.
+Data / telemetry — CI run data, issue trackers, and pull request dashboards; actions and results are captured for audits.
+Interoperability — Integrates with GitHub, Jira, Sentry, and CI/CD pipelines.
+Deployment model — SaaS with CLI; agents run within GitHub checks and as a local client for tests.
+Notes — PR-centric and focused on code quality and developer productivity rather than runtime infrastructure automation.
 
-What it actually does: Autonomous coding agents fix failing tests, patch vulnerabilities, add docs/tests and open pull requests. Helps triage CI failures and suggests improvements across repositories.
+UKM Snapshot: ingest medium-low, index medium-low, retrieval medium-low, governance medium-low, overall medium-low.
+UAM Snapshot: ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high.
+UDM Snapshot: ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high.
+UOM Snapshot: ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high.
+UEOM Snapshot: ingest medium-low, index medium-low, retrieval medium-low, governance medium-low, overall medium-low.
+UPM Snapshot: ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high.
 
-Data / telemetry: CI runs, issue trackers, and PR dashboards; actions and results captured for audits.
-
-Interoperability: GitHub, Jira and Sentry; integrates with CI/CD pipelines.
-
-Deployment model: SaaS + CLI (agent runs in GitHub checks and a local client for tests).
-
-Notes: PR‑centric; not a runtime infra automation tool; emphasises code quality and developer productivity.
-
-UKM Snapshot: Medium‑Low  
-UAM Snapshot: Medium‑High  
-UDM Snapshot: Medium‑High  
-UOM Snapshot: Low‑Medium  
-UEOM Snapshot: Low  
-UPM Snapshot: Low‑Medium
-
-Latest updates — Product suite launched with the ability to fix tests and patch vulnerabilities; blog posts outline the roadmap and use cases.
-
-Links — [Zencoder AI Agents](https://www.zencoder.com)
+Latest updates — New features continue to be rolled out via the CI agent; no major announcements.
+Links — [Zencoder GitHub](https://github.com/zencoder)
