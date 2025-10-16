@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Offered as part of Splunk Cloud and Splunk Observability Cloud.  
 **Notes —** Focuses on remediation via playbooks and integrations rather than direct infrastructure apply.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest Y/H, index Y/H, retrieval Y/H, governance Y/M, overall high  <br>
-**Note:** Knowledge: consumes product-native and BYO sources.
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/M; Overall high
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: root-cause analysis with causal signals; correlates metrics/traces/logs; SOC detections supported
+**UAM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Capture & Sessionization: Y/H; Evidence Policy & Verification: Y/H; Cisco+Splunk’s agentic AI works under strict data policies
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: normalizes to standard schemas; Splunk CIM compatible
+**UDM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Detection & Alerting: Y/H; Root Cause Analysis & Correlation: Y/H; This is a core strength
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Instrumentation & Ingest: Y/H; Cisco’s platform (integrated with Splunk) ingests a broad range of telemetry; Normalization & Enrichment: Y/H; Ingested data is normalized through Splunk’s Common Information Model, and Cis
+
+
+**UEOM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
+
+
+**UPM Snapshots:**   
+ingest N/L, index N/L, retrieval N/L, governance N/L, overall low  <br>
+**Note:** Coverage — Ingest N/L; Index N/L; Retrieval N/L; Governance N/L; Overall low
+
+
+**Latest updates —** Cisco unveils agentic AI for Splunk Observability & SOC at .conf (Sep 9, 2025).
 **Links —** [Official Site](https://www.splunk.com/en_us/solutions/splunk-artificial-intelligence.html), [Docs](https://investor.cisco.com/news/news-details/2025/Cisco-Supercharges-Observability-with-Agentic-AI-for-Real-Time-Business-Insights/default.aspx), [Blog](https://www.splunk.com/en_us/newsroom/press-releases/2025/cisco-elevates-the-soc-with-agentic-ai-for-faster-threat-response-and-reduced-complexity.html)

@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Runs on the Salesforce Cloud.  
 **Notes —** OpsAI is positioned as part of Agentforce for cross-team workflows and approvals.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall High  <br>
-**Note:** Knowledge: consumes product-native and BYO sources.
+**Note:** Ingestion & Validation: Y/H; Normalization & Enrichment: Y/H; Agentforce classifies and enriches incoming data via an ontology of “Topics” and associated “Actions
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy; change controls via ITSM
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs; SOC detections supported
+**UAM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall Medium-High  <br>
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall Medium-High
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: product-native with adapters
+**UDM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall High  <br>
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall High
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall Medium-High  <br>
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall Medium-High
+
+
+**UEOM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall High  <br>
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall High
+
+
+**UPM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall Medium-High  <br>
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall Medium-High
+
+
+**Latest updates —** Dreamforce: Agentforce 360; OpenAI & Anthropic partnerships expanded (Oct 14, 2025).
 **Links —** [Official Site](https://www.salesforce.com/agentforce/), [Docs](https://www.salesforce.com/news/press-releases/2025/10/14/openai-partnership-expansion-announcement/), [Blog](https://www.salesforce.com/news/press-releases/2025/10/14/anthropic-regulated-industries-partnership-expansion-announcement/)

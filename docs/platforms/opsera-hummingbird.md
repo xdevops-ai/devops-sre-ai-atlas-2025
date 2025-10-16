@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** SaaS.  
 **Notes —** Does not perform provisioning directly; relies on integrations for infrastructure changes.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest Y/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Knowledge: consumes product-native and BYO sources.
+**Note:** Ingestion & Validation: Y/M; Normalization & Enrichment: Y/M; Opsera normalizes disparate tool data into a common model
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
+**UAM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: product-native with adapters
+**UDM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+
+
+**UEOM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+
+
+**UPM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+
+
+**Latest updates —** Opsera raises $20M; Hummingbird AI agents highlighted (Apr 2, 2025).
 **Links —** [Official Site](https://opsera.ai/platform/hummingbird-ai/), [Docs](https://opsera.ai/newsroom/opsera-raises-20m-to-drive-ai-powered-devops-platform-innovation-accelerating-ai-agent-adoption-and-developer-efficiency/), [Blog](https://www.prnewswire.com/news-releases/opsera-raises-20m-to-drive-ai-powered-devops-platform-innovation-accelerating-ai-agent-adoption-and-developer-efficiency-302417777.html)

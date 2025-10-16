@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Runs as part of GitHub SaaS.  
 **Notes —** Only applies infrastructure changes via IaC PRs; does not directly mutate runtime resources.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest P/L, index N/L, retrieval P/M, governance Y/M, overall medium  <br>
-**Note:** Knowledge: BYO sources; governed ingestion & indexing.
+**Note:** Ingestion & Validation: N/L; Normalization & Enrichment: N/L; Copilot doesn’t create a unified schema of your project knowledge
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
+**UAM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: normalizes to standard schemas
+**UDM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Error Understanding in Code: P/L; CI Pipeline and Build Issue Diagnosis: P/L; GitHub has introduced some features (often tied with Actions and the broader GitHub ecosystem) where AI can help understand why a build or dep
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Instrumentation & Ingest: N/L; GitHub Copilot is not an observability tool and does not ingest metrics, logs, or traces from systems; Normalization & Enrichment: N/L; Since Copilot isn’t dealing with observability data, 
+
+
+**UEOM Snapshots:**   
+ingest N/L, index N/L, retrieval N/L, governance N/L, overall low  <br>
+**Note:** Coverage — Ingest N/L; Index N/L; Retrieval N/L; Governance N/L; Overall low
+
+
+**UPM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+
+
+**Latest updates —** Copilot coding agent GA (Sep 25, 2025).
 **Links —** [Official Site](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent), [Docs](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent), [Blog](https://www.theverge.com/news/669339/github-ai-coding-agent-fix-bugs)

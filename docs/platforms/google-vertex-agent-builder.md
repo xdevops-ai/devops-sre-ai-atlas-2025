@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Google Cloud.  
 **Notes —** Infrastructure changes require external services; the Jules coding agent is a separate product.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest P/L, index P/L, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Knowledge: consumes product-native and BYO sources.
+**Note:** Ingestion & Validation: N/L; Normalization & Enrichment: P/L
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage
+**UAM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests platform telemetry
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: normalizes to standard schemas
+**UDM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
+**Note:** Based Troubleshooting: P/L; Knowledge Base Answers: P/L; One strength of Dialogflow (Gen App Builder) is integration with knowledge bases and FAQs
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Instrumentation & Ingest: N/L; Google’s Gen App Builder (Dialogflow CX-based) doesn’t ingest telemetry data by default; Normalization & Enrichment: N/L; Out of the box, there’s no observability data to normalize
+
+
+**UEOM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
+
+
+**UPM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
+
+
+**Latest updates —** “Get started with Vertex AI Agent Builder” guide updated (Sep 19, 2025).
 **Links —** [Official Site](https://cloud.google.com/products/agent-builder), [Docs](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-builder/overview), [Blog](https://cloud.google.com/blog/products/ai-machine-learning/get-started-with-vertex-ai-agent-builder)

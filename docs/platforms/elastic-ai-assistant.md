@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Runs on the Elastic Stack (self-hosted) or Elastic Cloud.  
 **Notes —** A human assistant that accelerates root-cause analysis and onboarding.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest Y/M, index Y/M, retrieval Y/M, governance P/M, overall medium  <br>
-**Note:** Knowledge: BYO sources; governed ingestion & indexing.
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance P/M; Overall medium
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: root-cause analysis with causal signals; correlates metrics/traces/logs
+**UAM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** https://www
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: product-native with adapters
+**UDM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Assistive Detection: P/L; Log and Error Analysis: Y/M
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
+**Note:** Instrumentation & Ingest: Y/M; Elastic Observability supports ingesting metrics, logs, traces, and uptime data via Beats/Elastic Agent and open APIs; Normalization & Enrichment: Y/M; Elastic uses the Elastic Common Schem
+
+
+**UEOM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+
+
+**UPM Snapshots:**   
+ingest N/L, index N/L, retrieval N/L, governance N/L, overall low  <br>
+**Note:** Coverage — Ingest N/L; Index N/L; Retrieval N/L; Governance N/L; Overall low
+
+
+**Latest updates —** Elastic expands AI Assistant docs for Observability & Security (2025).
 **Links —** [Official Site](https://www.elastic.co/elasticsearch/ai-assistant), [Docs](https://www.elastic.co/docs/solutions/observability/observability-ai-assistant), [Blog](https://www.elastic.co/docs/solutions/security/ai/ai-assistant)

@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Runs as part of the Termius client; requires Termius Cloud and host instances.  
 **Notes —** Early roadmap; capabilities still evolving and reliant on SSH; bring your own context and policies.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest low, index low, retrieval low, governance low, overall low  <br>
-**Note:** Knowledge: consumes product-native and BYO sources.
+**Note:** Ingestion & Validation: N/L; Normalization & Enrichment: N/L; There is no indication of Gloria applying metadata schemas or ontologies
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: guided actions with approvals; sessionized context
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage
+**UAM Snapshots:**   
+ingest medium, index medium, retrieval medium, governance medium, overall medium  <br>
+**Note:** Coverage — Ingest medium; Index medium; Retrieval medium; Governance medium; Overall medium
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests platform telemetry
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: product-native with adapters
+**UDM Snapshots:**   
+ingest medium, index medium, retrieval medium, governance medium, overall medium  <br>
+**Note:** Coverage — Ingest medium; Index medium; Retrieval medium; Governance medium; Overall medium
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest medium, index medium, retrieval medium, governance medium, overall medium  <br>
+**Note:** Coverage — Ingest medium; Index medium; Retrieval medium; Governance medium; Overall medium
+
+
+**UEOM Snapshots:**   
+ingest low, index low, retrieval low, governance low, overall low  <br>
+**Note:** Concept & Modeling (Score: 0) – None
+
+
+**UPM Snapshots:**   
+ingest medium, index medium, retrieval medium, governance medium, overall medium  <br>
+**Note:** Coverage — Ingest medium; Index medium; Retrieval medium; Governance medium; Overall medium
+
+
+**Latest updates —** Termius introduces Gloria DevOps agent (Aug 20, 2025).
 **Links —** [Official Site](https://termius.com/gloria), [Docs](https://termius.com/blog/devops-ai-agent-gloria), [Blog](https://termius.com/blog/ai-agent)

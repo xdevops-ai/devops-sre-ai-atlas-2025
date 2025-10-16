@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Managed PaaS.  
 **Notes —** Limited third-party validation; treat as tentative.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest P/L, index N/L, retrieval P/L, governance P/L, overall low  <br>
-**Note:** Knowledge: BYO sources; governed ingestion & indexing.
+**Note:** Coverage — Ingest P/L; Index N/L; Retrieval P/L; Governance P/L; Overall low
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: guided actions with approvals
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
+**UAM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: product-native with adapters
+**UDM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+
+
+**UEOM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+
+
+**UPM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
+
+
+**Latest updates —** Kuberns posts new guides and blog updates (Oct 7–14, 2025).
 **Links —** [Official Site](https://kuberns.com/), [Docs](https://docs.kuberns.com/), [Blog](https://kuberns.com/blogs)

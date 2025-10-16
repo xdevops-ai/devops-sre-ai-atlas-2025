@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Runs as Azure AI Foundry in the cloud with a containerised agent runtime; the SDK is open‑source for local development and cloud deployment.  
 **Notes —** Focused on agent workflow orchestration and governance rather than direct human‑facing operations.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest Y/M, index P/M, retrieval Y/M, governance Y/H, overall medium  <br>
-**Note:** Knowledge: consumes product-native and BYO sources.
+**Note:** Coverage — Ingest Y/M; Index P/M; Retrieval Y/M; Governance Y/H; Overall medium
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy; sessionized context
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
+**UAM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: product-native with adapters
+**UDM Snapshots:**   
+ingest N/L, index N/L, retrieval N/L, governance N/L, overall low  <br>
+**Note:** Coverage — Ingest N/L; Index N/L; Retrieval N/L; Governance N/L; Overall low
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
+
+
+**UEOM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+
+
+**UPM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
+
+
+**Latest updates —** Azure AI Agent Service overview updated for Foundry (2025).
 **Links —** [Official Site](https://azure.microsoft.com/en-us/products/ai-foundry/agent-service), [Docs](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview), [Blog](https://azure.microsoft.com/en-us/blog/)

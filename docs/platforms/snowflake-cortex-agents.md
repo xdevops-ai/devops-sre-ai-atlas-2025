@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Runs as a managed service inside your Snowflake account. There is no separate runtime; agents deploy via SQL/Python and operate within Snowflake's security and governance controls.  
 **Notes —** Designed for data and MLOps use cases; not general DevOps/SRE. Diagnostic and provisioning capabilities are limited; its strengths are knowledge and ontology (UEOM/UKM) and activities (UAM).
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high  <br>
-**Note:** Knowledge: BYO sources; governed ingestion & indexing.
+**Note:** Coverage — Ingest medium-high; Index medium-high; Retrieval medium-high; Governance medium-high; Overall medium-high
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
+**UAM Snapshots:**   
+ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high  <br>
+**Note:** Coverage — Ingest medium-high; Index medium-high; Retrieval medium-high; Governance medium-high; Overall medium-high
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: normalizes to standard schemas; CMDB/service-aware entities
+**UDM Snapshots:**   
+ingest low-medium, index low-medium, retrieval low-medium, governance low-medium, overall low-medium  <br>
+**Note:** Coverage — Ingest low-medium; Index low-medium; Retrieval low-medium; Governance low-medium; Overall low-medium
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest low-medium, index low-medium, retrieval low-medium, governance low-medium, overall low-medium  <br>
+**Note:** Coverage — Ingest low-medium; Index low-medium; Retrieval low-medium; Governance low-medium; Overall low-medium
+
+
+**UEOM Snapshots:**   
+ingest high, index high, retrieval high, governance high, overall high  <br>
+**Note:** Coverage — Ingest high; Index high; Retrieval high; Governance high; Overall high
+
+
+**UPM Snapshots:**   
+ingest low-medium, index low-medium, retrieval low-medium, governance low-medium, overall low-medium  <br>
+**Note:** Coverage — Ingest low-medium; Index low-medium; Retrieval low-medium; Governance low-medium; Overall low-medium
+
+
+**Latest updates —** Cortex Agents docs/guide expanded (2025).
 **Links —** [Official Site](https://www.snowflake.com/en/product/features/cortex/), [Docs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents), [Blog](https://docs.snowflake.com/en/user-guide/snowflake-cortex/snowflake-intelligence)

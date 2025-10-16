@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** SaaS with Terraform.  
 **Notes —** strong apply/rollback within the DuploCloud ecosystem.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Knowledge: consumes product-native and BYO sources. metadata & tagging supported
+**Note:** Coverage — Ingest P/M; Index P/M; Retrieval Y/M; Governance Y/M; Overall medium
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: guided actions with approvals; change controls via ITSM
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
+**UAM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: product-native with adapters
+**UDM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
+**Note:** Instrumentation & Ingest: P/M; DuploCloud’s AI assistant monitors the cloud environments it manages at a high level; Normalization & Enrichment: P/M; Data is inherently structured by the cloud APIs (JSON responses, etc
+
+
+**UEOM Snapshots:**   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+
+
+**UPM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
+
+
+**Latest updates —** AI HelpDesk docs published (Sep 18, 2025).
 **Links —** [Official Site](https://duplocloud.com/), [Docs](https://docs.duplocloud.com/docs/ai-suite/ai-helpdesk), [Blog](https://duplocloud.com/blog/ai-help-desk-for-devops/)

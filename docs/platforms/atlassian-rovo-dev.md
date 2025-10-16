@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Atlassian cloud with a local CLI.  
 **Notes —** Focuses on developer workflows; infrastructure operations are out of scope.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Knowledge: BYO sources; governed ingestion & indexing.
+**Note:** Coverage — Ingest P/M; Index P/M; Retrieval Y/M; Governance Y/M; Overall medium
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy; sessionized context
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage
+**UAM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Capture & Sessionization: Y/M; Evidence Policy & Verification: P/L
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests platform telemetry
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: product-native with adapters
+**UDM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Detection & Monitoring: P/L; Root Cause Analysis & Context Gathering: P/M
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
+**Note:** Instrumentation & Ingest: N/L; Rovo does not directly ingest traditional telemetry (metrics, logs, traces); Normalization & Enrichment: P/L; Context is limited to Atlassian’s data model (linking tickets, PRs, docs)
+
+
+**UEOM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+
+
+**UPM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+
+
+**Latest updates —** Rovo Dev CLI adds GPT‑5 support (Aug 8, 2025).
 **Links —** [Official Site](https://www.atlassian.com/software/rovo-dev), [Docs](https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/), [Blog](https://www.atlassian.com/blog/announcements/rovo-dev-cli-with-gpt5)

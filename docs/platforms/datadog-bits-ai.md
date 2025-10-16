@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Datadog SaaS (some agents LA/preview in 2025).  
 **Notes —** Human‑in‑the‑loop with optional auto‑run of safe remediations; approvals for complex actions.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Knowledge: consumes product-native and BYO sources.
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy; change controls via ITSM
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: root-cause analysis with causal signals; correlates metrics/traces/logs; SOC detections supported
+**UAM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Capture & Sessionization: Y/H; Evidence Policy & Verification: P/M
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events; service topology correlation
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: normalizes to standard schemas; CMDB/service-aware entities
+**UDM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Proactive Detection & Noise Reduction: Y/H; Automated Triage & Root Cause Analysis: Y/H; Bits AI is essentially an on-call engineer that works at machine speed
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
+
+
+**UEOM Snapshots:**   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
+
+
+**UPM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
+
+
+**Latest updates —** Datadog unveils new domain‑specific AI agents at DASH (Jun 10, 2025).
 **Links —** [Official Site](https://www.datadoghq.com/product/platform/bits-ai/), [Docs](https://docs.datadoghq.com/bits_ai/), [Blog](https://investors.datadoghq.com/news-releases/news-release-details/datadog-unveils-latest-ai-agents-rapidly-resolve-application)

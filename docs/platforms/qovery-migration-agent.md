@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Open-source agent with a Qovery cloud service.  
 **Notes —** Produces artifacts but does not run live observability.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest P/L, index N/L, retrieval P/L, governance P/L, overall Low-Medium  <br>
-**Note:** Knowledge: consumes product-native and BYO sources.
+**Note:** Coverage — Ingest P/L; Index N/L; Retrieval P/L; Governance P/L; Overall Low-Medium
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: guided actions with approvals
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: anomaly detection & triage
+**UAM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall Low-Medium  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall Low-Medium
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests platform telemetry
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: product-native with adapters
+**UDM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall Low-Medium  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall Low-Medium
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall Low-Medium  <br>
+**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall Low-Medium
+
+
+**UEOM Snapshots:**   
+ingest N/L, index N/L, retrieval N/L, governance N/L, overall Low  <br>
+**Note:** Coverage — Ingest N/L; Index N/L; Retrieval N/L; Governance N/L; Overall Low
+
+
+**UPM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall High  <br>
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall High
+
+
+**Latest updates —** Qovery’s AI Cloud Migration Agent site & GitHub updated (2025).
 **Links —** [Official Site](https://migrate.qovery.com/), [Docs](https://github.com/Qovery/qovery-migration-ai-agent), [Blog](https://www.qovery.com/blog/open-source-devops-ai-agent--effortless-migration-from-heroku-to-aws)

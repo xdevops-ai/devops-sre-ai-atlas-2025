@@ -16,27 +16,35 @@ parent: Platform Directory
 **Deployment model —** Dynatrace SaaS.  
 **Notes —** Remediation guided or via workflows; direct infra apply is limited.
 
-**UKM Snapshots:**
+**UKM Snapshots:** 
 ingest Y/H, index Y/H, retrieval Y/H, governance Y/M, overall high  <br>
-**Note:** Knowledge: consumes product-native and BYO sources.
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/M; Overall high
 
-**UAM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Activities: agent executes playbooks/workflows with policy
 
-**UDM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Diagnostics: root-cause analysis with causal signals; correlates metrics/traces/logs; SOC detections supported
+**UAM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
 
-**UOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Observability: ingests metrics/traces/logs/events
 
-**UEOM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Ontology: product-native with adapters
+**UDM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Continuous Detection & Smart Alerting: Y/H; Automatic Root Cause Analysis: Y/H; This is where Davis truly shines
 
-**UPM Snapshots:**
-ingest —, index —, retrieval —, governance —, overall —  <br>
-**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
+
+**UOM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Instrumentation & Ingest: Y/H; Dynatrace’s OneAgent automatically instruments hosts, processes, containers, and applications; Normalization & Enrichment: Y/H; All telemetry is fed into Dynatrace’s unified Smartscape mode
+
+
+**UEOM Snapshots:**   
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
+
+
+**UPM Snapshots:**   
+ingest N/L, index N/L, retrieval N/L, governance N/L, overall low  <br>
+**Note:** Coverage — Ingest N/L; Index N/L; Retrieval N/L; Governance N/L; Overall low
+
+
+**Latest updates —** “State of Observability 2025” report and Davis docs updated (Oct 7, 2025).
 **Links —** [Official Site](https://www.dynatrace.com/news/press-release/state-of-observability-2025/), [Docs](https://docs.dynatrace.com/docs/discover-dynatrace/references/semantic-dictionary/model/davis), [Blog](https://www.dynatrace.com/news/blog/state-of-observability-2025-ai-trust-roi/)
