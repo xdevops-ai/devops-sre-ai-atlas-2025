@@ -6,8 +6,8 @@ parent: Platform Directory
 
 # Elastic AI Assistant
 
-Activities: P/M | Diagnostics: P/M | Provisioning: N/L  <br>
-Event ontology: P/M | Observability: Y/M | Confidence: Medium
+**Activities**: P/M | **Diagnostics**: P/M | **Provisioning**: N/L  <br>
+**Event ontology**: P/M | **Observability**: Y/M | **Confidence**: Medium
 
 **Build style / interface —** Integrated into Elastic Observability (Kibana) with contextual prompts and chat.  
 **What it actually does —** Explains errors and logs with actionable fixes, answers questions like "why is latency high?", recommends queries and visualizations, and surfaces runbooks with the option to execute them for known issues.  
@@ -17,15 +17,11 @@ Event ontology: P/M | Observability: Y/M | Confidence: Medium
 **Notes —** A human assistant that accelerates root-cause analysis and onboarding.
 
 **UKM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance P/M, overall medium  <br>
-Note: See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
-
-
-
-
+ingest Y/M, index Y/M, retrieval Y/M, governance P/M, overall medium
+**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
 
 
 **UAM Snapshots:**
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
 **Note:** https://www
+**Links —** [Official Site](https://www.elastic.co/elasticsearch/ai-assistant), [Docs](https://www.elastic.co/docs/solutions/observability/observability-ai-assistant), [Blog](https://www.elastic.co/docs/solutions/security/ai/ai-assistant)

@@ -6,8 +6,8 @@ parent: Platform Directory
 
 # IBM AskIAM
 
-Activities: Y/M | Diagnostics: Y/M | Provisioning: Y/H  <br>
-Event ontology: P/M | Observability: P/L | Confidence: Medium
+**Activities**: Y/M | **Diagnostics**: Y/M | **Provisioning**: Y/H  <br>
+**Event ontology**: P/M | **Observability**: P/L | **Confidence**: Medium
 
 **Build style / interface —** Low‑code assistant workflows delivered via IBM Consulting.  
 **What it actually does —** Handles identity and access requests, approvals, and onboarding; provides posture insights and cross‑system provisioning across platforms.  
@@ -17,5 +17,6 @@ Event ontology: P/M | Observability: P/L | Confidence: Medium
 **Notes —** Deep infrastructure telemetry is out of scope.
 
 **UKM Snapshots:**
-ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
+ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium
 **Note:** Ingestion & Validation: P/M; AskIAM integrates with enterprise IAM systems (IBM Verify, Microsoft Entra, Saviynt, etc; Normalization & Enrichment: Y/M; A key value of AskIAM is centralizing and simpli
+**Links —** [Official Site](https://www.ibm.com/services/identity-access-management), [Docs](https://newsroom.ibm.com/blog-askiam-ibms-new-agentic-ai-for-identity-and-access-management), [Blog](https://newsroom.ibm.com/index.php?item=2326&s=34222)
