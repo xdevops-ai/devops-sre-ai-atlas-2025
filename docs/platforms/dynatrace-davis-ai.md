@@ -6,35 +6,35 @@ parent: Platform Directory
 
 # Dynatrace Davis AI
 
-Activities: Y/H | Diagnostics: Y/H | Provisioning: N/L  
+Activities: Y/H | Diagnostics: Y/H | Provisioning: N/L  <br>
 Event ontology: Y/H | Observability: Y/H | Confidence: High
 
-Build style / interface — Low-code workflows and Davis apps.  
-What it actually does — Automatic anomaly detection and causal root cause analysis; correlates into "Davis problems" with evidence.  
-Data / telemetry — Full-stack APM/Infrastructure/Logs/RUM in Grail; uses DQL.  
-Interoperability — Integrations and workflows.  
-Deployment model — Dynatrace SaaS.  
-Notes — Remediation guided or via workflows; direct infra apply is limited.
+**Build style / interface —** Low-code workflows and Davis apps.  
+**What it actually does —** Automatic anomaly detection and causal root cause analysis; correlates into "Davis problems" with evidence.  
+**Data / telemetry —** Full-stack APM/Infrastructure/Logs/RUM in Grail; uses DQL.  
+**Interoperability —** Integrations and workflows.  
+**Deployment model —** Dynatrace SaaS.  
+**Notes —** Remediation guided or via workflows; direct infra apply is limited.
 
-UKM Snapshots: 
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/M, overall high
-Note:   See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
+**UKM Snapshots:**
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/M, overall high  <br>
+Note: See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
 
-UAM Snapshots:   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high
-Note:   See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
-UDM Snapshots:   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high
-Note:   See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
-UOM Snapshots:   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high
-Note:   See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
-UEOM Snapshots:   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high
-Note:   See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
-UPM Snapshots:   
-ingest N/L, index N/L, retrieval N/L, governance N/L, overall low
-Note:   See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
 
-Latest updates — “State of Observability 2025” report and Davis docs updated (Oct 7, 2025).
-Links — [Official Site](https://www.dynatrace.com/news/press-release/state-of-observability-2025/), [Docs](https://docs.dynatrace.com/docs/discover-dynatrace/references/semantic-dictionary/model/davis), [Blog](https://www.dynatrace.com/news/blog/state-of-observability-2025-ai-trust-roi/)
+
+
+
+
+
+**UAM Snapshots:**
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+Note: See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+
+
+
+
+
+
+**UDM Snapshots:**
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
+**Note:** Continuous Detection & Smart Alerting: Y/H; Dynatrace’s Davis AI is renowned for its real-time anomaly detection; Automatic Root Cause Analysis: Y/H; This is where Davis truly shines
