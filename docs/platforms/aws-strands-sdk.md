@@ -17,6 +17,26 @@ parent: Platform Directory
 **Notes —** Bring your own memory and knowledge base; strong tracing and governance hooks.
 
 **UKM Snapshots:**
-ingest P/L, index N/L, retrieval P/M, governance P/M, overall medium-low
-**Note:** Ingestion & Validation: P/L; The Strands SDK itself doesn’t ingest domain knowledge for you; Normalization & Enrichment: P/M; Strands emphasizes a model-agnostic, tool-based architecture brightdata
+ingest P/L, index N/L, retrieval P/M, governance P/M, overall medium-low  <br>
+**Note:** Knowledge: BYO sources; governed ingestion & indexing.
+
+**UAM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: guided actions with approvals
+
+**UDM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
+
+**UOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: normalizes to standard schemas; CMDB/service-aware entities
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: SaaS-managed; limited direct apply
 **Links —** [Official Site](https://strandsagents.com/latest/), [Docs](https://strandsagents.com/latest/documentation/docs/), [Blog](https://aws.amazon.com/blogs/machine-learning/strands-agents-sdk-a-technical-deep-dive-into-agent-architectures-and-observability/)

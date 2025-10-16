@@ -17,6 +17,26 @@ parent: Platform Directory
 **Notes —** Provisioning occurs through integrations and runbooks rather than direct apply.
 
 **UKM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/H, overall High
-**Note:** Ingestion & Validation: Y/H; ServiceNow’s AI Agent Orchestrator ingests data from ITSM, ITOM, and beyond: incident tickets, change requests, monitoring alerts, and even external telemetry like OpenTel
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/H, overall High  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
+
+**UAM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy
+
+**UDM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs; SOC detections supported
+
+**UOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: normalizes to standard schemas; OpenTelemetry semantic conv.; CMDB/service-aware entities
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
 **Links —** [Official Site](https://www.servicenow.com/products/ai-agents.html), [Docs](https://www.servicenow.com/company/media/press-room/ai-agents-studio.html), [Blog](https://www.ciodive.com/news/ServiceNow-AI-agent-portfolio-enterprise-automation/738685/)

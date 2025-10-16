@@ -17,30 +17,26 @@ parent: Platform Directory
 **Notes —** Focused on agent workflow orchestration and governance rather than direct human‑facing operations.
 
 **UKM Snapshots:**
-ingest Y/M, index P/M, retrieval Y/M, governance Y/H, overall medium
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest Y/M, index P/M, retrieval Y/M, governance Y/H, overall medium  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
 
 **UAM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy; sessionized context
 
 **UDM Snapshots:**
-ingest N/L, index N/L, retrieval N/L, governance N/L, overall low
-**Note:** See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
 
 **UOM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
 
 **UEOM Snapshots:**
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
-**Note:** See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
 
 **UPM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low
-**Note:** See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
-
-
-**Latest updates —** Azure AI Agent Service overview updated for Foundry (2025).
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
 **Links —** [Official Site](https://azure.microsoft.com/en-us/products/ai-foundry/agent-service), [Docs](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview), [Blog](https://azure.microsoft.com/en-us/blog/)

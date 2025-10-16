@@ -17,30 +17,26 @@ parent: Platform Directory
 **Notes —** Focuses on release governance rather than direct infrastructure application.
 
 **UKM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Knowledge: consumes product-native and BYO sources. metadata & tagging supported; semantic index available
 
 **UAM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: guided actions with approvals
 
 **UDM Snapshots:**
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
-**Note:** See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
 
 **UOM Snapshots:**
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
-**Note:** See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
 
 **UEOM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
 
 **UPM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low
-**Note:** See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
-
-
-**Latest updates —** JFrog unveils Fly, an agentic repository (Sep 9, 2025).
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
 **Links —** [Official Site](https://jfrog.com/fly/), [Docs](https://investors.jfrog.com/news/news-details/2025/JFrog-Unveils-Industrys-First-Agentic-Repository-Revolutionizing-How-Developers-Deliver-AI-Native-Software/default.aspx), [Blog](https://www.infoworld.com/article/4055080/jfrog-announces-agentic-repo-for-ai-driven-development.html)

@@ -17,19 +17,26 @@ parent: Platform Directory
 **Notes —** Strong Kubernetes workflows, deep observability integrations and policy hooks; brings extensibility via CRDs and a pluggable gateway.
 
 **UKM Snapshots:**
-ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
 
 **UAM Snapshots:**
-ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy
 
 **UDM Snapshots:**
-ingest high, index high, retrieval high, governance high, overall high
-**Note:** See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: root-cause analysis with causal signals; correlates metrics/traces/logs
 
 **UOM Snapshots:**
-ingest high, index high, retrieval high, governance high, overall high
-**Note:** Instrumentation & Ingest: Y/M; Kagent hooks into a Kubernetes cluster’s observability endpoints; Normalization & Enrichment: Y/M; Data coming from Kubernetes already carries labels (namespace, pod nam
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: normalizes to standard schemas
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: integrates with IaC/tools for apply; Kubernetes aware
 **Links —** [Official Site](https://www.solo.io/products/kagent-enterprise), [Docs](https://www.solo.io/blog/bringing-agentic-ai-to-kubernetes-contributing-kagent-to-cncf), [Blog](https://www.globenewswire.com/news-release/2025/09/15/3150169/0/en/Solo-io-Announces-Kagent-Enterprise-to-Bridge-the-Agentic-Infrastructure-Gap-Between-Kubernetes-and-AI.html)

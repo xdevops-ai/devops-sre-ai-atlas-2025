@@ -17,30 +17,26 @@ parent: Platform Directory
 **Notes —** Focuses on evaluation and quality; not intended for infrastructure operations.
 
 **UKM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
 
 **UAM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: guided actions with approvals
 
 **UDM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium
-**Note:** See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
 
 **UOM Snapshots:**
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
-**Note:** See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
 
 **UEOM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
 
 **UPM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium
-**Note:** See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
-
-
-**Latest updates —** Agent Bricks docs launched for AWS/Azure (Sep 5, 2025).
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: SaaS-managed; limited direct apply
 **Links —** [Official Site](https://www.databricks.com/product/artificial-intelligence/agent-bricks), [Docs](https://docs.databricks.com/aws/en/generative-ai/agent-bricks/), [Blog](https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-bricks/)

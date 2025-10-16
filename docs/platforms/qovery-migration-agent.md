@@ -17,30 +17,26 @@ parent: Platform Directory
 **Notes —** Produces artifacts but does not run live observability.
 
 **UKM Snapshots:**
-ingest P/L, index N/L, retrieval P/L, governance P/L, overall Low-Medium
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest P/L, index N/L, retrieval P/L, governance P/L, overall Low-Medium  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
 
 **UAM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall Low-Medium
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: guided actions with approvals
 
 **UDM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall Low-Medium
-**Note:** See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage
 
 **UOM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall Low-Medium
-**Note:** See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests platform telemetry
 
 **UEOM Snapshots:**
-ingest N/L, index N/L, retrieval N/L, governance N/L, overall Low
-**Note:** See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
 
 **UPM Snapshots:**
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall High
-**Note:** See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
-
-
-**Latest updates —** Qovery’s AI Cloud Migration Agent site & GitHub updated (2025).
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
 **Links —** [Official Site](https://migrate.qovery.com/), [Docs](https://github.com/Qovery/qovery-migration-ai-agent), [Blog](https://www.qovery.com/blog/open-source-devops-ai-agent--effortless-migration-from-heroku-to-aws)

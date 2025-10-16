@@ -17,6 +17,26 @@ parent: Platform Directory
 **Notes —** Deep infrastructure telemetry is out of scope.
 
 **UKM Snapshots:**
-ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** Ingestion & Validation: P/M; AskIAM integrates with enterprise IAM systems (IBM Verify, Microsoft Entra, Saviynt, etc; Normalization & Enrichment: Y/M; A key value of AskIAM is centralizing and simpli
+ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
+
+**UAM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy; change controls via ITSM
+
+**UDM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage
+
+**UOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests platform telemetry
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
 **Links —** [Official Site](https://www.ibm.com/services/identity-access-management), [Docs](https://newsroom.ibm.com/blog-askiam-ibms-new-agentic-ai-for-identity-and-access-management), [Blog](https://newsroom.ibm.com/index.php?item=2326&s=34222)

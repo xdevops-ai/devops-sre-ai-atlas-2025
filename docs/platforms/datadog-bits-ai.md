@@ -17,11 +17,26 @@ parent: Platform Directory
 **Notes —** Human‑in‑the‑loop with optional auto‑run of safe remediations; approvals for complex actions.
 
 **UKM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
 
 **UAM Snapshots:**
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high
-**Note:** Capture & Sessionization: Y/H; Datadog Bits AI operates within the Datadog platform, capturing conversational interactions and automated investigations as part of incident timelines; Evidence Policy &
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy; change controls via ITSM
+
+**UDM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: root-cause analysis with causal signals; correlates metrics/traces/logs; SOC detections supported
+
+**UOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events; service topology correlation
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: normalizes to standard schemas; CMDB/service-aware entities
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
 **Links —** [Official Site](https://www.datadoghq.com/product/platform/bits-ai/), [Docs](https://docs.datadoghq.com/bits_ai/), [Blog](https://investors.datadoghq.com/news-releases/news-release-details/datadog-unveils-latest-ai-agents-rapidly-resolve-application)

@@ -17,11 +17,26 @@ parent: Platform Directory
 **Notes —** Focuses on developer workflows; infrastructure operations are out of scope.
 
 **UKM Snapshots:**
-ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Knowledge: BYO sources; governed ingestion & indexing.
 
 **UAM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** Capture & Sessionization: Y/M; Rovo supports multi-turn conversations within Jira/Confluence, maintaining context across user queries; Evidence Policy & Verification: P/L; Rovo Dev operates on trusted
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy; sessionized context
+
+**UDM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage
+
+**UOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests platform telemetry
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
 **Links —** [Official Site](https://www.atlassian.com/software/rovo-dev), [Docs](https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/), [Blog](https://www.atlassian.com/blog/announcements/rovo-dev-cli-with-gpt5)

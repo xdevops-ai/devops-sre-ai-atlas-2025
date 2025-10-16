@@ -17,6 +17,26 @@ parent: Platform Directory
 **Notes —** Early roadmap; capabilities still evolving and reliant on SSH; bring your own context and policies.
 
 **UKM Snapshots:**
-ingest low, index low, retrieval low, governance low, overall low
-**Note:** Ingestion & Validation: N/L; Gloria mainly acts on live infrastructure context  rather than ingesting a broad knowledge base; Normalization & Enrichment: N/L; There is no indication of Gloria applying
+ingest low, index low, retrieval low, governance low, overall low  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
+
+**UAM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: guided actions with approvals; sessionized context
+
+**UDM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage
+
+**UOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests platform telemetry
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
 **Links —** [Official Site](https://termius.com/gloria), [Docs](https://termius.com/blog/devops-ai-agent-gloria), [Blog](https://termius.com/blog/ai-agent)

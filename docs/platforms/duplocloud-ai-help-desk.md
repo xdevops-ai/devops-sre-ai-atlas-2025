@@ -17,19 +17,26 @@ parent: Platform Directory
 **Notes —** strong apply/rollback within the DuploCloud ecosystem.
 
 **UKM Snapshots:**
-ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Knowledge: consumes product-native and BYO sources. metadata & tagging supported
 
 **UAM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: guided actions with approvals; change controls via ITSM
 
 **UDM Snapshots:**
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high
-**Note:** See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
 
 **UOM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** Instrumentation & Ingest: P/M; DuploCloud’s AI assistant monitors the cloud environments it manages at a high level; Normalization & Enrichment: P/M; Data is inherently structured by the cloud APIs (J
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
 **Links —** [Official Site](https://duplocloud.com/), [Docs](https://docs.duplocloud.com/docs/ai-suite/ai-helpdesk), [Blog](https://duplocloud.com/blog/ai-help-desk-for-devops/)

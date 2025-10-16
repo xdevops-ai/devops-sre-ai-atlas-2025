@@ -17,6 +17,26 @@ parent: Platform Directory
 **Notes —** Does not perform provisioning directly; relies on integrations for infrastructure changes.
 
 **UKM Snapshots:**
-ingest Y/M, index P/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** Ingestion & Validation: Y/M; Hummingbird ingests extensive DevOps data from CI/CD pipelines, source control, and ticketing systems into Opsera’s Unified Insights platform; Normalization & Enrichment:
+ingest Y/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
+
+**UAM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy
+
+**UDM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
+
+**UOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
 **Links —** [Official Site](https://opsera.ai/platform/hummingbird-ai/), [Docs](https://opsera.ai/newsroom/opsera-raises-20m-to-drive-ai-powered-devops-platform-innovation-accelerating-ai-agent-adoption-and-developer-efficiency/), [Blog](https://www.prnewswire.com/news-releases/opsera-raises-20m-to-drive-ai-powered-devops-platform-innovation-accelerating-ai-agent-adoption-and-developer-efficiency-302417777.html)

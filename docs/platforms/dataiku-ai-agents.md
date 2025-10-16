@@ -17,6 +17,26 @@ parent: Platform Directory
 **Notes —** Strong guardrails/tracing; infra provisioning out of scope.
 
 **UKM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/H, overall medium-high
-**Note:** Ingestion & Validation: Y/M; Dataiku’s AI Agents work within the Dataiku DSS platform, which excels at ingesting data from myriad sources; Normalization & Enrichment: Y/H; Dataiku provides a unified e
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/H, overall medium-high  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
+
+**UAM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy
+
+**UDM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
+
+**UOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: integrates with IaC/tools for apply
 **Links —** [Official Site](https://www.dataiku.com/product/key-capabilities/ai-agents/), [Docs](https://doc.dataiku.com/dss/latest/agents/introduction.html), [Blog](https://www.dataiku.com/stories/detail/ai-agents/)

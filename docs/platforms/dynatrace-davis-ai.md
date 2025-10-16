@@ -17,15 +17,26 @@ parent: Platform Directory
 **Notes —** Remediation guided or via workflows; direct infra apply is limited.
 
 **UKM Snapshots:**
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/M, overall high
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest Y/H, index Y/H, retrieval Y/H, governance Y/M, overall high  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
 
 **UAM Snapshots:**
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy
 
 **UDM Snapshots:**
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high
-**Note:** Continuous Detection & Smart Alerting: Y/H; Dynatrace’s Davis AI is renowned for its real-time anomaly detection; Automatic Root Cause Analysis: Y/H; This is where Davis truly shines
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: root-cause analysis with causal signals; correlates metrics/traces/logs; SOC detections supported
+
+**UOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
+
+**UEOM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
+
+**UPM Snapshots:**
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
 **Links —** [Official Site](https://www.dynatrace.com/news/press-release/state-of-observability-2025/), [Docs](https://docs.dynatrace.com/docs/discover-dynatrace/references/semantic-dictionary/model/davis), [Blog](https://www.dynatrace.com/news/blog/state-of-observability-2025-ai-trust-roi/)

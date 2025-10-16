@@ -17,30 +17,26 @@ parent: Platform Directory
 **Notes —** Limited third-party validation; treat as tentative.
 
 **UKM Snapshots:**
-ingest P/L, index N/L, retrieval P/L, governance P/L, overall low
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest P/L, index N/L, retrieval P/L, governance P/L, overall low  <br>
+**Note:** Knowledge: BYO sources; governed ingestion & indexing.
 
 **UAM Snapshots:**
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: guided actions with approvals
 
 **UDM Snapshots:**
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
-**Note:** See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs
 
 **UOM Snapshots:**
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
-**Note:** See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
 
 **UEOM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium
-**Note:** See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
 
 **UPM Snapshots:**
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high
-**Note:** See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
-
-
-**Latest updates —** Kuberns posts new guides and blog updates (Oct 7–14, 2025).
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
 **Links —** [Official Site](https://kuberns.com/), [Docs](https://docs.kuberns.com/), [Blog](https://kuberns.com/blogs)

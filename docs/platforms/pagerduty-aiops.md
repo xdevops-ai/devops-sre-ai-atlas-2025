@@ -17,30 +17,26 @@ parent: Platform Directory
 **Notes —** Human-centric: can auto-execute safe diagnostics and remediations when confidence is high, but escalates to humans if uncertain.
 
 **UKM Snapshots:**
-ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
 
 **UAM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy; sessionized context
 
 **UDM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs; SOC detections supported
 
 **UOM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium
-**Note:** See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
 
 **UEOM Snapshots:**
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
-**Note:** See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: normalizes to standard schemas; CMDB/service-aware entities
 
 **UPM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium
-**Note:** See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
-
-
-**Latest updates —** PagerDuty launches end-to-end AI Agent Suite (Oct 8, 2025).
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
 **Links —** [Official Site](https://www.pagerduty.com/platform/aiops/), [Docs](https://support.pagerduty.com/main/docs/aiops), [Blog](https://www.pagerduty.com/resources/aiops/learn/what-is-aiops/)

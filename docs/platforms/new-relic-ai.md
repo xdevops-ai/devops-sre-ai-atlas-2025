@@ -17,30 +17,26 @@ parent: Platform Directory
 **Notes —** Advisory only (no direct apply); RBAC enforced; some regulated accounts unsupported.
 
 **UKM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
 
 **UAM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy
 
 **UDM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage; correlates metrics/traces/logs; SOC detections supported
 
 **UOM Snapshots:**
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high
-**Note:** See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests metrics/traces/logs/events
 
 **UEOM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: product-native with adapters
 
 **UPM Snapshots:**
-ingest N/L, index N/L, retrieval N/L, governance N/L, overall low
-**Note:** See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
-
-
-**Latest updates —** New Relic NOW+ 2025 unveils 20+ AI capabilities (Feb 25, 2025).
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: integrates with IaC/tools for apply; cloud-hosted service
 **Links —** [Official Site](https://newrelic.com/platform/new-relic-ai), [Docs](https://docs.newrelic.com/whats-new/2025/02/whats-new-02-25-new-relic-now-product-announcements/), [Blog](https://newrelic.com/blog/nerdlog/new-relic-now-2025-innovation-roundup)

@@ -17,30 +17,26 @@ parent: Platform Directory
 **Notes —** Enterprise-ready guardrails: explicit confirmation before changes, execution history logs, respect for tenant boundaries.
 
 **UKM Snapshots:**
-ingest P/L, index P/L, retrieval P/M, governance Y/M, overall medium-low
-**Note:** See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
-
+ingest P/L, index P/L, retrieval P/M, governance Y/M, overall medium-low  <br>
+**Note:** Knowledge: consumes product-native and BYO sources.
 
 **UAM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Activities: agent executes playbooks/workflows with policy
 
 **UDM Snapshots:**
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
-**Note:** See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Diagnostics: anomaly detection & triage
 
 **UOM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium
-**Note:** See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Observability: ingests platform telemetry
 
 **UEOM Snapshots:**
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium
-**Note:** See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Ontology: normalizes to standard schemas
 
 **UPM Snapshots:**
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
-**Note:** See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
-
-
-**Latest updates —** Agent Mode docs refreshed for Visual Studio 2022 (Sep 22, 2025).
+ingest —, index —, retrieval —, governance —, overall —  <br>
+**Note:** Provisioning: SaaS-managed; limited direct apply; cloud-hosted service
 **Links —** [Official Site](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode), [Docs](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-agent-mode?view=vs-2022), [Blog](https://code.visualstudio.com/blogs/)
