@@ -16,13 +16,25 @@ Interoperability — Over 1 400 Azure Logic Apps as tools; supports external f
 Deployment model — Runs as Azure AI Foundry in the cloud with a containerised agent runtime; the SDK is open‑source for local development and cloud deployment.  
 Notes — Focused on agent workflow orchestration and governance rather than direct human‑facing operations.
 
-UKM Snapshot: ingest Y/M, index P/M, retrieval Y/M, governance Y/H, overall medium‑high.  
-UAM Snapshot: ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium‑high.  
-UDM Snapshot: ingest N/L, index N/L, retrieval N/L, governance N/L, overall low.  
-UOM Snapshot: ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium‑high.  
-UEOM Snapshot: ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium.  
-UPM Snapshot: ingest P/L, index P/L, retrieval P/L, governance P/L, overall low‑medium.
+UKM Snapshots: 
+ingest Y/M, index P/M, retrieval Y/M, governance Y/H, overall medium
+Note:   See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
 
-Latest updates — Public preview in late 2024 followed by general availability in mid 2025 (with Logic Apps as tools and framework integrations); October 2025 release of the open‑source Agent Framework SDK based on Semantic Kernel and AutoGen.  
-Links — [Azure AI Agent Service](https://azure.microsoft.com), [InfoQ GA coverage](https://www.infoq.com/news/)
+UAM Snapshots:   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium
+Note:   See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+UDM Snapshots:   
+ingest N/L, index N/L, retrieval N/L, governance N/L, overall low
+Note:   See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+UOM Snapshots:   
+ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium
+Note:   See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
+UEOM Snapshots:   
+ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
+Note:   See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
+UPM Snapshots:   
+ingest P/L, index P/L, retrieval P/L, governance P/L, overall low
+Note:   See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
 
+Latest updates — Azure AI Agent Service overview updated for Foundry (2025).
+Links — [Official Site](https://azure.microsoft.com/en-us/products/ai-foundry/agent-service), [Docs](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview), [Blog](https://azure.microsoft.com/en-us/blog/)

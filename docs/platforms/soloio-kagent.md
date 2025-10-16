@@ -16,12 +16,25 @@ Interoperability — Interfaces via MCP servers, custom resource definitions (CR
 Deployment model — Runs inside Kubernetes clusters; the open Agent Gateway is donated to the Linux Foundation with enterprise support available.  
 Notes — Strong Kubernetes workflows, deep observability integrations and policy hooks; brings extensibility via CRDs and a pluggable gateway.
 
-UKM Snapshot: ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high.  
-UAM Snapshot: ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high.  
-UDM Snapshot: ingest high, index high, retrieval high, governance high, overall high.  
-UOM Snapshot: ingest high, index high, retrieval high, governance high, overall high.  
-UEOM Snapshot: ingest medium, index medium, retrieval medium, governance medium, overall medium.  
-UPM Snapshot: ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high.
+UKM Snapshots: 
+ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high
+Note:   See analysis/baselines/knowledge.md (doc-platform.tar) for definitions and evaluation criteria.
 
-Latest updates — Solo.io donated its Agent Gateway to the Linux Foundation, added support for the latest MCP/A2A, and released Kagent Enterprise.  
-Links — [Agent Gateway blog](https://www.solo.io/blog/agentgateway-linux-foundation) • [A2A & MCP update](https://www.solo.io/blog/updated-a2a-and-mcp-gateway)
+UAM Snapshots:   
+ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high
+Note:   See analysis/baselines/activity.md (doc-platform.tar) for definitions and evaluation criteria.
+UDM Snapshots:   
+ingest high, index high, retrieval high, governance high, overall high
+Note:   See analysis/baselines/diagnostic.md (doc-platform.tar) for definitions and evaluation criteria.
+UOM Snapshots:   
+ingest high, index high, retrieval high, governance high, overall high
+Note:   See analysis/baselines/observability.md (doc-platform.tar) for definitions and evaluation criteria.
+UEOM Snapshots:   
+ingest medium, index medium, retrieval medium, governance medium, overall medium
+Note:   See analysis/baselines/ontology.md (doc-platform.tar) for definitions and evaluation criteria.
+UPM Snapshots:   
+ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high
+Note:   See analysis/baselines/provisioning.md (doc-platform.tar) for definitions and evaluation criteria.
+
+Latest updates — Solo.io contributes kagent to CNCF; Kagent Enterprise announced (Apr 3 & Sep 15, 2025).
+Links — [Official Site](https://www.solo.io/products/kagent-enterprise), [Docs](https://www.solo.io/blog/bringing-agentic-ai-to-kubernetes-contributing-kagent-to-cncf), [Blog](https://www.globenewswire.com/news-release/2025/09/15/3150169/0/en/Solo-io-Announces-Kagent-Enterprise-to-Bridge-the-Agentic-Infrastructure-Gap-Between-Kubernetes-and-AI.html)
