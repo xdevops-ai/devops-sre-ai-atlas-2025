@@ -179,11 +179,11 @@ For full terms, see the [LICENSE](LICENSE).
 ---
 
 ## 🔗 Quick Links
-
+- 👥 [DevOps & SRE AI Platforms Atlas 2025](https://xdevops-ai.github.io/devops-sre-ai-atlas-2025/) — Web Atlas
 - 📚 [Full Documentation](docs/) — Detailed platform analysis  
 - 🤝 [Community Guidelines](docs/community/CONTRIBUTING.md) — Contribute to the Atlas  
 - 🐛 [Report Issues](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025/issues) — Help improve the project  
-- 👥 [XDevOps Meetup](https://xdevops.ai) — Join our events and discussions  
+- 👥 [XDevOps Meetup](https://www.meetup.com/bucharest-xdevops-meetup-group/events/311375041/) — Join our events and discussions
 
 ---
 
