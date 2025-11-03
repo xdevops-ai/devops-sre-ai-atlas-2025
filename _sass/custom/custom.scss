@@ -1,0 +1,144 @@
+/* -----------------------------------------------------------------------------
+   docs/_sass/custom/custom.scss
+   Site-specific CSS overrides for Just the Docs.
+   NOTE:
+   - This file is loaded AFTER the theme's modules.
+   - Use this for CSS rule overrides (colors, spacing, layout tweaks).
+   - If you need to override Sass variables at build-time, put those in
+     docs/_sass/custom/_variables.scss or docs/_sass/custom/_setup.scss.
+----------------------------------------------------------------------------- */
+
+/* === 1) Header & top nav ================================================== */
+
+/* Sticky, translucent header with a subtle divider */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.88);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+@media (prefers-color-scheme: dark) {
+  .site-header {
+    background-color: rgba(17, 24, 39, 0.88); /* gray-900 @ ~88% */
+    border-bottom-color: rgba(255, 255, 255, 0.10);
+  }
+}
+
+/* Compact title/link spacing */
+.site-header .site-title {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+/* Left nav link spacing and active emphasis */
+.site-nav .nav-list .nav-list-item > .nav-list-link {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+.site-nav .nav-list .nav-list-item > .nav-list-link.active {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* === 2) Search input ======================================================= */
+
+.search input.search-input {
+  max-width: 22rem; /* a bit wider than default for long queries */
+}
+
+/* === 3) Main content rhythm & anchor offset =============================== */
+
+/* Slightly looser line-height for readability */
+.main-content {
+  line-height: 1.65;
+}
+
+/* Ensure in-page anchors aren't hidden behind sticky header */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  scroll-margin-top: 5rem;
+}
+
+/* === 4) Tables: make wide tables usable on small screens =================== */
+
+.main-content table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.main-content table th,
+.main-content table td {
+  vertical-align: top;
+}
+
+/* Tighter lists/paragraphs inside table cells */
+td ul { margin: .25rem 0 .5rem 1rem; }
+td p  { margin: .25rem 0; }
+
+/* === 5) Code blocks ======================================================== */
+
+pre.highlight,
+.highlight pre,
+.highlight code {
+  font-size: 0.9rem;
+}
+pre.highlight {
+  border-radius: 6px;
+}
+
+/* === 6) Callouts (admonitions) ============================================ */
+/* Use in Markdown via raw HTML:
+   <div class="callout info">…</div>
+   <div class="callout warning">…</div> etc.
+*/
+.callout {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left-width: 4px;
+  padding: .75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+.callout.info    { border-left-color: #2b8aef; }
+.callout.warning { border-left-color: #f59e0b; }
+.callout.success { border-left-color: #10b981; }
+.callout.danger  { border-left-color: #ef4444; }
+@media (prefers-color-scheme: dark) {
+  .callout { border-color: rgba(255, 255, 255, 0.12); }
+}
+
+/* === 7) Capability token badges (optional utility) ======================== */
+/* Use in tables: <span class="cap-badge y-h">Y/H</span> etc. */
+.cap-badge {
+  display: inline-block;
+  font-weight: 600;
+  font-size: .78rem;
+  line-height: 1;
+  padding: .25rem .375rem;
+  border-radius: .35rem;
+  border: 1px solid rgba(0,0,0,.08);
+  letter-spacing: .2px;
+}
+.cap-badge.n-l { background: #f3f4f6; color: #111827; } /* gray 100 / gray 900 */
+.cap-badge.p-l { background: #e0f2fe; color: #0c4a6e; } /* sky 100 / cyan 900 */
+.cap-badge.p-m { background: #e9d5ff; color: #5b21b6; } /* violet 100 / violet 900 */
+.cap-badge.y-m { background: #dcfce7; color: #14532d; } /* green 100 / green 900 */
+.cap-badge.y-h { background: #fee2e2; color: #7f1d1d; } /* red 100 / red 900 */
+
+/* === 8) YOUR NAV/HEADER OVERRIDES ========================================= */
+/* Paste any site-specific nav/header tweaks you previously had in
+   docs/assets/css/custom-nav.css below this line, then you may delete the
+   old file entirely if you want to keep all overrides in one place.
+*/
+
+/* Example (remove/replace as needed):
+.site-header .search {
+  margin-left: auto;
+}
+*/
