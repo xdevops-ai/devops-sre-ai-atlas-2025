@@ -13,7 +13,7 @@ permalink: /capabilities/baselines/ukm/ratings/
 ## 📊 Ratings — Current Platforms (UKM v2)
 
 | Platform | **Overall UKM (0–4)** | Gating Notes |
-|---|---:|---|
+| --- | --- | --- |
 | **Salesforce – Agentforce (OpsAI)** | **4** | Typed corpora in Data Cloud; governed retrieval with citations; knowledge graph linking; profile‑aware surfacing. |
 | **ServiceNow – AI Agent Orchestrator** | **4** | CSDM/Service Graph + KB; governed retrieval; citations; versioned ontology & query packs. |
 | **Databricks – Agent “Bricks”** | **4** | Lakehouse tables + vector functions; lineage graph; governed RAG; profile/context aware. |
