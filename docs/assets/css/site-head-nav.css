@@ -1,0 +1,4 @@
+/* docs/assets/css/just-the-docs-head-nav.css */
+
+/* Import your actual navigation styles */
+@import url("./custom-nav.css");
