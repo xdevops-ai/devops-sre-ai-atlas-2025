@@ -92,3 +92,7 @@ seo:
 #     - /assets/
 #     - /vendor/
 #   include_posts: false
+exclude:
+  - assets/css/just-the-docs-head-nav.css
+
+
