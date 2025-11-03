@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Capability Framework
@@ -19,21 +20,17 @@ This file summarizes capability maturity across **UKM, UAM, UDM, UOM, UEOM, UPM*
 
 ## Capability Definitions
 
-**UKM — Knowledge Management.** *A vendor‑neutral baseline describing how platforms **ingest, normalize, index, retrieve, and govern** organizational knowledge.*.
+**UKM — Knowledge Management.** *A vendor‑neutral baseline describing how platforms **ingest, normalize, index, retrieve, and govern** organizational knowledge.*
 
 **UAM — Activities Management.** *A vendor‑neutral framework describing how intelligent platforms **capture, sanitize, enrich, index, retrieve, replay, summarize, and govern** human/tool activity.* This version aligns the **Activities** capability in the Atlas with a **0–4 maturity scale** and tightens acceptance criteria, KPIs, and lint rules.
 
-**UDM — Diagnostics Management.** *A vendor‑neutral baseline describing how intelligent Ops/Observability systems **detect, enrich, correlate, explain (RCA), and recommend/remediate** incidents — with verifiable evidence.*.
+**UDM — Diagnostics Management.** *A vendor‑neutral baseline describing how intelligent Ops/Observability systems **detect, enrich, correlate, explain (RCA), and recommend/remediate** incidents — with verifiable evidence.*
 
-**UOM — Observability Management.** *A vendor‑neutral baseline describing how platforms **collect, normalize, store, explore, alert, correlate, and govern** observability data (metrics, logs, traces, events, profiles).*.
+**UOM — Observability Management.** *A vendor‑neutral baseline describing how platforms **collect, normalize, store, explore, alert, correlate, and govern** observability data (metrics, logs, traces, events, profiles).*
 
-**UEOM — Event/Ontology Management.** *A vendor‑neutral baseline describing how platforms **model, validate, materialize, retrieve, and govern** event & topology knowledge as a graph.*.
+**UEOM — Event/Ontology Management.** *A vendor‑neutral baseline describing how platforms **model, validate, materialize, retrieve, and govern** event & topology knowledge as a graph.*
 
-**UPM — Provisioning Management.** *A vendor‑neutral baseline describing how platforms **plan, validate, execute, verify, and audit** provisioning & change operations.*.
-
----
-
-
+**UPM — Provisioning Management.** *A vendor‑neutral baseline describing how platforms **plan, validate, execute, verify, and audit** provisioning & change operations.*
 
 ---
 
@@ -185,6 +182,11 @@ This file summarizes capability maturity across **UKM, UAM, UDM, UOM, UEOM, UPM*
 
 Use these pages for the full acceptance criteria, evidence gates, and examples for each capability:
 
-- **UKM** — [UKM Baseline (v2)]({ '/capabilities/baselines/ukm/' | relative_url }) · [Ratings & Notes]({ '/capabilities/baselines/ukm/ratings/' | relative_url })
+- **UKM** — [UKM Baseline (v2)]({{ '/capabilities/baselines/ukm/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/ukm/rating-example/' | relative_url }})
+- **UAM** — [UAM Baseline (v2)]({{ '/capabilities/baselines/uam/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/uam/rating-example/' | relative_url }})
+- **UDM** — [UDM Baseline (v2)]({{ '/capabilities/baselines/udm/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/udm/rating-example/' | relative_url }})
+- **UOM** — [UOM Baseline (v2)]({{ '/capabilities/baselines/uom/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/uom/rating-example/' | relative_url }})
+- **UEOM** — [UEOM Baseline (v2)]({{ '/capabilities/baselines/ueom/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/ueom/rating-example/' | relative_url }})
+- **UPM** — [UPM Baseline (v2)]({{ '/capabilities/baselines/upm/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/upm/rating-example/' | relative_url }})
 
 Use these categories as a lens when reviewing platforms in the [Platform Directory]({{ '/platforms/' | relative_url }}) and [Platform Overview]({{ '/platform-overview/' | relative_url }}).
