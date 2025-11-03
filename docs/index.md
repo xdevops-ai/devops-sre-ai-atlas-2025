@@ -110,4 +110,3 @@ This is a living document! Help us keep it current:
 ---
 
 *This project is [open source](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025/blob/main/LICENSE) and maintained by the xDevOps community.*
-
