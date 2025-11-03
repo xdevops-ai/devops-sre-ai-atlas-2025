@@ -28,7 +28,7 @@ last_updated: 2025-10-12T13:16:15Z
 
 ## ⚙️ The Five Knowledge Phases
 | # | Phase | Definition | Typical Data | Expected Capability |
-|---:|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **1** | **Ingestion & Validation** | Bring knowledge into the system and ensure it conforms to schema | KB JSON, runbooks, retros, capability cards, profiles, ontology events | Source adapters, schema validation, dedupe, provenance capture |
 | **2** | **Normalization & Enrichment** | Add structure and context | Owner/visibility, tags, entities (service/team/env), versions | Metadata normalization, ontology tagging, PII redaction, versioning |
 | **3** | **Indexing & Linking** | Make it searchable and connected | Embeddings, scalar metadata, RDF triples, shapes | Vector index (Milvus‑class), metadata filters/expr, graph links (RDF/SHACL), shapes→vectors |
@@ -39,7 +39,7 @@ last_updated: 2025-10-12T13:16:15Z
 
 ## 🧩 UKM Maturity Scale (0–4)
 | Level | Label | Acceptance (must satisfy all lower levels) |
-|---:|---|---|
+| --- | --- | --- |
 | **0** | **None** | Ad‑hoc docs/wikis; no embeddings or schema; no provenance. |
 | **1** | **Indexed** | Keyword search across files/pages; basic metadata (owner or tags); no vector index; no graph. |
 | **2** | **Semantic** | Vector index + metadata filters; basic provenance (source, owner, updated_at); recency windows; no graph requirements. |
