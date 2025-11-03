@@ -183,7 +183,8 @@ This file summarizes capability maturity across **UKM, UAM, UDM, UOM, UEOM, UPM*
 
 ### Baselines Referenced
 
-- **UAM v2** (Activities), **UDM v2** (Diagnostics), **UOM v2** (Observability), **UEOM v2** (Event Ontology), **UKM v2** (Knowledge), **UPM v2** (Provisioning).
-- See your `/documentation/analysis/baselines/*.md` and deep‑dive files for phase‑level expectations and acceptance criteria.
+Use these pages for the full acceptance criteria, evidence gates, and examples for each capability:
+
+- **UKM** — [UKM Baseline (v2)]({ '/capabilities/baselines/ukm/' | relative_url }) · [Ratings & Notes]({ '/capabilities/baselines/ukm/ratings/' | relative_url })
 
 Use these categories as a lens when reviewing platforms in the [Platform Directory]({{ '/platforms/' | relative_url }}) and [Platform Overview]({{ '/platform-overview/' | relative_url }}).
