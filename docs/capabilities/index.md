@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Capability Framework
@@ -182,11 +181,11 @@ This file summarizes capability maturity across **UKM, UAM, UDM, UOM, UEOM, UPM*
 
 Use these pages for the full acceptance criteria, evidence gates, and examples for each capability:
 
-- **UKM** — [UKM Baseline (v2)]({{ '/capabilities/baselines/ukm/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/ukm/rating-example/' | relative_url }})
-- **UAM** — [UAM Baseline (v2)]({{ '/capabilities/baselines/uam/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/uam/rating-example/' | relative_url }})
-- **UDM** — [UDM Baseline (v2)]({{ '/capabilities/baselines/udm/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/udm/rating-example/' | relative_url }})
-- **UOM** — [UOM Baseline (v2)]({{ '/capabilities/baselines/uom/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/uom/rating-example/' | relative_url }})
-- **UEOM** — [UEOM Baseline (v2)]({{ '/capabilities/baselines/ueom/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/ueom/rating-example/' | relative_url }})
-- **UPM** — [UPM Baseline (v2)]({{ '/capabilities/baselines/upm/' | relative_url }}) · [Rating Example]({{ '/capabilities/baselines/upm/rating-example/' | relative_url }})
+- **UKM** — [UKM Baseline (v2)]({{ '/capabilities/baselines/ukm/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/ukm-ratings/' | relative_url }})
+- **UAM** — [UAM Baseline (v2)]({{ '/capabilities/baselines/uam/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/uam-ratings/' | relative_url }})
+- **UDM** — [UDM Baseline (v2)]({{ '/capabilities/baselines/udm/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/udm-ratings/' | relative_url }})
+- **UOM** — [UOM Baseline (v2)]({{ '/capabilities/baselines/uom/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/uom-ratings/' | relative_url }})
+- **UEOM** — [UEOM Baseline (v2)]({{ '/capabilities/baselines/ueom/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/ueom-ratings/' | relative_url }})
+- **UPM** — [UPM Baseline (v2)]({{ '/capabilities/baselines/upm/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/upm-ratings/' | relative_url }})
 
 Use these categories as a lens when reviewing platforms in the [Platform Directory]({{ '/platforms/' | relative_url }}) and [Platform Overview]({{ '/platform-overview/' | relative_url }}).
