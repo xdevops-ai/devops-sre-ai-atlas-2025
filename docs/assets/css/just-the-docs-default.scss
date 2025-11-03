@@ -3,7 +3,7 @@
 @import "custom/setup";
 @import "color_schemes/light";
 @import "modules";
-/* keep the lines you already have above */
+/* keep the lines you already have above  */
 
 /* Add this line at the end of your imports: */
 @import url("{{ '/assets/css/site-head-nav.css' | relative_url }}");
