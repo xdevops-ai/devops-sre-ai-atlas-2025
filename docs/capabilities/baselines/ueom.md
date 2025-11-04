@@ -35,15 +35,16 @@ last_updated: 2025-10-12T12:56:12Z
 
 ---
 
-## 🧩 UEOM Maturity Scale (0–4)  
+## UEOM Maturity Scale (0-4)
 
 | Level | Label | Acceptance (must satisfy all lower levels) |
-|:--:|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:----:|:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **0** | **None** | No ontology deliverables; ad-hoc documents only. |
-| **1** | **Schema-only** | Versioned OWL/Turtle exists with labels and examples; **no enforced mapping or validation in pipeline**. |
-| **2** | **Validated graph** | Deterministic **mapping** runs in ingest; **SHACL** validates instances; violation reports and coverage % exported. |
-| **3** | **Governed graph** | **Named graphs** per tenant/env; **provenance** (PROV) on inserts; **versioning** and deprecation policy; **RBAC** on the data plane; query pack published. |
-| **4** | **Semantic/Reasoned** | Reasoning/rules or inference; **cross-domain joins** with latency SLOs; **embeddings** bound to URIs (RAG-ready); governance metrics and evolution workflows. |
+| **1** | **Schema-only** | Versioned OWL/Turtle exists with labels and examples; no enforced mapping or validation in pipeline. |
+| **2** | **Validated graph** | Deterministic mapping runs in ingest; SHACL validates instances; violation reports and coverage % exported. |
+| **3** | **Governed graph** | Named graphs per tenant/env; provenance (PROV) on inserts; versioning and deprecation policy; RBAC on the data plane; query pack published. |
+| **4** | **Semantic/Reasoned** | Reasoning/rules or inference; cross-domain joins with latency SLOs; embeddings bound to URIs (RAG-ready); governance metrics and evolution workflows. |
+
 > **Evidence gates (caps):**
 > - **No shapes (SHACL)** → cap at **L1** even if mapping exists.
 > - **No deterministic identity/URI strategy** → cap at **L2**.
