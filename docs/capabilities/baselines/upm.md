@@ -24,28 +24,30 @@ last_updated: 2025-10-12T13:02:58Z
 ---
 
 ## ⚙️ The Five Provisioning Phases
-| # | Phase | Definition | Typical Data | Expected Capability |
-|---:|---|---|---|---|
-| **1** | **Intent & Planning** | Turn a human/API request into a deterministic plan | NL prompts, tickets, IaC templates (Bicep/Terraform/Helm) | Ordered resource graph; explicit commands/templates; idempotency; dependency resolution |
-| **2** | **Pre‑flight Validation & Approvals** | Validate prerequisites and policies **before** mutation | Cloud/K8s reads, quotas/limits, OPA/policies, RBAC scope, cost est. | Existence checks; dry‑run/simulation; policy eval; approvals/gates |
-| **3** | **Safe Execution** | Execute the plan with **guard‑rails** | Version‑pinned CLIs, mTLS endpoints, ephemeral creds | Meta blocking; pipe allow‑list; timeouts/retries; progressive rollout; secret redaction |
-| **4** | **Post‑Execution Verification & Drift** | Prove intended state and detect drift | Read‑backs, health probes, rollout status, baselines | Rollout/health checks; config/state diffs vs baseline; drift alarms; rollback trigger |
-| **5** | **Audit, Governance & Rollback** | Record, attribute, and remediate | Change log, approvals, evidence, ownership | Immutable audit trail; evidence packs; visibility enforcement; **automated rollback** workflow |
+
+| #   | Phase                              | Definition                                               | Typical Data                                     | Expected Capability                                                                      |
+|:---:|------------------------------------|----------------------------------------------------------|--------------------------------------------------|------------------------------------------------------------------------------------------|
+| **1** | **Intent & Planning**                | Turn a human/API request into a deterministic plan         | NL prompts, tickets, IaC templates (Bicep/Terraform/Helm) | Ordered resource graph; explicit commands/templates; idempotency; dependency resolution   |
+| **2** | **Pre-flight & Approvals**          | Validate prerequisites and policies **before** mutation    | Cloud/K8s reads, quotas/limits, OPA/policies, RBAC scope, cost est. | Existence checks; dry-run/simulation; policy evaluation; approvals/gates                  |
+| **3** | **Safe Execution**                  | Execute the plan with **guard-rails**                     | Version-pinned CLIs, mTLS endpoints, ephemeral creds | Meta blocking; pipe allow-list; timeouts/retries; progressive rollout; secret redaction  |
+| **4** | **Post-Execution Verification & Drift** | Prove intended state and detect drift                      | Read-backs, health probes, rollout status, baselines | Rollout/health checks; config/state diffs vs baseline; drift alarms; rollback trigger     |
+| **5** | **Audit, Governance & Rollback**    | Record, attribute, and remediate                           | Change log, approvals, evidence, ownership       | Immutable audit trail; evidence packs; visibility enforcement; **automated rollback**     |
 
 ---
 
 ## 🧩 UPM Maturity Scale (0–4)
-| Level | Label | Acceptance (must satisfy all lower levels) |
-|---:|---|---|
-| **0** | **None** | Manual clicks/scripts; no deterministic plan; no audit. |
-| **1** | **Scripted** | Imperative scripts; basic logs; long‑lived creds; best‑effort read‑backs. |
-| **2** | **Guarded** | Deterministic plans; pre‑flight checks; mTLS/secret redaction; timeouts; partial drift checks. |
-| **3** | **Policy‑aware** | OPA/policy evaluation; approvals; ephemeral creds; version‑pinned CLIs; streaming telemetry; drift checks; **documented rollback plan**. |
-| **4** | **Autonomous** | NL→plan + simulation; guarded auto‑execution with progressive delivery; **continuous drift reconciliation**; **executed rollback** evidence; change SLOs. |
+
+| Level | Label           | Acceptance (must satisfy all lower levels)                                                                 |
+|:----:|------------------|-------------------------------------------------------------------------------------------------------------|
+| **0** | **None**         | Manual clicks/scripts; no deterministic plan; no audit.                                                    |
+| **1** | **Scripted**     | Imperative scripts; basic logs; long-lived creds; best-effort read-backs.                                  |
+| **2** | **Guarded**      | Deterministic plans; pre-flight checks; mTLS/secret redaction; timeouts; partial drift checks.             |
+| **3** | **Policy-aware** | OPA/policy evaluation; approvals; ephemeral creds; version-pinned CLIs; streaming telemetry; drift checks; **documented rollback plan**. |
+| **4** | **Autonomous**   | NL→plan + simulation; guarded auto-execution with progressive delivery; **continuous drift reconciliation**; **executed rollback** evidence; change SLOs. |
 
 > **Evidence gates**  
 > • If **plan diff + approval trail + execution logs** are not exportable, **cap at Level 2 (Guarded)**.  
-> • If **rollback evidence** (successful rollback in test/prod) is missing, **cap at Level 3 (Policy‑aware)**.
+> • If **rollback evidence** (successful rollback in test/prod) is missing, **cap at Level 3 (Policy-aware)**.
 
 > **Gating rule:** Platform **UPM level = highest level where all acceptance clauses for that level and below hold**.
 
