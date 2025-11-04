@@ -1,3 +1,13 @@
+---
+layout: default
+title: UDM Baseline (v2)
+parent: Capability Framework
+nav_order: 5
+has_children: true
+permalink: /capabilities/baselines/udm/
+last_updated: 2025-10-12T13:02:58Z
+---
+
 # 🧭 Universal Diagnostic Model (UDM) — v2 (0–4 scale)
 
 *A vendor-neutral baseline describing how intelligent Ops/Observability systems **detect, enrich, correlate, explain (RCA), and recommend/remediate** incidents — with verifiable evidence.*
