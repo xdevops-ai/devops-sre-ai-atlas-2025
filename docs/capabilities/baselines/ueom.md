@@ -23,26 +23,27 @@ last_updated: 2025-10-12T12:56:12Z
 
 ---
 
-## ⚙️ Five Ontology Phases
+## ⚙️ Five Ontology Phases  
+
 | # | Phase | Definition | Typical Evidence |
-|---:|---|---|---|
-| **1** | **Concept & Modeling** | Define classes/properties/identifiers with naming policy | OWL/RDF Turtle, prefixes, examples, change log |
-| **2** | **Mapping & Normalization** | Deterministically map raw events/resources to ontology instances | Source→URI rules, identity/dedupe keys, unit normalization, JSON‑LD envelopes |
-| **3** | **Validation & Conformance** | Enforce shapes/constraints during ingest | SHACL shapes (strict/relaxed), violation reports, coverage metrics |
-| **4** | **Materialization & Linking** | Insert/link triples in a graph store with resilience | SPARQL updates, batch/idempotent inserts, link discovery, provenance stamps |
-| **5** | **Retrieval, Reasoning & Governance** | Query, reason/derive, embed for RAG; govern evolution & access | SPARQL library, reasoning/rules, embeddings keyed by URIs, versioning, named graphs & RBAC |
+|:--:|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------|
+| **1** | **Concept & Modeling** | Define classes, properties, and identifiers with a consistent naming policy. | OWL/RDF Turtle, prefixes, examples, change logs |
+| **2** | **Mapping & Normalization** | Deterministically map raw events or resources to ontology instances. | Source→URI rules, identity/dedupe keys, unit normalization, JSON-LD envelopes |
+| **3** | **Validation & Conformance** | Enforce shapes and constraints during ingest. | SHACL shapes (strict/relaxed), violation reports, coverage metrics |
+| **4** | **Materialization & Linking** | Insert and link triples in a graph store with resilience. | SPARQL updates, batch/idempotent inserts, link discovery, provenance stamps |
+| **5** | **Retrieval, Reasoning & Governance** | Query, reason or derive, embed for RAG; govern evolution and access. | SPARQL library, reasoning/rules, embeddings keyed by URIs, versioning, named graphs & RBAC |
 
 ---
 
-## 🧩 UEOM Maturity Scale (0–4)
-| Level | Label | Acceptance (must satisfy all lower levels) |
-|---:|---|---|
-| **0** | **None** | No ontology deliverables; ad‑hoc documents only. |
-| **1** | **Schema‑only** | Versioned OWL/Turtle exists with labels & examples; **no enforced mapping/validation in pipeline**. |
-| **2** | **Validated graph** | Deterministic **mapping** runs in ingest; **SHACL** validates instances; violation reports & coverage % exported. |
-| **3** | **Governed graph** | **Named graphs** per tenant/env; **provenance** (PROV) on inserts; **versioning** & deprecation policy; **RBAC** on data plane; query pack published. |
-| **4** | **Semantic/Reasoned** | Reasoning/rules or inference; **cross‑domain joins** with latency SLO; **embeddings** bound to URIs (RAG‑ready); governance metrics and evolution workflows. |
+## 🧩 UEOM Maturity Scale (0–4)  
 
+| Level | Label | Acceptance (must satisfy all lower levels) |
+|:--:|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0** | **None** | No ontology deliverables; ad-hoc documents only. |
+| **1** | **Schema-only** | Versioned OWL/Turtle exists with labels and examples; **no enforced mapping or validation in pipeline**. |
+| **2** | **Validated graph** | Deterministic **mapping** runs in ingest; **SHACL** validates instances; violation reports and coverage % exported. |
+| **3** | **Governed graph** | **Named graphs** per tenant/env; **provenance** (PROV) on inserts; **versioning** and deprecation policy; **RBAC** on the data plane; query pack published. |
+| **4** | **Semantic/Reasoned** | Reasoning/rules or inference; **cross-domain joins** with latency SLOs; **embeddings** bound to URIs (RAG-ready); governance metrics and evolution workflows. |
 > **Evidence gates (caps):**
 > - **No shapes (SHACL)** → cap at **L1** even if mapping exists.
 > - **No deterministic identity/URI strategy** → cap at **L2**.
