@@ -15,7 +15,7 @@
 ## 📖 About This Project
 
 The **DevOps & SRE AI Atlas 2025** is your definitive guide to navigating the rapidly evolving landscape of **AI agents in operations**.  
-We provide evidence-based analysis of 25+ AI platforms to help DevOps, SRE, and platform engineering teams make informed adoption decisions.
+We provide evidence-based analysis of 35+ AI platforms to help DevOps, SRE, and platform engineering teams make informed adoption decisions.
 
 ---
 
