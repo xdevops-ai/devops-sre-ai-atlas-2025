@@ -21,7 +21,7 @@ We provide evidence-based analysis of 35+ AI platforms to help DevOps, SRE, and 
 
 ## 🎯 What You'll Discover
 
-- **🤖 25+ AI Platform Analyses** — In-depth coverage of tools from AWS, Azure, Google, Datadog, Dynatrace, ServiceNow, and more  
+- **🤖 35+ AI Platform Analyses** — In-depth coverage of tools from AWS, Azure, Google, Datadog, Dynatrace, ServiceNow, and more  
 - **🔧 Capability Framework** — Standardized evaluation of AI agent capabilities  
 - **🏗️ Architecture Patterns** — Proven designs for implementing AI in DevOps workflows  
 - **📊 Comparative Analysis** — Side-by-side platform comparisons and capability benchmarks  
