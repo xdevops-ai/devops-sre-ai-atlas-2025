@@ -1342,3 +1342,190 @@ This edition incorporates source‑verified changes across all vendors (see “L
 - **[Snowflake Cortex Agents]({{ '/platforms/snowflake-cortex-agents' | relative_url }})** — Data-centric agents orchestrating Analyst/Search with tools/LLMs; infrastructure AIOps out of scope.
 - **[Termius — Gloria]({{ '/platforms/termius-gloria' | relative_url }})** — SSH-native assistant to run services/commands and manage Docker on hosts; early provisioning features.
 - **[Zencoder AI Agents]({{ '/platforms/zencoder-ai-agents' | relative_url }})** — CI-centric autonomous code fixers that diagnose failing pipelines and open PRs.
+
+---
+
+# ➕ Addendum (Nov 12, 2025) — Newly Added Platforms  
+*(Original content above remains unchanged. This section adds new platforms using the same Atlas schema.)*
+
+## Recap — **additions** by archetype (Nov 2025)
+- **🔭 Observability‑First:** **BigPanda Event Intelligence**; **BMC Helix AIOps**.  
+- **⚙️ Provisioning‑Focused:** **HashiCorp Terraform MCP Server + Project Infragraph** (agent‑safe IaC).  
+- **👨‍💻 Developer‑Centric & Frameworks:** **GitLab Duo Agent Platform**.  
+- **🏢 Enterprise Workflow Orchestrators:** **Dell APEX AIOps** (CloudIQ + Incident Management).  
+- **🎯 Specialized / Adjacent:** **incident.io (AI for Incident Response)**; **Overmind (Cloud Impact Map)**; **Harness AIDA** (DevOps platform AI).  
+
+---
+
+# PLATFORM SECTIONS (New — A–Z)
+
+## 🧩 BigPanda Event Intelligence  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — SaaS incident console with correlation, timelines, and enrichment.  
+**💡 What it actually does** — Ingests alerts/changes from many tools via an **Open Integration Hub**, **correlates** them into incidents, dedupes noise, adds context, and applies GenAI‑assisted summaries/recommendations.  
+**📊 Data / telemetry** — Alert & change events from monitoring/CI/CD/CMDB; analytics and incident timelines.  
+**🔗 Interoperability** — 100+ integrations (monitoring, ITSM, ChatOps); Open Integration Hub & APIs.  
+**🏢 Deployment model** — SaaS.  
+**🗒️ Notes** — Focus is correlation/incident intelligence; **telemetry stays in source tools**; remediation typically runs via playbooks/integrations.
+
+**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 BMC Helix AIOps  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** Y/M · 👁️ **Observability:** Y/M · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — SaaS/managed with service views, correlation policies, and insights.  
+**💡 What it actually does** — **Correlates and analyzes large event volumes** into actionable “situations,” reducing noise and improving time‑to‑clue; supplies service context/topology for investigations.  
+**📊 Data / telemetry** — Events/metrics/logs from monitored systems; service models/topology.  
+**🔗 Interoperability** — Integrates with common observability and ITSM tools.  
+**🏢 Deployment model** — BMC Helix (SaaS/managed).  
+**🗒️ Notes** — Strong on correlation/noise reduction; **remediations** usually via runbooks/integrations.
+
+**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**👁️ UOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🧬 UEOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 Dell APEX AIOps (CloudIQ + Incident Management)  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — **APEX AIOps** console (CloudIQ) + **Incident Management** experience for enterprise fleets.  
+**💡 What it actually does** — **Proactive monitoring** and health insights via CloudIQ, with **incident correlation/workflows** for faster triage and response.  
+**📊 Data / telemetry** — Dell infrastructure & platform telemetry via CloudIQ; incident/event streams.  
+**🔗 Interoperability** — Integrations for ticketing/automation; Dell ecosystem.  
+**🏢 Deployment model** — Dell APEX AIOps (SaaS).  
+**🗒️ Notes** — Direct infra changes typically flow via automations, not free‑form commands.
+
+**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 GitLab Duo Agent Platform  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** N/L · 👁️ **Observability:** P/M · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — Duo **Agent Platform** to create organization‑specific agents that can act across GitLab (code→CI/CD→issues).  
+**💡 What it actually does** — Lets teams **build custom agents** that understand their repos/issues and perform actions (e.g., create MRs, modify pipelines) with **guardrails & approvals**.  
+**📊 Data / telemetry** — Repo history, CI logs, issues, MR discussions.  
+**🔗 Interoperability** — GitLab APIs; connectors to external tools via jobs/webhooks.  
+**🏢 Deployment model** — GitLab SaaS/Self‑Managed (feature availability varies).  
+**🗒️ Notes** — Dev‑centric scope; infra changes are typically **PR/MR‑based** rather than direct applies.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/L**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/L**, Retrieval **P/M**, Governance **P/M**, Overall **Low‑Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 Harness AIDA (AI Development Assistant)  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** Y/M  
+🧬 **Event ontology:** P/L · 👁️ **Observability:** P/M · 📈 **Confidence:** Med‑High
+
+**🏗️ Build style / interface** — AIDA across the **Harness Platform** (CI/CD, Feature Flags, SRM).  
+**💡 What it actually does** — AI assistance for pipelines/releases/security with **governed automations** and insights; accelerates PR verification and release tasks in the Harness toolchain.  
+**📊 Data / telemetry** — CI/CD runs, deployment metrics, verification signals (via SRM).  
+**🔗 Interoperability** — Cloud providers, K8s, observability connectors through Harness.  
+**🏢 Deployment model** — Harness SaaS/Self‑Managed.  
+**🗒️ Notes** — Strongest inside Harness; external infra changes generally run through **Harness pipelines/approvals**.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/L**, Retrieval **P/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🚀 UPM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.
+
+---
+
+## 🧩 HashiCorp Terraform MCP Server + **Project Infragraph**  
+⚙️ **Activities:** P/M · 🔍 **Diagnostics:** N/L · 🚀 **Provisioning:** Y/H  
+🧬 **Event ontology:** Y/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — **MCP server for HCP Terraform** lets agents use Terraform safely; **Project Infragraph** builds a **unified infra graph** for resources & relationships.  
+**💡 What it actually does** — Enables **agentic workflows** to plan/apply with approvals and **policy‑as‑code**, while Infragraph supplies **typed entities & dependencies** to reason about impact.  
+**📊 Data / telemetry** — State, plans/diffs, runs, policy results; infra graph nodes/edges.  
+**🔗 Interoperability** — Terraform providers; Sentinel/Run Tasks; MCP tool ecosystem.  
+**🏢 Deployment model** — HCP Terraform (cloud) & Terraform CLI; Infragraph (project).  
+**🗒️ Notes** — Purpose‑built for **safe provisioning**; not an observability or RCA product.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **Y/H**, Overall **Medium‑High**.  
+**⚙️ UAM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **Y/M**, Overall **Medium**.  
+**🔍 UDM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low**.  
+**🧬 UEOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🚀 UPM — Snapshot:** Ingest **Y/H**, Index **Y/H**, Retrieval **Y/H**, Governance **Y/H**, Overall **High**.
+
+---
+
+## 🧩 incident.io (AI for Incident Response)  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/L · 👁️ **Observability:** P/L · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — Slack/Teams‑first incident product with rich web console.  
+**💡 What it actually does** — **AI assists** during incidents (summaries, suggestions, duplicate detection, post‑incident drafting), orchestrates status pages/commms, and automates workflows across tools.  
+**📊 Data / telemetry** — Incident timelines, runbooks, prior incidents; signals pulled from monitoring/issue trackers.  
+**🔗 Interoperability** — PagerDuty, Jira, GitHub, Statuspage, and many more.  
+**🏢 Deployment model** — SaaS.  
+**🗒️ Notes** — Optimized for **people/process** flow; diagnostics depth depends on integrated observability.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 Overmind (Cloud Impact Map)  
+⚙️ **Activities:** P/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** N/L  
+🧬 **Event ontology:** Y/M · 👁️ **Observability:** P/L · 📈 **Confidence:** Med
+
+**🏗️ Build style / interface** — Cloud map UI & APIs; Terraform Cloud **Run Task** plugin.  
+**💡 What it actually does** — Builds a **graph of your cloud** and provides **blast‑radius/impact analysis** (e.g., before Terraform applies). Helps reviewers understand change scope and dependencies.  
+**📊 Data / telemetry** — Cloud resource inventory/relationships; change context.  
+**🔗 Interoperability** — Terraform Cloud Run Tasks; CI/CD hooks.  
+**🏢 Deployment model** — SaaS.  
+**🗒️ Notes** — Read‑heavy analysis product; **does not apply** changes directly.
+
+**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **P/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🚀 UPM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.
+
+---
+
+## Neutral one‑line summaries — **Addendum (Nov 2025)**
+- **BigPanda Event Intelligence** — Correlates alerts/changes into incidents with GenAI summaries; acts as a cross‑tool incident brain.  
+- **BMC Helix AIOps** — ML‑based event correlation into “situations” to reduce noise and guide triage.  
+- **Dell APEX AIOps** — CloudIQ‑based proactive monitoring plus Incident Management in Dell’s ops cloud.  
+- **GitLab Duo Agent Platform** — Build governed, org‑specific agents that can open/modify MRs and pipelines in GitLab.  
+- **Harness AIDA** — AI assistance across Harness pipelines/releases with governed automations.  
+- **HashiCorp Terraform MCP + Infragraph** — Agent‑safe Terraform operations with a unified infrastructure graph for impact‑aware changes.  
+- **incident.io** — Chat‑first incident platform with AI summaries, suggestions, and post‑incident drafting.  
+- **Overmind** — Cloud dependency graph and Terraform **impact analysis** for blast‑radius checks pre‑apply.
+
