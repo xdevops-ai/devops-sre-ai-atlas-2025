@@ -1,4 +1,4 @@
-# 🚀 DevOps & SRE AI Atlas 2025
+# 🚀 DevOps & SRE AI Atlas 2026
 
 **A comprehensive, vendor-neutral knowledge base tracking AI agents and platforms transforming DevOps and Site Reliability Engineering.**
 
@@ -14,7 +14,7 @@
 
 ## 📖 About This Project
 
-The **DevOps & SRE AI Atlas 2025** is your definitive guide to navigating the rapidly evolving landscape of **AI agents in operations**.  
+The **DevOps & SRE AI Atlas 2026** is your definitive guide to navigating the rapidly evolving landscape of **AI agents in operations**.  
 We provide evidence-based analysis of 35+ AI platforms to help DevOps, SRE, and platform engineering teams make informed adoption decisions.
 
 ---
@@ -25,7 +25,7 @@ We provide evidence-based analysis of 35+ AI platforms to help DevOps, SRE, and 
 - **🔧 Capability Framework** — Standardized evaluation of AI agent capabilities  
 - **🏗️ Architecture Patterns** — Proven designs for implementing AI in DevOps workflows  
 - **📊 Comparative Analysis** — Side-by-side platform comparisons and capability benchmarks  
-- **🔮 Trend Insights** — Emerging patterns and predictions shaping DevOps AI for 2025  
+- **🔮 Trend Insights** — Emerging patterns and predictions shaping DevOps AI for 2026  
 
 ---
 
@@ -82,7 +82,7 @@ We track the evolving **AI in DevOps/SRE ecosystem** across categories:
 
 ---
 
-## 🎯 Key Insights for 2025
+## 🎯 Key Insights for 2026
 
 > AI agents have evolved from “chat over dashboards” to **actionable co-workers** spanning the entire incident lifecycle.
 
@@ -119,7 +119,7 @@ We welcome contributions from:
 ```text
 devops-sre-ai-atlas-2025/
 ├── 📚 docs/                    # Main documentation site (Jekyll)
-│   ├── platforms/              # 25+ AI platform deep dives
+│   ├── platforms/              # 55+ AI platform deep dives
 │   ├── capabilities/           # Evaluation framework
 │   ├── platform-overview/      # Market analysis
 │   └── community/              # Contribution guidelines
@@ -131,7 +131,7 @@ devops-sre-ai-atlas-2025/
 
 ## 🔄 Update Cycle
 
-We maintain a **continuous research and update cycle** throughout 2025:
+We maintain a **continuous research and update cycle** throughout 2026:
 
 - 🗓️ New platforms and versions added monthly  
 - 📊 Capability scores reviewed quarterly  
@@ -140,9 +140,9 @@ We maintain a **continuous research and update cycle** throughout 2025:
 
 ---
 
-## 📆 2025 Focus
+## 📆 2026 Focus
 
-This edition specifically tracks developments through **2025**, with updates to reflect:
+This edition specifically tracks developments through **2026**, with updates to reflect:
 
 - New AI-powered DevOps tools and features  
 - Integration and orchestration trends  
@@ -154,8 +154,8 @@ This edition specifically tracks developments through **2025**, with updates to 
 
 If you reference or build on this project, please cite:
 
-> DevOps & SRE AI Atlas 2025.  
-> XDevOps AI Initiative, 2025. Licensed under **CC BY-SA 4.0**.  
+> DevOps & SRE AI Atlas 2026.  
+> XDevOps AI Initiative, 2026. Licensed under **CC BY-SA 4.0**.  
 > https://github.com/xdevops-ai/devops-sre-ai-atlas-2025
 
 ---
@@ -179,7 +179,7 @@ For full terms, see the [LICENSE](LICENSE).
 ---
 
 ## 🔗 Quick Links
-- 👥 [DevOps & SRE AI Platforms Atlas 2025](https://xdevops-ai.github.io/devops-sre-ai-atlas-2025/) — Web Atlas
+- 👥 [DevOps & SRE AI Platforms Atlas 2025-2026](https://xdevops-ai.github.io/devops-sre-ai-atlas-2025/) — Web Atlas
 - 📚 [Full Documentation](docs/) — Detailed platform analysis  
 - 🤝 [Community Guidelines](docs/community/CONTRIBUTING.md) — Contribute to the Atlas  
 - 🐛 [Report Issues](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025/issues) — Help improve the project  
