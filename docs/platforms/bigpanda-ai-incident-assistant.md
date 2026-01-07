@@ -35,4 +35,9 @@ entity/change context P/M, overall medium
 ingest N/L, apply N/L, rollback N/L, overall low
 
 **Latest updates —** Agentic Incident Assistant announced (May 28, 2025).  
-**Links —** [Official](https://www.bigpanda.io/), [AI Incident Assistant](https://www.bigpanda.io/our-product/ai-incident-assistant/), [Assistant overview](https://www.bigpanda.io/ai-powered-incident-management-assistant/)
+**Links —** 
+- [Official](https://www.bigpanda.io/)
+- [AI Incident Assistant](https://www.bigpanda.io/our-product/ai-incident-assistant/)
+- [Assistant overview](https://www.bigpanda.io/ai-powered-incident-management-assistant/)
+- [Doc](https://docs.bigpanda.io)  
+- [Blog](https://www.bigpanda.io/blog/)

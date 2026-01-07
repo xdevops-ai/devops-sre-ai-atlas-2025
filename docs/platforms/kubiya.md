@@ -62,6 +62,6 @@ ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high
 
 **Latest updates —** Expanded multi-agent capabilities, improved workflow generation from natural language, and broader enterprise integrations (2024–2025).  
 **Links —**  
-- https://www.kubiya.ai  
-- https://docs.kubiya.ai  
-- https://github.com/kubiya-ai
+- [Official](https://www.kubiya.ai)  
+- [Docs](https://docs.kubiya.ai)  
+- [GitHub](https://github.com/kubiya-ai)

@@ -62,6 +62,6 @@ ingest N/L, index N/L, retrieval N/L, governance N/L, overall low
 
 **Latest updates —** Expanded AI SRE features and open-source MCP server for IDE integrations (2024–2025).  
 **Links —**  
-- https://rootly.com  
-- https://docs.rootly.com  
-- https://github.com/rootly-ai
+- [Official](https://rootly.com)  
+- [Docs](https://docs.rootly.com)  
+- [GitHub](https://github.com/rootly-ai)

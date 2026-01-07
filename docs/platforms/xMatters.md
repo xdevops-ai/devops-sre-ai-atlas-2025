@@ -62,6 +62,6 @@ ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium
 
 **Latest updates —** Continued expansion of Service Intelligence, change awareness, AI-assisted insights, and Everbridge Digital Operations integration (2024–2025).  
 **Links —**  
-- https://www.xmatters.com  
-- https://help.xmatters.com  
-- https://github.com/xmatters
+- [Officail](https://www.xmatters.com)  
+- [Help](https://help.xmatters.com)  
+- [GitHub](https://github.com/xmatters)

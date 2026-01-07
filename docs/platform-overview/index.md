@@ -1,13 +1,12 @@
----
 layout: default
 title: Platform Overview
 nav_order: 3
 permalink: /platform-overview/
----
 
-# 📋 DevOps & SRE AI Platforms — 2025 Atlas (Updated October 11, 2025)
 
-> **What this is:** A vendor‑neutral overview of AI agent platforms across DevOps/SRE/ITOps and data/MLOps.  
+# 📋 DevOps & SRE AI Platforms — 2025 Atlas (Updated January 6, 2026)
+
+> **What this is:** A vendor‑neutral overview of AI agent platforms across DevOps/SRE/ITOps and data/MLOps.  
 
 ---
 # 🧭 Legend — DevOps Agent Atlas 2025
@@ -47,8 +46,8 @@ permalink: /platform-overview/
 
 ---
 
-💡 **Usage:**  
-Every platform section follows the same schema so you can compare capabilities at a glance.  
+💡 **Usage:**  
+Every platform section follows the same schema so you can compare capabilities at a glance.  
 The combination of emoji + short labels ensures quick scanning for SREs, analysts, and engineers reviewing the Atlas.
 
 ---
@@ -59,149 +58,151 @@ This section defines each Atlas capability with **clear boundaries**, **what cou
 
 > **How to use:** For each capability, validate with artifacts (screenshots, API outputs, logs, PRs, dashboards) and mark the **highest level that is fully satisfied**. When in doubt, choose the **lower** level and add a note.
 
+
+
 ---
 ## 🧩 Capability Explanations — Knowledge & Contextual Intelligence Layer
 
-This section defines how an AI system can **represent, ingest, and use organizational knowledge** — from infrastructure topology and DevOps workflows to individual engineer expertise and contextual storytelling.  
+This section defines how an AI system can **represent, ingest, and use organizational knowledge** — from infrastructure topology and DevOps workflows to individual engineer expertise and contextual storytelling.  
 It allows retrieval-augmented agents (diag, activity, etc.) to adapt their reasoning, tone, and outputs to the specific company or environment.
 
 ---
 
 ### 🧠 Knowledge — Organizational Memory & Semantic Context
 
-**What it is:**  
+**What it is:**  
 A structured repository of all *explicit and tacit* company knowledge: architecture diagrams, policies, conventions, incident retrospectives, KB articles, and internal best practices.
 
 **Counts as capability**
-- Indexed across multiple modalities (text, diagrams, configs, wiki pages).  
-- Linked to ontology entities (services, clusters, teams, roles).  
-- Versioned and queryable through embeddings and metadata filters.  
-- Governed by visibility/ownership (team/org/global).  
+- Indexed across multiple modalities (text, diagrams, configs, wiki pages).  
+- Linked to ontology entities (services, clusters, teams, roles).  
+- Versioned and queryable through embeddings and metadata filters.  
+- Governed by visibility/ownership (team/org/global).  
 
 **Does NOT count**
-- Unstructured file dumps without metadata or embeddings.  
+- Unstructured file dumps without metadata or embeddings.  
 - Outdated or unvalidated documentation with no provenance.
 
 **Evidence checklist**
-- Knowledge graphs, Milvus collections, or RDF triples representing internal sources.  
-- API for semantic + keyword retrieval with metadata (owner, timestamp, tags).  
+- Knowledge graphs, Milvus collections, or RDF triples representing internal sources.  
+- API for semantic + keyword retrieval with metadata (owner, timestamp, tags).  
 - Periodic validation and feedback loops.
 
 **Scoring**
-- **N/L:** Ad-hoc or external wiki only.  
-- **P/M:** Some internal KB indexed but no entity linkage.  
-- **Y/M:** Multi-source KB with embeddings + metadata; used in prompting.  
+- **N/L:** Ad-hoc or external wiki only.  
+- **P/M:** Some internal KB indexed but no entity linkage.  
+- **Y/M:** Multi-source KB with embeddings + metadata; used in prompting.  
 - **Y/H:** Fully governed, ontology-linked knowledge layer with reasoning hooks.
 
 ---
 
 ### 💪 Capability — Skills, Tools, and Procedural Know-How
 
-**What it is:**  
+**What it is:**  
 A registry of *what the organization and its engineers can do* — DevOps playbooks, deployment methods, automation scripts, observability patterns, and integrations.
 
 **Counts as capability**
-- Taxonomy of internal tools, scripts, services, and their APIs.  
-- Linkage between people (or teams) and the systems they operate.  
-- Stored as structured “capability cards” (name, purpose, API, maturity, owner).  
-- Referenced dynamically by agents to decide which tool or process to use.  
+- Taxonomy of internal tools, scripts, services, and their APIs.  
+- Linkage between people (or teams) and the systems they operate.  
+- Stored as structured "capability cards" (name, purpose, API, maturity, owner).  
+- Referenced dynamically by agents to decide which tool or process to use.  
 
 **Does NOT count**
-- Static list of tools without API metadata or context.  
+- Static list of tools without API metadata or context.  
 - Human-only descriptions not usable for orchestration or planning.
 
 **Evidence checklist**
-- YAML/JSON “capability registry” or vector index describing actions/functions.  
-- Mappings to workloads, environments, and ownership.  
+- YAML/JSON "capability registry" or vector index describing actions/functions.  
+- Mappings to workloads, environments, and ownership.  
 - Retrieval and ranking via intent classifiers or embeddings.
 
 **Scoring**
-- **N/L:** Tribal knowledge only.  
-- **P/M:** Tools listed manually; partial metadata.  
-- **Y/M:** Structured capability index; referenced by agents.  
+- **N/L:** Tribal knowledge only.  
+- **P/M:** Tools listed manually; partial metadata.  
+- **Y/M:** Structured capability index; referenced by agents.  
 - **Y/H:** Dynamic capability graph with discovery, usage tracking, and confidence metrics.
 
 ---
 
 ### 📖 Storytelling — Narratives, Incidents, and Institutional Memory
 
-**What it is:**  
-Curated *narratives* capturing how the organization learned, failed, and evolved — incident timelines, project retrospectives, and engineering “stories” that teach context and culture.
+**What it is:**  
+Curated *narratives* capturing how the organization learned, failed, and evolved — incident timelines, project retrospectives, and engineering "stories" that teach context and culture.
 
 **Counts as capability**
-- Chronological or thematic story records linked to systems, incidents, and outcomes.  
-- Embedded narratives used for prompt adaptation (e.g., tone, lessons learned).  
-- Governed by confidentiality and relevance tags.  
-- Indexed for retrieval and reasoning (semantic embeddings).  
+- Chronological or thematic story records linked to systems, incidents, and outcomes.  
+- Embedded narratives used for prompt adaptation (e.g., tone, lessons learned).  
+- Governed by confidentiality and relevance tags.  
+- Indexed for retrieval and reasoning (semantic embeddings).  
 
 **Does NOT count**
-- Free-form incident logs with no summary, tags, or structure.  
+- Free-form incident logs with no summary, tags, or structure.  
 - Public case studies unlinked to internal systems.
 
 **Evidence checklist**
-- Vectorized retrospectives, “stories” collections in Milvus.  
-- Temporal relationships (before/after incidents).  
+- Vectorized retrospectives, "stories" collections in Milvus.  
+- Temporal relationships (before/after incidents).  
 - Summaries and moral/lesson fields for generative prompting.
 
 **Scoring**
-- **N/L:** No structured retrospectives.  
-- **P/M:** Informal retros or blog posts.  
-- **Y/M:** Indexed story corpus; retrievable and summarized.  
+- **N/L:** No structured retrospectives.  
+- **P/M:** Informal retros or blog posts.  
+- **Y/M:** Indexed story corpus; retrievable and summarized.  
 - **Y/H:** Semantic narrative graph integrated into prompt adaptation.
 
 ---
 
 ### 🏗️ Workload Deployed — Ontology Instances (Runtime Context)
 
-**What it is:**  
-The **live topology** and **state** of the company’s deployed workloads — environments, namespaces, services, pods, metrics, and relationships.
+**What it is:**  
+The **live topology** and **state** of the company's deployed workloads — environments, namespaces, services, pods, metrics, and relationships.
 
 **Counts as capability**
-- Modeled as ontology instances (e.g., RDF/OWL classes → running resources).  
-- Continuously synchronized with runtime telemetry (Prometheus/K8s APIs).  
-- Serves as contextual substrate for diagnostics and recommendations.  
-- Queryable via SPARQL, vector search, or graph traversal.  
+- Modeled as ontology instances (e.g., RDF/OWL classes → running resources).  
+- Continuously synchronized with runtime telemetry (Prometheus/K8s APIs).  
+- Serves as contextual substrate for diagnostics and recommendations.  
+- Queryable via SPARQL, vector search, or graph traversal.  
 
 **Does NOT count**
-- Static inventory CSVs or unmaintained CMDB.  
+- Static inventory CSVs or unmaintained CMDB.  
 - Runtime metrics with no semantic linkage to entities.
 
 **Evidence checklist**
-- Ontology instance data (Service, Deployment, Pod, Config, etc.).  
-- Relationships: dependsOn, monitoredBy, ownedBy, runsIn.  
+- Ontology instance data (Service, Deployment, Pod, Config, etc.).  
+- Relationships: dependsOn, monitoredBy, ownedBy, runsIn.  
 - Regular updates and validation.
 
 **Scoring**
-- **N/L:** Static CMDB; no live state.  
-- **P/M:** Partial synchronization; some ontology coverage.  
-- **Y/M:** Live state mapping to ontology instances; used for diagnostics.  
+- **N/L:** Static CMDB; no live state.  
+- **P/M:** Partial synchronization; some ontology coverage.  
+- **Y/M:** Live state mapping to ontology instances; used for diagnostics.  
 - **Y/H:** Fully dynamic knowledge graph fed by observability + infra data streams.
 
 ---
 
 ### 👤 Profiles — Human and Team Context
 
-**What it is:**  
+**What it is:**  
 Representation of **engineer/SRE/DevOps profiles**, expertise, and operational responsibilities to personalize diagnostics and knowledge retrieval.
 
 **Counts as capability**
-- Metadata: roles, experience areas, systems owned, on-call history, skills.  
-- Integrated into authorization and reasoning layers (e.g., route query to expert).  
-- Optional embeddings for semantic matching (e.g., “find engineer experienced with Kafka”).  
+- Metadata: roles, experience areas, systems owned, on-call history, skills.  
+- Integrated into authorization and reasoning layers (e.g., route query to expert).  
+- Optional embeddings for semantic matching (e.g., "find engineer experienced with Kafka").  
 
 **Does NOT count**
-- HR database dump or generic user list.  
+- HR database dump or generic user list.  
 - Missing skills, ownership, or expertise linkages.
 
 **Evidence checklist**
-- Structured “EngineerProfile” dataset or graph nodes linked to capabilities/workloads.  
-- Skill taxonomies and ownership relationships.  
+- Structured "EngineerProfile" dataset or graph nodes linked to capabilities/workloads.  
+- Skill taxonomies and ownership relationships.  
 - Governance for PII and access control.
 
 **Scoring**
-- **N/L:** Flat user list, no metadata.  
-- **P/M:** Basic roles + system ownership.  
-- **Y/M:** Skills/ownership mapped and retrievable.  
+- **N/L:** Flat user list, no metadata.  
+- **P/M:** Basic roles + system ownership.  
+- **Y/M:** Skills/ownership mapped and retrievable.  
 - **Y/H:** Full semantic profile graph with confidence, feedback, and usage tracking.
 
 ---
@@ -219,16 +220,16 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 
 ## 🧠 Unified Models — Snapshot Guide (UKM, UAM, UDM, UOM, UEOM, UPM)
 
-> **How to read these lines:** Each platform card includes snapshot lines like  
-> `**🧠 UKM — Snapshot:** Ingest **…**, Index **…**, Retrieval **…**, Governance **…**, Overall **…**.`  
+> **How to read these lines:** Each platform card includes snapshot lines like  
+> `**🧠 UKM — Snapshot:** Ingest **…**, Index **…**, Retrieval **…**, Governance **…**, Overall **…**.`  
 > The four facets are interpreted **per model** as defined below. Scores use the same rubric as above (N/L, P/L, P/M, Y/M, Y/H → Overall Low → High).
 
 **Mapping from top‑line badges → U‑models**
-- **UKM** ⇢ derives from the **Knowledge & Contextual Intelligence Layer** maturity (RAG/KB governance).  
-- **UAM** ⇢ derives from **⚙️ Activities** maturity.  
-- **UDM** ⇢ derives from **🔍 Diagnostics** maturity.  
-- **UOM** ⇢ derives from **👁️ Observability** maturity.  
-- **UEOM** ⇢ derives from **🧬 Event Ontology** maturity.  
+- **UKM** ⇢ derives from the **Knowledge & Contextual Intelligence Layer** maturity (RAG/KB governance).  
+- **UAM** ⇢ derives from **⚙️ Activities** maturity.  
+- **UDM** ⇢ derives from **🔍 Diagnostics** maturity.  
+- **UOM** ⇢ derives from **👁️ Observability** maturity.  
+- **UEOM** ⇢ derives from **🧬 Event Ontology** maturity.  
 - **UPM** ⇢ derives from **🚀 Provisioning** maturity.
 
 ---
@@ -236,19 +237,19 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 ### 🧠 UKM — Unified Knowledge Model (Ingest → Index → Retrieve → Govern)
 
 **Facet definitions**
-- **Ingest:** Connectors/pipelines for docs, incidents, runbooks, configs; dedupe and provenance.  
-- **Index:** Hybrid search (keyword + vector) with metadata (owner, service, env); update cadence.  
-- **Retrieval:** RAG quality; citations; query routing to the right corpus; multi‑doc synthesis.  
+- **Ingest:** Connectors/pipelines for docs, incidents, runbooks, configs; dedupe and provenance.  
+- **Index:** Hybrid search (keyword + vector) with metadata (owner, service, env); update cadence.  
+- **Retrieval:** RAG quality; citations; query routing to the right corpus; multi‑doc synthesis.  
 - **Governance:** RBAC, PII policy, source visibility, versioning, feedback loops, eval sets.
 
 **Counts as capability**
-- Multi‑source knowledge with embeddings and metadata; citations in answers; corpus scoping by role/team.  
+- Multi‑source knowledge with embeddings and metadata; citations in answers; corpus scoping by role/team.  
 - Measurable retrieval quality (evaluations); provenance stored and exportable.
 
 **Scoring**
-- **N/L:** Ad‑hoc or external wiki only.  
-- **P/M:** Some internal KB indexed; limited metadata; weak governance.  
-- **Y/M:** Multi‑source hybrid index; RAG used in prompting; role‑aware visibility.  
+- **N/L:** Ad‑hoc or external wiki only.  
+- **P/M:** Some internal KB indexed; limited metadata; weak governance.  
+- **Y/M:** Multi‑source hybrid index; RAG used in prompting; role‑aware visibility.  
 - **Y/H:** Fully governed, ontology‑linked corpus with evals, citations, and continuous feedback.
 
 ---
@@ -256,9 +257,9 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 ### ⚙️ UAM — Unified Activity Model (Log → Learn → Automate)
 
 **Facet definitions**
-- **Ingest:** Durable capture of actions/events (sessions, tickets, PRs, pipeline runs, change sets).  
-- **Index:** Correlated, searchable timeline linked to incidents/entities; de‑dupe & normalization.  
-- **Retrieval:** Fast queries, filters, and **replay** of parametrized actions/runbooks.  
+- **Ingest:** Durable capture of actions/events (sessions, tickets, PRs, pipeline runs, change sets).  
+- **Index:** Correlated, searchable timeline linked to incidents/entities; de‑dupe & normalization.  
+- **Retrieval:** Fast queries, filters, and **replay** of parametrized actions/runbooks.  
 - **Governance:** Audit trail, RBAC, approvals, retention/SOX controls, signed artifacts.
 
 **Counts as capability**
@@ -272,9 +273,9 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 ### 🔍 UDM — Unified Diagnostics Model (Detect → Correlate → RCA → Verify)
 
 **Facet definitions**
-- **Ingest:** Alerts + telemetry + change/events streams.  
-- **Index:** Problem/incidence structures (grouped signals, similarity clusters, causal/episode graphs).  
-- **Retrieval:** Evidence‑backed narratives; queries, tests, hypotheses reconstruction.  
+- **Ingest:** Alerts + telemetry + change/events streams.  
+- **Index:** Problem/incidence structures (grouped signals, similarity clusters, causal/episode graphs).  
+- **Retrieval:** Evidence‑backed narratives; queries, tests, hypotheses reconstruction.  
 - **Governance:** Evaluation sets, confidence & FP/FN tracking, human‑in‑the‑loop and override rules.
 
 **Counts as capability**
@@ -288,9 +289,9 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 ### 👁️ UOM — Unified Observability Model (MELT)
 
 **Facet definitions**
-- **Ingest:** Multi‑signal collection (APM/Infra/RUM/profiles), ideally **OpenTelemetry‑compliant**.  
-- **Index:** Time‑series, log, and trace stores with join keys; service maps/topology.  
-- **Retrieval:** SLOs, drill‑downs, cross‑modal hops (alert → trace → span → logs), time‑travel comparisons.  
+- **Ingest:** Multi‑signal collection (APM/Infra/RUM/profiles), ideally **OpenTelemetry‑compliant**.  
+- **Index:** Time‑series, log, and trace stores with join keys; service maps/topology.  
+- **Retrieval:** SLOs, drill‑downs, cross‑modal hops (alert → trace → span → logs), time‑travel comparisons.  
 - **Governance:** RBAC, data classification/PII filtering, retention & cost controls, sampling policy.
 
 **Counts as capability**
@@ -304,9 +305,9 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 ### 🧬 UEOM — Unified Event Ontology Model (Entities & Relationships)
 
 **Facet definitions**
-- **Ingest:** Mapping raw signals into **typed entities** with stable IDs.  
-- **Index:** Graph/relational store for **relationships** (depends_on, runs_on, caused_by) and versions.  
-- **Retrieval:** Graph traversal/queries (SPARQL/DSL); cross‑joins across telemetry & tickets.  
+- **Ingest:** Mapping raw signals into **typed entities** with stable IDs.  
+- **Index:** Graph/relational store for **relationships** (depends_on, runs_on, caused_by) and versions.  
+- **Retrieval:** Graph traversal/queries (SPARQL/DSL); cross‑joins across telemetry & tickets.  
 - **Governance:** Schema versioning, lineage/provenance, ownership, quality checks & federation rules.
 
 **Counts as capability**
@@ -320,9 +321,9 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 ### 🚀 UPM — Unified Provisioning Model (Plan → Approve → Apply → Verify → Rollback)
 
 **Facet definitions**
-- **Ingest:** Desired state (IaC templates), change sets, drift & preflight/policy results.  
-- **Index:** Per‑env state, plan/diff history, dependency graph, rollback points.  
-- **Retrieval:** Human‑readable diffs, impact/risk summaries, prior “known‑good” run selection.  
+- **Ingest:** Desired state (IaC templates), change sets, drift & preflight/policy results.  
+- **Index:** Per‑env state, plan/diff history, dependency graph, rollback points.  
+- **Retrieval:** Human‑readable diffs, impact/risk summaries, prior "known‑good" run selection.  
 - **Governance:** RBAC, **policy‑as‑code**, approvals/freeze windows, **automatic rollback**, break‑glass audit.
 
 **Counts as capability**
@@ -335,25 +336,25 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 
 ## ⚙️ Activities — Activity Footprint (Log → Learn → Automate)
 
-**What it is:** The platform’s ability to **record what happened**, **make that history actionable**, and **replay or automate** activity patterns.
+**What it is:** The platform's ability to **record what happened**, **make that history actionable**, and **replay or automate** activity patterns.
 
 **Counts as capability**
 - **Logging:** durable records of actions/events (e.g., sessions, tickets, PRs, pipeline runs, change sets).
 - **Search & awareness:** query, filter, and correlate the activity timeline; link to incidents or entities.
-- **Repro/automation:** re‑run past fixes/runbooks; trigger actions from history (e.g., “apply last good remediation”).
+- **Repro/automation:** re‑run past fixes/runbooks; trigger actions from history (e.g., "apply last good remediation").
 
 **Does NOT count**
 - Ephemeral console output without storage or search.
-- Vendor says “we log everything” with **no user‑visible history** or export.
+- Vendor says "we log everything" with **no user‑visible history** or export.
 
 **Evidence checklist**
 - Export/API for activity history; correlation to incidents/CMDB/owners.
 - Ability to **replay** or **schedule** a past action; audit trail of who/when/what.
 
 **Scoring**
-- **N/L:** Little/no persisted history; no search.  
-- **P/M:** Persisted history + basic search; limited correlation; manual replay only.  
-- **Y/M:** Rich timeline + correlation to entities/incidents + API export; some templated replays.  
+- **N/L:** Little/no persisted history; no search.  
+- **P/M:** Persisted history + basic search; limited correlation; manual replay only.  
+- **Y/M:** Rich timeline + correlation to entities/incidents + API export; some templated replays.  
 - **Y/H:** Full audit + programmatic replay, **policy guardrails**, approvals, and **closed‑loop** automation.
 
 **Edge cases**: Git/CI logs alone → **P/M** unless the agent **uses** them for replay/decisions.
@@ -365,23 +366,23 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 **What it is:** How the platform **detects anomalies**, **groups signals**, **identifies root cause**, and **verifies** hypotheses with evidence.
 
 **Counts as capability**
-- **Detection:** thresholds, anomalies (stat/ML), pattern mining.  
-- **Correlation:** multi‑signal grouping across metrics/logs/traces/changes.  
-- **RCA:** causal graphs or structured hypotheses explaining *why*.  
+- **Detection:** thresholds, anomalies (stat/ML), pattern mining.  
+- **Correlation:** multi‑signal grouping across metrics/logs/traces/changes.  
+- **RCA:** causal graphs or structured hypotheses explaining *why*.  
 - **Verification:** counter‑tests, confidence scoring, and falsification steps; links to evidence.
 
 **Does NOT count**
-- LLM summary of dashboards with no evidence or tests.  
-- “RCA” that is just the **first alert** restated.
+- LLM summary of dashboards with no evidence or tests.  
+- "RCA" that is just the **first alert** restated.
 
 **Evidence checklist**
-- An incident record with **grouped signals**, a **root‑cause narrative**, **queries/logs** linked, and a **confidence** or **verdict**.  
+- An incident record with **grouped signals**, a **root‑cause narrative**, **queries/logs** linked, and a **confidence** or **verdict**.  
 - If ML is claimed: show **model/feature** descriptions or docs; show **examples** of correct/incorrect RCA.
 
 **Scoring**
-- **N/L:** Alerts only; no grouping; no cause.  
-- **P/M:** Some correlation or heuristic RCA; limited verification; links to raw data.  
-- **Y/M:** Structured RCA (entities/changes) + repeatable verification plan + confidence.  
+- **N/L:** Alerts only; no grouping; no cause.  
+- **P/M:** Some correlation or heuristic RCA; limited verification; links to raw data.  
+- **Y/M:** Structured RCA (entities/changes) + repeatable verification plan + confidence.  
 - **Y/H:** Causal/graph‑based RCA + automated counter‑tests + **early finalize** on high confidence; low false‑positive rate tracked.
 
 **Edge cases**: If evidence is not linkable/exportable → cap at **P/M**.
@@ -393,25 +394,25 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 **What it is:** Ability to **create/modify** infrastructure/services directly, with **safety** (approvals, drift detection, rollback).
 
 **Counts as capability**
-- Executing **Terraform/Cloud/K8s** changes (apply/rollback), with approvals and diffs.  
-- Generating IaC **and** applying it through the platform’s control path.  
+- Executing **Terraform/Cloud/K8s** changes (apply/rollback), with approvals and diffs.  
+- Generating IaC **and** applying it through the platform's control path.  
 - Recording change sets and status to history.
 
 **Does NOT count**
-- Only opening a **PR** with IaC (no execution) → this is **indirect**.  
+- Only opening a **PR** with IaC (no execution) → this is **indirect**.  
 - Clicking a third‑party runbook manually with no platform control or audit.
 
 **Evidence checklist**
-- Change plan/diff, execution logs, approval trail, **rollback outcome**.  
+- Change plan/diff, execution logs, approval trail, **rollback outcome**.  
 - Policy checks (preflight, drift detection), dry-run/simulator proof.
 
 **Scoring**
-- **N/L:** Recommendations or PRs only; no apply.  
-- **P/M:** Limited apply via integrations; no rollback/approvals.  
-- **Y/M:** Managed apply with approvals/policies; rollback supported; drift checks.  
+- **N/L:** Recommendations or PRs only; no apply.  
+- **P/M:** Limited apply via integrations; no rollback/approvals.  
+- **Y/M:** Managed apply with approvals/policies; rollback supported; drift checks.  
 - **Y/H:** Safe multi‑env orchestration, canary/blue‑green, policy-as-code, and **automatic rollback** on failure.
 
-**Edge cases**: “We trigger Jenkins/Terraform” without visibility → **P/M** at best.
+**Edge cases**: "We trigger Jenkins/Terraform" without visibility → **P/M** at best.
 
 ---
 
@@ -420,24 +421,26 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 **What it is:** A **domain model** for events/entities (services, pods, hosts, alerts, changes) with **typed relationships** and **schemas**.
 
 **Counts as capability**
-- Entities with stable IDs (service, workload, ticket, user, dataset).  
-- Relationships (depends_on, runs_on, caused_by), time windows, and schemas.  
+- Entities with stable IDs (service, workload, ticket, user, dataset).  
+- Relationships (depends_on, runs_on, caused_by), time windows, and schemas.  
 - Standards: **OTel semantic conventions**, **CIM**, **CSDM**, **DQL entities**.
 
 **Does NOT count**
 - Free‑text or flat tables without entity linkage.
 
 **Evidence checklist**
-- Schema docs; example queries that traverse relationships; export of typed entities.  
+- Schema docs; example queries that traverse relationships; export of typed entities.  
 - Mapping docs showing how vendor ingests → normalized ontology.
 
 **Scoring**
-- **N/L:** Flat metrics/logs; no linkage.  
-- **P/M:** Partial mapping (e.g., alerts → service); limited joins.  
-- **Y/M:** Cohesive graph across domains (infra/app/change/ticket); queryable.  
+- **N/L:** Flat metrics/logs; no linkage.  
+- **P/M:** Partial mapping (e.g., alerts → service); limited joins.  
+- **Y/M:** Cohesive graph across domains (infra/app/change/ticket); queryable.  
 - **Y/H:** Versioned ontology with lineage, enrichment pipelines, and cross-product federation.
 
 **Edge cases**: If only *one* domain (e.g., CI) is modeled → **P/M** unless cross-domain mapping exists.
+
+
 
 ---
 
@@ -446,21 +449,21 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 **What it is:** How comprehensively the platform **collects, visualizes, and links** telemetry (metrics, logs, traces, events) to entities and incidents.
 
 **Counts as capability**
-- Multi‑signal ingest (**metrics/logs/traces/events**), SLO/SLA views, drill-downs to entity timelines.  
+- Multi‑signal ingest (**metrics/logs/traces/events**), SLO/SLA views, drill-downs to entity timelines.  
 - First‑class dashboards and APIs; alerting with runbooks.
 
 **Does NOT count**
-- Static screenshots or one‑off charts without live data.  
-- “Bring your own Grafana” with zero native linkage.
+- Static screenshots or one‑off charts without live data.  
+- "Bring your own Grafana" with zero native linkage.
 
 **Evidence checklist**
-- Live dashboards; entity page with linked telemetry; alert → trace/log/metric hops.  
+- Live dashboards; entity page with linked telemetry; alert → trace/log/metric hops.  
 - SLO burn‑rates; topology view tied to telemetry.
 
 **Scoring**
-- **N/L:** No native or live telemetry; static screenshots/CSVs only; no queries or alerting.  
-- **P/M:** One major signal only or siloed collectors; basic dashboards; limited linking; minimal alerting; no cross‑modal hops.  
-- **Y/M:** Multiple sources unified; entity/incident link‑outs; SLOs.  
+- **N/L:** No native or live telemetry; static screenshots/CSVs only; no queries or alerting.  
+- **P/M:** One major signal only or siloed collectors; basic dashboards; limited linking; minimal alerting; no cross‑modal hops.  
+- **Y/M:** Multiple sources unified; entity/incident link‑outs; SLOs.  
 - **Y/H:** Full‑stack + topology + cross‑modal hops (alert → trace → span → logs) + **time travel** and comparative baselines.
 
 **Edge cases**: If traces absent but logs/metrics proxy spans adequately, cap at **Y/M**.
@@ -469,16 +472,16 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 
 ## 📈 Confidence — Maturity, Stability & Evidence Quality
 
-**What it is:** Our rating of how **reliable and production‑ready** the platform’s claims are, based on **documentation, evidence, and references**.
+**What it is:** Our rating of how **reliable and production‑ready** the platform's claims are, based on **documentation, evidence, and references**.
 
 **What drives confidence**
-- **Enterprise references/GA** vs. beta/claims.  
-- **Repeatable demos** with exported artifacts (not marketing screenshots).  
+- **Enterprise references/GA** vs. beta/claims.  
+- **Repeatable demos** with exported artifacts (not marketing screenshots).  
 - **Operational hygiene:** SLAs, rate limits, circuit breakers, RBAC, auditability.
 
 **Scoring**
-- **Low:** early/beta; sparse docs; limited third‑party validation.  
-- **Med:** documented features, consistent results in scope, some references.  
+- **Low:** early/beta; sparse docs; limited third‑party validation.  
+- **Med:** documented features, consistent results in scope, some references.  
 - **High:** GA + references + audits; strong artifacts; mature guardrails.
 
 **Edge cases**: Missing artifacts → drop one level.
@@ -487,15 +490,15 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 
 ## 📊 Suggested KPIs for Bake‑offs
 
-- **TTFC / TTRC:** Time‑to‑first‑clue / time‑to‑root‑cause.  
-- **Verified RCA rate** and **false‑positive rate** across a fixed incident set.  
-- **Actionability:** % of cases with a clear, safe next step (rollback/fix).  
-- **Evidence quality:** % of outputs with linked queries/logs/traces.  
-- **Operator effort:** Clicks/commands to resolution; handoff count.  
+- **TTFC / TTRC:** Time‑to‑first‑clue / time‑to‑root‑cause.  
+- **Verified RCA rate** and **false‑positive rate** across a fixed incident set.  
+- **Actionability:** % of cases with a clear, safe next step (rollback/fix).  
+- **Evidence quality:** % of outputs with linked queries/logs/traces.  
+- **Operator effort:** Clicks/commands to resolution; handoff count.  
 - **Resilience:** Behavior under partial outages (API down, timeouts, throttling).
 
 ---
-## Executive Summary -- DevOps & SRE AI Platforms (Oct 11, 2025)
+## Executive Summary -- DevOps & SRE AI Platforms (Jan 6, 2026)
 
 **The headline:** AI agents for DevOps/SRE have progressed from "chat over dashboards" to actionable co‑workers spanning triage → RCA → guided remediation → post‑incident learning. No single vendor covers the full lifecycle; the 2025 winning pattern is composable adoption: anchor on an observability‑first triage brain, add a workflow orchestrator for approvals/audit, and layer in guardrailed provisioning for safe apply/rollback.
 
@@ -503,116 +506,120 @@ Representation of **engineer/SRE/DevOps profiles**, expertise, and operational r
 
 | Archetype | Best fit | Representative platforms | Core strength | Typical limits |
 | --- | --- | --- | --- | --- |
-| Observability‑First | Fast triage, RCA, incident comms | Dynatrace Davis AI; Cisco (Splunk) AI Agents; Datadog Bits AI & Agents; Elastic AI Assistant; New Relic AI | Multi‑signal correlation, causal/hypothesis reasoning, narrative updates | Usually no direct apply beyond playbooks; relies on external approvals |
-| Provisioning‑Focused | Safe, repeatable infra changes | Azure Copilot (Agent Mode); DuploCloud; Qovery; Kuberns | Generate/apply IaC with approvals and rollback | Lighter AIOps correlation; observability via integrations |
-| Developer‑Centric & Frameworks | Code/PR changes; build your own agents | AWS Strands SDK; Atlassian Rovo Dev; GitHub Copilot Coding Agent; Zencoder; JFrog Fly; Azure AI Agent Service (Foundry) | Planning/tool orchestration, CI/CD fixes, AgentOps | Not a runtime ops console; direct infra apply limited |
-| Enterprise Orchestrators | Cross‑team workflows, audit, CMDB | ServiceNow AI Agent Orchestrator; Salesforce Agentforce (OpsAI); PagerDuty AIOps | Ticket/change graph, approvals, runbooks | Deep telemetry depends on observability tools |
-| Data & MLOps | AI quality, data pipelines | Databricks Agent Bricks; Snowflake Cortex Agents; Dataiku AI Agents | Evaluations/guardrails, lineage, model operations | Infra ops out of scope |
-| Specialized Domain | Deep expertise for a niche | IBM AskIAM (IAM); Solo.io Kagent (K8s) | Accuracy within narrow scope | Limited breadth by design |
+| Observability‑First | Fast triage, RCA, incident comms | Dynatrace Davis AI; Cisco (Splunk) AI Agents; Datadog Bits AI & Agents; Elastic AI Assistant; New Relic AI; **BigPanda**; **BMC Helix AIOps**; **LogicMonitor AIOps**; **Moogsoft** | Multi‑signal correlation, causal/hypothesis reasoning, narrative updates | Usually no direct apply beyond playbooks; relies on external approvals |
+| Provisioning‑Focused | Safe, repeatable infra changes | Azure Copilot (Agent Mode); DuploCloud; Qovery; Kuberns; **HashiCorp Terraform MCP + Infragraph** | Generate/apply IaC with approvals and rollback | Lighter AIOps correlation; observability via integrations |
+| Developer‑Centric & Frameworks | Code/PR changes; build your own agents | AWS Strands SDK; Atlassian Rovo Dev; GitHub Copilot Coding Agent; Zencoder; JFrog Fly; Azure AI Agent Service (Foundry); **GitLab Duo Agent Platform** | Planning/tool orchestration, CI/CD fixes, AgentOps | Not a runtime ops console; direct infra apply limited |
+| Enterprise Orchestrators | Cross‑team workflows, audit, CMDB | ServiceNow AI Agent Orchestrator; Salesforce Agentforce (OpsAI); PagerDuty AIOps; **Rootly**; **xMatters**; **Kubiya** | Ticket/change graph, approvals, runbooks | Deep telemetry depends on observability tools |
+| Data & MLOps | AI quality, data pipelines | Databricks Agent Bricks; Snowflake Cortex Agents; Dataiku AI Agents; **Observe (o11y.ai)** | Evaluations/guardrails, lineage, model operations | Infra ops out of scope |
+| Specialized Domain | Deep expertise for a niche | IBM AskIAM (IAM); Solo.io Kagent (K8s); **Snyk**; **incident.io**; **Overmind**; **Harness AIDA**; **Dell APEX AIOps** | Accuracy within narrow scope | Limited breadth by design |
 
 ### Top 6 takeaways for 2025
-1. **From chat to action:** Leaders pair **explanations with verifiable evidence** (queries/logs/traces) and **suggest the next safe step** (runbook, PR, or controlled apply).  
-2. **Human‑in‑the‑loop is default:** Approvals, RBAC, and audit trails are table stakes for production change.  
-3. **AgentOps matters:** Tracing, evaluations, and policy hooks (data boundaries, PII controls, prompt safety) separate pilots from production.  
-4. **Event ontology wins RCA:** Platforms with **typed entities + change context** consistently outperform generic LLMs on root cause.  
-5. **IaC is the safety rail:** Even where agents can apply changes, **diffs/Bicep/Terraform + approvals** remain the safest path.  
+1. **From chat to action:** Leaders pair **explanations with verifiable evidence** (queries/logs/traces) and **suggest the next safe step** (runbook, PR, or controlled apply).  
+2. **Human‑in‑the‑loop is default:** Approvals, RBAC, and audit trails are table stakes for production change.  
+3. **AgentOps matters:** Tracing, evaluations, and policy hooks (data boundaries, PII controls, prompt safety) separate pilots from production.  
+4. **Event ontology wins RCA:** Platforms with **typed entities + change context** consistently outperform generic LLMs on root cause.  
+5. **IaC is the safety rail:** Even where agents can apply changes, **diffs/Bicep/Terraform + approvals** remain the safest path.  
 6. **Compose the stack:** The best outcomes pair **one observability brain + one orchestrator + optional provisioning**.
 
 ### Quick picks by job‑to‑be‑done
-- **Rapid triage & RCA with evidence:** Dynatrace; Cisco (Splunk); **Datadog Bits AI** · *(complement: PagerDuty AIOps for comms/response)*.  
-- **End‑to‑end incident coordination & comms:** **PagerDuty AIOps**; ServiceNow; Salesforce · *(complement: your observability suite)*.  
-- **Direct, approval‑gated infra changes:** **Azure Copilot (Agent Mode)**; DuploCloud · *(complement: Qovery for migration IaC)*.  
-- **Build governed, bespoke ops agents:** **Azure AI Agent Service (Foundry)**; AWS Strands · *(complement: Dataiku/Databricks for evals)*.  
-- **Repo/CI‑centric fixes (PRs/tests/docs):** GitHub Copilot Coding Agent; Atlassian Rovo Dev; Zencoder · *(complement: JFrog Fly for release policy)*.  
-- **Kubernetes deep‑dive fixes:** Solo.io Kagent · *(complement: APM/logs)*.  
-- **Identity requests & compliance:** IBM AskIAM.  
-- **Data & MLOps guardrails/evals:** Databricks Agent Bricks; Dataiku; Snowflake Cortex Agents.
+- **Rapid triage & RCA with evidence:** Dynatrace; Cisco (Splunk); **Datadog Bits AI**; **Moogsoft**; **LogicMonitor** · *(complement: PagerDuty AIOps for comms/response)*.  
+- **End‑to‑end incident coordination & comms:** **PagerDuty AIOps**; ServiceNow; Salesforce; **Rootly**; **xMatters** · *(complement: your observability suite)*.  
+- **Direct, approval‑gated infra changes:** **Azure Copilot (Agent Mode)**; DuploCloud; **HashiCorp Terraform MCP** · *(complement: Qovery for migration IaC)*.  
+- **Build governed, bespoke ops agents:** **Azure AI Agent Service (Foundry)**; AWS Strands; **Kubiya** · *(complement: Dataiku/Databricks for evals)*.  
+- **Repo/CI‑centric fixes (PRs/tests/docs):** GitHub Copilot Coding Agent; Atlassian Rovo Dev; Zencoder; **GitLab Duo Agent Platform** · *(complement: JFrog Fly for release policy)*.  
+- **Kubernetes deep‑dive fixes:** Solo.io Kagent · *(complement: APM/logs)*.  
+- **Identity requests & compliance:** IBM AskIAM.  
+- **Data & MLOps guardrails/evals:** Databricks Agent Bricks; Dataiku; Snowflake Cortex Agents; **Observe (o11y.ai)**.  
+- **Security automation:** **Snyk** · *(complement: runtime security tools)*.
 
 ### Capability trends vs. last edition
-- **Diagnostics:** More **change‑aware correlation** and **hypothesis testing**; observability tools add **post‑mortem drafting** and **Slack/Teams updates** by default.  
-- **Activities & history:** Richer **incident timelines** and **action replays** (e.g., “apply last good remediation”), strongest in orchestrators.  
-- **Provisioning:** Clear split—some stay advisory; others (Azure Copilot, DuploCloud) execute with **diffs, approvals, rollbacks**.  
-- **Event ontology:** Convergence on **OTel semantic conventions** and CMDB/entity graphs; better joins across **alerts ↔ services ↔ changes**.  
+- **Diagnostics:** More **change‑aware correlation** and **hypothesis testing**; observability tools add **post‑mortem drafting** and **Slack/Teams updates** by default.  
+- **Activities & history:** Richer **incident timelines** and **action replays** (e.g., "apply last good remediation"), strongest in orchestrators.  
+- **Provisioning:** Clear split—some stay advisory; others (Azure Copilot, DuploCloud) execute with **diffs, approvals, rollbacks**.  
+- **Event ontology:** Convergence on **OTel semantic conventions** and CMDB/entity graphs; better joins across **alerts ↔ services ↔ changes**.  
 - **Agent observability:** First‑class **traces, evaluations, safety scores** (Foundry, Dataiku, Databricks, Salesforce Command Center).
 
-### Reference architecture (what “good” looks like)
-1. **Telemetry backbone:** OTel + your observability suite (Dynatrace/Splunk/Datadog/Elastic/New Relic).  
-2. **Orchestration & audit:** ServiceNow or Salesforce; add **PagerDuty AIOps** for real‑time response.  
-3. **Provisioning lane:** **Azure Copilot (Agent Mode)** or DuploCloud for controlled applies; Qovery for migration IaC.  
-4. **Developer loop:** GitHub Copilot Coding Agent / Atlassian Rovo Dev / Zencoder; JFrog Fly for release policy.  
-5. **AgentOps layer:** Azure AI Agent Service (Foundry), Dataiku, or Databricks for **tracing, evals, safety**.  
+### Reference architecture (what "good" looks like)
+
+1. **Telemetry backbone:** OTel + your observability suite (Dynatrace/Splunk/Datadog/Elastic/New Relic).  
+2. **Orchestration & audit:** ServiceNow or Salesforce; add **PagerDuty AIOps** for real‑time response.  
+3. **Provisioning lane:** **Azure Copilot (Agent Mode)** or DuploCloud for controlled applies; Qovery for migration IaC.  
+4. **Developer loop:** GitHub Copilot Coding Agent / Atlassian Rovo Dev / Zencoder; JFrog Fly for release policy.  
+5. **AgentOps layer:** Azure AI Agent Service (Foundry), Dataiku, or Databricks for **tracing, evals, safety**.  
 6. **Guardrails:** RBAC, approval workflows, drift checks, **read‑only dry‑runs by default**, and **immutable audit logs**.
 
 ### Risks & guardrails to enforce
-- **False confidence / silent failures:** Require **evidence links** for every diagnosis; block “summary‑only” outputs.  
-- **Unsafe changes:** Enforce **two‑person approval** and **automatic rollback plans**; prefer **IaC diffs** over ad‑hoc commands.  
-- **Vendor lock‑in:** Favor platforms with **MCP/A2A**, exportable traces, and **open schemas**.  
+- **False confidence / silent failures:** Require **evidence links** for every diagnosis; block "summary‑only" outputs.  
+- **Unsafe changes:** Enforce **two‑person approval** and **automatic rollback plans**; prefer **IaC diffs** over ad‑hoc commands.  
+- **Vendor lock‑in:** Favor platforms with **MCP/A2A**, exportable traces, and **open schemas**.  
 - **Cost surprises:** Track **agent run counts, tool invocations, LLM usage**; set SLOs & budgets for agents.
 
 ### Bake‑off checklist (pair with Atlas KPIs)
-- **TTFC/TTRC** on a fixed incident set, with **linked evidence** and a **verification plan** per RCA.  
-- **Actionability rate:** % of cases with a safe next step (rollback/fix or runbook).  
-- **Closed‑loop rate:** % of incidents where the platform **proposed and executed** a remediation under approvals.  
-- **AgentOps quality:** Presence of **traces/evals/guardrails**, red‑team tests, **data boundary controls**.  
+- **TTFC/TTRC** on a fixed incident set, with **linked evidence** and a **verification plan** per RCA.  
+- **Actionability rate:** % of cases with a safe next step (rollback/fix or runbook).  
+- **Closed‑loop rate:** % of incidents where the platform **proposed and executed** a remediation under approvals.  
+- **AgentOps quality:** Presence of **traces/evals/guardrails**, red‑team tests, **data boundary controls**.  
 - **Interoperability:** MCP/OTel support; **OTel→CMDB** mapping if you use an orchestrator.
 ---
 
 # 🗂️ Platform Archetypes Overview
 
-Keep the original overview, plus add the clarifications below to reflect new platforms.
-
 ### 🔭 Observability‑First Agents
-These agents spring from APM, monitoring, and logging platforms. **Dynatrace’s Davis AI** and **Cisco’s (Splunk) AI Agents** are prime examples. They have **high diagnostic capabilities** – ingesting huge volumes of telemetry, detecting anomalies, performing root cause analysis (often with causal AI), and even initiating automated remediation of known issues. They boast strong event ontologies (Dynatrace’s unified entity model, Splunk’s CIM with OpenTelemetry data) and rich observability dashboards. However, they intentionally do not focus on provisioning or large-scale changes – any fixes applied are usually within the existing infrastructure (restarting services, adjusting thresholds, etc.), not deploying new servers or altering network architecture. The value here is in proactive incident detection and resolution guidance, not infrastructure as code.
+These agents spring from APM, monitoring, and logging platforms. **Dynatrace's Davis AI** and **Cisco's (Splunk) AI Agents** are prime examples. They have **high diagnostic capabilities** – ingesting huge volumes of telemetry, detecting anomalies, performing root cause analysis (often with causal AI), and even initiating automated remediation of known issues. They boast strong event ontologies (Dynatrace's unified entity model, Splunk's CIM with OpenTelemetry data) and rich observability dashboards. However, they intentionally do not focus on provisioning or large-scale changes – any fixes applied are usually within the existing infrastructure (restarting services, adjusting thresholds, etc.), not deploying new servers or altering network architecture. The value here is in proactive incident detection and resolution guidance, not infrastructure as code.
 
-**Additions (Oct 2025):** **Datadog Bits AI & AI Agents** (SRE/Dev/Sec agents, hypothesis‑driven RCA, incident comms, post‑mortems), **Elastic AI Assistant for Observability** (ESRE‑grounded answers, runbook proposals), **New Relic AI** (plain‑English NRQL, change‑aware analysis).
+**Additions:** **Datadog Bits AI & AI Agents** (SRE/Dev/Sec agents, hypothesis‑driven RCA, incident comms, post‑mortems), **Elastic AI Assistant for Observability** (ESRE‑grounded answers, runbook proposals), **New Relic AI** (plain‑English NRQL, change‑aware analysis), **BigPanda Event Intelligence**, **BMC Helix AIOps**, **LogicMonitor AIOps**, **Moogsoft**.
 
 ### ⚙️ Provisioning‑Focused Agents
-These platforms excel at automating environment setup and resource management. **DuploCloud’s AI DevOps Suite** and **Qovery’s AI Migration Agent** fall in this bucket. They typically integrate with cloud APIs or use Infrastructure-as-Code (Terraform, Docker, Kubernetes) under the hood to provision and configure systems on demand. For example, DuploCloud’s agent can create cloud resources and pipelines based on high-level requests (backed by Terraform), and Qovery’s open-source agent can generate Terraform files or Dockerfiles to help migrate applications to cloud platforms. **Kuberns Platform**, a managed PaaS with an AI assistant, also emphasizes one-click deployment and AI-driven scaling/cost optimization. These agents handle provisioning as a core strength, automating tasks like spinning up VMs, containers, or cloud services. On the flip side, their observability and diagnostics features are limited – they might perform basic health checks or cost analyses, but they don’t have full AIOps event correlation. In short, they’ll launch or fix your infrastructure components, but they rely on other tools to deeply monitor them.
+These platforms excel at automating environment setup and resource management. **DuploCloud's AI DevOps Suite** and **Qovery's AI Migration Agent** fall in this bucket. They typically integrate with cloud APIs or use Infrastructure-as-Code (Terraform, Docker, Kubernetes) under the hood to provision and configure systems on demand. For example, DuploCloud's agent can create cloud resources and pipelines based on high-level requests (backed by Terraform), and Qovery's open-source agent can generate Terraform files or Dockerfiles to help migrate applications to cloud platforms. **Kuberns Platform**, a managed PaaS with an AI assistant, also emphasizes one-click deployment and AI-driven scaling/cost optimization. These agents handle provisioning as a core strength, automating tasks like spinning up VMs, containers, or cloud services. On the flip side, their observability and diagnostics features are limited – they might perform basic health checks or cost analyses, but they don't have full AIOps event correlation. In short, they'll launch or fix your infrastructure components, but they rely on other tools to deeply monitor them.
 
-**Additions (Oct 2025):** **Microsoft Azure Copilot (Agent Mode)**—VS Code operator that decomposes requests, generates/modifies Bicep, runs `az`/`azd`, checks resource health, deploys under RBAC with confirmation gates.
+**Additions:** **Microsoft Azure Copilot (Agent Mode)**—VS Code operator that decomposes requests, generates/modifies Bicep, runs `az`/`azd`, checks resource health, deploys under RBAC with confirmation gates, **HashiCorp Terraform MCP + Infragraph**.
 
 ### 👨‍💻 Developer‑Centric (Code‑First) Agents
-This category targets software engineers and integrates into the development lifecycle. **AWS Strands SDK**, **Atlassian’s Rovo Dev Agent**, **GitHub Copilot**, **Zencoder AI Agents**, and **JFrog’s Fly** all exemplify a developer-first approach. They often run as part of the coding process or CI/CD pipeline. For instance, Atlassian’s Rovo Dev is a CLI tool that can generate code, write tests, and even create pull requests autonomously to accelerate development. GitHub’s evolving AI agent can propose code changes via pull requests while respecting branch protections (acting as an asynchronous coding assistant). Zencoder’s agents embed in CI to fix failing tests, update documentation, and suggest code refactors automatically when pipelines fail. JFrog Fly introduces an “agentic” repository that works with AI agents to manage artifact releases and security compliance in the dev workflow. These tools usually require some configuration or code (they might be SDKs or CLI commands), and they operate by producing code or config changes rather than by controlling running infrastructure directly. Their “activities” logging is often via source control history or CI logs, and their observability is minimal outside developer metrics (like code quality or build status). In essence, they act as AI co-developers more than traditional ops bots.
+This category targets software engineers and integrates into the development lifecycle. **AWS Strands SDK**, **Atlassian's Rovo Dev Agent**, **GitHub Copilot**, **Zencoder AI Agents**, and **JFrog's Fly** all exemplify a developer-first approach. They often run as part of the coding process or CI/CD pipeline. For instance, Atlassian's Rovo Dev is a CLI tool that can generate code, write tests, and even create pull requests autonomously to accelerate development. GitHub's evolving AI agent can propose code changes via pull requests while respecting branch protections (acting as an asynchronous coding assistant). Zencoder's agents embed in CI to fix failing tests, update documentation, and suggest code refactors automatically when pipelines fail. JFrog Fly introduces an "agentic" repository that works with AI agents to manage artifact releases and security compliance in the dev workflow. These tools usually require some configuration or code (they might be SDKs or CLI commands), and they operate by producing code or config changes rather than by controlling running infrastructure directly. Their "activities" logging is often via source control history or CI logs, and their observability is minimal outside developer metrics (like code quality or build status). In essence, they act as AI co-developers more than traditional ops bots.
 
-**Additions (Oct 2025):** **Microsoft Azure AI Agent Service (Foundry)**—enterprise framework for building and observing multi‑agent systems; MCP/OpenAPI tools; AgentOps/OTel tracing; open‑source Agent Framework SDK.
+**Additions:** **Microsoft Azure AI Agent Service (Foundry)**—enterprise framework for building and observing multi‑agent systems; MCP/OpenAPI tools; AgentOps/OTel tracing; open‑source Agent Framework SDK, **GitLab Duo Agent Platform**.
 
 ### 🏢 Enterprise Workflow Orchestrators
-These are the heavyweights leveraging existing enterprise platforms. **ServiceNow AI Agent Orchestrator** and **Salesforce OpsAI/Agentforce** are key examples, and even **IBM’s AskIAM** (built on Watsonx) fits here for a specialized domain. They provide a low-code interface to orchestrate complex workflows across IT and business operations. ServiceNow’s platform can ingest activity records from across the enterprise (tickets, configuration database, monitoring alerts) and use AI agents to triage incidents, correlate events, and even execute runbook actions via its workflow engine. Salesforce’s Agentforce (also branded as OpsAI for IT ops use-case) integrates with its Data Cloud and Atlas AI to monitor events (like incidents, cases) and can trigger actions through Salesforce Flow or external integrations. These platforms tend to have a high event ontology – for example, Salesforce defines an incident object model and topics for events, and ServiceNow has its Common Service Data Model – which helps their agents understand context at a high level. They can perform diagnostics (e.g., identifying an alert’s likely root cause, using knowledge base or past incidents) and even some provisioning or remediation by invoking other tools (resetting a server via integration, creating a Jira ticket, running an Apex script, etc.). However, their direct observability into infrastructure is partial; they often rely on integrations with monitoring tools for deep metrics. The strength here is coordination and breadth: an agent orchestrator can call on many specialized agents or workflows to resolve an incident end-to-end. These systems are poised to be the “brain” that delegates tasks out to more focused tools.
+These are the heavyweights leveraging existing enterprise platforms. **ServiceNow AI Agent Orchestrator** and **Salesforce OpsAI/Agentforce** are key examples, and even **IBM's AskIAM** (built on Watsonx) fits here for a specialized domain. They provide a low-code interface to orchestrate complex workflows across IT and business operations. ServiceNow's platform can ingest activity records from across the enterprise (tickets, configuration database, monitoring alerts) and use AI agents to triage incidents, correlate events, and even execute runbook actions via its workflow engine. Salesforce's Agentforce (also branded as OpsAI for IT ops use-case) integrates with its Data Cloud and Atlas AI to monitor events (like incidents, cases) and can trigger actions through Salesforce Flow or external integrations. These platforms tend to have a high event ontology – for example, Salesforce defines an incident object model and topics for events, and ServiceNow has its Common Service Data Model – which helps their agents understand context at a high level. They can perform diagnostics (e.g., identifying an alert's likely root cause, using knowledge base or past incidents) and even some provisioning or remediation by invoking other tools (resetting a server via integration, creating a Jira ticket, running an Apex script, etc.). However, their direct observability into infrastructure is partial; they often rely on integrations with monitoring tools for deep metrics. The strength here is coordination and breadth: an agent orchestrator can call on many specialized agents or workflows to resolve an incident end-to-end. These systems are poised to be the "brain" that delegates tasks out to more focused tools.
 
-**Additions (Oct 2025):** **PagerDuty AIOps**—noise reduction & correlation, AI agent suite drafting comms and next steps, change‑aware hints; safe diagnostics/remediations via Automation Actions/Rundeck.
+**Additions:** **PagerDuty AIOps**—noise reduction & correlation, AI agent suite drafting comms and next steps, change‑aware hints; safe diagnostics/remediations via Automation Actions/Rundeck, **Rootly**, **xMatters**, **Kubiya**.
 
 ### 📊 Data and MLOps Agents
-A subset of platforms concentrate on data pipelines, ML model lifecycle, and AI quality management. **Databricks’ Agent Bricks**, **Snowflake’s AI Agents**, and **Dataiku AI Agents** represent this group. They are not traditional IT ops tools but bring agentic AI to data science and analytics operations. For example, Databricks Agent Bricks can simulate agents in notebooks to evaluate LLM behaviors or automatically judge the quality of model outputs (it focuses on AI evaluation and guardrails, using synthetic data and MLflow tracking). Snowflake’s approach involves using its Data Cloud to let agents automate parts of the data science workflow – e.g. preparing datasets, scheduling training runs, or detecting data drift – all within the Snowflake ecosystem (with a strong event model of pipeline steps and metrics). Dataiku’s AI Agents feature allows creation of governed agents that can orchestrate data projects, with a “trace explorer” to debug agent decisions and built-in guardrails. These data-focused agents have rich domain-specific ontologies (for pipelines, models, datasets) and good observability into model performance and costs. They typically don’t provision infrastructure outside their platform – for instance, they won’t create new Kubernetes clusters for you, but they might allocate resources in Databricks or trigger a cloud function as part of a data workflow. Their diagnostics are about data and model issues (accuracy, drift, etc.) rather than IT incidents.
+A subset of platforms concentrate on data pipelines, ML model lifecycle, and AI quality management. **Databricks' Agent Bricks**, **Snowflake's AI Agents**, and **Dataiku AI Agents** represent this group. They are not traditional IT ops tools but bring agentic AI to data science and analytics operations. For example, Databricks Agent Bricks can simulate agents in notebooks to evaluate LLM behaviors or automatically judge the quality of model outputs (it focuses on AI evaluation and guardrails, using synthetic data and MLflow tracking). Snowflake's approach involves using its Data Cloud to let agents automate parts of the data science workflow – e.g. preparing datasets, scheduling training runs, or detecting data drift – all within the Snowflake ecosystem (with a strong event model of pipeline steps and metrics). Dataiku's AI Agents feature allows creation of governed agents that can orchestrate data projects, with a "trace explorer" to debug agent decisions and built-in guardrails. These data-focused agents have rich domain-specific ontologies (for pipelines, models, datasets) and good observability into model performance and costs. They typically don't provision infrastructure outside their platform – for instance, they won't create new Kubernetes clusters for you, but they might allocate resources in Databricks or trigger a cloud function as part of a data workflow. Their diagnostics are about data and model issues (accuracy, drift, etc.) rather than IT incidents.
+
+**Additions:** **Observe (o11y.ai)**.
 
 ### 🎯 Specialized Domain Agents
-Some AI agents zero in on a narrow yet critical domain of IT. **IBM’s AskIAM** is a prime example, concentrating on Identity and Access Management tasks. Built with Watsonx Assistant, AskIAM can handle requests like provisioning or deprovisioning user access, checking compliance with access policies, and answering audit queries. It maintains activity records of access changes and can diagnose potential identity risks (like toxic permission combinations) using AI. Another example is **JFrog’s security and compliance agents** (part of JFrog Fly’s ecosystem), which automatically scan for vulnerabilities and even initiate remediation by suggesting or applying artifact updates. **Kagent by Solo.io** targets Kubernetes operations specifically – it runs AI agents inside K8s clusters to troubleshoot and fix issues at the cluster level (e.g., analyzing pod logs, adjusting deployments) and uses an open standard (MCP, or Model Context Protocol) to interface with various tools. These domain-specific agents leverage AI to handle repetitive, domain-specific chores with high accuracy, but by design they are limited in scope – they won’t manage anything outside their niche.
+Some AI agents zero in on a narrow yet critical domain of IT. **IBM's AskIAM** is a prime example, concentrating on Identity and Access Management tasks. Built with Watsonx Assistant, AskIAM can handle requests like provisioning or deprovisioning user access, checking compliance with access policies, and answering audit queries. It maintains activity records of access changes and can diagnose potential identity risks (like toxic permission combinations) using AI. Another example is **JFrog's security and compliance agents** (part of JFrog Fly's ecosystem), which automatically scan for vulnerabilities and even initiate remediation by suggesting or applying artifact updates. **Kagent by Solo.io** targets Kubernetes operations specifically – it runs AI agents inside K8s clusters to troubleshoot and fix issues at the cluster level (e.g., analyzing pod logs, adjusting deployments) and uses an open standard (MCP, or Model Context Protocol) to interface with various tools. These domain-specific agents leverage AI to handle repetitive, domain-specific chores with high accuracy, but by design they are limited in scope – they won't manage anything outside their niche.
+
+**Additions:** **Snyk**, **incident.io**, **Overmind**, **Harness AIDA**, **Dell APEX AIOps**.
 
 ---
 ### Recap — quick list
-- **🔭 Observability‑First:** Dynatrace Davis AI; Cisco (Splunk) AI Agents; **Datadog Bits AI & AI Agents**; **Elastic AI Assistant for Observability**; **New Relic AI**.  
-- **⚙️ Provisioning‑Focused:** DuploCloud AI Help Desk; Qovery AI Migration Agent; Kuberns Platform; **Microsoft Azure Copilot (Agent Mode)**.  
-- **👨‍💻 Developer‑Centric (Code‑first & Frameworks):** AWS Strands SDK; Atlassian Rovo Dev; GitHub Copilot Coding Agent; Zencoder; JFrog Fly (agentic repo); **Microsoft Azure AI Agent Service (Foundry)**.  
-- **🏢 Enterprise Workflow Orchestrators:** ServiceNow AI Agent Orchestrator; Salesforce Agentforce (OpsAI); **PagerDuty AIOps**.  
-- **📊 Data & MLOps Agents:** Databricks Agent Bricks; Snowflake Cortex Agents; Dataiku AI Agents.  
-- **🎯 Specialized Domain:** IBM AskIAM (IAM); Solo.io Kagent (K8s).
+- **🔭 Observability‑First:** Dynatrace Davis AI; Cisco (Splunk) AI Agents; **Datadog Bits AI & AI Agents**; **Elastic AI Assistant for Observability**; **New Relic AI**; **BigPanda**; **BMC Helix AIOps**; **LogicMonitor AIOps**; **Moogsoft**.  
+- **⚙️ Provisioning‑Focused:** DuploCloud AI Help Desk; Qovery AI Migration Agent; Kuberns Platform; **Microsoft Azure Copilot (Agent Mode)**; **HashiCorp Terraform MCP + Infragraph**.  
+- **👨‍💻 Developer‑Centric (Code‑first & Frameworks):** AWS Strands SDK; Atlassian Rovo Dev; GitHub Copilot Coding Agent; Zencoder; JFrog Fly (agentic repo); **Microsoft Azure AI Agent Service (Foundry)**; **GitLab Duo Agent Platform**.  
+- **🏢 Enterprise Workflow Orchestrators:** ServiceNow AI Agent Orchestrator; Salesforce Agentforce (OpsAI); **PagerDuty AIOps**; **Rootly**; **xMatters**; **Kubiya**.  
+- **📊 Data & MLOps Agents:** Databricks Agent Bricks; Snowflake Cortex Agents; Dataiku AI Agents; **Observe (o11y.ai)**.  
+- **🎯 Specialized Domain:** IBM AskIAM (IAM); Solo.io Kagent (K8s); **Snyk**; **incident.io**; **Overmind**; **Harness AIDA**; **Dell APEX AIOps**.
 
 ---
 
 # PLATFORM SECTIONS (A–Z)
 
-> **Notation:** Each card includes a short **UKM snapshot** (knowledge layer maturity) **and** U‑model snapshots (UAM/UDM/UOM/UEOM/UPM). “Latest updates” link to primary sources.
+> **Notation:** Each card includes a short **UKM snapshot** (knowledge layer maturity) **and** U‑model snapshots (UAM/UDM/UOM/UEOM/UPM). "Latest updates" link to primary sources.
 
 ---
 
 ## 🧩 Atlassian Rovo Dev
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** P/L  · 👁️ **Observability:** P/L  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/L  · 👁️ **Observability:** P/L  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — CLI + cloud; integrates across Jira/Confluence/Bitbucket/GitHub.  
-**💡 What it actually does** — Context‑aware coding agent for planning, coding, tests, docs, and PR automation.  
-**📊 Data / telemetry** — Work items + docs + repo/PR history.  
-**🔗 Interoperability** — Atlassian Graph, CLI; works with Bitbucket/GitHub.  
-**🏢 Deployment model** — Atlassian cloud + local CLI.  
+**🏗️ Build style / interface** — CLI + cloud; integrates across Jira/Confluence/Bitbucket/GitHub.  
+**💡 What it actually does** — Context‑aware coding agent for planning, coding, tests, docs, and PR automation.  
+**📊 Data / telemetry** — Work items + docs + repo/PR history.  
+**🔗 Interoperability** — Atlassian Graph, CLI; works with Bitbucket/GitHub.  
+**🏢 Deployment model** — Atlassian cloud + local CLI.  
 **🗒️ Notes** — Developer‑centric; infra ops out of scope.
 
 **🧠 UKM — Snapshot:** Ingest **P/M** (work items/repos), Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.
@@ -630,14 +637,14 @@ Some AI agents zero in on a narrow yet critical domain of IT. **IBM’s AskIAM**
 ---
 
 ## 🧩 AWS Strands SDK
-⚙️ **Activities:** P/L  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** Y/M  
-🧬 **Event ontology:** P/L  · 👁️ **Observability:** P/M  · 📈 **Confidence:** High
+⚙️ **Activities:** P/L  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** Y/M  
+🧬 **Event ontology:** P/L  · 👁️ **Observability:** P/M  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Code‑first SDK (Python/Node).  
-**💡 What it actually does** — Model‑driven agent framework; plan/act via tools; deploy on AWS (Lambda/Fargate/EKS/EC2).  
-**📊 Data / telemetry** — Agent plans/tool calls via OpenTelemetry.  
-**🔗 Interoperability** — MCP + A2A; AWS services; community toolpacks.  
-**🏢 Deployment model** — Your AWS account.  
+**🏗️ Build style / interface** — Code‑first SDK (Python/Node).  
+**💡 What it actually does** — Model‑driven agent framework; plan/act via tools; deploy on AWS (Lambda/Fargate/EKS/EC2).  
+**📊 Data / telemetry** — Agent plans/tool calls via OpenTelemetry.  
+**🔗 Interoperability** — MCP + A2A; AWS services; community toolpacks.  
+**🏢 Deployment model** — Your AWS account.  
 **🗒️ Notes** — BYO memory/KB; strong tracing & governance hooks.
 
 **🧠 UKM — Snapshot:** Ingest **P/L**, Index **N/L**, Retrieval **P/M**, Governance **P/M**, Overall **Medium‑Low**.
@@ -652,20 +659,20 @@ Some AI agents zero in on a narrow yet critical domain of IT. **IBM’s AskIAM**
 
 **🚀 UPM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.
 
-**Latest updates:** SDK OSS release; OTel tracing; MCP integration patterns and prescriptive guidance.  
+**Latest updates:** SDK OSS release; OTel tracing; MCP integration patterns and prescriptive guidance.  
 Links: aws.amazon.com/blogs/opensource • aws.amazon.com/blogs/machine-learning • docs.aws.amazon.com/prescriptive-guidance • github.com/strands-agents
 
 ---
 
 ## 🧩 Cisco Splunk AI Agents
-⚙️ **Activities:** Y/H  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** N/L  
-🧬 **Event ontology:** Y/H  · 👁️ **Observability:** Y/H  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/H  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** N/L  
+🧬 **Event ontology:** Y/H  · 👁️ **Observability:** Y/H  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Low‑code actions in Splunk Observability/Security.  
-**💡 What it actually does** — AI agents for telemetry collection, alert config, anomaly/RCA, and fix recommendations.  
-**📊 Data / telemetry** — OpenTelemetry signals; Splunk CIM.  
-**🔗 Interoperability** — Broad ecosystem; Cisco + Splunk.  
-**🏢 Deployment model** — Splunk Cloud/Observability Cloud.  
+**🏗️ Build style / interface** — Low‑code actions in Splunk Observability/Security.  
+**💡 What it actually does** — AI agents for telemetry collection, alert config, anomaly/RCA, and fix recommendations.  
+**📊 Data / telemetry** — OpenTelemetry signals; Splunk CIM.  
+**🔗 Interoperability** — Broad ecosystem; Cisco + Splunk.  
+**🏢 Deployment model** — Splunk Cloud/Observability Cloud.  
 **🗒️ Notes** — Remediation via playbooks/integrations more than direct infra apply.
 
 **🧠 UKM — Snapshot:** Ingest **Y/H**, Index **Y/H**, Retrieval **Y/H**, Governance **Y/M**, Overall **High**.
@@ -680,20 +687,20 @@ Links: aws.amazon.com/blogs/opensource • aws.amazon.com/blogs/machine-learning
 
 **🚀 UPM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.
 
-**Latest updates:** “Agentic AI‑powered Observability” unveiled at .conf25; AI Troubleshooting Agents across portfolio.  
+**Latest updates:** "Agentic AI‑powered Observability" unveiled at .conf25; AI Troubleshooting Agents across portfolio.  
 Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 ---
 
 ## 🧩 Databricks Agent Bricks
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** P/L  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** Y/M  · 👁️ **Observability:** P/M  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** P/L  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** Y/M  · 👁️ **Observability:** P/M  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Workspace UI + APIs; Mosaic AI + MLflow.  
-**💡 What it actually does** — **Auto‑optimize agents** on enterprise data; eval/guardrails; traces in Lakehouse/MLflow.  
-**📊 Data / telemetry** — Traces, eval datasets, cost/quality.  
-**🔗 Interoperability** — Connectors; runs in Databricks.  
-**🏢 Deployment model** — Databricks workspace.  
+**🏗️ Build style / interface** — Workspace UI + APIs; Mosaic AI + MLflow.  
+**💡 What it actually does** — **Auto‑optimize agents** on enterprise data; eval/guardrails; traces in Lakehouse/MLflow.  
+**📊 Data / telemetry** — Traces, eval datasets, cost/quality.  
+**🔗 Interoperability** — Connectors; runs in Databricks.  
+**🏢 Deployment model** — Databricks workspace.  
 **🗒️ Notes** — Evaluation/quality focus; not infra ops.
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.
@@ -711,14 +718,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 Datadog Bits AI & AI Agents
-⚙️ **Activities:** Y/H  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** Y/M  · 👁️ **Observability:** Y/H  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/H  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** Y/M  · 👁️ **Observability:** Y/H  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Integrated into Datadog SaaS platform (no‑code UX in dashboards/incident console).  
-**💡 What it actually does** — Generative AIOps assistant + role‑specific agents (SRE/Dev/Sec). Investigates alerts/incidents with parallel, hypothesis‑driven RCA; groups related alerts; produces real‑time incident summaries & suggested next steps; drafts post‑mortems; Dev agent can open PRs.  
-**📊 Data / telemetry** — Datadog’s unified telemetry (metrics, logs, traces, events) + service topology & runbooks.  
-**🔗 Interoperability** — Slack/Teams, PagerDuty/On‑Call, Jira/ServiceNow; GitHub for PR‑based fixes.  
-**🏢 Deployment model** — Datadog SaaS (some agents LA/preview in 2025).  
+**🏗️ Build style / interface** — Integrated into Datadog SaaS platform (no‑code UX in dashboards/incident console).  
+**💡 What it actually does** — Generative AIOps assistant + role‑specific agents (SRE/Dev/Sec). Investigates alerts/incidents with parallel, hypothesis‑driven RCA; groups related alerts; produces real‑time incident summaries & suggested next steps; drafts post‑mortems; Dev agent can open PRs.  
+**📊 Data / telemetry** — Datadog's unified telemetry (metrics, logs, traces, events) + service topology & runbooks.  
+**🔗 Interoperability** — Slack/Teams, PagerDuty/On‑Call, Jira/ServiceNow; GitHub for PR‑based fixes.  
+**🏢 Deployment model** — Datadog SaaS (some agents LA/preview in 2025).  
 **🗒️ Notes** — Human‑in‑the‑loop with optional auto‑run of safe remediations; approvals for complex actions.
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.
@@ -736,14 +743,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 Dataiku AI Agents
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** Y/M  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** Y/M  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — No/low‑code + Python; LLM Mesh; **Trace Explorer**.  
-**💡 What it actually does** — Build/trace/evaluate governed agents; orchestrate data workflows.  
-**📊 Data / telemetry** — Structured agent traces & metrics.  
-**🔗 Interoperability** — LLM Mesh; plugins; LangChain‑style patterns.  
-**🏢 Deployment model** — Dataiku DSS.  
+**🏗️ Build style / interface** — No/low‑code + Python; LLM Mesh; **Trace Explorer**.  
+**💡 What it actually does** — Build/trace/evaluate governed agents; orchestrate data workflows.  
+**📊 Data / telemetry** — Structured agent traces & metrics.  
+**🔗 Interoperability** — LLM Mesh; plugins; LangChain‑style patterns.  
+**🏢 Deployment model** — Dataiku DSS.  
 **🗒️ Notes** — Strong guardrails/tracing; infra provisioning out of scope.
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/H**, Overall **Medium‑High**.
@@ -761,14 +768,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 DuploCloud AI Help Desk
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** Y/H  
-🧬 **Event ontology:** P/M  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** Med
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** Y/H  
+🧬 **Event ontology:** P/M  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** Med
 
-**🏗️ Build style / interface** — No/low‑code ticket‑driven agents.  
-**💡 What it actually does** — K8s troubleshooting & cloud ops; can apply fixes via **DuploCloud Terraform Provider**.  
-**📊 Data / telemetry** — Tickets/action logs + cloud account metadata.  
-**🔗 Interoperability** — Terraform provider + integrations.  
-**🏢 Deployment model** — SaaS + Terraform.  
+**🏗️ Build style / interface** — No/low‑code ticket‑driven agents.  
+**💡 What it actually does** — K8s troubleshooting & cloud ops; can apply fixes via **DuploCloud Terraform Provider**.  
+**📊 Data / telemetry** — Tickets/action logs + cloud account metadata.  
+**🔗 Interoperability** — Terraform provider + integrations.  
+**🏢 Deployment model** — SaaS + Terraform.  
 **🗒️ Notes** — Strong on apply/rollback in DuploCloud context.
 
 **🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.
@@ -786,14 +793,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 Dynatrace Davis AI
-⚙️ **Activities:** Y/H  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** N/L  
-🧬 **Event ontology:** Y/H  · 👁️ **Observability:** Y/H  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/H  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** N/L  
+🧬 **Event ontology:** Y/H  · 👁️ **Observability:** Y/H  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Low‑code workflows + Davis apps.  
-**💡 What it actually does** — Automatic anomaly detection & **causal RCA**; correlates into **Davis problems** with evidence.  
-**📊 Data / telemetry** — Full‑stack APM/Infra/Logs/RUM in **Grail**; DQL.  
-**🔗 Interoperability** — Integrations & workflows.  
-**🏢 Deployment model** — Dynatrace SaaS.  
+**🏗️ Build style / interface** — Low‑code workflows + Davis apps.  
+**💡 What it actually does** — Automatic anomaly detection & **causal RCA**; correlates into **Davis problems** with evidence.  
+**📊 Data / telemetry** — Full‑stack APM/Infra/Logs/RUM in **Grail**; DQL.  
+**🔗 Interoperability** — Integrations & workflows.  
+**🏢 Deployment model** — Dynatrace SaaS.  
 **🗒️ Notes** — Remediation guided or via workflows; direct infra apply is limited.
 
 **🧠 UKM — Snapshot:** Ingest **Y/H**, Index **Y/H**, Retrieval **Y/H**, Governance **Y/M**, Overall **High**.
@@ -808,16 +815,17 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 **🚀 UPM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.
 
+---
 
 ## 🧩 Elastic AI Assistant for Observability
-⚙️ **Activities:** P/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** N/L (↗ runbooks)  
-🧬 **Event ontology:** P/M  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** Med
+⚙️ **Activities:** P/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** N/L (↗ runbooks)  
+🧬 **Event ontology:** P/M  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** Med
 
-**🏗️ Build style / interface** — Built into Elastic Observability (Kibana) with contextual prompts + chat.  
-**💡 What it actually does** — Explains errors/logs with actionable fixes, answers “why is latency high?”, recommends queries/visualizations, and surfaces relevant runbooks (can propose executing them for known issues).  
-**📊 Data / telemetry** — Elastic full‑stack data (metrics/logs/traces/APM profiles) grounded via ESRE; optional org KB via connectors (RAG).  
-**🔗 Interoperability** — Works with user‑provided LLMs or Elastic Cloud LLM; content connectors; triggers Elastic Actions/external workflows.  
-**🏢 Deployment model** — Elastic Stack (self‑hosted or Elastic Cloud).  
+**🏗️ Build style / interface** — Built into Elastic Observability (Kibana) with contextual prompts + chat.  
+**💡 What it actually does** — Explains errors/logs with actionable fixes, answers "why is latency high?", recommends queries/visualizations, and surfaces relevant runbooks (can propose executing them for known issues).  
+**📊 Data / telemetry** — Elastic full‑stack data (metrics/logs/traces/APM profiles) grounded via ESRE; optional org KB via connectors (RAG).  
+**🔗 Interoperability** — Works with user‑provided LLMs or Elastic Cloud LLM; content connectors; triggers Elastic Actions/external workflows.  
+**🏢 Deployment model** — Elastic Stack (self‑hosted or Elastic Cloud).  
 **🗒️ Notes** — Human assistant first; accelerates RCA and onboarding.
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **P/M**, Overall **Medium**.
@@ -835,14 +843,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 GitHub Copilot Coding Agent
-⚙️ **Activities:** P/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** N/L  · 👁️ **Observability:** P/M  · 📈 **Confidence:** High
+⚙️ **Activities:** P/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** N/L  · 👁️ **Observability:** P/M  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — PR/CLI; async cloud agent; Agents panel.  
-**💡 What it actually does** — Launches ephemeral VM, clones repo, runs tests/fixes, opens PRs, responds to review.  
-**📊 Data / telemetry** — PRs/commits/CI logs; agent status.  
-**🔗 Interoperability** — GitHub Actions/CLI; MCP extension in docs.  
-**🏢 Deployment model** — GitHub SaaS.  
+**🏗️ Build style / interface** — PR/CLI; async cloud agent; Agents panel.  
+**💡 What it actually does** — Launches ephemeral VM, clones repo, runs tests/fixes, opens PRs, responds to review.  
+**📊 Data / telemetry** — PRs/commits/CI logs; agent status.  
+**🔗 Interoperability** — GitHub Actions/CLI; MCP extension in docs.  
+**🏢 Deployment model** — GitHub SaaS.  
 **🗒️ Notes** — Infra provisioning via IaC PRs only.
 
 **🧠 UKM — Snapshot:** Ingest **P/L**, Index **N/L**, Retrieval **P/M**, Governance **Y/M**, Overall **Medium**.
@@ -860,14 +868,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 Google Vertex AI Agent Builder
-⚙️ **Activities:** P/L  · 🔍 **Diagnostics:** P/L  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** P/L  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** Med
+⚙️ **Activities:** P/L  · 🔍 **Diagnostics:** P/L  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/L  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** Med
 
-**🏗️ Build style / interface** — No‑code console (Dialogflow CX lineage) + ADK.  
-**💡 What it actually does** — Multi‑agent conversational experiences; analytics; actions via webhooks/GCP services.  
-**📊 Data / telemetry** — Conversation analytics, evals.  
-**🔗 Interoperability** — Webhooks; Vertex AI Search; **Agent Garden** samples.  
-**🏢 Deployment model** — Google Cloud.  
+**🏗️ Build style / interface** — No‑code console (Dialogflow CX lineage) + ADK.  
+**💡 What it actually does** — Multi‑agent conversational experiences; analytics; actions via webhooks/GCP services.  
+**📊 Data / telemetry** — Conversation analytics, evals.  
+**🔗 Interoperability** — Webhooks; Vertex AI Search; **Agent Garden** samples.  
+**🏢 Deployment model** — Google Cloud.  
 **🗒️ Notes** — Infra changes require external services; Jules (coding agent) is separate.
 
 **🧠 UKM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/M**, Governance **P/M**, Overall **Medium‑Low**.
@@ -885,14 +893,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 IBM AskIAM
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** Y/H  
-🧬 **Event ontology:** P/M  · 👁️ **Observability:** P/L  · 📈 **Confidence:** Med
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** Y/H  
+🧬 **Event ontology:** P/M  · 👁️ **Observability:** P/L  · 📈 **Confidence:** Med
 
-**🏗️ Build style / interface** — Low‑code assistant workflows delivered via IBM Consulting.  
-**💡 What it actually does** — IAM requests/approvals; onboarding; posture insights; cross‑system provisioning.  
-**📊 Data / telemetry** — IAM requests, audit trails.  
-**🔗 Interoperability** — IAM APIs (Entra, SailPoint, etc.).  
-**🏢 Deployment model** — IBM‑managed for clients.  
+**🏗️ Build style / interface** — Low‑code assistant workflows delivered via IBM Consulting.  
+**💡 What it actually does** — IAM requests/approvals; onboarding; posture insights; cross‑system provisioning.  
+**📊 Data / telemetry** — IAM requests, audit trails.  
+**🔗 Interoperability** — IAM APIs (Entra, SailPoint, etc.).  
+**🏢 Deployment model** — IBM‑managed for clients.  
 **🗒️ Notes** — Deep infra telemetry not in scope.
 
 **🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.
@@ -910,14 +918,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 JFrog Fly (Agentic Repository)
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** Y/M  · 👁️ **Observability:** P/M  · 📈 **Confidence:** Med
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** Y/M  · 👁️ **Observability:** P/M  · 📈 **Confidence:** Med
 
-**🏗️ Build style / interface** — Low‑config repo + agent workflows.  
-**💡 What it actually does** — Agent‑aware artifact/evidence flows; policy & compliance events; MCP connections to tools.  
-**📊 Data / telemetry** — Semantic metadata; evidence & policy events.  
-**🔗 Interoperability** — JFrog platform; GitHub; MCP.  
-**🏢 Deployment model** — SaaS (beta).  
+**🏗️ Build style / interface** — Low‑config repo + agent workflows.  
+**💡 What it actually does** — Agent‑aware artifact/evidence flows; policy & compliance events; MCP connections to tools.  
+**📊 Data / telemetry** — Semantic metadata; evidence & policy events.  
+**🔗 Interoperability** — JFrog platform; GitHub; MCP.  
+**🏢 Deployment model** — SaaS (beta).  
 **🗒️ Notes** — Release governance focus; not direct infra apply.
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.
@@ -935,14 +943,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 Kagent (Solo.io)
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** Y/M  
-🧬 **Event ontology:** P/M  · 👁️ **Observability:** Y/H  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** Y/M  
+🧬 **Event ontology:** P/M  · 👁️ **Observability:** Y/H  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Kubernetes‑native framework; **Agent Gateway** (OSS) for A2A/MCP; kmcp.  
-**💡 What it actually does** — Cluster diagnostics and tool orchestration (K8s/Prom/Grafana/Helm/Argo).  
-**📊 Data / telemetry** — Agent & LLM traces; K8s/Prom via tools.  
-**🔗 Interoperability** — MCP servers/tools; K8s CRDs, Gateway API.  
-**🏢 Deployment model** — K8s runtime (OSS/Enterprise).  
+**🏗️ Build style / interface** — Kubernetes‑native framework; **Agent Gateway** (OSS) for A2A/MCP; kmcp.  
+**💡 What it actually does** — Cluster diagnostics and tool orchestration (K8s/Prom/Grafana/Helm/Argo).  
+**📊 Data / telemetry** — Agent & LLM traces; K8s/Prom via tools.  
+**🔗 Interoperability** — MCP servers/tools; K8s CRDs, Gateway API.  
+**🏢 Deployment model** — K8s runtime (OSS/Enterprise).  
 **🗒️ Notes** — Deep K8s workflows; strong observability and policy hooks.
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.
@@ -959,15 +967,35 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 ---
 
-## 🧩 Kuberns Platform
-⚙️ **Activities:** P/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** Y/H  
-🧬 **Event ontology:** P/L  · 👁️ **Observability:** P/M  · 📈 **Confidence:** Low
+## 🧩 Kubiya — ChatOps + Workflow Execution  
+⚙️ **Activities:** Y/H · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** Y/M  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** P/L · 📈 **Confidence:** Med‑High
 
-**🏗️ Build style / interface** — Low‑code PaaS UI; “one‑click deploy”.  
-**💡 What it actually does** — Deploy/scale apps; AI‑assisted cost/perf optimization (claims).  
-**📊 Data / telemetry** — Basic platform metrics.  
-**🔗 Interoperability** — Not well‑documented.  
-**🏢 Deployment model** — Managed PaaS.  
+**🏗️ Build style / interface** — Slack/Teams‑native ChatOps platform + web console; orchestrates tools via connectors and runbooks.  
+**💡 What it actually does** — Turns chat requests into governed workflows (diagnostics, approvals, executions), with reusable "skills" for common ops and platform tasks.  
+**📊 Data / telemetry** — Chat sessions, workflow runs, action logs, tool outputs; optional retrieval from internal docs/runbooks.  
+**🔗 Interoperability** — Cloud/K8s tools, ticketing (Jira/ServiceNow), CI/CD, on‑call, scripts; API/connectors.  
+**🏢 Deployment model** — SaaS with integrations to your systems.  
+**🗒️ Notes** — Strong orchestration/audit; observability depth depends on connected tools.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/H**, Index **Y/H**, Retrieval **Y/H**, Governance **Y/H**, Overall **High**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.
+
+---
+
+## 🧩 Kuberns Platform
+⚙️ **Activities:** P/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** Y/H  
+🧬 **Event ontology:** P/L  · 👁️ **Observability:** P/M  · 📈 **Confidence:** Low
+
+**🏗️ Build style / interface** — Low‑code PaaS UI; "one‑click deploy".  
+**💡 What it actually does** — Deploy/scale apps; AI‑assisted cost/perf optimization (claims).  
+**📊 Data / telemetry** — Basic platform metrics.  
+**🔗 Interoperability** — Not well‑documented.  
+**🏢 Deployment model** — Managed PaaS.  
 **🗒️ Notes** — Limited third‑party validation; treat as **tentative**.
 
 **🧠 UKM — Snapshot:** Ingest **P/L**, Index **N/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low**.
@@ -984,18 +1012,38 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 ---
 
+## 🧩 LogicMonitor — AIOps  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** Y/M · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — SaaS monitoring + AIOps console; combines metrics, events, logs (and select traces) with workflow integrations.  
+**💡 What it actually does** — Detects anomalies, correlates alerts into incidents, reduces noise, and guides triage with context (device/service views, topology hints) and recommended actions.  
+**📊 Data / telemetry** — Agent/collector telemetry, cloud/provider APIs, device/service metrics, events, logs; correlation metadata.  
+**🔗 Interoperability** — Integrations with ITSM, ChatOps, and common monitoring sources; alert routing + automation hooks.  
+**🏢 Deployment model** — SaaS.  
+**🗒️ Notes** — Strong monitoring heritage; remediation is typically via integrations and runbooks.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**👁️ UOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
 ## 🧩 Microsoft Azure AI Agent Service (Foundry)
 
 > **Note:** Microsoft Copilot and Azure/Foundry are separate offerings; they appear as distinct entries to reflect different product positioning and capabilities.
 
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** N/L  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** P/M  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** N/L  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/M  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Azure AI Foundry service + **open‑source Agent Framework** SDK; visual workflow editor & CLI.  
-**💡 What it actually does** — Build/deploy/manage multi‑agent systems with enterprise guardrails; orchestrates stateful agent workflows; integrates tools via OpenAPI & **MCP**; evaluation & **AgentOps** monitoring.  
-**📊 Data / telemetry** — Agent conversation logs, tool invocations, **OpenTelemetry** traces; governance events & metrics.  
-**🔗 Interoperability** — 1,400+ **Azure Logic Apps** as tools; supports external frameworks (LangChain/LangGraph); connectors; integrates with Microsoft 365 Copilot & external APIs.  
-**🏢 Deployment model** — Azure AI Foundry (cloud) with containerized agent runtime; SDK open‑source for local dev + cloud deploy.  
+**🏗️ Build style / interface** — Azure AI Foundry service + **open‑source Agent Framework** SDK; visual workflow editor & CLI.  
+**💡 What it actually does** — Build/deploy/manage multi‑agent systems with enterprise guardrails; orchestrates stateful agent workflows; integrates tools via OpenAPI & **MCP**; evaluation & **AgentOps** monitoring.  
+**📊 Data / telemetry** — Agent conversation logs, tool invocations, **OpenTelemetry** traces; governance events & metrics.  
+**🔗 Interoperability** — 1,400+ **Azure Logic Apps** as tools; supports external frameworks (LangChain/LangGraph); connectors; integrates with Microsoft 365 Copilot & external APIs.  
+**🏢 Deployment model** — Azure AI Foundry (cloud) with containerized agent runtime; SDK open‑source for local dev + cloud deploy.  
 **🗒️ Notes** — Focused on agent workflow orchestration/governance rather than direct human‑facing ops.
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/H**, Overall **Medium‑High**.
@@ -1016,14 +1064,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 > **Note:** Microsoft Copilot and Azure/Foundry are separate offerings; they appear as distinct entries to reflect different product positioning and capabilities.
 
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** Y/M  
-🧬 **Event ontology:** P/L  · 👁️ **Observability:** P/L  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** Y/M  
+🧬 **Event ontology:** P/L  · 👁️ **Observability:** P/L  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — VS Code extension (**Copilot for Azure**) with chat (“Ask”) + **Agent Mode**.  
-**💡 What it actually does** — Natural‑language ops over Azure: decomposes prompts into tasks, **generates/modifies Bicep**, runs **Azure CLI/azd**, checks resource health, and deploys with confirmations under RBAC.  
-**📊 Data / telemetry** — Azure Resource Graph, resource configs, and health APIs.  
-**🔗 Interoperability** — Azure CLI/SDK + Azure Developer CLI; **Azure RBAC**.  
-**🏢 Deployment model** — Client‑side VS Code extension backed by your Azure subscription (cloud backend).  
+**🏗️ Build style / interface** — VS Code extension (**Copilot for Azure**) with chat ("Ask") + **Agent Mode**.  
+**💡 What it actually does** — Natural‑language ops over Azure: decomposes prompts into tasks, **generates/modifies Bicep**, runs **Azure CLI/azd**, checks resource health, and deploys with confirmations under RBAC.  
+**📊 Data / telemetry** — Azure Resource Graph, resource configs, and health APIs.  
+**🔗 Interoperability** — Azure CLI/SDK + Azure Developer CLI; **Azure RBAC**.  
+**🏢 Deployment model** — Client‑side VS Code extension backed by your Azure subscription (cloud backend).  
 **🗒️ Notes** — Enterprise‑ready guardrails: explicit confirmation before changes; logs execution history; respects tenant boundaries.
 
 **🧠 UKM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/M**, Governance **Y/M**, Overall **Medium‑Low**.
@@ -1040,15 +1088,35 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 ---
 
-## 🧩 New Relic AI (formerly “Grok”)
-⚙️ **Activities:** P/L  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** N/L  
-🧬 **Event ontology:** Y/M  · 👁️ **Observability:** Y/H  · 📈 **Confidence:** High
+## 🧩 Moogsoft — AIOps & Incident Correlation  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/H · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** P/L · 📈 **Confidence:** Med‑High
 
-**🏗️ Build style / interface** — Web chatbot in New Relic One; IDE via **CodeStream**; mobile app.  
-**💡 What it actually does** — Lets anyone query telemetry in plain English, summarize health, explain anomalies, **generate NRQL/dashboards**, and recommend fixes; guides instrumentation and alerting; analyzes deploy impact pre/post.  
-**📊 Data / telemetry** — Unified MELT data + deploy/change events and UX data.  
-**🔗 Interoperability** — OpenAI GPT with New Relic data context; CodeStream integration; alerting tie‑ins.  
-**🏢 Deployment model** — New Relic SaaS.  
+**🏗️ Build style / interface** — AIOps event‑intelligence platform (SaaS/managed offerings depending on edition) with dashboards, APIs, and integrations.  
+**💡 What it actually does** — Correlates events/alerts into incidents ("situations"), performs noise reduction, and surfaces probable cause and related context for faster triage.  
+**📊 Data / telemetry** — Alert/event streams from monitoring tools; enrichment (CMDB/topology hints, changes) depending on integrations.  
+**🔗 Interoperability** — Broad integrations (monitoring, ITSM, ChatOps) and APIs; workflows typically run through external automation.  
+**🏢 Deployment model** — SaaS/managed (varies by packaging).  
+**🗒️ Notes** — Focus is event correlation rather than raw telemetry collection.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **Y/H**, Index **Y/H**, Retrieval **Y/H**, Governance **Y/M**, Overall **High**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 New Relic AI (formerly "Grok")
+⚙️ **Activities:** P/L  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** N/L  
+🧬 **Event ontology:** Y/M  · 👁️ **Observability:** Y/H  · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — Web chatbot in New Relic One; IDE via **CodeStream**; mobile app.  
+**💡 What it actually does** — Lets anyone query telemetry in plain English, summarize health, explain anomalies, **generate NRQL/dashboards**, and recommend fixes; guides instrumentation and alerting; analyzes deploy impact pre/post.  
+**📊 Data / telemetry** — Unified MELT data + deploy/change events and UX data.  
+**🔗 Interoperability** — OpenAI GPT with New Relic data context; CodeStream integration; alerting tie‑ins.  
+**🏢 Deployment model** — New Relic SaaS.  
 **🗒️ Notes** — Advisory only (no direct apply); RBAC enforced; some regulated accounts unsupported (2025).
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.
@@ -1065,15 +1133,35 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 ---
 
-## 🧩 Opsera Hummingbird (Unified Insights)
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** P/M  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** Med
+## 🧩 Observe (o11y.ai) — AI / Agent Observability  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** N/L  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** Y/M · 📈 **Confidence:** Med‑High
 
-**🏗️ Build style / interface** — Low‑code dashboards & insights.  
-**💡 What it actually does** — Aggregates CI/CD + SCM; DORA/DevEx metrics; AI insights & recommendations.  
-**📊 Data / telemetry** — CI, SCM, release events; AI code assistant adoption analytics.  
-**🔗 Interoperability** — Connectors; actions via integrations.  
-**🏢 Deployment model** — SaaS.  
+**🏗️ Build style / interface** — SaaS observability platform with a focus on **agent/LLM telemetry** (traces, evaluations, cost) and analytics.  
+**💡 What it actually does** — Provides visibility into agent runs (tool calls, prompts, outputs), evaluation workflows, and debugging views to improve quality/safety and reduce cost regressions.  
+**📊 Data / telemetry** — Agent traces/logs, evaluation signals, latency/cost metrics; optional links to app/infra telemetry via integrations.  
+**🔗 Interoperability** — OpenTelemetry patterns, APIs/connectors, and integrations with common data/observability sources (implementation dependent).  
+**🏢 Deployment model** — SaaS.  
+**🗒️ Notes** — This is **AI/agent observability**, not classic infra APM; pairs well with existing MELT stacks.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**👁️ UOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.
+
+---
+
+## 🧩 Opsera Hummingbird (Unified Insights)
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/M  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** Med
+
+**🏗️ Build style / interface** — Low‑code dashboards & insights.  
+**💡 What it actually does** — Aggregates CI/CD + SCM; DORA/DevEx metrics; AI insights & recommendations.  
+**📊 Data / telemetry** — CI, SCM, release events; AI code assistant adoption analytics.  
+**🔗 Interoperability** — Connectors; actions via integrations.  
+**🏢 Deployment model** — SaaS.  
 **🗒️ Notes** — Infra provisioning via integrations only.
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.
@@ -1091,14 +1179,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 PagerDuty AIOps (Event Intelligence & AI Agent Suite)
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** P/M  · 👁️ **Observability:** P/L  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/M  · 👁️ **Observability:** P/L  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — SaaS with low‑code incident workflows, **Automation Actions**, AI‑driven Command Console.  
-**💡 What it actually does** — Incident intelligence & response automation: suppress/dedupe noise, correlate related alerts into incidents, surface change context and similar incidents, draft status updates/post‑mortems, and recommend next steps. SRE, Insights, and Shift agents assist during response.  
-**📊 Data / telemetry** — Ingests events from monitoring tools + change feeds; maintains incident timelines/human response history; change tracking.  
-**🔗 Interoperability** — Datadog/New Relic/CloudWatch, Jira/ServiceNow, Slack/Teams; remediation via Automation Actions or **Rundeck**.  
-**🏢 Deployment model** — PagerDuty Operations Cloud (SaaS).  
+**🏗️ Build style / interface** — SaaS with low‑code incident workflows, **Automation Actions**, AI‑driven Command Console.  
+**💡 What it actually does** — Incident intelligence & response automation: suppress/dedupe noise, correlate related alerts into incidents, surface change context and similar incidents, draft status updates/post‑mortems, and recommend next steps. SRE, Insights, and Shift agents assist during response.  
+**📊 Data / telemetry** — Ingests events from monitoring tools + change feeds; maintains incident timelines/human response history; change tracking.  
+**🔗 Interoperability** — Datadog/New Relic/CloudWatch, Jira/ServiceNow, Slack/Teams; remediation via Automation Actions or **Rundeck**.  
+**🏢 Deployment model** — PagerDuty Operations Cloud (SaaS).  
 **🗒️ Notes** — Human‑centric: can auto‑execute safe diagnostics/remediations when confidence high; escalates if uncertain.
 
 **🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.
@@ -1116,15 +1204,15 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 Qovery AI Migration Agent
-⚙️ **Activities:** P/L  · 🔍 **Diagnostics:** P/L  · 🚀 **Provisioning:** Y/H (via IaC output)  
-🧬 **Event ontology:** N/L  · 👁️ **Observability:** P/L  · 📈 **Confidence:** High
+⚙️ **Activities:** P/L  · 🔍 **Diagnostics:** P/L  · 🚀 **Provisioning:** Y/H (via IaC output)  
+🧬 **Event ontology:** N/L  · 👁️ **Observability:** P/L  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Code‑first; OSS repo + web.  
-**💡 What it actually does** — Scans apps and **generates Terraform/Dockerfiles** for PaaS→cloud migration; effort estimates.  
-**📊 Data / telemetry** — One‑time analysis & config output.  
-**🔗 Interoperability** — Terraform/Docker ecosystems; Qovery platform.  
-**🏢 Deployment model** — OSS + Qovery cloud.  
-**🗒️ Notes** — Produces artifacts; doesn’t run live observability.
+**🏗️ Build style / interface** — Code‑first; OSS repo + web.  
+**💡 What it actually does** — Scans apps and **generates Terraform/Dockerfiles** for PaaS→cloud migration; effort estimates.  
+**📊 Data / telemetry** — One‑time analysis & config output.  
+**🔗 Interoperability** — Terraform/Docker ecosystems; Qovery platform.  
+**🏢 Deployment model** — OSS + Qovery cloud.  
+**🗒️ Notes** — Produces artifacts; doesn't run live observability.
 
 **🧠 UKM — Snapshot:** Ingest **P/L**, Index **N/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
 
@@ -1140,15 +1228,35 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 ---
 
-## 🧩 Salesforce Agentforce (OpsAI)
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** Y/M  
-🧬 **Event ontology:** Y/H  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** High
+## 🧩 Rootly — Incident Response Automation  
+⚙️ **Activities:** Y/H · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Low‑code **Agent Studio** + Apex; **Command Center**; MCP support.  
-**💡 What it actually does** — Ingest/search via **Data Cloud**; incident/ops flows; trigger actions and integrations.  
-**📊 Data / telemetry** — Data Cloud topics/events; agent metrics in Command Center.  
-**🔗 Interoperability** — MCP, MuleSoft, Flows, partner tools.  
-**🏢 Deployment model** — Salesforce Cloud.  
+**🏗️ Build style / interface** — Slack‑native incident management + web console; templates and automation rules.  
+**💡 What it actually does** — Automates incident workflows (declare, assign, comms, timeline, follow‑ups), drafts updates/post‑mortems, and coordinates responders across tools.  
+**📊 Data / telemetry** — Incident timelines, comms, action history, links to alerts/dashboards/tickets; does not store raw MELT telemetry.  
+**🔗 Interoperability** — Slack, PagerDuty, Jira, ServiceNow, Statuspage, GitHub, and observability sources via integrations.  
+**🏢 Deployment model** — SaaS.  
+**🗒️ Notes** — Strong process/orchestration; diagnostics depth depends on linked observability tools.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/H**, Index **Y/H**, Retrieval **Y/H**, Governance **Y/H**, Overall **High**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 Salesforce Agentforce (OpsAI)
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** Y/M  
+🧬 **Event ontology:** Y/H  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — Low‑code **Agent Studio** + Apex; **Command Center**; MCP support.  
+**💡 What it actually does** — Ingest/search via **Data Cloud**; incident/ops flows; trigger actions and integrations.  
+**📊 Data / telemetry** — Data Cloud topics/events; agent metrics in Command Center.  
+**🔗 Interoperability** — MCP, MuleSoft, Flows, partner tools.  
+**🏢 Deployment model** — Salesforce Cloud.  
 **🗒️ Notes** — OpsAI positioned as Agentforce use‑case.
 
 **🧠 UKM — Snapshot:** Ingest **Y/H**, Index **Y/H**, Retrieval **Y/H**, Governance **Y/H**, Overall **High**.
@@ -1166,14 +1274,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 ServiceNow AI Agent Orchestrator
-⚙️ **Activities:** Y/H  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** Y/M  
-🧬 **Event ontology:** Y/H  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** High
+⚙️ **Activities:** Y/H  · 🔍 **Diagnostics:** Y/H  · 🚀 **Provisioning:** Y/M  
+🧬 **Event ontology:** Y/H  · 👁️ **Observability:** Y/M  · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — No/low‑code **Agent Studio**; orchestrates across ITSM/ITOM.  
-**💡 What it actually does** — Multi‑agent coordination, incident workflows, runbooks; **OTel → CMDB** via Service Graph.  
-**📊 Data / telemetry** — ITSM/CMDB/CSDM; OpenTelemetry via Service Graph.  
-**🔗 Interoperability** — Integrations, scripts, OTel.  
-**🏢 Deployment model** — ServiceNow Cloud.  
+**🏗️ Build style / interface** — No/low‑code **Agent Studio**; orchestrates across ITSM/ITOM.  
+**💡 What it actually does** — Multi‑agent coordination, incident workflows, runbooks; **OTel → CMDB** via Service Graph.  
+**📊 Data / telemetry** — ITSM/CMDB/CSDM; OpenTelemetry via Service Graph.  
+**🔗 Interoperability** — Integrations, scripts, OTel.  
+**🏢 Deployment model** — ServiceNow Cloud.  
 **🗒️ Notes** — Provisioning via integrations/runbooks.
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/H**, Overall **High**.
@@ -1190,15 +1298,35 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 ---
 
-## 🧩 Snowflake Cortex Agents
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** P/L  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** Y/H  · 👁️ **Observability:** P/L  · 📈 **Confidence:** Med
+## 🧩 Snyk — DevSecOps Automation  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/M  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** P/M · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Low‑code + SQL/Python inside Snowflake.  
-**💡 What it actually does** — Agents orchestrate **Cortex Analyst** (structured) + **Cortex Search** (unstructured) with tools/LLMs.  
-**📊 Data / telemetry** — Agent conversation logs; monitoring APIs.  
-**🔗 Interoperability** — Custom tools via UDFs/SPs; REST API.  
-**🏢 Deployment model** — Snowflake SaaS.  
+**🏗️ Build style / interface** — SaaS security platform integrated into SCM/CI; CLI + IDE plugins; policy and reporting UI.  
+**💡 What it actually does** — Finds and fixes vulnerabilities across code/dependencies/containers/IaC with automated PRs, risk prioritization, and policy enforcement (shift‑left automation).  
+**📊 Data / telemetry** — Code/dependency graphs, SBOM context, scan results, build artifacts, policy decisions, fix PR history.  
+**🔗 Interoperability** — GitHub/GitLab/Bitbucket, CI systems, ticketing, container registries; APIs and webhooks.  
+**🏢 Deployment model** — SaaS + CLI/SCM integrations.  
+**🗒️ Notes** — "Provisioning" is PR‑driven remediation (IaC/code), not direct infra apply.
+
+**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**👁️ UOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.
+
+---
+
+## 🧩 Snowflake Cortex Agents
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** P/L  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** Y/H  · 👁️ **Observability:** P/L  · 📈 **Confidence:** Med
+
+**🏗️ Build style / interface** — Low‑code + SQL/Python inside Snowflake.  
+**💡 What it actually does** — Agents orchestrate **Cortex Analyst** (structured) + **Cortex Search** (unstructured) with tools/LLMs.  
+**📊 Data / telemetry** — Agent conversation logs; monitoring APIs.  
+**🔗 Interoperability** — Custom tools via UDFs/SPs; REST API.  
+**🏢 Deployment model** — Snowflake SaaS.  
 **🗒️ Notes** — Data‑centric scope; not infra AIOps.
 
 **🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/H**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.
@@ -1216,14 +1344,14 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 ---
 
 ## 🧩 Termius — Gloria
-⚙️ **Activities:** P/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** P/M  
-🧬 **Event ontology:** N/L  · 👁️ **Observability:** P/M  · 📈 **Confidence:** Med
+⚙️ **Activities:** P/M  · 🔍 **Diagnostics:** P/M  · 🚀 **Provisioning:** P/M  
+🧬 **Event ontology:** N/L  · 👁️ **Observability:** P/M  · 📈 **Confidence:** Med
 
-**🏗️ Build style / interface** — In‑app assistant in Termius; no‑code UX.  
-**💡 What it actually does** — Runs services/commands over SSH; pull/configure/run Docker containers; log/VM plans emerging.  
-**📊 Data / telemetry** — Session/command outcomes; light history.  
-**🔗 Interoperability** — SSH‑first.  
-**🏢 Deployment model** — Termius Cloud + your hosts over SSH.  
+**🏗️ Build style / interface** — In‑app assistant in Termius; no‑code UX.  
+**💡 What it actually does** — Runs services/commands over SSH; pull/configure/run Docker containers; log/VM plans emerging.  
+**📊 Data / telemetry** — Session/command outcomes; light history.  
+**🔗 Interoperability** — SSH‑first.  
+**🏢 Deployment model** — Termius Cloud + your hosts over SSH.  
 **🗒️ Notes** — Not a full AIOps suite; roadmap evolving.
 
 **🧠 UKM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **P/M**, Governance **P/M**, Overall **Low**.
@@ -1240,15 +1368,35 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 ---
 
-## 🧩 Zencoder AI Agents
-⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** N/L  · 👁️ **Observability:** P/L  · 📈 **Confidence:** Med
+## 🧩 xMatters — Operations Automation  
+⚙️ **Activities:** Y/H · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** P/M  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
 
-**🏗️ Build style / interface** — Code‑first; CI webhook/CLI.  
-**💡 What it actually does** — Autonomous coding agents to fix failing tests, patch vulns, add docs/tests, open PRs.  
-**📊 Data / telemetry** — CI runs/issues/PRs dashboards.  
-**🔗 Interoperability** — GitHub/Jira/Sentry, etc.  
-**🏢 Deployment model** — SaaS + CLI.  
+**🏗️ Build style / interface** — SaaS on‑call + incident communications with flow designer for automation and integrations.  
+**💡 What it actually does** — Orchestrates incident response (notify/escalate, comms, status updates) and triggers automated workflows/runbooks across ITSM and ops tools.  
+**📊 Data / telemetry** — Incident/workflow events, on‑call schedules, notifications, acknowledgements; telemetry remains in upstream monitoring tools.  
+**🔗 Interoperability** — Monitoring tools, ServiceNow/Jira, Slack/Teams, automation/runbook systems via integrations.  
+**🏢 Deployment model** — SaaS.  
+**🗒️ Notes** — Excellent response/comms automation; RCA depends on integrated observability.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/H**, Index **Y/H**, Retrieval **Y/H**, Governance **Y/H**, Overall **High**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.
+
+---
+
+## 🧩 Zencoder AI Agents
+⚙️ **Activities:** Y/M  · 🔍 **Diagnostics:** Y/M  · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** N/L  · 👁️ **Observability:** P/L  · 📈 **Confidence:** Med
+
+**🏗️ Build style / interface** — Code‑first; CI webhook/CLI.  
+**💡 What it actually does** — Autonomous coding agents to fix failing tests, patch vulns, add docs/tests, open PRs.  
+**📊 Data / telemetry** — CI runs/issues/PRs dashboards.  
+**🔗 Interoperability** — GitHub/Jira/Sentry, etc.  
+**🏢 Deployment model** — SaaS + CLI.  
 **🗒️ Notes** — PR‑centric; not runtime infra ops.
 
 **🧠 UKM — Snapshot:** Ingest **P/L**, Index **N/L**, Retrieval **P/M**, Governance **P/M**, Overall **Medium‑Low**.
@@ -1263,55 +1411,278 @@ Links: splunk.com/newsroom • investor.cisco.com • siliconangle.com
 
 **🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
 
+---
+
+# ➕ Addendum (Nov 12, 2025) — Newly Added Platforms  
+*(Original content above remains unchanged. This section adds new platforms using the same Atlas schema.)*
+
+## Recap — **additions** by archetype (Nov 2025)
+- **🔭 Observability‑First:** **BigPanda Event Intelligence**; **BMC Helix AIOps**.  
+- **⚙️ Provisioning‑Focused:** **HashiCorp Terraform MCP Server + Project Infragraph** (agent‑safe IaC).  
+- **👨‍💻 Developer‑Centric & Frameworks:** **GitLab Duo Agent Platform**.  
+- **🏢 Enterprise Workflow Orchestrators:** **Dell APEX AIOps** (CloudIQ + Incident Management).  
+- **🎯 Specialized / Adjacent:** **incident.io (AI for Incident Response)**; **Overmind (Cloud Impact Map)**; **Harness AIDA** (DevOps platform AI).  
 
 ---
 
-# Appendix — Verification Notes (Oct 2025)
+# PLATFORM SECTIONS (New — A–Z)
 
-This edition incorporates source‑verified changes across all vendors (see “Latest updates” links in each card). Highlights:
-- **Agentforce 3** adds **Command Center** & **MCP**; enterprise observability for agents (Salesforce press + landing).  
-- **Strands SDK** open‑sourced with **OTel** and **MCP**; prescriptive guidance and GitHub activity.  
-- **Splunk/Cisco** unveils **agentic AI** across Observability (.conf25).  
-- **Databricks Agent Bricks** launched; subsequent enterprise partnerships reported.  
-- **Snowflake Cortex Agents** document multi‑tool orchestration (Analyst + Search) and monitoring.  
-- **ServiceNow** details **AI Agent Orchestrator/Studio** and **OTel → CMDB** connector.  
-- **JFrog Fly** (agentic repo) announced with MCP integrations; beta.  
-- **Qovery** OSS migration agent generates Terraform/Dockerfiles for PaaS→cloud.  
-- **Rovo Dev** now GA across CLI/Bitbucket/GitHub.  
-- **Termius Gloria** blog confirms SSH/Docker scope.  
+## 🧩 BigPanda Event Intelligence  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — SaaS incident console with correlation, timelines, and enrichment.  
+**💡 What it actually does** — Ingests alerts/changes from many tools via an **Open Integration Hub**, **correlates** them into incidents, dedupes noise, adds context, and applies GenAI‑assisted summaries/recommendations.  
+**📊 Data / telemetry** — Alert & change events from monitoring/CI/CD/CMDB; analytics and incident timelines.  
+**🔗 Interoperability** — 100+ integrations (monitoring, ITSM, ChatOps); Open Integration Hub & APIs.  
+**🏢 Deployment model** — SaaS.  
+**🗒️ Notes** — Focus is correlation/incident intelligence; **telemetry stays in source tools**; remediation typically runs via playbooks/integrations.
+
+**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 BMC Helix AIOps  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** Y/M · 👁️ **Observability:** Y/M · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — SaaS/managed with service views, correlation policies, and insights.  
+**💡 What it actually does** — **Correlates and analyzes large event volumes** into actionable "situations," reducing noise and improving time‑to‑clue; supplies service context/topology for investigations.  
+**📊 Data / telemetry** — Events/metrics/logs from monitored systems; service models/topology.  
+**🔗 Interoperability** — Integrates with common observability and ITSM tools.  
+**🏢 Deployment model** — BMC Helix (SaaS/managed).  
+**🗒️ Notes** — Strong on correlation/noise reduction; **remediations** usually via runbooks/integrations.
+
+**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**👁️ UOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🧬 UEOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 Dell APEX AIOps (CloudIQ + Incident Management)  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — **APEX AIOps** console (CloudIQ) + **Incident Management** experience for enterprise fleets.  
+**💡 What it actually does** — **Proactive monitoring** and health insights via CloudIQ, with **incident correlation/workflows** for faster triage and response.  
+**📊 Data / telemetry** — Dell infrastructure & platform telemetry via CloudIQ; incident/event streams.  
+**🔗 Interoperability** — Integrations for ticketing/automation; Dell ecosystem.  
+**🏢 Deployment model** — Dell APEX AIOps (SaaS).  
+**🗒️ Notes** — Direct infra changes typically flow via automations, not free‑form commands.
+
+**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 GitLab Duo Agent Platform  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** N/L · 👁️ **Observability:** P/M · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — Duo **Agent Platform** to create organization‑specific agents that can act across GitLab (code→CI/CD→issues).  
+**💡 What it actually does** — Lets teams **build custom agents** that understand their repos/issues and perform actions (e.g., create MRs, modify pipelines) with **guardrails & approvals**.  
+**📊 Data / telemetry** — Repo history, CI logs, issues, MR discussions.  
+**🔗 Interoperability** — GitLab APIs; connectors to external tools via jobs/webhooks.  
+**🏢 Deployment model** — GitLab SaaS/Self‑Managed (feature availability varies).  
+**🗒️ Notes** — Dev‑centric scope; infra changes are typically **PR/MR‑based** rather than direct applies.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/L**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/L**, Retrieval **P/M**, Governance **P/M**, Overall **Low‑Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 Harness AIDA (AI Development Assistant)  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** Y/M  
+🧬 **Event ontology:** P/L · 👁️ **Observability:** P/M · 📈 **Confidence:** Med‑High
+
+**🏗️ Build style / interface** — AIDA across the **Harness Platform** (CI/CD, Feature Flags, SRM).  
+**💡 What it actually does** — AI assistance for pipelines/releases/security with **governed automations** and insights; accelerates PR verification and release tasks in the Harness toolchain.  
+**📊 Data / telemetry** — CI/CD runs, deployment metrics, verification signals (via SRM).  
+**🔗 Interoperability** — Cloud providers, K8s, observability connectors through Harness.  
+**🏢 Deployment model** — Harness SaaS/Self‑Managed.  
+**🗒️ Notes** — Strongest inside Harness; external infra changes generally run through **Harness pipelines/approvals**.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/L**, Retrieval **P/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🚀 UPM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.
+
+---
+
+## 🧩 HashiCorp Terraform MCP Server + **Project Infragraph**  
+⚙️ **Activities:** P/M · 🔍 **Diagnostics:** N/L · 🚀 **Provisioning:** Y/H  
+🧬 **Event ontology:** Y/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — **MCP server for HCP Terraform** lets agents use Terraform safely; **Project Infragraph** builds a **unified infra graph** for resources & relationships.  
+**💡 What it actually does** — Enables **agentic workflows** to plan/apply with approvals and **policy‑as‑code**, while Infragraph supplies **typed entities & dependencies** to reason about impact.  
+**📊 Data / telemetry** — State, plans/diffs, runs, policy results; infra graph nodes/edges.  
+**🔗 Interoperability** — Terraform providers; Sentinel/Run Tasks; MCP tool ecosystem.  
+**🏢 Deployment model** — HCP Terraform (cloud) & Terraform CLI; Infragraph (project).  
+**🗒️ Notes** — Purpose‑built for **safe provisioning**; not an observability or RCA product.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **Y/H**, Overall **Medium‑High**.  
+**⚙️ UAM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **Y/M**, Overall **Medium**.  
+**🔍 UDM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low**.  
+**🧬 UEOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🚀 UPM — Snapshot:** Ingest **Y/H**, Index **Y/H**, Retrieval **Y/H**, Governance **Y/H**, Overall **High**.
+
+---
+
+## 🧩 incident.io (AI for Incident Response)  
+⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** P/L  
+🧬 **Event ontology:** P/L · 👁️ **Observability:** P/L · 📈 **Confidence:** High
+
+**🏗️ Build style / interface** — Slack/Teams‑first incident product with rich web console.  
+**💡 What it actually does** — **AI assists** during incidents (summaries, suggestions, duplicate detection, post‑incident drafting), orchestrates status pages/commms, and automates workflows across tools.  
+**📊 Data / telemetry** — Incident timelines, runbooks, prior incidents; signals pulled from monitoring/issue trackers.  
+**🔗 Interoperability** — PagerDuty, Jira, GitHub, Statuspage, and many more.  
+**🏢 Deployment model** — SaaS.  
+**🗒️ Notes** — Optimized for **people/process** flow; diagnostics depth depends on integrated observability.
+
+**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
+
+---
+
+## 🧩 Overmind (Cloud Impact Map)  
+⚙️ **Activities:** P/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** N/L  
+🧬 **Event ontology:** Y/M · 👁️ **Observability:** P/L · 📈 **Confidence:** Med
+
+**🏗️ Build style / interface** — Cloud map UI & APIs; Terraform Cloud **Run Task** plugin.  
+**💡 What it actually does** — Builds a **graph of your cloud** and provides **blast‑radius/impact analysis** (e.g., before Terraform applies). Helps reviewers understand change scope and dependencies.  
+**📊 Data / telemetry** — Cloud resource inventory/relationships; change context.  
+**🔗 Interoperability** — Terraform Cloud Run Tasks; CI/CD hooks.  
+**🏢 Deployment model** — SaaS.  
+**🗒️ Notes** — Read‑heavy analysis product; **does not apply** changes directly.
+
+**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **P/M**, Overall **Medium**.  
+**⚙️ UAM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
+**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
+**🧬 UEOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
+**🚀 UPM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.
+
+---
+
+## Neutral one‑line summaries — **Addendum (Nov 2025)**
+- **BigPanda Event Intelligence** — Correlates alerts/changes into incidents with GenAI summaries; acts as a cross‑tool incident brain.  
+- **BMC Helix AIOps** — ML‑based event correlation into "situations" to reduce noise and guide triage.  
+- **Dell APEX AIOps** — CloudIQ‑based proactive monitoring plus Incident Management in Dell's ops cloud.  
+- **GitLab Duo Agent Platform** — Build governed, org‑specific agents that can open/modify MRs and pipelines in GitLab.  
+- **Harness AIDA** — AI assistance across Harness pipelines/releases with governed automations.  
+- **HashiCorp Terraform MCP + Infragraph** — Agent‑safe Terraform operations with a unified infrastructure graph for impact‑aware changes.  
+- **incident.io** — Chat‑first incident platform with AI summaries, suggestions, and post‑incident drafting.  
+- **Overmind** — Cloud dependency graph and Terraform **impact analysis** for blast‑radius checks pre‑apply.
+
+---
+
+# Appendix — Verification Notes (Jan 6, 2026)
+
+This edition incorporates source‑verified changes across all vendors (see "Latest updates" links in each card). Highlights:
+- **Agentforce 3** adds **Command Center** & **MCP**; enterprise observability for agents (Salesforce press + landing).  
+- **Strands SDK** open‑sourced with **OTel** and **MCP**; prescriptive guidance and GitHub activity.  
+- **Splunk/Cisco** unveils **agentic AI** across Observability (.conf25).  
+- **Databricks Agent Bricks** launched; subsequent enterprise partnerships reported.  
+- **Snowflake Cortex Agents** document multi‑tool orchestration (Analyst + Search) and monitoring.  
+- **ServiceNow** details **AI Agent Orchestrator/Studio** and **OTel → CMDB** connector.  
+- **JFrog Fly** (agentic repo) announced with MCP integrations; beta.  
+- **Qovery** OSS migration agent generates Terraform/Dockerfiles for PaaS→cloud.  
+- **Rovo Dev** now GA across CLI/Bitbucket/GitHub.  
+- **Termius Gloria** blog confirms SSH/Docker scope.  
 
 **Additions (Oct 2025):**
-- **Datadog Bits AI & Agents** launched/expanded at DASH 2025 (SRE/Dev/Sec agents; post‑mortems).  
-- **Elastic AI Assistant** iterated 2024–2025 with ESRE grounding, multi‑step chat, runbook proposals.  
-- **Microsoft Azure Copilot (Agent Mode)** GA June 2025 with Bicep generation, `az`/`azd` orchestration, confirmation‑gated changes under RBAC.  
-- **Microsoft Azure AI Agent Service (Foundry)** GA mid‑2025 (Logic Apps as tools, AgentOps, OTel traces); **Oct 2025** open‑source Agent Framework SDK.  
-- **New Relic AI** (Grok → AI) adds NRQL generation, guided instrumentation, change‑aware analysis.  
+- **Datadog Bits AI & Agents** launched/expanded at DASH 2025 (SRE/Dev/Sec agents; post‑mortems).  
+- **Elastic AI Assistant** iterated 2024–2025 with ESRE grounding, multi‑step chat, runbook proposals.  
+- **Microsoft Azure Copilot (Agent Mode)** GA June 2025 with Bicep generation, `az`/`azd` orchestration, confirmation‑gated changes under RBAC.  
+- **Microsoft Azure AI Agent Service (Foundry)** GA mid‑2025 (Logic Apps as tools, AgentOps, OTel traces); **Oct 2025** open‑source Agent Framework SDK.  
+- **New Relic AI** (Grok → AI) adds NRQL generation, guided instrumentation, change‑aware analysis.  
 - **PagerDuty AIOps** introduces AI Agent Suite (Oct 2025) for incident response & insights.
+
+**Additions (Nov 2025):**
+- **BigPanda Event Intelligence** — Open Integration Hub with GenAI summaries.  
+- **BMC Helix AIOps** — ML‑based correlation and noise reduction.  
+- **Dell APEX AIOps** — CloudIQ + Incident Management for enterprise infrastructure.  
+- **GitLab Duo Agent Platform** — Organization‑specific agents with guardrails.  
+- **Harness AIDA** — AI assistance across Harness platform components.  
+- **HashiCorp Terraform MCP + Infragraph** — Agent‑safe IaC with unified infrastructure graph.  
+- **incident.io** — AI‑assisted incident response with workflow automation.  
+- **Overmind** — Cloud impact analysis and dependency mapping.
+
+**Additions (Jan 2026):**
+- **Kubiya** — ChatOps‑native workflow execution with strong auditability.  
+- **LogicMonitor AIOps** — Monitoring‑led AIOps for anomaly detection and incident correlation.  
+- **Moogsoft** — Event‑intelligence correlation into incidents/situations with noise reduction.  
+- **Observe (o11y.ai)** — Agent/LLM observability for debugging and governing agentic systems.  
+- **Rootly** — Slack‑native incident response automation for comms, timelines, and post‑mortems.  
+- **Snyk** — DevSecOps automation for finding/fixing vulnerabilities across code/deps/containers/IaC.  
+- **xMatters** — On‑call communications + operations automation flows across monitoring/ITSM/ChatOps.
 
 ---
 
-# Appendix — Verified Sources (Oct 2025)
+# Appendix — Verified Sources (Jan 6, 2026)
 
-- **Salesforce Agentforce 3 (Command Center, MCP):** https://www.salesforce.com/partners/solutions/technology-partner/agentforce-3/  
-- **AWS agents observability with OpenTelemetry (AgentCore/Strands):** https://aws.amazon.com/blogs/mt/observability-patterns-for-ai-agents-on-aws-with-amazon-bedrock-agentcore/  
-- **Cisco / Splunk AI Assistant for IT Operations:** https://www.splunk.com/en_us/blog/it/ai-assistant-for-it-operations.html  
-- **Dynatrace Davis AI causal correlation docs:** https://docs.dynatrace.com/docs/shortlink/ai-correlation#how-it-works  
-- **ServiceNow Service Graph Connector for OpenTelemetry (OTel → CMDB):** https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/solution-brief/service-graph-connector-for-opentelemetry.pdf  
-- **Snowflake Cortex Agents (Run API):** https://docs.snowflake.com/en/developer-guide/snowflake-cortex/agents/command/run  
-- **Dataiku Trace Explorer (product blog):** https://www.dataiku.com/blog/trace-explorer-in-dataiku-13-2/  
-- **Databricks Agent Bricks (news):** https://www.reuters.com/business/finance/databricks-buy-sequoia-backed-tecton-ai-agent-push-2025-08-22/  
-- **JFrog Fly (agentic repository) press:** https://jfrog.com/press/introducing-jfrog-fly-the-industrys-first-agentic-repository/  
-- **DuploCloud Terraform Provider:** https://registry.terraform.io/providers/duplocloud/duplocloud/latest  
-- **Termius — Gloria (DevOps AI Agent):** https://termius.com/blog/devops-ai-agent-gloria  
-- **Qovery Migration AI Agent:** https://medium.com/qovery/introducing-the-qovery-migration-ai-agent-3fe3892616b6  
+- **Salesforce Agentforce 3 (Command Center, MCP):** https://www.salesforce.com/partners/solutions/technology-partner/agentforce-3/  
+- **AWS agents observability with OpenTelemetry (AgentCore/Strands):** https://aws.amazon.com/blogs/mt/observability-patterns-for-ai-agents-on-aws-with-amazon-bedrock-agentcore/  
+- **Cisco / Splunk AI Assistant for IT Operations:** https://www.splunk.com/en_us/blog/it/ai-assistant-for-it-operations.html  
+- **Dynatrace Davis AI causal correlation docs:** https://docs.dynatrace.com/docs/shortlink/ai-correlation#how-it-works  
+- **ServiceNow Service Graph Connector for OpenTelemetry (OTel → CMDB):** https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/solution-brief/service-graph-connector-for-opentelemetry.pdf  
+- **Snowflake Cortex Agents (Run API):** https://docs.snowflake.com/en/developer-guide/snowflake-cortex/agents/command/run  
+- **Dataiku Trace Explorer (product blog):** https://www.dataiku.com/blog/trace-explorer-in-dataiku-13-2/  
+- **Databricks Agent Bricks (news):** https://www.reuters.com/business/finance/databricks-buy-sequoia-backed-tecton-ai-agent-push-2025-08-22/  
+- **JFrog Fly (agentic repository) press:** https://jfrog.com/press/introducing-jfrog-fly-the-industrys-first-agentic-repository/  
+- **DuploCloud Terraform Provider:** https://registry.terraform.io/providers/duplocloud/duplocloud/latest  
+- **Termius — Gloria (DevOps AI Agent):** https://termius.com/blog/devops-ai-agent-gloria  
+- **Qovery Migration AI Agent:** https://medium.com/qovery/introducing-the-qovery-migration-ai-agent-3fe3892616b6  
 
 **Newly added sources (Oct 2025):**
-- **Microsoft Azure Copilot (Agent Mode) GA coverage:** https://visualstudiomagazine.com *(search: “Copilot for Azure Agent Mode GA June 2025”)*  
-- **Microsoft Azure AI Agent Service / Foundry (overview & GA):** https://azure.microsoft.com *(Agent Service/Foundry)* • https://www.infoq.com/news/ *(search: “Azure AI Agent Service GA Logic Apps tools”)*  
-- **Datadog Bits AI & Agents launch:** https://www.datadoghq.com  
-- **Elastic AI Assistant for Observability:** https://www.elastic.co • https://www.digitalisationworld.com  
-- **New Relic AI (Grok → AI):** https://newrelic.com  
-- **PagerDuty AIOps AI Agent Suite recap:** https://www.aimmediahouse.com *(search: “PagerDuty AI Agent Suite 2025”)*
+- **Microsoft Azure Copilot (Agent Mode) GA coverage:** https://visualstudiomagazine.com *(search: "Copilot for Azure Agent Mode GA June 2025")*  
+- **Microsoft Azure AI Agent Service / Foundry (overview & GA):** https://azure.microsoft.com *(Agent Service/Foundry)* • https://www.infoq.com/news/ *(search: "Azure AI Agent Service GA Logic Apps tools")*  
+- **Datadog Bits AI & Agents launch:** https://www.datadoghq.com  
+- **Elastic AI Assistant for Observability:** https://www.elastic.co • https://www.digitalisationworld.com  
+- **New Relic AI (Grok → AI):** https://newrelic.com  
+- **PagerDuty AIOps AI Agent Suite recap:** https://www.aimmediahouse.com *(search: "PagerDuty AI Agent Suite 2025")*
+
+**Newly added sources (Nov 2025):**
+- **BigPanda Event Intelligence:** https://www.bigpanda.io • https://www.bigpanda.io/blog/  
+- **BMC Helix AIOps:** https://www.bmc.com • https://docs.bmc.com  
+- **Dell APEX AIOps:** https://www.dell.com • https://www.delltechnologies.com  
+- **GitLab Duo Agent Platform:** https://docs.gitlab.com • https://about.gitlab.com/blog/  
+- **Harness AIDA:** https://www.harness.io • https://docs.harness.io  
+- **HashiCorp Terraform MCP + Infragraph:** https://www.hashicorp.com • https://developer.hashicorp.com  
+- **incident.io:** https://incident.io • https://docs.incident.io  
+- **Overmind:** https://overmind.tech • https://docs.overmind.tech
+
+**Newly added sources (Jan 2026):**
+- **Kubiya:** https://www.kubiya.ai • https://docs.kubiya.ai  
+- **LogicMonitor AIOps:** https://www.logicmonitor.com • https://www.logicmonitor.com/solutions/aiops  
+- **Moogsoft:** https://www.moogsoft.com • https://docs.moogsoft.com  
+- **Observe (o11y.ai):** https://www.observeinc.com • https://docs.observeinc.com  
+- **Rootly:** https://www.rootly.com • https://docs.rootly.com  
+- **Snyk:** https://www.snyk.io • https://docs.snyk.io  
+- **xMatters:** https://www.xmatters.com • https://docs.xmatters.com
 
 
 ## Neutral one-line summaries (A–Z)
@@ -1323,209 +1694,40 @@ This edition incorporates source‑verified changes across all vendors (see “L
 - **[Datadog Bits AI & Agents]({{ '/platforms/datadog-bits-ai' | relative_url }})** — Hypothesis-driven triage/RCA and incident comms over unified Datadog telemetry; can suggest runbooks/PRs.
 - **[Dataiku AI Agents]({{ '/platforms/dataiku-ai-agents' | relative_url }})** — Governed agents for data workflows with Trace Explorer; strong tracing/guardrails, limited direct provisioning.
 - **[DuploCloud AI Help Desk]({{ '/platforms/duplocloud-ai-help-desk' | relative_url }})** — Ticket-driven DevOps agents with Terraform-backed provisioning and rollback in the DuploCloud context.
-- **[Dynatrace Davis AI]({{ '/platforms/dynatrace-davis-ai' | relative_url }})** — Causal correlation/RCA over full-stack telemetry, producing “Davis problems” with evidence; remediation via workflows.
+- **[Dynatrace Davis AI]({{ '/platforms/dynatrace-davis-ai' | relative_url }})** — Causal correlation/RCA over full-stack telemetry, producing "Davis problems" with evidence; remediation via workflows.
 - **[Elastic AI Assistant]({{ '/platforms/elastic-ai-assistant' | relative_url }})** — ESRE-grounded explanations and query suggestions inside Elastic Observability with runbook proposals.
 - **[GitHub Copilot Coding Agent]({{ '/platforms/github-copilot-coding-agent' | relative_url }})** — Async cloud agent that fixes code/tests and opens PRs; infrastructure changes are PR-only.
 - **[Google Vertex AI Agent Builder]({{ '/platforms/google-vertex-agent-builder' | relative_url }})** — No-code/ADK for conversational and multi-agent apps with webhooks/GCP actions; ops via external services.
 - **[IBM AskIAM]({{ '/platforms/ibm-askiam' | relative_url }})** — IAM-focused assistant for requests/approvals and cross-system provisioning; limited deep infra observability.
 - **[JFrog Fly (Agentic Repository)]({{ '/platforms/jfrog-fly-agentic-repo' | relative_url }})** — Agent-aware artifact/release governance with policy/evidence events; not a runtime ops console.
 - **[Kagent (Solo.io)]({{ '/platforms/soloio-kagent' | relative_url }})** — Kubernetes-native agents orchestrating K8s/Prom/Grafana/Helm/Argo for diagnostics and guarded actions.
+- **[Kubiya]({{ '/platforms/kubiya-chatops-workflow-execution' | relative_url }})** — ChatOps‑native workflow execution with strong auditability; observability depth depends on connected tools.
 - **[Kuberns Platform]({{ '/platforms/kuberns-platform' | relative_url }})** — Managed PaaS with AI-assisted deployment/ops; third-party validation is currently limited.
+- **[LogicMonitor AIOps]({{ '/platforms/logicmonitor-aiops' | relative_url }})** — Monitoring‑led AIOps for anomaly detection and incident correlation with guided triage.
 - **[Microsoft Azure AI Agent Service (Foundry)]({{ '/platforms/azure-ai-agent-service-foundry' | relative_url }})** — Enterprise service to build/orchestrate multi-agent workflows with AgentOps and Logic Apps tools.
 - **[Microsoft Azure Copilot (Agent Mode)]({{ '/platforms/azure-copilot-agent-mode' | relative_url }})** — VS Code operator that generates/edits Bicep and runs Azure CLI under RBAC with explicit confirmations.
+- **[Moogsoft]({{ '/platforms/moogsoft-aiops-incident-correlation' | relative_url }})** — Event‑intelligence correlation into incidents/situations with noise reduction and probable cause.
 - **[New Relic AI]({{ '/platforms/new-relic-ai' | relative_url }})** — Natural-language telemetry queries, NRQL generation, and change-aware analysis; advisory only (no direct apply).
+- **[Observe (o11y.ai)]({{ '/platforms/observe-o11y-ai-observability' | relative_url }})** — Agent/LLM observability (traces/evals/cost/safety) to debug and govern agentic systems.
 - **[Opsera Hummingbird (Unified Insights)]({{ '/platforms/opsera-hummingbird' | relative_url }})** — Unified DevOps insights/DORA metrics with recommendations; actions routed via integrations.
 - **[PagerDuty AIOps]({{ '/platforms/pagerduty-aiops' | relative_url }})** — Incident intelligence for noise reduction, correlation, comms drafts, and safe diagnostics/remediations via Automation Actions/Rundeck.
 - **[Qovery AI Migration Agent]({{ '/platforms/qovery-migration-agent' | relative_url }})** — Scans apps and outputs Terraform/Dockerfiles for cloud migration; produces artifacts, not live changes.
+- **[Rootly]({{ '/platforms/rootly-incident-response-automation' | relative_url }})** — Slack‑native incident response automation: comms, timelines, follow‑ups, post‑mortems.
 - **[Salesforce Agentforce (OpsAI)]({{ '/platforms/salesforce-agentforce-opsai' | relative_url }})** — Data Cloud-backed agents for ops flows with actions via Flows/MuleSoft and Command Center observability.
 - **[ServiceNow AI Agent Orchestrator]({{ '/platforms/servicenow-ai-agent-orchestrator' | relative_url }})** — Multi-agent workflows across ITSM/ITOM with CMDB/OTel mapping; provisioning through runbooks/integrations.
+- **[Snyk]({{ '/platforms/snyk-devsecops-automation' | relative_url }})** — DevSecOps automation for finding/fixing vulns across code/deps/containers/IaC with PR‑based remediation.
 - **[Snowflake Cortex Agents]({{ '/platforms/snowflake-cortex-agents' | relative_url }})** — Data-centric agents orchestrating Analyst/Search with tools/LLMs; infrastructure AIOps out of scope.
 - **[Termius — Gloria]({{ '/platforms/termius-gloria' | relative_url }})** — SSH-native assistant to run services/commands and manage Docker on hosts; early provisioning features.
+- **[xMatters]({{ '/platforms/xmatters-operations-automation' | relative_url }})** — On‑call communications + operations automation flows across monitoring/ITSM/ChatOps.
 - **[Zencoder AI Agents]({{ '/platforms/zencoder-ai-agents' | relative_url }})** — CI-centric autonomous code fixers that diagnose failing pipelines and open PRs.
 
----
-
-# ➕ Addendum (Nov 12, 2025) — Newly Added Platforms  
-*(Original content above remains unchanged. This section adds new platforms using the same Atlas schema.)*
-
-## Recap — **additions** by archetype (Nov 2025)
-- **🔭 Observability‑First:** **BigPanda Event Intelligence**; **BMC Helix AIOps**.  
-- **⚙️ Provisioning‑Focused:** **HashiCorp Terraform MCP Server + Project Infragraph** (agent‑safe IaC).  
-- **👨‍💻 Developer‑Centric & Frameworks:** **GitLab Duo Agent Platform**.  
-- **🏢 Enterprise Workflow Orchestrators:** **Dell APEX AIOps** (CloudIQ + Incident Management).  
-- **🎯 Specialized / Adjacent:** **incident.io (AI for Incident Response)**; **Overmind (Cloud Impact Map)**; **Harness AIDA** (DevOps platform AI).  
-
----
-
-# PLATFORM SECTIONS (New — A–Z)
-
-## 🧩 BigPanda Event Intelligence  
-⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** P/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
-
-**🏗️ Build style / interface** — SaaS incident console with correlation, timelines, and enrichment.  
-**💡 What it actually does** — Ingests alerts/changes from many tools via an **Open Integration Hub**, **correlates** them into incidents, dedupes noise, adds context, and applies GenAI‑assisted summaries/recommendations.  
-**📊 Data / telemetry** — Alert & change events from monitoring/CI/CD/CMDB; analytics and incident timelines.  
-**🔗 Interoperability** — 100+ integrations (monitoring, ITSM, ChatOps); Open Integration Hub & APIs.  
-**🏢 Deployment model** — SaaS.  
-**🗒️ Notes** — Focus is correlation/incident intelligence; **telemetry stays in source tools**; remediation typically runs via playbooks/integrations.
-
-**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
-**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
-**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
-
----
-
-## 🧩 BMC Helix AIOps  
-⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** Y/M · 👁️ **Observability:** Y/M · 📈 **Confidence:** High
-
-**🏗️ Build style / interface** — SaaS/managed with service views, correlation policies, and insights.  
-**💡 What it actually does** — **Correlates and analyzes large event volumes** into actionable “situations,” reducing noise and improving time‑to‑clue; supplies service context/topology for investigations.  
-**📊 Data / telemetry** — Events/metrics/logs from monitored systems; service models/topology.  
-**🔗 Interoperability** — Integrates with common observability and ITSM tools.  
-**🏢 Deployment model** — BMC Helix (SaaS/managed).  
-**🗒️ Notes** — Strong on correlation/noise reduction; **remediations** usually via runbooks/integrations.
-
-**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**👁️ UOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**🧬 UEOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
-
----
-
-## 🧩 Dell APEX AIOps (CloudIQ + Incident Management)  
-⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** Y/M · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** P/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
-
-**🏗️ Build style / interface** — **APEX AIOps** console (CloudIQ) + **Incident Management** experience for enterprise fleets.  
-**💡 What it actually does** — **Proactive monitoring** and health insights via CloudIQ, with **incident correlation/workflows** for faster triage and response.  
-**📊 Data / telemetry** — Dell infrastructure & platform telemetry via CloudIQ; incident/event streams.  
-**🔗 Interoperability** — Integrations for ticketing/automation; Dell ecosystem.  
-**🏢 Deployment model** — Dell APEX AIOps (SaaS).  
-**🗒️ Notes** — Direct infra changes typically flow via automations, not free‑form commands.
-
-**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**🔍 UDM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
-**🧬 UEOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
-**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
-
----
-
-## 🧩 GitLab Duo Agent Platform  
-⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** N/L · 👁️ **Observability:** P/M · 📈 **Confidence:** High
-
-**🏗️ Build style / interface** — Duo **Agent Platform** to create organization‑specific agents that can act across GitLab (code→CI/CD→issues).  
-**💡 What it actually does** — Lets teams **build custom agents** that understand their repos/issues and perform actions (e.g., create MRs, modify pipelines) with **guardrails & approvals**.  
-**📊 Data / telemetry** — Repo history, CI logs, issues, MR discussions.  
-**🔗 Interoperability** — GitLab APIs; connectors to external tools via jobs/webhooks.  
-**🏢 Deployment model** — GitLab SaaS/Self‑Managed (feature availability varies).  
-**🗒️ Notes** — Dev‑centric scope; infra changes are typically **PR/MR‑based** rather than direct applies.
-
-**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/L**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.  
-**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/L**, Retrieval **P/M**, Governance **P/M**, Overall **Low‑Medium**.  
-**👁️ UOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
-**🧬 UEOM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.  
-**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
-
----
-
-## 🧩 Harness AIDA (AI Development Assistant)  
-⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** Y/M  
-🧬 **Event ontology:** P/L · 👁️ **Observability:** P/M · 📈 **Confidence:** Med‑High
-
-**🏗️ Build style / interface** — AIDA across the **Harness Platform** (CI/CD, Feature Flags, SRM).  
-**💡 What it actually does** — AI assistance for pipelines/releases/security with **governed automations** and insights; accelerates PR verification and release tasks in the Harness toolchain.  
-**📊 Data / telemetry** — CI/CD runs, deployment metrics, verification signals (via SRM).  
-**🔗 Interoperability** — Cloud providers, K8s, observability connectors through Harness.  
-**🏢 Deployment model** — Harness SaaS/Self‑Managed.  
-**🗒️ Notes** — Strongest inside Harness; external infra changes generally run through **Harness pipelines/approvals**.
-
-**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/L**, Retrieval **P/M**, Governance **Y/M**, Overall **Medium**.  
-**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
-**👁️ UOM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
-**🧬 UEOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
-**🚀 UPM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.
-
----
-
-## 🧩 HashiCorp Terraform MCP Server + **Project Infragraph**  
-⚙️ **Activities:** P/M · 🔍 **Diagnostics:** N/L · 🚀 **Provisioning:** Y/H  
-🧬 **Event ontology:** Y/M · 👁️ **Observability:** P/L · 📈 **Confidence:** High
-
-**🏗️ Build style / interface** — **MCP server for HCP Terraform** lets agents use Terraform safely; **Project Infragraph** builds a **unified infra graph** for resources & relationships.  
-**💡 What it actually does** — Enables **agentic workflows** to plan/apply with approvals and **policy‑as‑code**, while Infragraph supplies **typed entities & dependencies** to reason about impact.  
-**📊 Data / telemetry** — State, plans/diffs, runs, policy results; infra graph nodes/edges.  
-**🔗 Interoperability** — Terraform providers; Sentinel/Run Tasks; MCP tool ecosystem.  
-**🏢 Deployment model** — HCP Terraform (cloud) & Terraform CLI; Infragraph (project).  
-**🗒️ Notes** — Purpose‑built for **safe provisioning**; not an observability or RCA product.
-
-**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **Y/H**, Overall **Medium‑High**.  
-**⚙️ UAM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **Y/M**, Overall **Medium**.  
-**🔍 UDM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.  
-**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low**.  
-**🧬 UEOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**🚀 UPM — Snapshot:** Ingest **Y/H**, Index **Y/H**, Retrieval **Y/H**, Governance **Y/H**, Overall **High**.
-
----
-
-## 🧩 incident.io (AI for Incident Response)  
-⚙️ **Activities:** Y/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** P/L  
-🧬 **Event ontology:** P/L · 👁️ **Observability:** P/L · 📈 **Confidence:** High
-
-**🏗️ Build style / interface** — Slack/Teams‑first incident product with rich web console.  
-**💡 What it actually does** — **AI assists** during incidents (summaries, suggestions, duplicate detection, post‑incident drafting), orchestrates status pages/commms, and automates workflows across tools.  
-**📊 Data / telemetry** — Incident timelines, runbooks, prior incidents; signals pulled from monitoring/issue trackers.  
-**🔗 Interoperability** — PagerDuty, Jira, GitHub, Statuspage, and many more.  
-**🏢 Deployment model** — SaaS.  
-**🗒️ Notes** — Optimized for **people/process** flow; diagnostics depth depends on integrated observability.
-
-**🧠 UKM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium**.  
-**⚙️ UAM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
-**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
-**🧬 UEOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
-**🚀 UPM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.
-
----
-
-## 🧩 Overmind (Cloud Impact Map)  
-⚙️ **Activities:** P/M · 🔍 **Diagnostics:** P/M · 🚀 **Provisioning:** N/L  
-🧬 **Event ontology:** Y/M · 👁️ **Observability:** P/L · 📈 **Confidence:** Med
-
-**🏗️ Build style / interface** — Cloud map UI & APIs; Terraform Cloud **Run Task** plugin.  
-**💡 What it actually does** — Builds a **graph of your cloud** and provides **blast‑radius/impact analysis** (e.g., before Terraform applies). Helps reviewers understand change scope and dependencies.  
-**📊 Data / telemetry** — Cloud resource inventory/relationships; change context.  
-**🔗 Interoperability** — Terraform Cloud Run Tasks; CI/CD hooks.  
-**🏢 Deployment model** — SaaS.  
-**🗒️ Notes** — Read‑heavy analysis product; **does not apply** changes directly.
-
-**🧠 UKM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **P/M**, Overall **Medium**.  
-**⚙️ UAM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
-**🔍 UDM — Snapshot:** Ingest **P/M**, Index **P/M**, Retrieval **P/M**, Governance **P/M**, Overall **Medium**.  
-**👁️ UOM — Snapshot:** Ingest **P/L**, Index **P/L**, Retrieval **P/L**, Governance **P/L**, Overall **Low‑Medium**.  
-**🧬 UEOM — Snapshot:** Ingest **Y/M**, Index **Y/M**, Retrieval **Y/M**, Governance **Y/M**, Overall **Medium‑High**.  
-**🚀 UPM — Snapshot:** Ingest **N/L**, Index **N/L**, Retrieval **N/L**, Governance **N/L**, Overall **Low**.
-
----
-
-## Neutral one‑line summaries — **Addendum (Nov 2025)**
-- **BigPanda Event Intelligence** — Correlates alerts/changes into incidents with GenAI summaries; acts as a cross‑tool incident brain.  
-- **BMC Helix AIOps** — ML‑based event correlation into “situations” to reduce noise and guide triage.  
-- **Dell APEX AIOps** — CloudIQ‑based proactive monitoring plus Incident Management in Dell’s ops cloud.  
-- **GitLab Duo Agent Platform** — Build governed, org‑specific agents that can open/modify MRs and pipelines in GitLab.  
-- **Harness AIDA** — AI assistance across Harness pipelines/releases with governed automations.  
-- **HashiCorp Terraform MCP + Infragraph** — Agent‑safe Terraform operations with a unified infrastructure graph for impact‑aware changes.  
-- **incident.io** — Chat‑first incident platform with AI summaries, suggestions, and post‑incident drafting.  
-- **Overmind** — Cloud dependency graph and Terraform **impact analysis** for blast‑radius checks pre‑apply.
+**Addendum (Nov 2025)**
+- **[BigPanda Event Intelligence]({{ '/platforms/bigpanda-event-intelligence' | relative_url }})** — Correlates alerts/changes into incidents with GenAI summaries; acts as a cross‑tool incident brain.
+- **[BMC Helix AIOps]({{ '/platforms/bmc-helix-aiops' | relative_url }})** — ML‑based event correlation into "situations" to reduce noise and guide triage.
+- **[Dell APEX AIOps]({{ '/platforms/dell-apex-aiops' | relative_url }})** — CloudIQ‑based proactive monitoring plus Incident Management in Dell's ops cloud.
+- **[GitLab Duo Agent Platform]({{ '/platforms/gitlab-duo-agent-platform' | relative_url }})** — Build governed, org‑specific agents that can open/modify MRs and pipelines in GitLab.
+- **[Harness AIDA]({{ '/platforms/harness-aida' | relative_url }})** — AI assistance across Harness pipelines/releases with governed automations.
+- **[HashiCorp Terraform MCP + Infragraph]({{ '/platforms/hashicorp-terraform-mcp-infragraph' | relative_url }})** — Agent‑safe Terraform operations with a unified infrastructure graph for impact‑aware changes.
+- **[incident.io]({{ '/platforms/incident-io' | relative_url }})** — Chat‑first incident platform with AI summaries, suggestions, and post‑incident drafting.
+- **[Overmind]({{ '/platforms/overmind' | relative_url }})** — Cloud dependency graph and Terraform **impact analysis** for blast‑radius checks pre‑apply.
 

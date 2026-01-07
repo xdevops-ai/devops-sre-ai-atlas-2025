@@ -3,7 +3,7 @@
 # --------------------
 # Site metadata
 # --------------------
-title: "DevOps & SRE AI Platforms — 2025 Atlas"
+title: "DevOps & SRE AI Platforms — 2025 & 2026 Atlas"
 description: "A vendor-neutral, community-driven wiki about DevOps/SRE AI platforms"
 url: "https://xdevops-ai.github.io"          # org/user site URL
 baseurl: "/devops-sre-ai-atlas-2025"         # repo name for project pages
@@ -81,7 +81,7 @@ exclude:
 # SEO defaults
 # --------------------
 seo:
-  name: "DevOps & SRE AI Platforms — 2025 Atlas"
+  name: "DevOps & SRE AI Platforms — 2025 & 2026 Atlas"
   type: "Website"
 
 # --------------------

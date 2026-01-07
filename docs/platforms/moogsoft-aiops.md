@@ -62,6 +62,6 @@ ingest N/L, index N/L, retrieval N/L, governance N/L, overall low
 
 **Latest updates —** Integrated into Dell APEX AIOps portfolio with continued enhancements to correlation rules, workflows, and UI (2024–2025).  
 **Links —**  
-- https://www.moogsoft.com  
-- https://www.dell.com/en-us/dt/apex/aiops.htm  
-- https://docs.moogsoft.com
+- [Official](https://www.moogsoft.com)  
+- [Dell] (https://www.dell.com/en-us/dt/apex/aiops.htm ) 
+- [Docs](https://docs.moogsoft.com)

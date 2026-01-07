@@ -62,6 +62,7 @@ ingest N/L, index N/L, retrieval N/L, governance N/L, overall low
 
 **Latest updates —** Continued expansion of Edwin AI, Service Intelligence, and forecasting capabilities (2024–2025).  
 **Links —**  
-- https://www.logicmonitor.com  
-- https://www.logicmonitor.com/edwin-ai  
-- https://registry.terraform.io/providers/logicmonitor/logicmonitor/latest
+- [Official](https://www.logicmonitor.com)  
+- [Docs](https://docs.logicmonitor.com)  
+- [gitHub](GitHubhttps://www.logicmonitor.com)  
+- [Registration](https://registry.terraform.io/providers/logicmonitor/logicmonitor/latest)

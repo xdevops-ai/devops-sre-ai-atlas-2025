@@ -62,6 +62,6 @@ ingest P/M, index P/M, retrieval P/M, governance Y/M, overall medium
 
 **Latest updates —** Expanded AI-assisted code analysis, improved reachability analysis, and broader IaC coverage (2024–2025).  
 **Links —**  
-- https://snyk.io  
-- https://docs.snyk.io  
-- https://github.com/snyk
+- [Official](https://snyk.io)  
+- [Doc](https://docs.snyk.io)  
+- [GitHub](https://github.com/snyk)
