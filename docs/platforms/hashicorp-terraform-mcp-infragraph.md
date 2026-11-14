@@ -13,6 +13,14 @@ permalink: /platforms/hashicorp-terraform-mcp-infragraph/
 
 Terraform MCP server; reviewed launch explicitly experimental 2025-07-16; Infragraph current status unverified
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Explore Terraform registry/workflow assistance from an MCP-enabled client.
+
+**Pilot question:** Which tools are available in the current server release, what is their permission scope, and is the needed Infragraph capability actually available?
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -28,12 +36,12 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 ## Scope and limitations
 
-Do not merge experimental MCP and Infragraph into a universally shipped autonomous platform.
+The reviewed Terraform MCP launch was explicitly experimental. Its available tools and current support should be checked against the repository; the reviewed material does not establish current Infragraph maturity or a universally shipped autonomous infrastructure platform.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://www.hashicorp.com/en/blog/build-secure-ai-driven-workflows-with-new-terraform-and-vault-mcp-servers)
-2. [Official source 2](https://github.com/hashicorp/terraform-mcp-server)
+1. [Build secure, AI-driven workflows with Terraform and Vault MCP servers (www.hashicorp.com)](https://www.hashicorp.com/en/blog/build-secure-ai-driven-workflows-with-new-terraform-and-vault-mcp-servers)
+2. [GitHub - hashicorp/terraform-mcp-server: The Terraform MCP Server provides seamless integration with Terraform (github.com)](https://github.com/hashicorp/terraform-mcp-server)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

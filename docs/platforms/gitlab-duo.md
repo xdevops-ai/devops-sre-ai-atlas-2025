@@ -13,6 +13,14 @@ permalink: /platforms/gitlab-duo/
 
 GitLab Duo Agent Platform and non-agentic features, documented
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Evaluate agent-assisted coding and pipeline work within GitLab.
+
+**Pilot question:** Which Duo features are available on your GitLab version and subscription, and can they handle a representative repository or CI issue?
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -28,11 +36,11 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 ## Scope and limitations
 
-Preserve per-feature maturity; landing docs do not imply all features GA.
+Duo includes agentic and non-agentic functions with feature-specific availability. A landing page does not establish that every function is GA or included in every GitLab tier.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://docs.gitlab.com/user/gitlab_duo/)
+1. [GitLab Duo | GitLab Docs (docs.gitlab.com)](https://docs.gitlab.com/user/gitlab_duo/)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

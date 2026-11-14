@@ -1,0 +1,13 @@
+criterion,scenario,baseline,target,result,evidence_url,owner,decision
+Verified task success,,,,,,,
+Evidence correctness,,,,,,,
+Human effort minutes,,,,,,,
+Time to useful evidence,,,,,,,
+False confidence,,,,,,,
+Authorization boundary,,,,,,,
+Data boundary,,,,,,,
+Timeout and partial execution,,,,,,,
+Duplicate delivery handling,,,,,,,
+Recovery verification,,,,,,,
+Fully allocated cost per successful task,,,,,,,
+Feature and license availability,,,,,,,

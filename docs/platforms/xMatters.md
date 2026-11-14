@@ -13,6 +13,14 @@ permalink: /platforms/xMatters/
 
 xMatters Flow Designer, documented workflow product
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Automate a deterministic incident-response workflow triggered by events.
+
+**Pilot question:** Can Flow Designer express the required integrations, escalation and failure path? Do not evaluate it as an autonomous AI root-cause investigator.
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -28,11 +36,11 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 ## Scope and limitations
 
-Do not label documented deterministic flows autonomous AI investigation.
+Flow Designer provides deterministic event-driven workflows. Those workflows may be useful without implying autonomous AI reasoning, infrastructure observability or independent root-cause investigation.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://help.xmatters.com/ondemand/flowdesigner/flow-designer.htm)
+1. [Flow Designer (help.xmatters.com)](https://help.xmatters.com/ondemand/flowdesigner/flow-designer.htm)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

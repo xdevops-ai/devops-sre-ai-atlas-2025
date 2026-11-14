@@ -13,6 +13,14 @@ permalink: /platforms/elastic-ai-assistant/
 
 AI Assistant deprecated in Stack 9.4+; Agent Builder successor; feature-specific preview labels remain
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Plan AI-assisted investigation in an Elastic environment while accounting for the assistant-to-Agent-Builder transition.
+
+**Pilot question:** Which knowledge-base and investigation features survive the migration in your exact Stack version, and which remain preview?
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -28,13 +36,13 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 ## Scope and limitations
 
-Critical migration: don't claim successor has all legacy features.
+The move from the deprecated AI Assistant to Agent Builder is not guaranteed feature parity. Evaluate the required knowledge, investigation and workflow features in the exact Stack version, especially where individual capabilities remain preview.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://www.elastic.co/docs/solutions/observability/ai/observability-ai-assistant)
-2. [Official source 2](https://www.elastic.co/docs/explore-analyze/ai-features/ai-chat-experiences/ai-agent-or-ai-assistant)
-3. [Official source 3](https://www.elastic.co/docs/solutions/observability/ai/agent-builder-observability)
+1. [Elastic AI Assistant for Observability and Search | Elastic Docs (www.elastic.co)](https://www.elastic.co/docs/solutions/observability/ai/observability-ai-assistant)
+2. [Compare Agent Builder and AI Assistant | Elastic Docs (www.elastic.co)](https://www.elastic.co/docs/explore-analyze/ai-features/ai-chat-experiences/ai-agent-or-ai-assistant)
+3. [Agent Builder for Observability | Elastic Docs (www.elastic.co)](https://www.elastic.co/docs/solutions/observability/ai/agent-builder-observability)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

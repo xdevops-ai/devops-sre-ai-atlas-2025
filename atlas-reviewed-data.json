@@ -11,11 +11,13 @@
       "monitor+incident context",
       "?"
     ],
-    "note": "Naming evolved from Bits AI SRE. Current API page differs from older preview-labelled cached pages; do not assert blanket API GA.",
+    "note": "Bits naming has evolved and API availability varies by endpoint. A current documentation page and an older preview-labelled result are not enough to assert blanket GA for every API surface.",
     "sources": [
       "https://docs.datadoghq.com/bits_ai/bits_investigation/",
       "https://docs.datadoghq.com/api/latest/bits-ai/"
-    ]
+    ],
+    "customer_use_case": "Investigate incidents where the useful metrics, logs and traces already live in Datadog.",
+    "pilot_question": "Can the investigation cite the relevant signals for a known incident, and distinguish a hypothesis from a confirmed cause?"
   },
   {
     "file": "dynatrace-davis-ai.md",
@@ -29,12 +31,14 @@
       "contextual topology",
       "?"
     ],
-    "note": "Replace 2025 survey as main product evidence.",
+    "note": "Current Dynatrace documentation distinguishes agentic/generative assistance and contextual telemetry. Feature availability is tied to the relevant release and account; query assistance and workflow-based resource changes should be evaluated separately.",
     "sources": [
       "https://docs.dynatrace.com/docs/dynatrace-intelligence/agentic-and-generative-ai/agentic-and-generative-ai-getting-started",
       "https://docs.dynatrace.com/docs/dynatrace-intelligence/agentic-and-generative-ai/chat-with-dynatrace-assist",
       "https://docs.dynatrace.com/docs/whats-new/saas/sprint-308"
-    ]
+    ],
+    "customer_use_case": "Explore AI-assisted troubleshooting alongside an existing Dynatrace telemetry and topology investment.",
+    "pilot_question": "Which Assist/Intelligence features are included in your tenant version and license, and can the output be traced to supporting entities and signals?"
   },
   {
     "file": "cisco-splunk-ai-agents.md",
@@ -48,11 +52,13 @@
       "alert context",
       "?"
     ],
-    "note": "Separate observability from Cisco SOC/security claims. English only documented; realm limitations.",
+    "note": "This record concerns Splunk Observability Cloud, not the whole Cisco security-agent portfolio. Documentation identifies English-language and realm limitations; the November 2026 A2A announcement applies to selected customers, not every account.",
     "sources": [
       "https://help.splunk.com/en/splunk-observability-cloud/splunk-ai-assistant/ai-assistant-in-observability-cloud",
       "https://help.splunk.com/en/splunk-observability-cloud/release-notes/november-2026"
-    ]
+    ],
+    "customer_use_case": "Help operators query and interpret Splunk Observability Cloud without manually composing every query.",
+    "pilot_question": "Does the assistant support your realm, language and data, and are the required agent-to-agent features actually available to your account?"
   },
   {
     "file": "new-relic-ai.md",
@@ -66,11 +72,13 @@
       "incident context",
       "?"
     ],
-    "note": "Rename/add current Autopilot scope; recommendations do not prove autonomous remediation.",
+    "note": "New Relic Autopilot provides an investigation and recommendation surface in the New Relic environment. A proposed remediation is not evidence that the platform executed or verified that change.",
     "sources": [
       "https://docs.newrelic.com/whats-new/2026/07/whats-new-07-21-autopilot/",
       "https://docs.newrelic.com/docs/agentic-ai/autopilot/overview/"
-    ]
+    ],
+    "customer_use_case": "Evaluate incident investigation and recommendations within an existing New Relic estate.",
+    "pilot_question": "Does Autopilot explain a real incident with linked telemetry and runbook context, without presenting a recommendation as an executed fix?"
   },
   {
     "file": "elastic-ai-assistant.md",
@@ -84,12 +92,14 @@
       "service map context",
       "?"
     ],
-    "note": "Critical migration: don't claim successor has all legacy features.",
+    "note": "The move from the deprecated AI Assistant to Agent Builder is not guaranteed feature parity. Evaluate the required knowledge, investigation and workflow features in the exact Stack version, especially where individual capabilities remain preview.",
     "sources": [
       "https://www.elastic.co/docs/solutions/observability/ai/observability-ai-assistant",
       "https://www.elastic.co/docs/explore-analyze/ai-features/ai-chat-experiences/ai-agent-or-ai-assistant",
       "https://www.elastic.co/docs/solutions/observability/ai/agent-builder-observability"
-    ]
+    ],
+    "customer_use_case": "Plan AI-assisted investigation in an Elastic environment while accounting for the assistant-to-Agent-Builder transition.",
+    "pilot_question": "Which knowledge-base and investigation features survive the migration in your exact Stack version, and which remain preview?"
   },
   {
     "file": "bigpanda-ai-incident-assistant.md",
@@ -103,17 +113,19 @@
       "ADR correlation context",
       "?"
     ],
-    "note": "Distinguish IA, AI Detection and Response, and Incident Prevention entitlements.",
+    "note": "Incident Assistant, AI Detection and Response, and Incident Prevention are distinct product surfaces. Their integrations, data access and entitlements should be confirmed separately rather than assumed to be included in one purchase.",
     "sources": [
       "https://docs.bigpanda.io/en/install-ai-incident-assistant",
       "https://docs.bigpanda.io/en/use-the-ai-incident-assistant-web-app",
       "https://docs.bigpanda.io/en/biggy-agent-in-the-adr-console"
-    ]
+    ],
+    "customer_use_case": "Evaluate investigation and incident context on top of a cross-tool event-management workflow.",
+    "pilot_question": "Which capabilities belong to Incident Assistant, ADR or Prevention, and can a pilot show the evidence behind event grouping?"
   },
   {
     "file": "pagerduty-aiops.md",
-    "title": "PagerDuty AIOps",
-    "identity": "AIOps + SRE Agent; SRE Agent and workflow integrations have explicit GA entries; some surfaces/skills early access",
+    "title": "PagerDuty AIOps / Paige (SRE Agent)",
+    "identity": "Paige (SRE Agent), documented; access and AIOps console entitlements differ. Individual feature availability must be checked separately.",
     "axes": [
       "connector/skill context",
       "workflows",
@@ -122,12 +134,13 @@
       "event correlation",
       "?"
     ],
-    "note": "Do not carry all individual EA surfaces into blanket GA.",
+    "note": "Paige, previously described as SRE Agent, provides an investigation surface within PagerDuty. Current documentation distinguishes PagerDuty AI access from the AIOps-plus-AI console requirements. Historical GA announcements do not make every skill or newer feature generally available.",
     "sources": [
-      "https://support.pagerduty.com/main/changelog/sre-agent-is-generally-available",
-      "https://support.pagerduty.com/main/changelog/sre-agent-workflow-integrations-are-generally-available",
-      "https://support.pagerduty.com/main/changelog/sre-agent-skills-now-available-for-early-access"
-    ]
+      "https://docs.pagerduty.com/ai-automation/advance/sre-agent",
+      "https://docs.pagerduty.com/get-started/release-notes"
+    ],
+    "customer_use_case": "Connect AI investigation to an established on-call and incident-response process.",
+    "pilot_question": "Can an incident move from alert through a scoped investigation and approved workflow, and which skills require early-access entitlement?"
   },
   {
     "file": "logicmonitor-aiops.md",
@@ -141,12 +154,14 @@
       "normalized events+correlation",
       "?"
     ],
-    "note": "Fix malformed GitHub link; link actual release/docs.",
+    "note": "Edwin AI includes distinct knowledge and operational-agent surfaces. A current release note identifies changes, while setup and agent documentation are needed to establish the data access and configuration required for a pilot.",
     "sources": [
       "https://www.logicmonitor.com/release-notes/edwin-ai-release-notes-timeline",
       "https://www.logicmonitor.com/support/edwin-ai-agents-overview",
       "https://www.logicmonitor.com/support/private-knowledge-base-agent"
-    ]
+    ],
+    "customer_use_case": "Evaluate investigation, correlated events and knowledge assistance in a LogicMonitor environment.",
+    "pilot_question": "Can Edwin use your private knowledge safely and explain why it grouped alerts or proposed an action?"
   },
   {
     "file": "hpe-opsramp.md",
@@ -160,27 +175,32 @@
       "service maps+alerts",
       "?"
     ],
-    "note": "Current release includes MCP extension and policy management; do not equate all Early Access sidebar features with GA.",
+    "note": "The reviewed release includes MCP extension and alert-policy management. Setup documentation provides a more useful starting point for a pilot; individual early-access features should not be treated as universally available.",
     "sources": [
+      "https://docs.opsramp.com/platform-features/feature-guides/copilot/getting-started/",
       "https://docs.opsramp.com/support/release-notes/2026-releases/platform-2026/platform-2026-10-u1/"
-    ]
+    ],
+    "customer_use_case": "Assess AI assistance where infrastructure monitoring, service maps and alert policies already use OpsRamp.",
+    "pilot_question": "Which release and entitlements expose the needed OpsPilot/MCP functions, and what controls govern policy changes?"
   },
   {
     "file": "bmc-helix-aiops.md",
     "title": "BMC Helix AIOps (ServiceOps)",
-    "identity": "BMC Helix AIOps; current feature validation PARTIAL",
+    "identity": "BMC Helix AIOps; documented observability-cost and HelixGPT Log Analyzer use case. This does not validate availability of the entire agentic suite.",
     "axes": [
-      "?",
+      "Not verified",
       "integration automation documented",
-      "service health context",
-      "OTel ingestion documented",
-      "service model+events",
-      "?"
+      "HelixGPT source-side log analysis in reviewed use case",
+      "OpenTelemetry ingestion, filtering and usage dashboards",
+      "service-model and event context; broader ontology not verified",
+      "Not verified"
     ],
-    "note": "Existing aiops253 agentic page returns 403; do not claim a fresh full agentic validation. Search found aiops262 use-case documentation and Helix docs migration notice.",
+    "note": "The current official documentation describes OpenTelemetry ingestion/filtering, usage dashboards and HelixGPT Log Analyzer just-in-time analysis at the log source without ingesting those logs. This is a concrete observability-cost use case, not proof of the full suite's agentic maturity. Required configuration and entitlement need separate confirmation.",
     "sources": [
-      "https://docs.bmc.com/xwiki/bin/view/IT-Operations-Management/Operations-Management/BMC-Helix-AIOps/aiops262/Getting-started/Use-cases/Managing-the-cost-of-observability/"
-    ]
+      "https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-AIOps/aiops262/Getting-started/Use-cases/Managing-the-cost-of-observability/"
+    ],
+    "customer_use_case": "Evaluate source-side log analysis and observability-cost controls in an existing BMC Helix environment.",
+    "pilot_question": "Can the documented log-analysis workflow operate on your sources with the required access and a measurable reduction in unnecessary ingestion? Confirm broader agentic capabilities separately."
   },
   {
     "file": "dell-apex-aiops.md",
@@ -194,11 +214,14 @@
       "incident correlation lineage",
       "?"
     ],
-    "note": "Same lineage as Moogsoft; avoid two independent competitor counts.",
+    "note": "Dell AIOps Incident Management shares the Moogsoft lineage and is counted once in this directory. Incident-management and observability modules have different scopes; legal documents establish provenance and terms, not operational performance.",
     "sources": [
+      "https://www.dell.com/support/product-details/en-us/product/apex-aiops-incident-management/overview",
       "https://www.dell.com/en-us/legal/lp/apex-ai-ops",
       "https://www.dell.com/en-us/legal/lp/cloud-and-hosting-services"
-    ]
+    ],
+    "customer_use_case": "Evaluate Dell incident management or the evolution of an existing Moogsoft investment.",
+    "pilot_question": "Which AIOps modules and migration terms apply, and does the purchased service include the observability and incident functions you need?"
   },
   {
     "file": "moogsoft-aiops.md",
@@ -212,10 +235,12 @@
       "same",
       "?"
     ],
-    "note": "Mark legacy name or alias, not separate modern product. Official Dell legal page explicitly states rename.",
+    "note": "Moogsoft Cloud was renamed Dell APEX AIOps Incident Management. This is a historical alias, not a separate modern competitor; consult the Dell record for the current evaluation.",
     "sources": [
       "https://www.dell.com/en-us/legal/lp/cloud-and-hosting-services"
-    ]
+    ],
+    "customer_use_case": "Find the current product lineage for an existing Moogsoft evaluation or contract.",
+    "pilot_question": "Compare the Dell record rather than treating Moogsoft and Dell as competing independent offers."
   },
   {
     "file": "ibm-instana-turbonomic-watsonx.md",
@@ -229,11 +254,13 @@
       "application entities",
       "resource optimization, not general provisioning"
     ],
-    "note": "Separate product scopes rather than invent single unified product. Licenses/versions gate integration.",
+    "note": "Instana and Turbonomic are separate product scopes connected through an integration. Licensing and supported versions gate that integration; do not assume a single universal product includes every capability.",
     "sources": [
       "https://www.ibm.com/docs/en/instana-observability?topic=hosted-integrating-turbonomic",
       "https://www.ibm.com/docs/en/instana-observability/standard/1.0.321?topic=capabilities-generative-ai-in-instana"
-    ]
+    ],
+    "customer_use_case": "Explore investigation with Instana and resource-optimization actions through its Turbonomic integration.",
+    "pilot_question": "Are both product licenses and compatible versions in scope, and can optimization results be verified separately from diagnosis?"
   },
   {
     "file": "Rootly.md",
@@ -247,12 +274,14 @@
       "alerts+incident context",
       "?"
     ],
-    "note": "Existing file, not new vendor.",
+    "note": "Rootly combines incident workflows with AI investigation and connected evidence. Teams and MCP surfaces are documented separately. Confirm the integrations and permissions required for your response workflow; incident automation does not establish general infrastructure provisioning.",
     "sources": [
       "https://rootly.com/ai-sre",
       "https://rootly.com/changelog/rootly-mcp-server-is-ga",
       "https://rootly.com/changelog/investigate-page-and-catch-up-without-leaving-microsoft-teams"
-    ]
+    ],
+    "customer_use_case": "Assess AI investigations alongside incident coordination, communication and incident history.",
+    "pilot_question": "Can the response team inspect evidence and continue its normal incident workflow, including the required chat and MCP integrations?"
   },
   {
     "file": "incident-io.md",
@@ -266,11 +295,13 @@
       "incident relationships",
       "?"
     ],
-    "note": "Separate incident workflow automation from production write remediation.",
+    "note": "Investigations is described as a paid add-on for the specified plans. Incident-response coordination and evidence gathering should be distinguished from permission to mutate production infrastructure.",
     "sources": [
       "https://incident.io/investigations",
       "https://incident.io/blog/what-is-a-software-reliability-platform"
-    ]
+    ],
+    "customer_use_case": "Add evidence-backed investigations to an incident.io response workflow.",
+    "pilot_question": "Does the Investigations add-on cover your plan, required signals and incident volume, and how does the team review inconclusive findings?"
   },
   {
     "file": "microsoft-azure-sre-agent.md",
@@ -284,11 +315,13 @@
       "deployment correlation",
       "permitted CLI scope, not universal"
     ],
-    "note": "Distinct from Foundry and IDE Copilot.",
+    "note": "Azure SRE Agent is distinct from Foundry Agent Service and the VS Code coding assistant. Its operational behavior depends on supported run modes, connected resources and granted permissions.",
     "sources": [
       "https://learn.microsoft.com/en-us/azure/sre-agent/overview",
       "https://learn.microsoft.com/en-us/azure/sre-agent/create-and-set-up"
-    ]
+    ],
+    "customer_use_case": "Evaluate governed investigations and scheduled operational tasks in an Azure-centered environment.",
+    "pilot_question": "Which identity, permissions, run mode and approval policy apply to each scheduled or interactive action?"
   },
   {
     "file": "google-duet-ai-ops.md",
@@ -306,7 +339,9 @@
     "sources": [
       "https://docs.cloud.google.com/cloud-assist/overview",
       "https://docs.cloud.google.com/cloud-assist/investigations"
-    ]
+    ],
+    "customer_use_case": "Evaluate Google Cloud investigations and assistance if your account has the required access.",
+    "pilot_question": "Confirm Preview and investigation access with your support tier/account team before spending time on a pilot."
   },
   {
     "file": "duplocloud-ai-help-desk.md",
@@ -320,10 +355,12 @@
       "ticket relationships only",
       "platform tasks, scope-dependent"
     ],
-    "note": "Old ai-suite URL is missing. Replacement:",
+    "note": "AI HelpDesk is documented within ARMOR. The relevant operational scope is supervised production assistance in the DuploCloud platform; confirm the ticket, permission and approval flow required for the task.",
     "sources": [
       "https://docs.duplocloud.com/docs/armor/helpdesk"
-    ]
+    ],
+    "customer_use_case": "Evaluate ticket-driven operational assistance in the DuploCloud platform.",
+    "pilot_question": "Can a representative ticket produce a scoped, reviewed production command with an auditable outcome in your existing environment?"
   },
   {
     "file": "kubiya.md",
@@ -337,12 +374,15 @@
       "graph, ontology scope unproven",
       "infrastructure workflows"
     ],
-    "note": "",
+    "note": "Kubiya documents hosted and self-hosted control-plane options and governed workflows. The MCP interface exposes selected operations, not proof of every infrastructure capability. Diagnosis depends on connected tools; validate the execution identity and audit trail in your own workflow.",
     "sources": [
+      "https://github.com/kubiyabot/kubiya-mcp-server",
       "https://docs.kubiya.ai/mcp/overview",
       "https://docs.kubiya.ai/core-concepts/control-plane/overview",
       "https://docs.kubiya.ai/api-reference/workflows/overview"
-    ]
+    ],
+    "customer_use_case": "Offer governed operational workflows through a shared execution control plane.",
+    "pilot_question": "Where will runners and the control plane operate, and can the workflow enforce the requesting user's permissions and approval boundaries?"
   },
   {
     "file": "harness-ai.md",
@@ -356,10 +396,12 @@
       "pipeline/deployment graph",
       "IaC/deployments"
     ],
-    "note": "Old Harness AI URL redirects. Separate marketed module capability from verified GA.",
+    "note": "Harness spans several SDLC modules and agents. A platform-level marketing page does not establish general availability, licensing or behavior of every module; evaluate the specific delivery workflow and required integrations.",
     "sources": [
       "https://www.harness.io/products/platform"
-    ]
+    ],
+    "customer_use_case": "Investigate AI assistance across an existing delivery, infrastructure and software-development toolchain.",
+    "pilot_question": "Which modules and agents are included and available, and can one pipeline failure-to-fix path be demonstrated without buying the whole portfolio?"
   },
   {
     "file": "firefly-agentic-cloud-automation.md",
@@ -373,10 +415,12 @@
       "dependency graph",
       "IaC generation+recovery"
     ],
-    "note": "Product emphasis now resilience; fine-grained GA unknown.",
+    "note": "The reviewed Firefly product material emphasizes cloud resilience, inventory, drift and recovery. Availability of individual functions is not established by a single platform marketing page, and generated IaC is not proof of a successful controlled recovery.",
     "sources": [
       "https://www.firefly.ai/product"
-    ]
+    ],
+    "customer_use_case": "Evaluate cloud inventory, drift understanding, IaC generation and recovery-oriented workflows.",
+    "pilot_question": "Can a pilot show the source-of-truth mapping, proposed change and recovery evidence for one controlled drift scenario?"
   },
   {
     "file": "qovery-migration-agent.md",
@@ -393,7 +437,9 @@
     "note": "README scope inconsistent between intro and feature list; conservative Heroku-to-Qovery focus, not general migration success.",
     "sources": [
       "https://github.com/Qovery/qovery-migration-ai-agent"
-    ]
+    ],
+    "customer_use_case": "Experiment with generated migration artifacts for a supported app/provider combination.",
+    "pilot_question": "Verify the repository's current supported source platform and manually validate generated Terraform and Dockerfiles before treating migration as successful."
   },
   {
     "file": "kuberns-platform.md",
@@ -407,10 +453,12 @@
       "?",
       "deployment+scaling claimed"
     ],
-    "note": "Source is marketing page, not independent test or GA contract. Do not reuse 90% faster / savings claims.",
+    "note": "The reviewed source is a commercial product page rather than independent product testing or a feature-specific availability contract. Supported workloads, operating responsibilities and deployment controls should be validated; no advertised speed or savings percentage is adopted here.",
     "sources": [
       "https://kuberns.com/"
-    ]
+    ],
+    "customer_use_case": "Explore an AI-assisted managed deployment platform for an application.",
+    "pilot_question": "Request product documentation and test deployment, rollback, access controls and pricing: marketing claims alone do not validate these capabilities."
   },
   {
     "file": "hashicorp-terraform-mcp-infragraph.md",
@@ -424,11 +472,13 @@
       "Infragraph unverified",
       "Terraform workflow assistance"
     ],
-    "note": "Do not merge experimental MCP and Infragraph into a universally shipped autonomous platform.",
+    "note": "The reviewed Terraform MCP launch was explicitly experimental. Its available tools and current support should be checked against the repository; the reviewed material does not establish current Infragraph maturity or a universally shipped autonomous infrastructure platform.",
     "sources": [
       "https://www.hashicorp.com/en/blog/build-secure-ai-driven-workflows-with-new-terraform-and-vault-mcp-servers",
       "https://github.com/hashicorp/terraform-mcp-server"
-    ]
+    ],
+    "customer_use_case": "Explore Terraform registry/workflow assistance from an MCP-enabled client.",
+    "pilot_question": "Which tools are available in the current server release, what is their permission scope, and is the needed Infragraph capability actually available?"
   },
   {
     "file": "opsera-hummingbird.md",
@@ -442,12 +492,14 @@
       "toolchain relationships",
       "workflows/integrations"
     ],
-    "note": "Distinguish conversational analytics from autonomous incident remediation.",
+    "note": "Conversational toolchain analytics, pipeline explanations and integration-driven automation address different outcomes. None of those alone proves autonomous production incident remediation.",
     "sources": [
       "https://opsera.ai/unified-insights",
       "https://opsera.ai/platform/",
       "https://opsera.ai/newsroom/opsera-unveils-next-generation-ai-powered-devops-platform-with-hummingbird-ai-reasoning-agents-insights-in-a-box-and-github-mcp-integration/"
-    ]
+    ],
+    "customer_use_case": "Evaluate cross-tool delivery insights and pipeline explanations.",
+    "pilot_question": "Can it connect the relevant delivery systems and explain a real pipeline failure with source evidence rather than only a dashboard summary?"
   },
   {
     "file": "xMatters.md",
@@ -461,28 +513,32 @@
       "alert-triggered flows",
       "custom integration-dependent"
     ],
-    "note": "Do not label documented deterministic flows autonomous AI investigation.",
+    "note": "Flow Designer provides deterministic event-driven workflows. Those workflows may be useful without implying autonomous AI reasoning, infrastructure observability or independent root-cause investigation.",
     "sources": [
       "https://help.xmatters.com/ondemand/flowdesigner/flow-designer.htm"
-    ]
+    ],
+    "customer_use_case": "Automate a deterministic incident-response workflow triggered by events.",
+    "pilot_question": "Can Flow Designer express the required integrations, escalation and failure path? Do not evaluate it as an autonomous AI root-cause investigator."
   },
   {
     "file": "termius-gloria.md",
-    "title": "Termius — Gloria",
-    "identity": "Termius Gloria identity/link requires further verification",
+    "title": "GloriaOps (early access; Termius link lineage)",
+    "identity": "Early access offered through the official GloriaOps page; capabilities below are vendor-described, not GA or independently tested.",
     "axes": [
-      "?",
-      "?",
-      "?",
-      "?",
-      "?",
-      "?"
+      "vendor-described infrastructure context",
+      "structured operations and approval plans, early-access claim",
+      "alert-triggered read-only investigation, vendor-described",
+      "connected infrastructure signals; backend coverage unverified",
+      "live infrastructure model described; generic ontology unverified",
+      "general provisioning not verified"
     ],
-    "note": "Old termius.com/gloria is 404. Official Termius footer links gloriaops.com, which redirects to gloriashell.com; destination inaccessible in tool. Preserve as verification pending, no fresh capability claims.",
+    "note": "The official Termius beta page leads through gloriaops.com to gloriashell.com, which is accessible and offers Request early access. The vendor describes a live infrastructure model, alert-triggered read-only investigation, structured operations for SSH/cloud/database targets and explicit change plans with approval. Integration breadth, support, security effectiveness and general availability have not been independently established.",
     "sources": [
-      "https://termius.com/beta-program",
-      "https://gloriaops.com"
-    ]
+      "https://gloriashell.com/",
+      "https://termius.com/beta-program"
+    ],
+    "customer_use_case": "Explore an early-access infrastructure agent for context-aware investigation and reviewed operational work.",
+    "pilot_question": "Confirm early-access eligibility, supported targets and operational ownership; demonstrate read-only investigation and approval enforcement before enabling changes."
   },
   {
     "file": "atlassian-rovo-dev.md",
@@ -496,10 +552,12 @@
       "work-item context",
       "?"
     ],
-    "note": "Flag transition rather than active standalone GA.",
+    "note": "The standalone Rovo Dev offering is undergoing an end-of-life/packaging transition into eligible Atlassian products. Confirm the current plan and supported experience rather than relying on the older standalone positioning.",
     "sources": [
       "https://www.atlassian.com/software/rovo-dev"
-    ]
+    ],
+    "customer_use_case": "Evaluate coding assistance within the current Atlassian offering rather than an obsolete standalone plan.",
+    "pilot_question": "Confirm the transition, Jira/Teamwork Collection eligibility and supported experience before contracting for Rovo Dev."
   },
   {
     "file": "github-copilot-coding-agent.md",
@@ -513,10 +571,12 @@
       "issue+PR context",
       "code output, not managed infra"
     ],
-    "note": "Old URL redirects; remove third-party Verge article as primary technical proof.",
+    "note": "The reviewed GitHub documentation establishes the repository-oriented cloud coding experience. Code output and PR automation still require the appropriate repository authorization, tests and human review; they do not establish production infrastructure operation.",
     "sources": [
       "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github"
-    ]
+    ],
+    "customer_use_case": "Delegate repository coding, debugging and pull-request work to a cloud coding agent.",
+    "pilot_question": "Can it produce a reviewable PR for your repository while respecting branch protection, repository access and test requirements?"
   },
   {
     "file": "azure-copilot-agent-mode.md",
@@ -530,10 +590,12 @@
       "?",
       "custom tools only"
     ],
-    "note": "Relabel IDE agent or source actual Azure Copilot separately.",
+    "note": "The evidence describes GitHub Copilot and AI tooling in VS Code, not a distinct Azure Copilot operations service. Local terminal/tool access and repository changes must be evaluated separately from cloud resource administration.",
     "sources": [
       "https://code.visualstudio.com/docs/chat/chat-overview"
-    ]
+    ],
+    "customer_use_case": "Use an IDE assistant for code and tool-assisted development in VS Code.",
+    "pilot_question": "Does your desired behavior belong to GitHub Copilot in VS Code or a distinct Azure operations product? Validate that distinction before comparing prices or permissions."
   },
   {
     "file": "gitlab-duo.md",
@@ -547,10 +609,12 @@
       "SDLC context",
       "CI-driven, not generic"
     ],
-    "note": "Preserve per-feature maturity; landing docs do not imply all features GA.",
+    "note": "Duo includes agentic and non-agentic functions with feature-specific availability. A landing page does not establish that every function is GA or included in every GitLab tier.",
     "sources": [
       "https://docs.gitlab.com/user/gitlab_duo/"
-    ]
+    ],
+    "customer_use_case": "Evaluate agent-assisted coding and pipeline work within GitLab.",
+    "pilot_question": "Which Duo features are available on your GitLab version and subscription, and can they handle a representative repository or CI issue?"
   },
   {
     "file": "zencoder-ai-agents.md",
@@ -564,10 +628,12 @@
       "?",
       "?"
     ],
-    "note": "Adjacent developer tool, not proven production SRE.",
+    "note": "Zencoder is evaluated here as a developer tool for code, tests and review. The reviewed product positioning does not establish production SRE investigation or general infrastructure operation.",
     "sources": [
       "https://zencoder.ai/"
-    ]
+    ],
+    "customer_use_case": "Evaluate code, test and review assistance for a development workflow.",
+    "pilot_question": "Can it generate a reviewable change and meaningful tests for your codebase? Production incident response is a separate capability to verify."
   },
   {
     "file": "jfrog-fly-agentic-repo.md",
@@ -581,10 +647,12 @@
       "artifact metadata",
       "artifact delivery, not infra provisioning"
     ],
-    "note": "Major lifecycle correction, preserve historical alias.",
+    "note": "The standalone Fly beta is winding down and its AI-native capabilities are moving into the JFrog Platform. Buyers and existing users should verify the successor feature, license and migration path rather than assume the former beta remains a standalone offer.",
     "sources": [
       "https://jfrog.com/blog/fly-graduates-ai-native-capabilities-land-in-artifactory/"
-    ]
+    ],
+    "customer_use_case": "Understand where former Fly capabilities now sit in the JFrog Platform.",
+    "pilot_question": "Which capabilities have migrated to Artifactory, under which license, and what replaces any dependency on the standalone beta?"
   },
   {
     "file": "snyk.md",
@@ -598,11 +666,13 @@
       "dependency relationships",
       "IaC scanning not provisioning"
     ],
-    "note": "Security adjacent; do not treat as SRE RCA.",
+    "note": "Snyk addresses software-security findings and developer remediation. Security analysis, fix PRs and IaC scanning should not be treated as a general production SRE investigation or provisioning platform.",
     "sources": [
       "https://docs.snyk.io/",
       "https://docs.snyk.io/snyk-data-and-governance/how-snyk-incorporates-generative-ai-into-the-platform"
-    ]
+    ],
+    "customer_use_case": "Improve security analysis and developer remediation workflows.",
+    "pilot_question": "Can a vulnerability finding be explained and fixed in a reviewable PR without confusing security findings with infrastructure incident diagnosis?"
   },
   {
     "file": "aws-strands-sdk.md",
@@ -616,10 +686,12 @@
       "custom",
       "deployment of agents only"
     ],
-    "note": "Distinct from AWS DevOps Agent.",
+    "note": "Strands is a toolkit for building agents, not the packaged AWS DevOps Agent investigation service. Custom tools, policies, evaluations and operating support remain part of the engineering work.",
     "sources": [
       "https://strandsagents.com/latest/"
-    ]
+    ],
+    "customer_use_case": "Build a custom agent when your team can own integrations, evaluation and operational support.",
+    "pilot_question": "What must your team implement beyond the toolkit to provide a safe, tenant-scoped SRE workflow? Compare engineering effort, not only model cost."
   },
   {
     "file": "azure-ai-agent-service-foundry.md",
@@ -633,10 +705,12 @@
       "custom",
       "agent hosting only"
     ],
-    "note": "Update name and redirected docs, do not equate agent observability with infrastructure UOM.",
+    "note": "Foundry Agent Service is a managed agent runtime and development platform. Agent monitoring and evaluation are not equivalent to native infrastructure observability; custom operational behavior still needs tools and policies.",
     "sources": [
       "https://learn.microsoft.com/en-us/azure/foundry/agents/overview"
-    ]
+    ],
+    "customer_use_case": "Build and operate a custom managed agent on Microsoft Foundry.",
+    "pilot_question": "Which runtime, tool, network and data-governance constraints apply, and which optimizer features are still Preview?"
   },
   {
     "file": "google-vertex-agent-builder.md",
@@ -650,10 +724,12 @@
       "custom",
       "agent deployment only"
     ],
-    "note": "Preserve legacy name/redirect and separate from Cloud Assist operational product.",
+    "note": "The earlier Vertex Agent Builder entry point now leads to Google's Gemini Enterprise Agent Platform. This is an agent-building foundation, distinct from the Cloud Assist operational investigation product.",
     "sources": [
       "https://cloud.google.com/products/gemini-enterprise-agent-platform"
-    ]
+    ],
+    "customer_use_case": "Evaluate a managed foundation for custom enterprise agents on Google's current platform.",
+    "pilot_question": "Confirm the current product name, APIs and migration path; distinguish an agent-building platform from Cloud Assist investigations."
   },
   {
     "file": "databricks-agent-bricks.md",
@@ -667,10 +743,12 @@
       "custom",
       "agent runtime hosting"
     ],
-    "note": "Old URL redirects to /agents. No out-of-box SRE equivalence.",
+    "note": "Current documentation points to Databricks agent development and runtime capabilities. Agent traces, sandboxing and evaluations do not by themselves establish an out-of-the-box infrastructure SRE workflow.",
     "sources": [
       "https://docs.databricks.com/aws/en/agents"
-    ]
+    ],
+    "customer_use_case": "Build governed data-grounded agents where the team already works in Databricks.",
+    "pilot_question": "Can a representative agent retrieve the correct governed data and pass your evaluation set? Agent traces alone do not prove infrastructure monitoring."
   },
   {
     "file": "snowflake-cortex-agents.md",
@@ -684,10 +762,12 @@
       "custom",
       "agent runtime only"
     ],
-    "note": "Data agent platform adjacent, not turnkey infrastructure ops.",
+    "note": "Cortex Agents operates over governed enterprise data and tools. It is an adjacent agent-building platform, not evidence of an out-of-the-box infrastructure operations service.",
     "sources": [
       "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents"
-    ]
+    ],
+    "customer_use_case": "Build enterprise-data agents within Snowflake's governance model.",
+    "pilot_question": "Can access control, tool execution and retrieval be validated for two users with different data permissions?"
   },
   {
     "file": "dataiku-ai-agents.md",
@@ -701,10 +781,12 @@
       "custom",
       "agent deployment only"
     ],
-    "note": "Framework capabilities must not be scored as prebuilt SRE behavior.",
+    "note": "Dataiku supplies agent-building and evaluation capabilities over connected data and tools. Those framework capabilities should not be scored as prebuilt production SRE behavior.",
     "sources": [
       "https://doc.dataiku.com/dss/latest/agents/introduction.html"
-    ]
+    ],
+    "customer_use_case": "Develop and evaluate custom agents as part of an existing Dataiku workflow.",
+    "pilot_question": "Which tools and datasets must be integrated, and who will own the operational behavior beyond the agent-building platform?"
   },
   {
     "file": "servicenow-ai-agent-orchestrator.md",
@@ -718,10 +800,12 @@
       "CMDB context separate",
       "workflow-dependent"
     ],
-    "note": "Do not equate entire ServiceNow portfolio with one orchestrator license.",
+    "note": "ServiceNow's wider portfolio includes workflow, ITOM and CMDB capabilities. They should not all be attributed to one agent orchestrator license; implementation and entitlement depend on the chosen modules and use case.",
     "sources": [
       "https://www.servicenow.com/products/ai-agents.html"
-    ]
+    ],
+    "customer_use_case": "Explore governed agent workflows in a ServiceNow-centered service-management estate.",
+    "pilot_question": "Identify the exact modules, licenses, CMDB requirements and integrations needed for one end-to-end workflow rather than assuming the entire portfolio is included."
   },
   {
     "file": "salesforce-agentforce-opsai.md",
@@ -735,10 +819,12 @@
       "customer/workflow context",
       "?"
     ],
-    "note": "Rename to verified product and adjacent category. Partner press releases not proof of infrastructure SRE.",
+    "note": "Agentforce is the verified product identity; an infrastructure-SRE product named OpsAI was not established. Salesforce business/service context and agent optimization are not equivalent to full-stack infrastructure monitoring.",
     "sources": [
       "https://www.salesforce.com/agentforce/"
-    ]
+    ],
+    "customer_use_case": "Evaluate agents for Salesforce business or service workflows.",
+    "pilot_question": "Is the use case a Salesforce service process or infrastructure SRE? Require explicit evidence before treating Agentforce as a replacement for an operations platform."
   },
   {
     "file": "ibm-askiam.md",
@@ -752,10 +838,12 @@
       "identity relationships",
       "user provisioning only"
     ],
-    "note": "Identity provisioning is not general infrastructure provisioning.",
+    "note": "AskIAM is a consultant-managed identity and access-management offering. User/access provisioning is distinct from general cloud infrastructure provisioning.",
     "sources": [
       "https://newsroom.ibm.com/blog-askiam-ibms-new-agentic-ai-for-identity-and-access-management"
-    ]
+    ],
+    "customer_use_case": "Evaluate consultant-managed automation of identity and access-management tasks.",
+    "pilot_question": "Can approval, identity scope and access provisioning be demonstrated for your IAM process? This does not establish general cloud infrastructure provisioning."
   },
   {
     "file": "soloio-kagent.md",
@@ -769,15 +857,17 @@
       "custom",
       "agent deployment"
     ],
-    "note": "Main identity; distinguish OSS and commercial entitlements.",
+    "note": "Open-source kagent and the Enterprise offering have different scopes. A Kubernetes agent framework still requires appropriate tools, permissions and operating ownership; its extensibility does not establish a turnkey incident-resolution service.",
     "sources": [
       "https://kagent.dev/"
-    ]
+    ],
+    "customer_use_case": "Build Kubernetes-oriented agent workflows using kagent and compatible tools.",
+    "pilot_question": "What is provided by OSS versus the Enterprise offering, and which permissions, tools and evaluation harness will your team supply?"
   },
   {
     "file": "kagent-solo-io.md",
     "title": "kagent — legacy duplicate page",
-    "identity": "Duplicate kagent file",
+    "identity": "Historical alias of kagent; see the canonical record.",
     "axes": [
       "same as soloio-kagent",
       "same",
@@ -786,10 +876,12 @@
       "same",
       "same"
     ],
-    "note": "Merge or canonical alias, preserve existing links rather than count twice.",
+    "note": "This historical entry refers to the same kagent project as the canonical record. It is retained for link compatibility and excluded from the canonical platform count.",
     "sources": [
       "https://kagent.dev/"
-    ]
+    ],
+    "customer_use_case": "Find the canonical kagent evaluation while preserving an older Atlas URL.",
+    "pilot_question": "Use the canonical kagent record; this page is not an additional competing product."
   },
   {
     "file": "robusta-holmesgpt.md",
@@ -808,7 +900,9 @@
       "https://docs.robusta.dev/master/how-it-works/architecture.html",
       "https://docs.robusta.dev/master/configuration/holmesgpt/holmes-chat-api.html",
       "https://docs.robusta.dev/master/configuration/github-actions/holmes-pr-review.html"
-    ]
+    ],
+    "customer_use_case": "Investigate Kubernetes incidents using existing telemetry, with an OSS or commercial route to evaluate.",
+    "pilot_question": "Which required features are available in HolmesGPT OSS versus Robusta commercial, and does the selected deployment respect your data boundary?"
   },
   {
     "file": "neubird-ai.md",
@@ -826,7 +920,9 @@
     "sources": [
       "https://docs.neubird.ai/mcp/overview/",
       "https://docs.neubird.ai/mcp/getting-started/quickstart/"
-    ]
+    ],
+    "customer_use_case": "Bring connected operational investigations into web, IDE, terminal or MCP-client workflows.",
+    "pilot_question": "Can an engineer start an investigation, inspect status and retrieve evidence using the required client without granting unnecessary connector permissions?"
   },
   {
     "file": "resolve-ai.md",
@@ -842,10 +938,13 @@
     ],
     "note": "Resolve positions its platform around multi-agent production investigations, governed operational work and reusable production memory. The May 2026 announcement distinguishes shipping capabilities from Triage early access. Availability should be checked per feature; generic infrastructure provisioning and independently measured performance improvements are not established by the reviewed sources.",
     "sources": [
-      "https://resolve.ai/blog/agents-to-run-and-fix-your-software",
+      "https://resolve.ai/product/overview",
       "https://resolve.ai/product/ai-sre",
-      "https://resolve.ai/why-resolve"
-    ]
+      "https://resolve.ai/integrations",
+      "https://resolve.ai/blog/agents-to-run-and-fix-your-software"
+    ],
+    "customer_use_case": "Assess a production investigation assistant with retained context and governed operational work.",
+    "pilot_question": "Can it distinguish evidence from hypotheses on your incident set, and which requested functions are shipping versus early access?"
   },
   {
     "file": "traversal.md",
@@ -865,7 +964,9 @@
       "https://www.traversal.com/platform/knowledge-bank",
       "https://www.traversal.com/blog/announcing-alert-intelligence",
       "https://www.traversal.com/security"
-    ]
+    ],
+    "customer_use_case": "Evaluate production-context reasoning and alert intelligence for investigation.",
+    "pilot_question": "Resolve the discrepancy between read-only security claims and fix-oriented marketing before authorizing or expecting production writes."
   },
   {
     "file": "ciroos.md",
@@ -883,7 +984,9 @@
     "sources": [
       "https://ciroos.ai/docs/msft-teams-ciroos-setup/",
       "https://ciroos.ai/introducing-ciroos-signal-intelligence/"
-    ]
+    ],
+    "customer_use_case": "Evaluate cross-domain alert correlation and investigations within collaborative response channels.",
+    "pilot_question": "Can channel/project/cluster scope and account linking prevent the wrong team from receiving another project's findings?"
   },
   {
     "file": "cleric.md",
@@ -902,7 +1005,9 @@
       "https://cleric.ai/product",
       "https://cleric.ai/integrations",
       "https://cleric.ai/pricing"
-    ]
+    ],
+    "customer_use_case": "Evaluate investigation and change verification that can lead to a reviewable fix PR.",
+    "pilot_question": "Does a known regression produce linked evidence and an independently verifiable recovery signal, with writes remaining opt-in?"
   },
   {
     "file": "aws-devops-agent.md",
@@ -921,7 +1026,9 @@
       "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-devops-agent-generally-available/",
       "https://docs.aws.amazon.com/devopsagent/latest/userguide/",
       "https://docs.aws.amazon.com/cli/latest/reference/devops-agent/"
-    ]
+    ],
+    "customer_use_case": "Evaluate an operational investigation product with AWS and connected external context.",
+    "pilot_question": "Are your regions, telemetry integrations and permission boundaries supported, and does the agent verify rather than merely suggest a resolution?"
   },
   {
     "file": "komodor-klaudia.md",
@@ -937,9 +1044,12 @@
     ],
     "note": "Komodor expanded its Kubernetes AI SRE into an Agentic Operations Platform with ready-to-run and custom workflows. Its September 2026 announcement describes agent import and SDK support, runbooks, role-scoped tools and credentials, approvals and audit. Klaudia belongs to this vendor record. Deploying an agent is not the same as general infrastructure provisioning; performance and readiness assertions have not been independently tested.",
     "sources": [
+      "https://komodor.com/platform/klaudia-ai-powered-troubleshooting/",
       "https://komodor.com/blog/komodor-launches-agentic-operations-platform-combining-ready-to-run-automation-with-a-comprehensive-backbone-for-custom-agents/",
       "https://komodor.com/blog/klaudia-how-we-built-an-ai-sre-enterprise-trusts/"
-    ]
+    ],
+    "customer_use_case": "Evaluate Kubernetes investigation plus governed operational workflows in the Komodor platform.",
+    "pilot_question": "Can the selected workflow demonstrate scoped credentials, approvals and an audit trail, and does it require custom agent development?"
   },
   {
     "file": "grafana-assistant.md",
@@ -955,9 +1065,12 @@
     ],
     "note": "Grafana Assistant combines observability-native investigations with natural-language monitoring and skills. Investigations and Watchers have GA milestones, while Managed Sandboxes for code-fix work remain public preview in the October announcement. Skills and tool approvals have their own configuration. Access from self-managed Grafana still connects to Grafana Cloud and does not establish wholly offline or on-premises inference.",
     "sources": [
+      "https://grafana.com/docs/grafana-cloud/platform/grafana-assistant/platform/watchers/",
+      "https://grafana.com/docs/grafana/latest/ai-tools/grafana-assistant/self-managed/",
       "https://grafana.com/blog/observabilitycon-2026-announcements/",
-      "https://grafana.com/whats-new/page/2/",
       "https://grafana.com/blog/grafana-assistant-everywhere/"
-    ]
+    ],
+    "customer_use_case": "Evaluate investigation and monitoring assistance where the relevant signals are in Grafana Cloud.",
+    "pilot_question": "Separate GA Investigations/Watchers from preview sandboxes, and confirm that the required Grafana Cloud connection meets your data policy."
   }
 ]

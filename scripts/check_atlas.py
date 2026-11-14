@@ -9,7 +9,7 @@ assert len({r['file'] for r in rows})==54
 idx=(docs/'platforms/index.md').read_text(); caps=(docs/'capabilities/index.md').read_text()
 for r in rows:
  p=docs/'platforms'/r['file']; text=p.read_text(); slug=p.stem
- for token in ['parent: Platform Directory',f'permalink: /platforms/{slug}/','## Identity and availability','## Capability mapping','## Official sources','14 November 2026']:
+ for token in ['parent: Platform Directory',f'permalink: /platforms/{slug}/','## Identity and availability','## Capability mapping','## Official links and evidence','## Is it relevant to your team?' ,'14 November 2026']:
   if token not in text: errors.append(f'{p.name}: missing {token}')
  if len(re.findall(r'^\| (?:UKM|UAM|UDM|UOM|UEOM|UPM) ',text,re.M))!=6:errors.append(f'{p.name}: six axes required')
  if not re.search(r'\]\(https://',text):errors.append(f'{p.name}: no source')

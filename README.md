@@ -60,9 +60,9 @@ Your site will be available at:
 
 ### Key Sections
 
-- **[Platform Overview](docs/platform-overview/)** — Executive summary and market analysis
+- **[Buyer Guide](docs/platform-overview/)** — Shortlist by need and design a fair pilot
 - **[Platform Directory](docs/platforms/)** — Deep dives into 52 AI platforms
-- **[Capability Framework](docs/capabilities/)** — How we evaluate and score AI platforms
+- **[Capability Framework](docs/capabilities/)** — Evidence across six operational capabilities
 - **[Community Resources](docs/community/)** — How to contribute and get involved
 
 ---
@@ -112,7 +112,7 @@ We welcome contributions from:
 🎯 Submit capability assessments
 📢 Suggest improvements and corrections
 
-📘 [Read the Community Guidelines →](docs/community/CONTRIBUTING.md)
+📘 [Read the Community Guidelines →](docs/community/index.md)
 
 ---
 
@@ -183,7 +183,7 @@ For full terms, see the [LICENSE](LICENSE).
 ## 🔗 Quick Links
 - 👥 [DevOps & SRE AI Platforms Atlas 2025-2026](https://xdevops-ai.github.io/devops-sre-ai-atlas-2025/) — Web Atlas
 - 📚 [Full Documentation](docs/) — Detailed platform analysis
-- 🤝 [Community Guidelines](docs/community/CONTRIBUTING.md) — Contribute to the Atlas
+- 🤝 [Community Guidelines](docs/community/index.md) — Contribute to the Atlas
 - 🐛 [Report Issues](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025/issues) — Help improve the project
 - 👥 [XDevOps Meetup](https://www.meetup.com/bucharest-xdevops-meetup-group/events/311375041/) — Join our events and discussions
 

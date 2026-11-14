@@ -13,6 +13,14 @@ permalink: /platforms/hpe-opsramp/
 
 HPE OpsRamp / OpsPilot; release 2026.10-U1 updated 2026-11-10
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Assess AI assistance where infrastructure monitoring, service maps and alert policies already use OpsRamp.
+
+**Pilot question:** Which release and entitlements expose the needed OpsPilot/MCP functions, and what controls govern policy changes?
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -28,11 +36,12 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 ## Scope and limitations
 
-Current release includes MCP extension and policy management; do not equate all Early Access sidebar features with GA.
+The reviewed release includes MCP extension and alert-policy management. Setup documentation provides a more useful starting point for a pilot; individual early-access features should not be treated as universally available.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://docs.opsramp.com/support/release-notes/2026-releases/platform-2026/platform-2026-10-u1/)
+1. [Getting Started with OpsPilot | OpsRamp Documentation (docs.opsramp.com)](https://docs.opsramp.com/platform-features/feature-guides/copilot/getting-started/)
+2. [2026.10-U1 (October 2026) | OpsRamp Documentation (docs.opsramp.com)](https://docs.opsramp.com/support/release-notes/2026-releases/platform-2026/platform-2026-10-u1/)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

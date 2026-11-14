@@ -13,6 +13,14 @@ permalink: /platforms/grafana-assistant/
 
 Assistant Investigations GA since late July 2026; Watchers GA 2026-10-19; Managed Sandboxes public preview as of 2026-10-20. Availability differs by feature.
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Evaluate investigation and monitoring assistance where the relevant signals are in Grafana Cloud.
+
+**Pilot question:** Separate GA Investigations/Watchers from preview sandboxes, and confirm that the required Grafana Cloud connection meets your data policy.
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -30,11 +38,12 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 Grafana Assistant combines observability-native investigations with natural-language monitoring and skills. Investigations and Watchers have GA milestones, while Managed Sandboxes for code-fix work remain public preview in the October announcement. Skills and tool approvals have their own configuration. Access from self-managed Grafana still connects to Grafana Cloud and does not establish wholly offline or on-premises inference.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://grafana.com/blog/observabilitycon-2026-announcements/)
-2. [Official source 2](https://grafana.com/whats-new/page/2/)
-3. [Official source 3](https://grafana.com/blog/grafana-assistant-everywhere/)
+1. [Use Assistant Watchers | Grafana Cloud documentation (grafana.com)](https://grafana.com/docs/grafana-cloud/platform/grafana-assistant/platform/watchers/)
+2. [Self-managed Grafana: Cloud dependency and limitations (grafana.com)](https://grafana.com/docs/grafana/latest/ai-tools/grafana-assistant/self-managed/)
+3. [ObservabilityCON 2026: A guide to all the announcements from Grafana Labs | Grafana Labs (grafana.com)](https://grafana.com/blog/observabilitycon-2026-announcements/)
+4. [Grafana Assistant everywhere: Customize and connect to the AI agent to fit your specific needs | Grafana Labs (grafana.com)](https://grafana.com/blog/grafana-assistant-everywhere/)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

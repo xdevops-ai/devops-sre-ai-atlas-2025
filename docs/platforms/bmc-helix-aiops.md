@@ -11,7 +11,15 @@ permalink: /platforms/bmc-helix-aiops/
 
 ## Identity and availability
 
-BMC Helix AIOps; current feature validation PARTIAL
+BMC Helix AIOps; documented observability-cost and HelixGPT Log Analyzer use case. This does not validate availability of the entire agentic suite.
+
+## Is it relevant to your team?
+
+**Why shortlist it:** Evaluate source-side log analysis and observability-cost controls in an existing BMC Helix environment.
+
+**Pilot question:** Can the documented log-analysis workflow operate on your sources with the required access and a measurable reduction in unnecessary ingestion? Confirm broader agentic capabilities separately.
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
 
 ## Capability mapping
 
@@ -21,18 +29,18 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 | --- | --- |
 | UKM — Knowledge | Not verified |
 | UAM — Activities | integration automation documented |
-| UDM — Diagnostics | service health context |
-| UOM — Observability | OTel ingestion documented |
-| UEOM — Events / ontology | service model+events |
+| UDM — Diagnostics | HelixGPT source-side log analysis in reviewed use case |
+| UOM — Observability | OpenTelemetry ingestion, filtering and usage dashboards |
+| UEOM — Events / ontology | service-model and event context; broader ontology not verified |
 | UPM — Provisioning | Not verified |
 
 ## Scope and limitations
 
-Existing aiops253 agentic page returns 403; do not claim a fresh full agentic validation. Search found aiops262 use-case documentation and Helix docs migration notice.
+The current official documentation describes OpenTelemetry ingestion/filtering, usage dashboards and HelixGPT Log Analyzer just-in-time analysis at the log source without ingesting those logs. This is a concrete observability-cost use case, not proof of the full suite's agentic maturity. Required configuration and entitlement need separate confirmation.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://docs.bmc.com/xwiki/bin/view/IT-Operations-Management/Operations-Management/BMC-Helix-AIOps/aiops262/Getting-started/Use-cases/Managing-the-cost-of-observability/)
+1. [Managing the cost of observability (docs.helixops.ai)](https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-AIOps/aiops262/Getting-started/Use-cases/Managing-the-cost-of-observability/)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

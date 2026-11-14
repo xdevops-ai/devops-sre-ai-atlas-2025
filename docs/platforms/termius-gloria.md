@@ -1,17 +1,25 @@
 ---
 layout: default
-title: "Termius — Gloria"
+title: "GloriaOps (early access; Termius link lineage)"
 parent: Platform Directory
 permalink: /platforms/termius-gloria/
 ---
 
-# Termius — Gloria
+# GloriaOps (early access; Termius link lineage)
 
 **Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
 ## Identity and availability
 
-Termius Gloria identity/link requires further verification
+Early access offered through the official GloriaOps page; capabilities below are vendor-described, not GA or independently tested.
+
+## Is it relevant to your team?
+
+**Why shortlist it:** Explore an early-access infrastructure agent for context-aware investigation and reviewed operational work.
+
+**Pilot question:** Confirm early-access eligibility, supported targets and operational ownership; demonstrate read-only investigation and approval enforcement before enabling changes.
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
 
 ## Capability mapping
 
@@ -19,21 +27,21 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 | Atlas capability | Reviewed evidence |
 | --- | --- |
-| UKM — Knowledge | Not verified |
-| UAM — Activities | Not verified |
-| UDM — Diagnostics | Not verified |
-| UOM — Observability | Not verified |
-| UEOM — Events / ontology | Not verified |
-| UPM — Provisioning | Not verified |
+| UKM — Knowledge | vendor-described infrastructure context |
+| UAM — Activities | structured operations and approval plans, early-access claim |
+| UDM — Diagnostics | alert-triggered read-only investigation, vendor-described |
+| UOM — Observability | connected infrastructure signals; backend coverage unverified |
+| UEOM — Events / ontology | live infrastructure model described; generic ontology unverified |
+| UPM — Provisioning | general provisioning not verified |
 
 ## Scope and limitations
 
-Old termius.com/gloria is 404. Official Termius footer links gloriaops.com, which redirects to gloriashell.com; destination inaccessible in tool. Preserve as verification pending, no fresh capability claims.
+The official Termius beta page leads through gloriaops.com to gloriashell.com, which is accessible and offers Request early access. The vendor describes a live infrastructure model, alert-triggered read-only investigation, structured operations for SSH/cloud/database targets and explicit change plans with approval. Integration breadth, support, security effectiveness and general availability have not been independently established.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://termius.com/beta-program)
-2. [Official source 2](https://gloriaops.com)
+1. [GloriaOps product and early-access request (gloriashell.com)](https://gloriashell.com/)
+2. [Termius beta-program page and product lineage (termius.com)](https://termius.com/beta-program)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

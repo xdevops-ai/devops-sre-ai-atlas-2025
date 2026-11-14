@@ -12,8 +12,8 @@ This atlas is a living document maintained by the DevOps & SRE AI community. We 
 ## How to contribute
 
 - **Raise an issue:** If you spot an error or want to suggest a new platform, please open an [issue]({{ site.github.repository_url }}/issues).
-- **Submit a pull request:** Fork the repository and send a pull request with your improvements. Check our [contribution guidelines]({{ site.github.repository_url }}/blob/main/CONTRIBUTING.md) first.
-- **Join the discussion:** Participate in our [GitHub Discussions]({{ site.github.repository_url }}/discussions) to ask questions and share insights.
+- **Submit a pull request:** Fork the repository and send a pull request with your improvements. Include the official source, review date, affected platform, feature availability and a concise explanation of the correction.
+- **Ask a question:** Use the same GitHub Issues page for questions; a separate Discussions area is not assumed to exist.
 
 ## Meetups & talks
 

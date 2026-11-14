@@ -13,6 +13,14 @@ permalink: /platforms/jfrog-fly-agentic-repo/
 
 Standalone Fly beta winding down; capabilities moving to JFrog Platform, announcement 2026-08-24
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Understand where former Fly capabilities now sit in the JFrog Platform.
+
+**Pilot question:** Which capabilities have migrated to Artifactory, under which license, and what replaces any dependency on the standalone beta?
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -28,11 +36,11 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 ## Scope and limitations
 
-Major lifecycle correction, preserve historical alias.
+The standalone Fly beta is winding down and its AI-native capabilities are moving into the JFrog Platform. Buyers and existing users should verify the successor feature, license and migration path rather than assume the former beta remains a standalone offer.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://jfrog.com/blog/fly-graduates-ai-native-capabilities-land-in-artifactory/)
+1. [JFrog Fly Integrates Seamlessly with JFrog Platform | JFrog (jfrog.com)](https://jfrog.com/blog/fly-graduates-ai-native-capabilities-land-in-artifactory/)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

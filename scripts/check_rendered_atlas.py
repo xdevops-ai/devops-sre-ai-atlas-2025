@@ -2,21 +2,24 @@
 """Validate built URLs and evidence tables after bundle exec jekyll build."""
 from pathlib import Path
 from html.parser import HTMLParser
+from urllib.parse import urlparse, urljoin, unquote
 import json,sys
 root=Path(__file__).resolve().parents[1]; site=root/'docs/_site';rows=json.loads((root/'atlas-reviewed-data.json').read_text());errors=[]
 class Links(HTMLParser):
  def __init__(self):super().__init__();self.links=[]
  def handle_starttag(self,tag,attrs):
   if tag=='a':self.links += [v for k,v in attrs if k=='href']
-paths=[site/'index.html',site/'platforms/index.html',site/'capabilities/index.html']+[site/'platforms'/Path(r['file']).stem/'index.html' for r in rows]
+paths=sorted(site.rglob('*.html'))
+assert len(paths)>100, 'Site build is incomplete'
 checked=0
 for p in paths:
  if not p.exists():errors.append(f'missing {p}');continue
  html=p.read_text();q=Links();q.feed(html)
  if '{{' in html:errors.append(f'unrendered Liquid {p}')
  for u in q.links:
-  if not u.startswith('/devops-sre-ai-atlas-2025/'):continue
-  target=site/u.removeprefix('/devops-sre-ai-atlas-2025/').split('#')[0].split('?')[0]
+  u=urlparse(urljoin('https://xdevops-ai.github.io/devops-sre-ai-atlas-2025/'+str(p.relative_to(site)),u))
+  if u.netloc!='xdevops-ai.github.io' or not u.path.startswith('/devops-sre-ai-atlas-2025/'):continue
+  target=site/unquote(u.path.removeprefix('/devops-sre-ai-atlas-2025/'))
   if not target.exists() and not (target/'index.html').exists():errors.append(f'{p.name}: missing {u}')
   checked+=1
 for r in rows:

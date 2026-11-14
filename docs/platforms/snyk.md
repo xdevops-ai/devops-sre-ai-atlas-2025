@@ -13,6 +13,14 @@ permalink: /platforms/snyk/
 
 Snyk DevSecOps tools; documented Fix/Explain, GA varies
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Improve security analysis and developer remediation workflows.
+
+**Pilot question:** Can a vulnerability finding be explained and fixed in a reviewable PR without confusing security findings with infrastructure incident diagnosis?
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -28,12 +36,12 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 ## Scope and limitations
 
-Security adjacent; do not treat as SRE RCA.
+Snyk addresses software-security findings and developer remediation. Security analysis, fix PRs and IaC scanning should not be treated as a general production SRE investigation or provisioning platform.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://docs.snyk.io/)
-2. [Official source 2](https://docs.snyk.io/snyk-data-and-governance/how-snyk-incorporates-generative-ai-into-the-platform)
+1. [Product overview (docs.snyk.io)](https://docs.snyk.io/)
+2. [How snyk incorporates generative ai into the platform (docs.snyk.io)](https://docs.snyk.io/snyk-data-and-governance/how-snyk-incorporates-generative-ai-into-the-platform)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

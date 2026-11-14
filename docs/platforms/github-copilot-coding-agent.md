@@ -13,6 +13,14 @@ permalink: /platforms/github-copilot-coding-agent/
 
 Copilot in cloud new experience available paid plans since 2026-10-28
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Delegate repository coding, debugging and pull-request work to a cloud coding agent.
+
+**Pilot question:** Can it produce a reviewable PR for your repository while respecting branch protection, repository access and test requirements?
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -28,11 +36,11 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 ## Scope and limitations
 
-Old URL redirects; remove third-party Verge article as primary technical proof.
+The reviewed GitHub documentation establishes the repository-oriented cloud coding experience. Code output and PR automation still require the appropriate repository authorization, tests and human review; they do not establish production infrastructure operation.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github)
+1. [GitHub Copilot on GitHub.com and GitHub Mobile - GitHub Docs (docs.github.com)](https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

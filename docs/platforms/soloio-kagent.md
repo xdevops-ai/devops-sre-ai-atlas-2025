@@ -13,6 +13,14 @@ permalink: /platforms/soloio-kagent/
 
 kagent OSS CNCF Sandbox + separate Enterprise offering
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Build Kubernetes-oriented agent workflows using kagent and compatible tools.
+
+**Pilot question:** What is provided by OSS versus the Enterprise offering, and which permissions, tools and evaluation harness will your team supply?
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -28,11 +36,11 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 ## Scope and limitations
 
-Main identity; distinguish OSS and commercial entitlements.
+Open-source kagent and the Enterprise offering have different scopes. A Kubernetes agent framework still requires appropriate tools, permissions and operating ownership; its extensibility does not establish a turnkey incident-resolution service.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://kagent.dev/)
+1. [kagent | Secure platform for managing AI agents on Kubernetes (kagent.dev)](https://kagent.dev/)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

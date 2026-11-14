@@ -13,6 +13,14 @@ permalink: /platforms/google-duet-ai-ops/
 
 Gemini Cloud Assist (formerly Duet); Preview
 
+## Is it relevant to your team?
+
+**Why shortlist it:** Evaluate Google Cloud investigations and assistance if your account has the required access.
+
+**Pilot question:** Confirm Preview and investigation access with your support tier/account team before spending time on a pilot.
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
+
 ## Capability mapping
 
 Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
@@ -30,10 +38,12 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 Since 2026-04-10 investigations require Premium Support or account-team access.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://docs.cloud.google.com/cloud-assist/overview)
-2. [Official source 2](https://docs.cloud.google.com/cloud-assist/investigations)
+1. [Overview (docs.cloud.google.com)](https://docs.cloud.google.com/cloud-assist/overview) — automated access check inconclusive
+2. [Investigations (docs.cloud.google.com)](https://docs.cloud.google.com/cloud-assist/investigations) — automated access check inconclusive
+
+Some official pages returned an access error or an unavailable-page response during the automated link check. This is not evidence that the product or link is unavailable to every reader. The capability review and link availability are separate checks.
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

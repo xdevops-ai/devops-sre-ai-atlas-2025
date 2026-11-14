@@ -30,6 +30,10 @@ permalink: /capabilities/
 - Suggested fixes, a PR, and autonomous production writes are distinct. Licensing, approvals and deployment scope matter.
 - No customer savings, correctness or speed claim is treated as independently tested.
 
+## Use the matrix in a buying decision
+
+Choose the two or three axes that matter for your actual task. Read the linked record for its deployment, availability and pilot question before interpreting a cell. A wider row is not necessarily a better fit. The [Buyer Guide]({{ "/platform-overview/" | relative_url }}) includes a downloadable scorecard and comparable outcome/cost measures.
+
 ## Current evidence matrix
 
 Each linked record contains its official sources, feature availability and limits. Descriptions are editorial mappings, not implementation equivalence with XDevOps.
@@ -40,7 +44,7 @@ Each linked record contains its official sources, feature availability and limit
 | [AWS DevOps Agent]({{ "/platforms/aws-devops-agent/" | relative_url }}) | runbooks, history and app relationships | SRE tasks through configured integrations and skills | operational investigations | observability integrations | cross-signal and deployment correlation | general provisioning not verified |
 | [AWS Strands SDK]({{ "/platforms/aws-strands-sdk/" | relative_url }}) | memory framework | tool execution framework | custom | agent tracing | custom | deployment of agents only |
 | [BigPanda AI Incident Assistant]({{ "/platforms/bigpanda-ai-incident-assistant/" | relative_url }}) | knowledge+post-incident analysis | collaboration workflows | investigation | integrated infrastructure signals | ADR correlation context | Not verified |
-| [BMC Helix AIOps (ServiceOps)]({{ "/platforms/bmc-helix-aiops/" | relative_url }}) | Not verified | integration automation documented | service health context | OTel ingestion documented | service model+events | Not verified |
+| [BMC Helix AIOps (ServiceOps)]({{ "/platforms/bmc-helix-aiops/" | relative_url }}) | Not verified | integration automation documented | HelixGPT source-side log analysis in reviewed use case | OpenTelemetry ingestion, filtering and usage dashboards | service-model and event context; broader ontology not verified | Not verified |
 | [Ciroos]({{ "/platforms/ciroos/" | relative_url }}) | persistent graph memory | collaboration; actuator scope unverified | cross-domain investigation | connected signals | signal normalization, correlation and temporal topology graph | not verified |
 | [Cisco Splunk AI Agents]({{ "/platforms/cisco-splunk-ai-agents/" | relative_url }}) | service context | query+chart tools | natural-language diagnosis | native APM/infra/logs | alert context | Not verified |
 | [Cleric]({{ "/platforms/cleric/" | relative_url }}) | retained infrastructure context | fix PRs and issues; writes opt-in | alert investigation and change verification | integrations and production verification | alert grouping; general ontology unverified | not verified |
@@ -75,7 +79,7 @@ Each linked record contains its official sources, feature availability and limit
 | [NeuBird AI]({{ "/platforms/neubird-ai/" | relative_url }}) | project instructions and history | investigation initiation and status; infrastructure writes unverified | incident investigation | cloud and monitoring integrations | incident history; generic ontology unverified | not verified |
 | [New Relic Autopilot]({{ "/platforms/new-relic-ai/" | relative_url }}) | runbooks+retrospectives | investigation tasks | RCA+recommendations | native telemetry | incident context | Not verified |
 | [Opsera Hummingbird]({{ "/platforms/opsera-hummingbird/" | relative_url }}) | toolchain context | pipeline automation | pipeline failure explanation | SDLC metrics, not APM | toolchain relationships | workflows/integrations |
-| [PagerDuty AIOps]({{ "/platforms/pagerduty-aiops/" | relative_url }}) | connector/skill context | workflows | investigation | integrated logs+metrics | event correlation | Not verified |
+| [PagerDuty AIOps / Paige (SRE Agent)]({{ "/platforms/pagerduty-aiops/" | relative_url }}) | connector/skill context | workflows | investigation | integrated logs+metrics | event correlation | Not verified |
 | [Qovery Migration Agent]({{ "/platforms/qovery-migration-agent/" | relative_url }}) | provider app context | file-generation workflow | manifest validation | Not verified | Not verified | Terraform+Dockerfile generation |
 | [Resolve AI]({{ "/platforms/resolve-ai/" | relative_url }}) | production memory | governed operational tasks | multi-agent production investigation | integrated evidence | triage and contextual relationships; generic ontology unverified | generic provisioning not verified |
 | [Robusta / HolmesGPT]({{ "/platforms/robusta-holmesgpt/" | relative_url }}) | investigation history and context | investigation tools; dangerous calls approval-gated | incident investigation | integrated telemetry; not a full replacement backend | alert timelines; general ontology unverified | not verified |
@@ -84,7 +88,7 @@ Each linked record contains its official sources, feature availability and limit
 | [Servicenow AI Agent Orchestrator]({{ "/platforms/servicenow-ai-agent-orchestrator/" | relative_url }}) | enterprise context | workflow automation | IT-specific agents scope-dependent | ITOM separate module | CMDB context separate | workflow-dependent |
 | [Snowflake Cortex Agents]({{ "/platforms/snowflake-cortex-agents/" | relative_url }}) | enterprise data/retrieval | tool+code execution | custom | agent monitoring | custom | agent runtime only |
 | [Snyk — DevSecOps Automation]({{ "/platforms/snyk/" | relative_url }}) | vulnerability knowledge | fix PR workflows | security analysis | security findings not APM | dependency relationships | IaC scanning not provisioning |
-| [Termius — Gloria]({{ "/platforms/termius-gloria/" | relative_url }}) | Not verified | Not verified | Not verified | Not verified | Not verified | Not verified |
+| [GloriaOps (early access; Termius link lineage)]({{ "/platforms/termius-gloria/" | relative_url }}) | vendor-described infrastructure context | structured operations and approval plans, early-access claim | alert-triggered read-only investigation, vendor-described | connected infrastructure signals; backend coverage unverified | live infrastructure model described; generic ontology unverified | general provisioning not verified |
 | [Traversal]({{ "/platforms/traversal/" | relative_url }}) | Knowledge Bank | remediation execution unverified: source conflict | causal investigation positioning | integrated observability | live entities, dependencies and alert correlation | not verified |
 | [xMatters — Operations Automation]({{ "/platforms/xMatters/" | relative_url }}) | workflow context | deterministic incident automation | Not verified | integrations | alert-triggered flows | custom integration-dependent |
 | [Zencoder AI Agents]({{ "/platforms/zencoder-ai-agents/" | relative_url }}) | codebase context | code/test/review agents | code verification | Not verified | Not verified | Not verified |

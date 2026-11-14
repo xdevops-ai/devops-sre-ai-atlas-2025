@@ -11,7 +11,15 @@ permalink: /platforms/kagent-solo-io/
 
 ## Identity and availability
 
-Duplicate kagent file
+Historical alias of kagent; see the canonical record.
+
+## Is it relevant to your team?
+
+**Why shortlist it:** Find the canonical kagent evaluation while preserving an older Atlas URL.
+
+**Pilot question:** Use the canonical kagent record; this page is not an additional competing product.
+
+This is editorial evaluation guidance inferred from the documented scope, not a product guarantee. Confirm contract, region, deployment model and feature entitlement with the provider.
 
 ## Capability mapping
 
@@ -28,11 +36,11 @@ Descriptions map product evidence to the Atlas framework, not numerical maturity
 
 ## Scope and limitations
 
-Merge or canonical alias, preserve existing links rather than count twice.
+This historical entry refers to the same kagent project as the canonical record. It is retained for link compatibility and excluded from the canonical platform count.
 
-## Official sources
+## Official links and evidence
 
-1. [Official source 1](https://kagent.dev/)
+1. [kagent | Secure platform for managing AI agents on Kubernetes (kagent.dev)](https://kagent.dev/)
 
 Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 

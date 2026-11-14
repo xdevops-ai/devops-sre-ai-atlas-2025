@@ -24,7 +24,7 @@ This atlas provides curated, source-backed reviews of AI agent platforms across 
 ## Quick Navigation
 
 - **[Platform Archetypes]({{ '/archetypes/' | relative_url }})** -- Strengths/weaknesses by category
-- **[Platform Overview]({{ '/platform-overview/' | relative_url }})** -- One-page summary of all platforms
+- **[Buyer Guide]({{ '/platform-overview/' | relative_url }})** -- Shortlist by need and run a fair pilot
 - **[Platform Directory]({{ '/platforms/' | relative_url }})** -- Platform evidence, availability and limits
 - **[Capability Framework]({{ '/capabilities/' | relative_url }})** -- Six-axis evidence and acceptance criteria
 - **[Community Resources]({{ '/community/' | relative_url }})** -- Contribute, discuss, roadmap
