@@ -1,0 +1,6 @@
+# Local Jekyll build and dependency state
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/

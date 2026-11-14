@@ -1,9 +1,9 @@
-# 🚀 DevOps & SRE AI Atlas 2026
+# 🚀 DevOps SRE AI Atlas 2025–2026
 
-**A comprehensive, vendor-neutral knowledge base tracking AI agents and platforms transforming DevOps and Site Reliability Engineering.**
+**A vendor-neutral knowledge base tracking AI agents and platforms transforming DevOps and Site Reliability Engineering.**
 
-![Version](https://img.shields.io/badge/version-2025.10-blue)
-![Platforms](https://img.shields.io/badge/platforms-25+-green)
+![Version](https://img.shields.io/badge/version-2026.11-blue)
+![Platforms](https://img.shields.io/badge/platforms-52-green)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-success)
 ![Contributors](https://img.shields.io/github/contributors/xdevops-ai/devops-sre-ai-atlas-2025)
@@ -14,18 +14,18 @@
 
 ## 📖 About This Project
 
-The **DevOps & SRE AI Atlas 2026** is your definitive guide to navigating the rapidly evolving landscape of **AI agents in operations**.  
-We provide evidence-based analysis of 35+ AI platforms to help DevOps, SRE, and platform engineering teams make informed adoption decisions.
+The **DevOps SRE AI Atlas 2025–2026** is a curated guide to navigating the rapidly evolving landscape of **AI agents in operations**.
+We provide source-backed reviews of 52 platform/product records to help DevOps, SRE, and platform engineering teams make informed adoption decisions.
 
 ---
 
 ## 🎯 What You'll Discover
 
-- **🤖 35+ AI Platform Analyses** — In-depth coverage of tools from AWS, Azure, Google, Datadog, Dynatrace, ServiceNow, and more  
-- **🔧 Capability Framework** — Standardized evaluation of AI agent capabilities  
-- **🏗️ Architecture Patterns** — Proven designs for implementing AI in DevOps workflows  
-- **📊 Comparative Analysis** — Side-by-side platform comparisons and capability benchmarks  
-- **🔮 Trend Insights** — Emerging patterns and predictions shaping DevOps AI for 2026  
+- **🤖 52 AI Platform Analyses** — In-depth coverage of tools from AWS, Azure, Google, Datadog, Dynatrace, ServiceNow, and more
+- **🔧 Capability Framework** — Standardized evaluation of AI agent capabilities
+- **🏗️ Architecture Patterns** — Proven designs for implementing AI in DevOps workflows
+- **📊 Comparative Analysis** — Side-by-side platform comparisons and capability benchmarks
+- **🔮 Trend Insights** — Emerging patterns and predictions shaping DevOps AI for 2026
 
 ---
 
@@ -48,22 +48,22 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Your site will be available at:  
+Your site will be available at:
 👉 `http://localhost:4000`
 
 ---
 
 ## 📚 Explore the Documentation
 
-**Visit our structured documentation:**  
+**Visit our structured documentation:**
 📘 [**docs/** directory](docs/)
 
 ### Key Sections
 
-- **[Platform Overview](docs/platform-overview/)** — Executive summary and market analysis  
-- **[Platform Directory](docs/platforms/)** — Deep dives into 25+ AI platforms  
-- **[Capability Framework](docs/capabilities/)** — How we evaluate and score AI platforms  
-- **[Community Resources](docs/community/)** — How to contribute and get involved  
+- **[Platform Overview](docs/platform-overview/)** — Executive summary and market analysis
+- **[Platform Directory](docs/platforms/)** — Deep dives into 52 AI platforms
+- **[Capability Framework](docs/capabilities/)** — How we evaluate and score AI platforms
+- **[Community Resources](docs/community/)** — How to contribute and get involved
 
 ---
 
@@ -82,33 +82,35 @@ We track the evolving **AI in DevOps/SRE ecosystem** across categories:
 
 ---
 
+> **Evidence refresh: 14 November 2026.** 52 canonical records plus two historical aliases. [Current directory](docs/platforms/index.md) and [descriptive capability matrix](docs/capabilities/index.md) distinguish documented, preview, marketing and unverified surfaces. Older long-form analyses remain historical background.
+
 ## 🎯 Key Insights for 2026
 
 > AI agents have evolved from “chat over dashboards” to **actionable co-workers** spanning the entire incident lifecycle.
 
 🏆 **Top Takeaways**
-- **Composable adoption** wins — no single vendor covers all needs  
-- **Human-in-the-loop** is now standard for trust and compliance  
-- **AgentOps maturity** defines production readiness (observability, safety, and evaluation)  
-- **IaC as the safety rail** — Infrastructure-as-Code remains the guardrail for automation with approvals  
+- **Composable adoption** wins — no single vendor covers all needs
+- **Human-in-the-loop** is now standard for trust and compliance
+- **AgentOps maturity** defines production readiness (observability, safety, and evaluation)
+- **IaC as the safety rail** — Infrastructure-as-Code remains the guardrail for automation with approvals
 
 ---
 
 ## 🤝 Join Our Community
 
-This is a **vendor-neutral, community-driven initiative** maintained *for practitioners, by practitioners*.  
+This is a **vendor-neutral, community-driven initiative** maintained *for practitioners, by practitioners*.
 We welcome contributions from:
 
-- **DevOps Engineers** sharing real-world experiences  
-- **SREs** contributing incident response patterns  
-- **Platform Engineers** documenting architecture decisions  
-- **AI Practitioners** providing technical insights  
+- **DevOps Engineers** sharing real-world experiences
+- **SREs** contributing incident response patterns
+- **Platform Engineers** documenting architecture decisions
+- **AI Practitioners** providing technical insights
 
 ### How to Contribute
-📝 Add or update platform analyses  
-🔧 Share implementation patterns and benchmarks  
-🎯 Submit capability assessments  
-📢 Suggest improvements and corrections  
+📝 Add or update platform analyses
+🔧 Share implementation patterns and benchmarks
+🎯 Submit capability assessments
+📢 Suggest improvements and corrections
 
 📘 [Read the Community Guidelines →](docs/community/CONTRIBUTING.md)
 
@@ -119,7 +121,7 @@ We welcome contributions from:
 ```text
 devops-sre-ai-atlas-2025/
 ├── 📚 docs/                    # Main documentation site (Jekyll)
-│   ├── platforms/              # 55+ AI platform deep dives
+│   ├── platforms/              # 52 AI platform deep dives
 │   ├── capabilities/           # Evaluation framework
 │   ├── platform-overview/      # Market analysis
 │   └── community/              # Contribution guidelines
@@ -133,10 +135,10 @@ devops-sre-ai-atlas-2025/
 
 We maintain a **continuous research and update cycle** throughout 2026:
 
-- 🗓️ New platforms and versions added monthly  
-- 📊 Capability scores reviewed quarterly  
-- 🧠 Emerging AI integrations analyzed continuously  
-- 📚 Real-world implementation case studies added as available  
+- 🗓️ New platforms and versions added monthly
+- 📊 Capability scores reviewed quarterly
+- 🧠 Emerging AI integrations analyzed continuously
+- 📚 Real-world implementation case studies added as available
 
 ---
 
@@ -144,9 +146,9 @@ We maintain a **continuous research and update cycle** throughout 2026:
 
 This edition specifically tracks developments through **2026**, with updates to reflect:
 
-- New AI-powered DevOps tools and features  
-- Integration and orchestration trends  
-- Real-world production adoption metrics  
+- New AI-powered DevOps tools and features
+- Integration and orchestration trends
+- Real-world production adoption metrics
 
 ---
 
@@ -154,8 +156,8 @@ This edition specifically tracks developments through **2026**, with updates to 
 
 If you reference or build on this project, please cite:
 
-> DevOps & SRE AI Atlas 2026.  
-> XDevOps AI Initiative, 2026. Licensed under **CC BY-SA 4.0**.  
+> DevOps SRE AI Atlas 2025–2026.
+> XDevOps AI Initiative, 2026. Licensed under **CC BY-SA 4.0**.
 > https://github.com/xdevops-ai/devops-sre-ai-atlas-2025
 
 ---
@@ -165,11 +167,11 @@ If you reference or build on this project, please cite:
 This work is licensed under the **Creative Commons Attribution–ShareAlike 4.0 International** license.
 
 You are free to:
-- **Share** — copy and redistribute the material in any medium or format  
-- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially  
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
 
 Under the following terms:
-- **Attribution** — Give appropriate credit, provide a link to the license, and indicate if changes were made.  
+- **Attribution** — Give appropriate credit, provide a link to the license, and indicate if changes were made.
 - **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the **same license**.
 
 For full terms, see the [LICENSE](LICENSE).
@@ -180,9 +182,9 @@ For full terms, see the [LICENSE](LICENSE).
 
 ## 🔗 Quick Links
 - 👥 [DevOps & SRE AI Platforms Atlas 2025-2026](https://xdevops-ai.github.io/devops-sre-ai-atlas-2025/) — Web Atlas
-- 📚 [Full Documentation](docs/) — Detailed platform analysis  
-- 🤝 [Community Guidelines](docs/community/CONTRIBUTING.md) — Contribute to the Atlas  
-- 🐛 [Report Issues](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025/issues) — Help improve the project  
+- 📚 [Full Documentation](docs/) — Detailed platform analysis
+- 🤝 [Community Guidelines](docs/community/CONTRIBUTING.md) — Contribute to the Atlas
+- 🐛 [Report Issues](https://github.com/xdevops-ai/devops-sre-ai-atlas-2025/issues) — Help improve the project
 - 👥 [XDevOps Meetup](https://www.meetup.com/bucharest-xdevops-meetup-group/events/311375041/) — Join our events and discussions
 
 ---

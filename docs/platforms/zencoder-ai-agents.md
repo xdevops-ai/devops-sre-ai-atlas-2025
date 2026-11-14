@@ -1,50 +1,39 @@
 ---
 layout: default
-title: Zencoder AI Agents
+title: "Zencoder AI Agents"
 parent: Platform Directory
+permalink: /platforms/zencoder-ai-agents/
 ---
 
 # Zencoder AI Agents
 
-**Activities**: Y/M | **Diagnostics**: Y/M | **Provisioning**: P/L  <br>
-**Event ontology**: N/L | **Observability**: P/L | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Code-first assistant that integrates with CI workflows; agents run via CI webhooks or CLI and appear as GitHub comments.  
-**What it actually does —** Autonomous coding agents fix failing tests, patch vulnerabilities, add documentation and tests, and open pull requests; they help triage CI failures and suggest improvements across repositories.  
-**Data / telemetry —** CI run data, issue trackers, and pull request dashboards; actions and results are captured for audits.  
-**Interoperability —** Integrates with GitHub, Jira, Sentry, and CI/CD pipelines.  
-**Deployment model —** SaaS with CLI; agents run within GitHub checks and as a local client for tests.  
-**Notes —** PR-centric and focused on code quality and developer productivity rather than runtime infrastructure automation.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest medium-low, index medium-low, retrieval medium-low, governance medium-low, overall medium-low  <br>
-**Note:** Coverage — Ingest medium-low; Index medium-low; Retrieval medium-low; Governance medium-low; Overall medium-low
+Zencoder / Zenflow code+work orchestration, commercial
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high  <br>
-**Note:** Coverage — Ingest medium-high; Index medium-high; Retrieval medium-high; Governance medium-high; Overall medium-high
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | codebase context |
+| UAM — Activities | code/test/review agents |
+| UDM — Diagnostics | code verification |
+| UOM — Observability | Not verified |
+| UEOM — Events / ontology | Not verified |
+| UPM — Provisioning | Not verified |
 
-**UDM Snapshots:**   
-ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high  <br>
-**Note:** Coverage — Ingest medium-high; Index medium-high; Retrieval medium-high; Governance medium-high; Overall medium-high
+## Scope and limitations
 
+Adjacent developer tool, not proven production SRE.
 
-**UOM Snapshots:**   
-ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high  <br>
-**Note:** Coverage — Ingest medium-high; Index medium-high; Retrieval medium-high; Governance medium-high; Overall medium-high
+## Official sources
 
+1. [Official source 1](https://zencoder.ai/)
 
-**UEOM Snapshots:**   
-ingest medium-low, index medium-low, retrieval medium-low, governance medium-low, overall medium-low  <br>
-**Note:** Coverage — Ingest medium-low; Index medium-low; Retrieval medium-low; Governance medium-low; Overall medium-low
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest medium-high, index medium-high, retrieval medium-high, governance medium-high, overall medium-high  <br>
-**Note:** Coverage — Ingest medium-high; Index medium-high; Retrieval medium-high; Governance medium-high; Overall medium-high
-
-
-**Latest updates —** Zencoder AI coding agent + JetBrains plugin listing (2025).
-**Links —** [Official Site](https://zencoder.ai/), [Docs](https://plugins.jetbrains.com/plugin/24782-zencoder-your-mindful-ai-coding-agent), [Blog](https://zencoder.ai/download)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

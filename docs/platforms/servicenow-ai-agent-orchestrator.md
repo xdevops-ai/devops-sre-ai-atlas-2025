@@ -1,50 +1,39 @@
 ---
 layout: default
-title: Servicenow AI Agent Orchestrator
+title: "Servicenow AI Agent Orchestrator"
 parent: Platform Directory
+permalink: /platforms/servicenow-ai-agent-orchestrator/
 ---
 
 # Servicenow AI Agent Orchestrator
 
-**Activities**: Y/H | **Diagnostics**: Y/H | **Provisioning**: Y/M  <br>
-**Event ontology**: Y/H | **Observability**: Y/M | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** No/low-code Agent Studio orchestrates across ITSM and ITOM.  
-**What it actually does —** Coordinates multiple agents and incident workflows; runs runbooks and service requests; maps OpenTelemetry data into the CMDB via Service Graph.  
-**Data / telemetry —** ITSM/CMDB/CSDM records, with OTel via Service Graph.  
-**Interoperability —** Supports integrations, scripts, and OTel connectors.  
-**Deployment model —** Available on the ServiceNow Cloud.  
-**Notes —** Provisioning occurs through integrations and runbooks rather than direct apply.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/H, overall High  <br>
-**Note:** Ingestion & Validation: Y/H; Normalization & Enrichment: Y/H; ServiceNow’s platform is built on a single data model (Service Graph/CMDB) that normalizes all entities (users, assets, services, incidents) and their relatio
+ServiceNow AI Agents and AI platform; public product claim, module-specific maturity not verified
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall High  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall High
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | enterprise context |
+| UAM — Activities | workflow automation |
+| UDM — Diagnostics | IT-specific agents scope-dependent |
+| UOM — Observability | ITOM separate module |
+| UEOM — Events / ontology | CMDB context separate |
+| UPM — Provisioning | workflow-dependent |
 
-**UDM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall High  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall High
+## Scope and limitations
 
+Do not equate entire ServiceNow portfolio with one orchestrator license.
 
-**UOM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall Medium-High  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall Medium-High
+## Official sources
 
+1. [Official source 1](https://www.servicenow.com/products/ai-agents.html)
 
-**UEOM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall Medium-High  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall Medium-High
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall Medium-High  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall Medium-High
-
-
-**Latest updates —** AI Agent Orchestrator & Agent Studio announced (Jan 29, 2025).
-**Links —** [Official Site](https://www.servicenow.com/products/ai-agents.html), [Docs](https://www.servicenow.com/company/media/press-room/ai-agents-studio.html), [Blog](https://www.ciodive.com/news/ServiceNow-AI-agent-portfolio-enterprise-automation/738685/)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

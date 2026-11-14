@@ -1,50 +1,41 @@
 ---
 layout: default
-title: PagerDuty AIOps
+title: "PagerDuty AIOps"
 parent: Platform Directory
+permalink: /platforms/pagerduty-aiops/
 ---
 
 # PagerDuty AIOps
 
-**Activities**: Y/M | **Diagnostics**: Y/M | **Provisioning**: P/L  <br>
-**Event ontology**: P/M | **Observability**: P/L | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** SaaS incident management with low-code incident workflows, Automation Actions, and an AI-driven Command Console.  
-**What it actually does —** Provides incident intelligence and response automation: suppresses and deduplicates alerts, correlates related events into incidents, surfaces change context and similar past incidents, drafts status updates and post-mortems, and recommends next steps. Includes SRE, Insights and Shift agents to assist during response.  
-**Data / telemetry —** Ingests events from monitoring tools and change feeds, and maintains incident timelines and human response history.  
-**Interoperability —** Integrates with Datadog, New Relic, CloudWatch, Jira, ServiceNow, Slack and Teams; remediation can run via Automation Actions or Rundeck.  
-**Deployment model —** PagerDuty Operations Cloud (SaaS).  
-**Notes —** Human-centric: can auto-execute safe diagnostics and remediations when confidence is high, but escalates to humans if uncertain.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval Y/M; Governance Y/M; Overall medium
+AIOps + SRE Agent; SRE Agent and workflow integrations have explicit GA entries; some surfaces/skills early access
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | connector/skill context |
+| UAM — Activities | workflows |
+| UDM — Diagnostics | investigation |
+| UOM — Observability | integrated logs+metrics |
+| UEOM — Events / ontology | event correlation |
+| UPM — Provisioning | Not verified |
 
-**UDM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+## Scope and limitations
 
+Do not carry all individual EA surfaces into blanket GA.
 
-**UOM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+## Official sources
 
+1. [Official source 1](https://support.pagerduty.com/main/changelog/sre-agent-is-generally-available)
+2. [Official source 2](https://support.pagerduty.com/main/changelog/sre-agent-workflow-integrations-are-generally-available)
+3. [Official source 3](https://support.pagerduty.com/main/changelog/sre-agent-skills-now-available-for-early-access)
 
-**UEOM Snapshots:**   
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
-
-
-**Latest updates —** PagerDuty launches end-to-end AI Agent Suite (Oct 8, 2025).
-**Links —** [Official Site](https://www.pagerduty.com/platform/aiops/), [Docs](https://support.pagerduty.com/main/docs/aiops), [Blog](https://www.pagerduty.com/resources/aiops/learn/what-is-aiops/)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

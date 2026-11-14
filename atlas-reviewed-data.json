@@ -1,0 +1,963 @@
+[
+  {
+    "file": "datadog-bits-ai.md",
+    "title": "Datadog Bits Investigation",
+    "identity": "Bits Investigation, documented; API maturity needs endpoint-specific check",
+    "axes": [
+      "investigation context",
+      "investigation execution",
+      "production investigation",
+      "native telemetry",
+      "monitor+incident context",
+      "?"
+    ],
+    "note": "Naming evolved from Bits AI SRE. Current API page differs from older preview-labelled cached pages; do not assert blanket API GA.",
+    "sources": [
+      "https://docs.datadoghq.com/bits_ai/bits_investigation/",
+      "https://docs.datadoghq.com/api/latest/bits-ai/"
+    ]
+  },
+  {
+    "file": "dynatrace-davis-ai.md",
+    "title": "Dynatrace Intelligence and Assist",
+    "identity": "Dynatrace Intelligence + Dynatrace Assist; CoPilot Chat GA documented in SaaS 1.308",
+    "axes": [
+      "shared guides",
+      "agentic queries+workflow integration",
+      "troubleshooting",
+      "native telemetry",
+      "contextual topology",
+      "?"
+    ],
+    "note": "Replace 2025 survey as main product evidence.",
+    "sources": [
+      "https://docs.dynatrace.com/docs/dynatrace-intelligence/agentic-and-generative-ai/agentic-and-generative-ai-getting-started",
+      "https://docs.dynatrace.com/docs/dynatrace-intelligence/agentic-and-generative-ai/chat-with-dynatrace-assist",
+      "https://docs.dynatrace.com/docs/whats-new/saas/sprint-308"
+    ]
+  },
+  {
+    "file": "cisco-splunk-ai-agents.md",
+    "title": "Cisco Splunk AI Agents",
+    "identity": "Splunk AI Assistant in Observability Cloud, documented; A2A select customers only 2026-11-12",
+    "axes": [
+      "service context",
+      "query+chart tools",
+      "natural-language diagnosis",
+      "native APM/infra/logs",
+      "alert context",
+      "?"
+    ],
+    "note": "Separate observability from Cisco SOC/security claims. English only documented; realm limitations.",
+    "sources": [
+      "https://help.splunk.com/en/splunk-observability-cloud/splunk-ai-assistant/ai-assistant-in-observability-cloud",
+      "https://help.splunk.com/en/splunk-observability-cloud/release-notes/november-2026"
+    ]
+  },
+  {
+    "file": "new-relic-ai.md",
+    "title": "New Relic Autopilot",
+    "identity": "New Relic Autopilot, formerly SRE Agent, GA announcement 2026-07-21",
+    "axes": [
+      "runbooks+retrospectives",
+      "investigation tasks",
+      "RCA+recommendations",
+      "native telemetry",
+      "incident context",
+      "?"
+    ],
+    "note": "Rename/add current Autopilot scope; recommendations do not prove autonomous remediation.",
+    "sources": [
+      "https://docs.newrelic.com/whats-new/2026/07/whats-new-07-21-autopilot/",
+      "https://docs.newrelic.com/docs/agentic-ai/autopilot/overview/"
+    ]
+  },
+  {
+    "file": "elastic-ai-assistant.md",
+    "title": "Elastic Agent Builder and legacy AI Assistant",
+    "identity": "AI Assistant deprecated in Stack 9.4+; Agent Builder successor; feature-specific preview labels remain",
+    "axes": [
+      "legacy knowledge base, successor gaps",
+      "workflow integration",
+      "investigation skills preview",
+      "native telemetry",
+      "service map context",
+      "?"
+    ],
+    "note": "Critical migration: don't claim successor has all legacy features.",
+    "sources": [
+      "https://www.elastic.co/docs/solutions/observability/ai/observability-ai-assistant",
+      "https://www.elastic.co/docs/explore-analyze/ai-features/ai-chat-experiences/ai-agent-or-ai-assistant",
+      "https://www.elastic.co/docs/solutions/observability/ai/agent-builder-observability"
+    ]
+  },
+  {
+    "file": "bigpanda-ai-incident-assistant.md",
+    "title": "BigPanda AI Incident Assistant",
+    "identity": "BigPanda AI Incident Assistant / Biggy, documented commercial setup",
+    "axes": [
+      "knowledge+post-incident analysis",
+      "collaboration workflows",
+      "investigation",
+      "integrated infrastructure signals",
+      "ADR correlation context",
+      "?"
+    ],
+    "note": "Distinguish IA, AI Detection and Response, and Incident Prevention entitlements.",
+    "sources": [
+      "https://docs.bigpanda.io/en/install-ai-incident-assistant",
+      "https://docs.bigpanda.io/en/use-the-ai-incident-assistant-web-app",
+      "https://docs.bigpanda.io/en/biggy-agent-in-the-adr-console"
+    ]
+  },
+  {
+    "file": "pagerduty-aiops.md",
+    "title": "PagerDuty AIOps",
+    "identity": "AIOps + SRE Agent; SRE Agent and workflow integrations have explicit GA entries; some surfaces/skills early access",
+    "axes": [
+      "connector/skill context",
+      "workflows",
+      "investigation",
+      "integrated logs+metrics",
+      "event correlation",
+      "?"
+    ],
+    "note": "Do not carry all individual EA surfaces into blanket GA.",
+    "sources": [
+      "https://support.pagerduty.com/main/changelog/sre-agent-is-generally-available",
+      "https://support.pagerduty.com/main/changelog/sre-agent-workflow-integrations-are-generally-available",
+      "https://support.pagerduty.com/main/changelog/sre-agent-skills-now-available-for-early-access"
+    ]
+  },
+  {
+    "file": "logicmonitor-aiops.md",
+    "title": "LogicMonitor Edwin AI",
+    "identity": "LogicMonitor Edwin AI; release v17.0 dated 2026-11-05",
+    "axes": [
+      "private/public knowledge agents",
+      "action groups",
+      "AI investigations",
+      "native+integrated telemetry",
+      "normalized events+correlation",
+      "?"
+    ],
+    "note": "Fix malformed GitHub link; link actual release/docs.",
+    "sources": [
+      "https://www.logicmonitor.com/release-notes/edwin-ai-release-notes-timeline",
+      "https://www.logicmonitor.com/support/edwin-ai-agents-overview",
+      "https://www.logicmonitor.com/support/private-knowledge-base-agent"
+    ]
+  },
+  {
+    "file": "hpe-opsramp.md",
+    "title": "HPE OpsRamp",
+    "identity": "HPE OpsRamp / OpsPilot; release 2026.10-U1 updated 2026-11-10",
+    "axes": [
+      "conversation context",
+      "alert policy management+automation",
+      "operational troubleshooting",
+      "native monitoring+logs",
+      "service maps+alerts",
+      "?"
+    ],
+    "note": "Current release includes MCP extension and policy management; do not equate all Early Access sidebar features with GA.",
+    "sources": [
+      "https://docs.opsramp.com/support/release-notes/2026-releases/platform-2026/platform-2026-10-u1/"
+    ]
+  },
+  {
+    "file": "bmc-helix-aiops.md",
+    "title": "BMC Helix AIOps (ServiceOps)",
+    "identity": "BMC Helix AIOps; current feature validation PARTIAL",
+    "axes": [
+      "?",
+      "integration automation documented",
+      "service health context",
+      "OTel ingestion documented",
+      "service model+events",
+      "?"
+    ],
+    "note": "Existing aiops253 agentic page returns 403; do not claim a fresh full agentic validation. Search found aiops262 use-case documentation and Helix docs migration notice.",
+    "sources": [
+      "https://docs.bmc.com/xwiki/bin/view/IT-Operations-Management/Operations-Management/BMC-Helix-AIOps/aiops262/Getting-started/Use-cases/Managing-the-cost-of-observability/"
+    ]
+  },
+  {
+    "file": "dell-apex-aiops.md",
+    "title": "Dell APEX AIOps (Moogsoft)",
+    "identity": "Dell AIOps / APEX AIOps incident management, commercial service documents",
+    "axes": [
+      "?",
+      "incident management",
+      "incident analysis scope",
+      "application observability module",
+      "incident correlation lineage",
+      "?"
+    ],
+    "note": "Same lineage as Moogsoft; avoid two independent competitor counts.",
+    "sources": [
+      "https://www.dell.com/en-us/legal/lp/apex-ai-ops",
+      "https://www.dell.com/en-us/legal/lp/cloud-and-hosting-services"
+    ]
+  },
+  {
+    "file": "moogsoft-aiops.md",
+    "title": "Moogsoft — legacy Dell AIOps alias",
+    "identity": "Moogsoft Cloud renamed Dell APEX AIOps Incident Management",
+    "axes": [
+      "same as Dell record",
+      "same",
+      "same",
+      "same",
+      "same",
+      "?"
+    ],
+    "note": "Mark legacy name or alias, not separate modern product. Official Dell legal page explicitly states rename.",
+    "sources": [
+      "https://www.dell.com/en-us/legal/lp/cloud-and-hosting-services"
+    ]
+  },
+  {
+    "file": "ibm-instana-turbonomic-watsonx.md",
+    "title": "IBM Instana + Turbonomic + watsonx",
+    "identity": "IBM Instana plus separately licensed Turbonomic; documented integration",
+    "axes": [
+      "contextual insights",
+      "optimization actions",
+      "intelligent investigation",
+      "native Instana telemetry",
+      "application entities",
+      "resource optimization, not general provisioning"
+    ],
+    "note": "Separate product scopes rather than invent single unified product. Licenses/versions gate integration.",
+    "sources": [
+      "https://www.ibm.com/docs/en/instana-observability?topic=hosted-integrating-turbonomic",
+      "https://www.ibm.com/docs/en/instana-observability/standard/1.0.321?topic=capabilities-generative-ai-in-instana"
+    ]
+  },
+  {
+    "file": "Rootly.md",
+    "title": "Rootly — Incident Response Automation",
+    "identity": "Rootly AI SRE + incident platform; documented, MCP GA",
+    "axes": [
+      "incident evidence/history",
+      "incident workflows",
+      "AI investigation",
+      "integrated telemetry",
+      "alerts+incident context",
+      "?"
+    ],
+    "note": "Existing file, not new vendor.",
+    "sources": [
+      "https://rootly.com/ai-sre",
+      "https://rootly.com/changelog/rootly-mcp-server-is-ga",
+      "https://rootly.com/changelog/investigate-page-and-catch-up-without-leaving-microsoft-teams"
+    ]
+  },
+  {
+    "file": "incident-io.md",
+    "title": "incident.io (AI SRE)",
+    "identity": "incident.io Investigations, paid Pro/Enterprise add-on",
+    "axes": [
+      "operational context",
+      "response coordination",
+      "parallel evidence-backed investigations",
+      "integrated telemetry",
+      "incident relationships",
+      "?"
+    ],
+    "note": "Separate incident workflow automation from production write remediation.",
+    "sources": [
+      "https://incident.io/investigations",
+      "https://incident.io/blog/what-is-a-software-reliability-platform"
+    ]
+  },
+  {
+    "file": "microsoft-azure-sre-agent.md",
+    "title": "Microsoft Azure SRE Agent",
+    "identity": "Azure SRE Agent, documented service; feature/run-mode availability varies",
+    "axes": [
+      "retained context",
+      "schedules+governed automation",
+      "investigations",
+      "Azure+partner signals",
+      "deployment correlation",
+      "permitted CLI scope, not universal"
+    ],
+    "note": "Distinct from Foundry and IDE Copilot.",
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/sre-agent/overview",
+      "https://learn.microsoft.com/en-us/azure/sre-agent/create-and-set-up"
+    ]
+  },
+  {
+    "file": "google-duet-ai-ops.md",
+    "title": "Gemini Cloud Assist (formerly Duet)",
+    "identity": "Gemini Cloud Assist (formerly Duet); Preview",
+    "axes": [
+      "operational memory/context",
+      "guided tools",
+      "investigations with access restrictions",
+      "GCP signals",
+      "topology+alert clustering",
+      "IaC generation"
+    ],
+    "note": "Since 2026-04-10 investigations require Premium Support or account-team access.",
+    "sources": [
+      "https://docs.cloud.google.com/cloud-assist/overview",
+      "https://docs.cloud.google.com/cloud-assist/investigations"
+    ]
+  },
+  {
+    "file": "duplocloud-ai-help-desk.md",
+    "title": "DuploCloud AI Help Desk",
+    "identity": "AI HelpDesk under ARMOR, documented",
+    "axes": [
+      "ticket context/history",
+      "supervised production commands",
+      "task investigation",
+      "?",
+      "ticket relationships only",
+      "platform tasks, scope-dependent"
+    ],
+    "note": "Old ai-suite URL is missing. Replacement:",
+    "sources": [
+      "https://docs.duplocloud.com/docs/armor/helpdesk"
+    ]
+  },
+  {
+    "file": "kubiya.md",
+    "title": "Kubiya — ChatOps + Workflow Execution",
+    "identity": "Kubiya control plane/workflows, documented hosted+self-hosted",
+    "axes": [
+      "Context Graph",
+      "governed workflows",
+      "tool-dependent",
+      "integrated",
+      "graph, ontology scope unproven",
+      "infrastructure workflows"
+    ],
+    "note": "",
+    "sources": [
+      "https://docs.kubiya.ai/mcp/overview",
+      "https://docs.kubiya.ai/core-concepts/control-plane/overview",
+      "https://docs.kubiya.ai/api-reference/workflows/overview"
+    ]
+  },
+  {
+    "file": "harness-ai.md",
+    "title": "Harness AI (incl. Harness MCP Server)",
+    "identity": "Harness Autonomous SDLC Platform; current commercial product page, per-agent GA not established",
+    "axes": [
+      "SDLC graph+memory",
+      "delivery worker agents",
+      "failure investigation",
+      "delivery+cost signals",
+      "pipeline/deployment graph",
+      "IaC/deployments"
+    ],
+    "note": "Old Harness AI URL redirects. Separate marketed module capability from verified GA.",
+    "sources": [
+      "https://www.harness.io/products/platform"
+    ]
+  },
+  {
+    "file": "firefly-agentic-cloud-automation.md",
+    "title": "Firefly (Agentic Cloud Automation)",
+    "identity": "Firefly Cloud Resilience + Thinkerbell AI; vendor product page",
+    "axes": [
+      "cloud system-of-record",
+      "drift+recovery workflows",
+      "misconfiguration investigation",
+      "inventory+drift, not full APM",
+      "dependency graph",
+      "IaC generation+recovery"
+    ],
+    "note": "Product emphasis now resilience; fine-grained GA unknown.",
+    "sources": [
+      "https://www.firefly.ai/product"
+    ]
+  },
+  {
+    "file": "qovery-migration-agent.md",
+    "title": "Qovery Migration Agent",
+    "identity": "Qovery Migration AI Agent, OSS still-in-development per README",
+    "axes": [
+      "provider app context",
+      "file-generation workflow",
+      "manifest validation",
+      "?",
+      "?",
+      "Terraform+Dockerfile generation"
+    ],
+    "note": "README scope inconsistent between intro and feature list; conservative Heroku-to-Qovery focus, not general migration success.",
+    "sources": [
+      "https://github.com/Qovery/qovery-migration-ai-agent"
+    ]
+  },
+  {
+    "file": "kuberns-platform.md",
+    "title": "Kuberns Platform",
+    "identity": "Kuberns commercial AI-cloud PaaS offered",
+    "axes": [
+      "?",
+      "deployment automation claimed",
+      "?",
+      "monitoring claimed",
+      "?",
+      "deployment+scaling claimed"
+    ],
+    "note": "Source is marketing page, not independent test or GA contract. Do not reuse 90% faster / savings claims.",
+    "sources": [
+      "https://kuberns.com/"
+    ]
+  },
+  {
+    "file": "hashicorp-terraform-mcp-infragraph.md",
+    "title": "HashiCorp Terraform MCP + Project Infragraph",
+    "identity": "Terraform MCP server; reviewed launch explicitly experimental 2025-07-16; Infragraph current status unverified",
+    "axes": [
+      "registry context",
+      "MCP tool interface",
+      "?",
+      "?",
+      "Infragraph unverified",
+      "Terraform workflow assistance"
+    ],
+    "note": "Do not merge experimental MCP and Infragraph into a universally shipped autonomous platform.",
+    "sources": [
+      "https://www.hashicorp.com/en/blog/build-secure-ai-driven-workflows-with-new-terraform-and-vault-mcp-servers",
+      "https://github.com/hashicorp/terraform-mcp-server"
+    ]
+  },
+  {
+    "file": "opsera-hummingbird.md",
+    "title": "Opsera Hummingbird",
+    "identity": "Opsera Hummingbird / Unified Insights, commercial page; 2025-10-23 reasoning-agent release",
+    "axes": [
+      "toolchain context",
+      "pipeline automation",
+      "pipeline failure explanation",
+      "SDLC metrics, not APM",
+      "toolchain relationships",
+      "workflows/integrations"
+    ],
+    "note": "Distinguish conversational analytics from autonomous incident remediation.",
+    "sources": [
+      "https://opsera.ai/unified-insights",
+      "https://opsera.ai/platform/",
+      "https://opsera.ai/newsroom/opsera-unveils-next-generation-ai-powered-devops-platform-with-hummingbird-ai-reasoning-agents-insights-in-a-box-and-github-mcp-integration/"
+    ]
+  },
+  {
+    "file": "xMatters.md",
+    "title": "xMatters — Operations Automation",
+    "identity": "xMatters Flow Designer, documented workflow product",
+    "axes": [
+      "workflow context",
+      "deterministic incident automation",
+      "?",
+      "integrations",
+      "alert-triggered flows",
+      "custom integration-dependent"
+    ],
+    "note": "Do not label documented deterministic flows autonomous AI investigation.",
+    "sources": [
+      "https://help.xmatters.com/ondemand/flowdesigner/flow-designer.htm"
+    ]
+  },
+  {
+    "file": "termius-gloria.md",
+    "title": "Termius — Gloria",
+    "identity": "Termius Gloria identity/link requires further verification",
+    "axes": [
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?"
+    ],
+    "note": "Old termius.com/gloria is 404. Official Termius footer links gloriaops.com, which redirects to gloriashell.com; destination inaccessible in tool. Preserve as verification pending, no fresh capability claims.",
+    "sources": [
+      "https://termius.com/beta-program",
+      "https://gloriaops.com"
+    ]
+  },
+  {
+    "file": "atlassian-rovo-dev.md",
+    "title": "Atlassian Rovo Dev",
+    "identity": "Standalone Rovo Dev end-of-life transition announced on current product page; moving into eligible Jira/TWC",
+    "axes": [
+      "Teamwork Graph",
+      "code+PR tasks",
+      "build/code troubleshooting",
+      "?",
+      "work-item context",
+      "?"
+    ],
+    "note": "Flag transition rather than active standalone GA.",
+    "sources": [
+      "https://www.atlassian.com/software/rovo-dev"
+    ]
+  },
+  {
+    "file": "github-copilot-coding-agent.md",
+    "title": "GitHub Copilot Coding Agent",
+    "identity": "Copilot in cloud new experience available paid plans since 2026-10-28",
+    "axes": [
+      "repo context",
+      "code+PR automation",
+      "code debugging",
+      "?",
+      "issue+PR context",
+      "code output, not managed infra"
+    ],
+    "note": "Old URL redirects; remove third-party Verge article as primary technical proof.",
+    "sources": [
+      "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github"
+    ]
+  },
+  {
+    "file": "azure-copilot-agent-mode.md",
+    "title": "GitHub Copilot in VS Code (legacy Azure label)",
+    "identity": "Identity error: source describes GitHub Copilot/AI in VS Code, NOT Azure Copilot",
+    "axes": [
+      "repo memory",
+      "tools+terminal",
+      "code assistance",
+      "?",
+      "?",
+      "custom tools only"
+    ],
+    "note": "Relabel IDE agent or source actual Azure Copilot separately.",
+    "sources": [
+      "https://code.visualstudio.com/docs/chat/chat-overview"
+    ]
+  },
+  {
+    "file": "gitlab-duo.md",
+    "title": "GitLab Duo",
+    "identity": "GitLab Duo Agent Platform and non-agentic features, documented",
+    "axes": [
+      "repo context",
+      "SDLC agents",
+      "code/pipeline assistance",
+      "?",
+      "SDLC context",
+      "CI-driven, not generic"
+    ],
+    "note": "Preserve per-feature maturity; landing docs do not imply all features GA.",
+    "sources": [
+      "https://docs.gitlab.com/user/gitlab_duo/"
+    ]
+  },
+  {
+    "file": "zencoder-ai-agents.md",
+    "title": "Zencoder AI Agents",
+    "identity": "Zencoder / Zenflow code+work orchestration, commercial",
+    "axes": [
+      "codebase context",
+      "code/test/review agents",
+      "code verification",
+      "?",
+      "?",
+      "?"
+    ],
+    "note": "Adjacent developer tool, not proven production SRE.",
+    "sources": [
+      "https://zencoder.ai/"
+    ]
+  },
+  {
+    "file": "jfrog-fly-agentic-repo.md",
+    "title": "JFrog Fly transition to JFrog Platform",
+    "identity": "Standalone Fly beta winding down; capabilities moving to JFrog Platform, announcement 2026-08-24",
+    "axes": [
+      "package context",
+      "release workflows",
+      "?",
+      "?",
+      "artifact metadata",
+      "artifact delivery, not infra provisioning"
+    ],
+    "note": "Major lifecycle correction, preserve historical alias.",
+    "sources": [
+      "https://jfrog.com/blog/fly-graduates-ai-native-capabilities-land-in-artifactory/"
+    ]
+  },
+  {
+    "file": "snyk.md",
+    "title": "Snyk — DevSecOps Automation",
+    "identity": "Snyk DevSecOps tools; documented Fix/Explain, GA varies",
+    "axes": [
+      "vulnerability knowledge",
+      "fix PR workflows",
+      "security analysis",
+      "security findings not APM",
+      "dependency relationships",
+      "IaC scanning not provisioning"
+    ],
+    "note": "Security adjacent; do not treat as SRE RCA.",
+    "sources": [
+      "https://docs.snyk.io/",
+      "https://docs.snyk.io/snyk-data-and-governance/how-snyk-incorporates-generative-ai-into-the-platform"
+    ]
+  },
+  {
+    "file": "aws-strands-sdk.md",
+    "title": "AWS Strands SDK",
+    "identity": "Strands open-source agent toolkit/harness, not packaged SRE service",
+    "axes": [
+      "memory framework",
+      "tool execution framework",
+      "custom",
+      "agent tracing",
+      "custom",
+      "deployment of agents only"
+    ],
+    "note": "Distinct from AWS DevOps Agent.",
+    "sources": [
+      "https://strandsagents.com/latest/"
+    ]
+  },
+  {
+    "file": "azure-ai-agent-service-foundry.md",
+    "title": "Microsoft Foundry Agent Service",
+    "identity": "Microsoft Foundry Agent Service; managed platform, optimizer Preview",
+    "axes": [
+      "search+tools",
+      "managed agent runtime",
+      "custom",
+      "agent tracing/evals",
+      "custom",
+      "agent hosting only"
+    ],
+    "note": "Update name and redirected docs, do not equate agent observability with infrastructure UOM.",
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/foundry/agents/overview"
+    ]
+  },
+  {
+    "file": "google-vertex-agent-builder.md",
+    "title": "Gemini Enterprise Agent Platform (formerly Vertex Agent Builder)",
+    "identity": "Former link now redirects to Gemini enterprise agent platform; platform foundation",
+    "axes": [
+      "grounded data",
+      "agent framework",
+      "custom",
+      "model+agent monitoring",
+      "custom",
+      "agent deployment only"
+    ],
+    "note": "Preserve legacy name/redirect and separate from Cloud Assist operational product.",
+    "sources": [
+      "https://cloud.google.com/products/gemini-enterprise-agent-platform"
+    ]
+  },
+  {
+    "file": "databricks-agent-bricks.md",
+    "title": "Databricks Agent Bricks",
+    "identity": "Agent Bricks developer platform; docs updated 2026-11-12",
+    "axes": [
+      "search+memory",
+      "durable runtime+sandbox",
+      "custom",
+      "MLflow agent tracing",
+      "custom",
+      "agent runtime hosting"
+    ],
+    "note": "Old URL redirects to /agents. No out-of-box SRE equivalence.",
+    "sources": [
+      "https://docs.databricks.com/aws/en/agents"
+    ]
+  },
+  {
+    "file": "snowflake-cortex-agents.md",
+    "title": "Snowflake Cortex Agents",
+    "identity": "Managed governed Cortex Agents, documented",
+    "axes": [
+      "enterprise data/retrieval",
+      "tool+code execution",
+      "custom",
+      "agent monitoring",
+      "custom",
+      "agent runtime only"
+    ],
+    "note": "Data agent platform adjacent, not turnkey infrastructure ops.",
+    "sources": [
+      "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents"
+    ]
+  },
+  {
+    "file": "dataiku-ai-agents.md",
+    "title": "Dataiku AI Agents",
+    "identity": "Dataiku DSS 15 agents, documented",
+    "axes": [
+      "data+tools",
+      "custom tools",
+      "custom",
+      "agent evaluation, not infra monitoring",
+      "custom",
+      "agent deployment only"
+    ],
+    "note": "Framework capabilities must not be scored as prebuilt SRE behavior.",
+    "sources": [
+      "https://doc.dataiku.com/dss/latest/agents/introduction.html"
+    ]
+  },
+  {
+    "file": "servicenow-ai-agent-orchestrator.md",
+    "title": "Servicenow AI Agent Orchestrator",
+    "identity": "ServiceNow AI Agents and AI platform; public product claim, module-specific maturity not verified",
+    "axes": [
+      "enterprise context",
+      "workflow automation",
+      "IT-specific agents scope-dependent",
+      "ITOM separate module",
+      "CMDB context separate",
+      "workflow-dependent"
+    ],
+    "note": "Do not equate entire ServiceNow portfolio with one orchestrator license.",
+    "sources": [
+      "https://www.servicenow.com/products/ai-agents.html"
+    ]
+  },
+  {
+    "file": "salesforce-agentforce-opsai.md",
+    "title": "Salesforce Agentforce",
+    "identity": "Salesforce Agentforce; exact product name OpsAI NOT verified",
+    "axes": [
+      "Salesforce context",
+      "business+IT service actions",
+      "ticket support",
+      "agent optimization not infra APM",
+      "customer/workflow context",
+      "?"
+    ],
+    "note": "Rename to verified product and adjacent category. Partner press releases not proof of infrastructure SRE.",
+    "sources": [
+      "https://www.salesforce.com/agentforce/"
+    ]
+  },
+  {
+    "file": "ibm-askiam.md",
+    "title": "IBM AskIAM",
+    "identity": "IBM Consulting AskIAM, GA 2025-06-06, consultant-managed",
+    "axes": [
+      "IAM knowledge",
+      "access requests+approvals",
+      "identity intelligence",
+      "?",
+      "identity relationships",
+      "user provisioning only"
+    ],
+    "note": "Identity provisioning is not general infrastructure provisioning.",
+    "sources": [
+      "https://newsroom.ibm.com/blog-askiam-ibms-new-agentic-ai-for-identity-and-access-management"
+    ]
+  },
+  {
+    "file": "soloio-kagent.md",
+    "title": "Kagent (Solo.io)",
+    "identity": "kagent OSS CNCF Sandbox + separate Enterprise offering",
+    "axes": [
+      "custom",
+      "Kubernetes agent orchestration",
+      "tool-dependent",
+      "agent/runtime context",
+      "custom",
+      "agent deployment"
+    ],
+    "note": "Main identity; distinguish OSS and commercial entitlements.",
+    "sources": [
+      "https://kagent.dev/"
+    ]
+  },
+  {
+    "file": "kagent-solo-io.md",
+    "title": "kagent — legacy duplicate page",
+    "identity": "Duplicate kagent file",
+    "axes": [
+      "same as soloio-kagent",
+      "same",
+      "same",
+      "same",
+      "same",
+      "same"
+    ],
+    "note": "Merge or canonical alias, preserve existing links rather than count twice.",
+    "sources": [
+      "https://kagent.dev/"
+    ]
+  },
+  {
+    "file": "robusta-holmesgpt.md",
+    "title": "Robusta / HolmesGPT",
+    "identity": "documented installable product; OSS HolmesGPT plus commercial Robusta SaaS/self-hosted platform. Commercial and OSS feature scopes differ.",
+    "axes": [
+      "investigation history and context",
+      "investigation tools; dangerous calls approval-gated",
+      "incident investigation",
+      "integrated telemetry; not a full replacement backend",
+      "alert timelines; general ontology unverified",
+      "not verified"
+    ],
+    "note": "Robusta investigates incidents over existing telemetry using an in-cluster agent and outbound-only SaaS connectivity, with self-hosted options. Commercial REST/SSE APIs, approval-required interactions and production-context PR reviews must not be assumed to exist in open-source HolmesGPT. Legacy deterministic Robusta Classic playbooks are distinct from HolmesGPT. Performance has not been independently tested.",
+    "sources": [
+      "https://docs.robusta.dev/master/how-it-works/architecture.html",
+      "https://docs.robusta.dev/master/configuration/holmesgpt/holmes-chat-api.html",
+      "https://docs.robusta.dev/master/configuration/github-actions/holmes-pr-review.html"
+    ]
+  },
+  {
+    "file": "neubird-ai.md",
+    "title": "NeuBird AI",
+    "identity": "documented commercial investigation platform and installable MCP interface; public docs undated.",
+    "axes": [
+      "project instructions and history",
+      "investigation initiation and status; infrastructure writes unverified",
+      "incident investigation",
+      "cloud and monitoring integrations",
+      "incident history; generic ontology unverified",
+      "not verified"
+    ],
+    "note": "NeuBird investigates incidents from web, IDE, terminal and MCP clients over connected cloud and monitoring data. Its MCP interface runs locally and calls the NeuBird API; documented operations include investigations, connection management, project instructions and report review. Infrastructure-changing actions were not established by these sources. Hawkeye compatibility aliases do not represent a separate vendor.",
+    "sources": [
+      "https://docs.neubird.ai/mcp/overview/",
+      "https://docs.neubird.ai/mcp/getting-started/quickstart/"
+    ]
+  },
+  {
+    "file": "resolve-ai.md",
+    "title": "Resolve AI",
+    "identity": "shipping capabilities announcement dated 2026-05-21; Triage explicitly early access in that announcement, not a blanket GA announcement.",
+    "axes": [
+      "production memory",
+      "governed operational tasks",
+      "multi-agent production investigation",
+      "integrated evidence",
+      "triage and contextual relationships; generic ontology unverified",
+      "generic provisioning not verified"
+    ],
+    "note": "Resolve positions its platform around multi-agent production investigations, governed operational work and reusable production memory. The May 2026 announcement distinguishes shipping capabilities from Triage early access. Availability should be checked per feature; generic infrastructure provisioning and independently measured performance improvements are not established by the reviewed sources.",
+    "sources": [
+      "https://resolve.ai/blog/agents-to-run-and-fix-your-software",
+      "https://resolve.ai/product/ai-sre",
+      "https://resolve.ai/why-resolve"
+    ]
+  },
+  {
+    "file": "traversal.md",
+    "title": "Traversal",
+    "identity": "commercial product offered through demo/deployment; reviewed official pages do not establish exact GA date for every capability.",
+    "axes": [
+      "Knowledge Bank",
+      "remediation execution unverified: source conflict",
+      "causal investigation positioning",
+      "integrated observability",
+      "live entities, dependencies and alert correlation",
+      "not verified"
+    ],
+    "note": "Traversal describes causal investigation, alert intelligence and a production context model with a Knowledge Bank. Its homepage describes diagnosing and fixing problems, while its security page says read-only always. This conflict remains unresolved: investigation and remediation recommendations are described here, but autonomous production writes are not verified. Vendor benchmarks are not independent customer outcomes.",
+    "sources": [
+      "https://www.traversal.com/",
+      "https://www.traversal.com/platform/knowledge-bank",
+      "https://www.traversal.com/blog/announcing-alert-intelligence",
+      "https://www.traversal.com/security"
+    ]
+  },
+  {
+    "file": "ciroos.md",
+    "title": "Ciroos",
+    "identity": "documented commercial AI SRE with Teams setup guide; Signal Intelligence product announcement undated in fetched page.",
+    "axes": [
+      "persistent graph memory",
+      "collaboration; actuator scope unverified",
+      "cross-domain investigation",
+      "connected signals",
+      "signal normalization, correlation and temporal topology graph",
+      "not verified"
+    ],
+    "note": "Ciroos describes cross-domain investigation, alert deduplication and correlation using persistent graph context. Its Teams guide requires an active account and defines channel, project and cluster scope, account linking, war rooms and human-reviewed recommendations. Signal Intelligence describes an actuator for remediation, but that architecture statement does not establish general availability or the permissions and scope of every action.",
+    "sources": [
+      "https://ciroos.ai/docs/msft-teams-ciroos-setup/",
+      "https://ciroos.ai/introducing-ciroos-signal-intelligence/"
+    ]
+  },
+  {
+    "file": "cleric.md",
+    "title": "Cleric",
+    "identity": "commercial product with trial/pricing and product documentation; exact release date of current capabilities not established.",
+    "axes": [
+      "retained infrastructure context",
+      "fix PRs and issues; writes opt-in",
+      "alert investigation and change verification",
+      "integrations and production verification",
+      "alert grouping; general ontology unverified",
+      "not verified"
+    ],
+    "note": "Cleric combines alert investigation, change verification and evidence-linked fix pull requests. Its product documentation describes read-only defaults, opt-in writes, delayed-regression detection, human review of fixes and recovery verification. Integrations and MCP provide additional context. Product demonstrations and pricing examples are not independent evidence of customer outcomes or unconditional autonomous remediation.",
+    "sources": [
+      "https://cleric.ai/product",
+      "https://cleric.ai/integrations",
+      "https://cleric.ai/pricing"
+    ]
+  },
+  {
+    "file": "aws-devops-agent.md",
+    "title": "AWS DevOps Agent",
+    "identity": "GA explicitly announced 2026-03-31. Distinct operational product from AWS Strands SDK already in Atlas.",
+    "axes": [
+      "runbooks, history and app relationships",
+      "SRE tasks through configured integrations and skills",
+      "operational investigations",
+      "observability integrations",
+      "cross-signal and deployment correlation",
+      "general provisioning not verified"
+    ],
+    "note": "AWS DevOps Agent is an operational investigation product, distinct from the Strands agent-building toolkit. Its GA announcement covers AWS, multicloud and on-premises operations through configured integrations and context. Current documentation and CLI describe investigation, readiness and testing surfaces, but do not establish equivalence to a general-purpose provisioning platform. Vendor MTTR statements are not an independently measured comparison.",
+    "sources": [
+      "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-devops-agent-generally-available/",
+      "https://docs.aws.amazon.com/devopsagent/latest/userguide/",
+      "https://docs.aws.amazon.com/cli/latest/reference/devops-agent/"
+    ]
+  },
+  {
+    "file": "komodor-klaudia.md",
+    "title": "Komodor / Klaudia",
+    "identity": "Agentic Operations Platform explicitly announced available worldwide 2026-09-16; Klaudia is part of the same vendor record.",
+    "axes": [
+      "persistent memory and knowledge graphs",
+      "built-in and custom governed workflows",
+      "Kubernetes investigations",
+      "operational integrations and optimization",
+      "Alert Intelligence and context",
+      "broad infrastructure provisioning not verified"
+    ],
+    "note": "Komodor expanded its Kubernetes AI SRE into an Agentic Operations Platform with ready-to-run and custom workflows. Its September 2026 announcement describes agent import and SDK support, runbooks, role-scoped tools and credentials, approvals and audit. Klaudia belongs to this vendor record. Deploying an agent is not the same as general infrastructure provisioning; performance and readiness assertions have not been independently tested.",
+    "sources": [
+      "https://komodor.com/blog/komodor-launches-agentic-operations-platform-combining-ready-to-run-automation-with-a-comprehensive-backbone-for-custom-agents/",
+      "https://komodor.com/blog/klaudia-how-we-built-an-ai-sre-enterprise-trusts/"
+    ]
+  },
+  {
+    "file": "grafana-assistant.md",
+    "title": "Grafana Assistant",
+    "identity": "Assistant Investigations GA since late July 2026; Watchers GA 2026-10-19; Managed Sandboxes public preview as of 2026-10-20. Availability differs by feature.",
+    "axes": [
+      "skills and runbook context",
+      "triggered investigations; code-fix sandboxes preview",
+      "multi-step investigations",
+      "native Grafana Cloud telemetry and visualization",
+      "Watchers and incident triggers; generic ontology unverified",
+      "not verified"
+    ],
+    "note": "Grafana Assistant combines observability-native investigations with natural-language monitoring and skills. Investigations and Watchers have GA milestones, while Managed Sandboxes for code-fix work remain public preview in the October announcement. Skills and tool approvals have their own configuration. Access from self-managed Grafana still connects to Grafana Cloud and does not establish wholly offline or on-premises inference.",
+    "sources": [
+      "https://grafana.com/blog/observabilitycon-2026-announcements/",
+      "https://grafana.com/whats-new/page/2/",
+      "https://grafana.com/blog/grafana-assistant-everywhere/"
+    ]
+  }
+]

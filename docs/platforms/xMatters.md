@@ -1,67 +1,39 @@
 ---
 layout: default
-title: xMatters — Operations Automation
+title: "xMatters — Operations Automation"
 parent: Platform Directory
+permalink: /platforms/xMatters/
 ---
 
 # xMatters — Operations Automation
 
-**Activities**: Y/H | **Diagnostics**: P/M | **Provisioning**: P/M  
-**Event ontology**: P/M | **Observability**: P/M | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Cloud-based SaaS platform with a web console, mobile apps, and low-code Flow Designer for automation; supports multi-channel notifications (SMS, voice, push, email) and on-call scheduling.  
-**What it actually does —** Coordinates and automates incident response across DevOps, SRE, and IT Ops. Ingests alerts and events, reduces noise, notifies and escalates to the right responders, orchestrates collaboration, and triggers automated remediation and runbooks to restore services quickly.  
-**Data / telemetry —** Alerts and events from monitoring/APM tools, CI/CD pipelines, ITSM systems, change events, and cloud platforms; contextual service and change metadata. Raw metrics/logs remain in upstream observability tools.  
-**Interoperability —** Extensive integration ecosystem (Datadog, Dynatrace, Splunk, New Relic, Prometheus-based tools, ServiceNow, Jira, PagerDuty, Slack, Teams, cloud providers, CI/CD). REST APIs, webhooks, Integration Builder, and xMatters Agent for on-prem connectivity.  
-**Deployment model —** SaaS (multi-region cloud) with optional on-prem/edge xMatters Agent for secure hybrid integrations.  
-**Notes —** Strong incident orchestration and communication engine; complements observability and AIOps platforms rather than replacing them.
+## Identity and availability
 
----
+xMatters Flow Designer, documented workflow product
 
-## 🧠 UKM Snapshots
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  
+## Capability mapping
 
-**Note:** Incident timelines, annotations, and post-incident data captured; relies on external knowledge bases/runbooks for deep organizational memory.
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
----
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | workflow context |
+| UAM — Activities | deterministic incident automation |
+| UDM — Diagnostics | Not verified |
+| UOM — Observability | integrations |
+| UEOM — Events / ontology | alert-triggered flows |
+| UPM — Provisioning | custom integration-dependent |
 
-## ⚙️ UAM Snapshots
-ingest Y/H, index Y/M, retrieval Y/M, governance Y/M, overall high  
+## Scope and limitations
 
-**Note:** Core strength—workflow automation, approvals, RBAC, escalation policies, and full audit trails for actions and notifications.
+Do not label documented deterministic flows autonomous AI investigation.
 
----
+## Official sources
 
-## 🔍 UDM Snapshots
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  
+1. [Official source 1](https://help.xmatters.com/ondemand/flowdesigner/flow-designer.htm)
 
-**Note:** Surfaces diagnostic context (changes, service dependencies, related alerts); deep RCA depends on integrated observability/AIOps tools.
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
----
-
-## 👁️ UOM Snapshots
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  
-
-**Note:** Consolidates alerting signals across tools; does not store or analyze raw telemetry.
-
----
-
-## 🧬 UEOM Snapshots
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  
-
-**Note:** Incident- and service-centric event model sufficient for routing and automation, not a full semantic workload graph.
-
----
-
-## 🚀 UPM Snapshots
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  
-
-**Note:** Can trigger provisioning and remediation via scripts, IaC, CI/CD, and cloud APIs through integrations; not a native provisioning engine.
-
----
-
-**Latest updates —** Continued expansion of Service Intelligence, change awareness, AI-assisted insights, and Everbridge Digital Operations integration (2024–2025).  
-**Links —**  
-- [Officail](https://www.xmatters.com)  
-- [Help](https://help.xmatters.com)  
-- [GitHub](https://github.com/xmatters)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

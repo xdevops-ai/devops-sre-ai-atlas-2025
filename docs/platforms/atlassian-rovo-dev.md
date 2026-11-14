@@ -1,50 +1,39 @@
 ---
 layout: default
-title: Atlassian Rovo Dev
+title: "Atlassian Rovo Dev"
 parent: Platform Directory
+permalink: /platforms/atlassian-rovo-dev/
 ---
 
 # Atlassian Rovo Dev
 
-**Activities**: Y/M | **Diagnostics**: Y/M | **Provisioning**: P/L  <br>
-**Event ontology**: P/L | **Observability**: P/L | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** CLI plus cloud components; integrates Jira, Confluence, Bitbucket, and GitHub.  
-**What it actually does —** A context-aware coding agent that plans, writes, tests, documents, and automates pull requests.  
-**Data / telemetry —** Work items, documentation, and repository/PR history.  
-**Interoperability —** Atlassian Graph and CLI with support for Bitbucket and GitHub.  
-**Deployment model —** Atlassian cloud with a local CLI.  
-**Notes —** Focuses on developer workflows; infrastructure operations are out of scope.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest P/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval Y/M; Governance Y/M; Overall medium
+Standalone Rovo Dev end-of-life transition announced on current product page; moving into eligible Jira/TWC
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Capture & Sessionization: Y/M; Evidence Policy & Verification: P/L
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | Teamwork Graph |
+| UAM — Activities | code+PR tasks |
+| UDM — Diagnostics | build/code troubleshooting |
+| UOM — Observability | Not verified |
+| UEOM — Events / ontology | work-item context |
+| UPM — Provisioning | Not verified |
 
-**UDM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Detection & Monitoring: P/L; Root Cause Analysis & Context Gathering: P/M
+## Scope and limitations
 
+Flag transition rather than active standalone GA.
 
-**UOM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Instrumentation & Ingest: N/L; Rovo does not directly ingest traditional telemetry (metrics, logs, traces); Normalization & Enrichment: P/L; Context is limited to Atlassian’s data model (linking tickets, PRs, docs)
+## Official sources
 
+1. [Official source 1](https://www.atlassian.com/software/rovo-dev)
 
-**UEOM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
-
-
-**Latest updates —** Rovo Dev CLI adds GPT‑5 support (Aug 8, 2025).
-**Links —** [Official Site](https://www.atlassian.com/software/rovo-dev), [Docs](https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/), [Blog](https://www.atlassian.com/blog/announcements/rovo-dev-cli-with-gpt5)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

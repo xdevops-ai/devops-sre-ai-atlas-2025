@@ -1,38 +1,39 @@
 ---
 layout: default
-title: Firefly (Agentic Cloud Automation)
+title: "Firefly (Agentic Cloud Automation)"
 parent: Platform Directory
+permalink: /platforms/firefly-agentic-cloud-automation/
 ---
 
 # Firefly (Agentic Cloud Automation)
 
-**Activities**: P/M | **Diagnostics**: N/L | **Provisioning**: P/M  <br>
-**Event ontology**: P/M | **Observability**: N/L | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Web console; policy & asset graph.  
-**What it actually does —** Discovers unmanaged/drifted assets, codifies to Terraform, and attaches remediation actions/policies using an asset graph.  
-**Data / telemetry —** Multi-cloud inventory and history.  
-**Interoperability —** Cloud providers, Terraform, marketplaces.  
-**Deployment model —** SaaS.  
-**Notes —** Best as a governance + codification companion to IaC pipelines.
+## Identity and availability
 
-**UKM Snapshots:**  
-asset history P/M
+Firefly Cloud Resilience + Thinkerbell AI; vendor product page
 
-**UAM Snapshots:**  
-policy actions P/M
+## Capability mapping
 
-**UDM Snapshots:**  
-N/L
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
-**UOM Snapshots:**  
-N/L
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | cloud system-of-record |
+| UAM — Activities | drift+recovery workflows |
+| UDM — Diagnostics | misconfiguration investigation |
+| UOM — Observability | inventory+drift, not full APM |
+| UEOM — Events / ontology | dependency graph |
+| UPM — Provisioning | IaC generation+recovery |
 
-**UEOM Snapshots:**  
-asset graph P/M
+## Scope and limitations
 
-**UPM Snapshots:**  
-IaC diffs P/M (guardrailed)
+Product emphasis now resilience; fine-grained GA unknown.
 
-**Latest updates —** Platform/asset graph enhancements (2025).  
-**Links —** [Official](https://www.firefly.ai/), [Product](https://www.firefly.ai/product)
+## Official sources
+
+1. [Official source 1](https://www.firefly.ai/product)
+
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
+
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

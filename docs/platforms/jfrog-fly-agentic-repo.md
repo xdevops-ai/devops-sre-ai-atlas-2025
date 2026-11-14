@@ -1,50 +1,39 @@
 ---
 layout: default
-title: JFrog Fly Agentic Repo
+title: "JFrog Fly transition to JFrog Platform"
 parent: Platform Directory
+permalink: /platforms/jfrog-fly-agentic-repo/
 ---
 
-# JFrog Fly Agentic Repo
+# JFrog Fly transition to JFrog Platform
 
-**Activities**: Y/M | **Diagnostics**: P/M | **Provisioning**: P/L  <br>
-**Event ontology**: Y/M | **Observability**: P/M | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Low‑config repository with agent workflows.  
-**What it actually does —** Provides agent‑aware artifact and evidence flows for DevSecOps; emits policy and compliance events; connects to tools via MCP.  
-**Data / telemetry —** Semantic metadata plus evidence and policy event streams.  
-**Interoperability —** Integrates with the JFrog platform, GitHub, and MCP.  
-**Deployment model —** SaaS (beta).  
-**Notes —** Focuses on release governance rather than direct infrastructure application.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
+Standalone Fly beta winding down; capabilities moving to JFrog Platform, announcement 2026-08-24
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | package context |
+| UAM — Activities | release workflows |
+| UDM — Diagnostics | Not verified |
+| UOM — Observability | Not verified |
+| UEOM — Events / ontology | artifact metadata |
+| UPM — Provisioning | artifact delivery, not infra provisioning |
 
-**UDM Snapshots:**   
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+## Scope and limitations
 
+Major lifecycle correction, preserve historical alias.
 
-**UOM Snapshots:**   
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+## Official sources
 
+1. [Official source 1](https://jfrog.com/blog/fly-graduates-ai-native-capabilities-land-in-artifactory/)
 
-**UEOM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
-
-
-**Latest updates —** JFrog unveils Fly, an agentic repository (Sep 9, 2025).
-**Links —** [Official Site](https://jfrog.com/fly/), [Docs](https://investors.jfrog.com/news/news-details/2025/JFrog-Unveils-Industrys-First-Agentic-Repository-Revolutionizing-How-Developers-Deliver-AI-Native-Software/default.aspx), [Blog](https://www.infoworld.com/article/4055080/jfrog-announces-agentic-repo-for-ai-driven-development.html)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

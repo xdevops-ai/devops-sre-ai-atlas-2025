@@ -1,38 +1,40 @@
 ---
 layout: default
-title: Microsoft Azure SRE Agent
+title: "Microsoft Azure SRE Agent"
 parent: Platform Directory
+permalink: /platforms/microsoft-azure-sre-agent/
 ---
 
 # Microsoft Azure SRE Agent
 
-**Activities**: Y/M | **Diagnostics**: Y/M | **Provisioning**: P/M  <br>
-**Event ontology**: P/M | **Observability**: Y/M | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Azure Portal; chat + action timeline.  
-**What it actually does —** Diagnoses issues from Azure telemetry and can execute mitigations with approvals; billed via Azure Agent Units (AAU).  
-**Data / telemetry —** Azure Monitor and Logs.  
-**Interoperability —** Hooks into Azure services, GitHub/PagerDuty (via integrations).  
-**Deployment model —** Azure managed service.  
-**Notes —** Scoped to Azure; approval-gated actions.
+## Identity and availability
 
-**UKM Snapshots:**  
-context learning P/M, overall medium
+Azure SRE Agent, documented service; feature/run-mode availability varies
 
-**UAM Snapshots:**  
-timeline Y/M, approvals Y/M, overall medium
+## Capability mapping
 
-**UDM Snapshots:**  
-diagnosis Y/M, suggestions Y/M, overall medium
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
-**UOM Snapshots:**  
-Azure signals Y/M
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | retained context |
+| UAM — Activities | schedules+governed automation |
+| UDM — Diagnostics | investigations |
+| UOM — Observability | Azure+partner signals |
+| UEOM — Events / ontology | deployment correlation |
+| UPM — Provisioning | permitted CLI scope, not universal |
 
-**UEOM Snapshots:**  
-resource graph P/M
+## Scope and limitations
 
-**UPM Snapshots:**  
-mitigations P/M (approval-gated)
+Distinct from Foundry and IDE Copilot.
 
-**Latest updates —** Preview billing started Sept 1, 2025 (AAU).  
-**Links —** [Product](https://azure.microsoft.com/en-us/products/sre-agent), [Docs – Overview](https://learn.microsoft.com/en-us/azure/sre-agent/overview), [Docs – Billing](https://learn.microsoft.com/en-us/azure/sre-agent/billing)
+## Official sources
+
+1. [Official source 1](https://learn.microsoft.com/en-us/azure/sre-agent/overview)
+2. [Official source 2](https://learn.microsoft.com/en-us/azure/sre-agent/create-and-set-up)
+
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
+
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

@@ -7,6 +7,9 @@ permalink: /capabilities/baselines/upm/rating-example/
 last_updated: 2025-11-03T00:00:00Z
 ---
 
+> Historical assessment: scores below were not revalidated in the November 2026 review. See the [current evidence matrix]({{ "/capabilities/" | relative_url }}).
+
+
 # 🧪 UPM Rating Example — *AbcCorp Cloud Platform*
 
 This worked example shows how to score a platform against **UPM v2** using the five phases, **evidence gates**, and KPIs.

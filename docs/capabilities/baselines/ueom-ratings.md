@@ -7,6 +7,9 @@ permalink: /capabilities/baselines/ueom/rating-example/
 last_updated: 2025-11-03T00:00:00Z
 ---
 
+> Historical assessment: scores below were not revalidated in the November 2026 review. See the [current evidence matrix]({{ "/capabilities/" | relative_url }}).
+
+
 # UEOM Rating Example — “Acme Events Graph”
 
 A worked example showing how to score a platform against **UEOM v2** using real evidence.

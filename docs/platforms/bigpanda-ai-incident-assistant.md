@@ -1,43 +1,41 @@
 ---
 layout: default
-title: BigPanda AI Incident Assistant
+title: "BigPanda AI Incident Assistant"
 parent: Platform Directory
+permalink: /platforms/bigpanda-ai-incident-assistant/
 ---
 
 # BigPanda AI Incident Assistant
 
-**Activities**: Y/M | **Diagnostics**: Y/M | **Provisioning**: N/L  <br>
-**Event ontology**: P/M | **Observability**: Y/M | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Web UI with incident console; Slack/ITSM integrations.  
-**What it actually does —** Correlates multi-source alerts with change data, proposes next steps, automates comms and post-incident artifacts.  
-**Data / telemetry —** Ingest from monitoring, logs, change feeds into an investigation view.  
-**Interoperability —** Broad integrations across observability/ITSM/ChatOps.  
-**Deployment model —** SaaS.  
-**Notes —** Focused on evidence-backed triage and RCA; changes typically routed via external approvals/runbooks.
+## Identity and availability
 
-**UKM Snapshots:**  
-ingest Y/M, index Y/M, retrieval Y/M, governance P/M, overall medium
+BigPanda AI Incident Assistant / Biggy, documented commercial setup
 
-**UAM Snapshots:**  
-capture Y/M, sessionization Y/M, verification Y/M, audit P/M, overall medium
+## Capability mapping
 
-**UDM Snapshots:**  
-detection Y/M, correlation Y/M, RCA Y/M, overall medium
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
-**UOM Snapshots:**  
-multi-signal ingest Y/M, enrichment P/M, overall medium
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | knowledge+post-incident analysis |
+| UAM — Activities | collaboration workflows |
+| UDM — Diagnostics | investigation |
+| UOM — Observability | integrated infrastructure signals |
+| UEOM — Events / ontology | ADR correlation context |
+| UPM — Provisioning | Not verified |
 
-**UEOM Snapshots:**  
-entity/change context P/M, overall medium
+## Scope and limitations
 
-**UPM Snapshots:**  
-ingest N/L, apply N/L, rollback N/L, overall low
+Distinguish IA, AI Detection and Response, and Incident Prevention entitlements.
 
-**Latest updates —** Agentic Incident Assistant announced (May 28, 2025).  
-**Links —** 
-- [Official](https://www.bigpanda.io/)
-- [AI Incident Assistant](https://www.bigpanda.io/our-product/ai-incident-assistant/)
-- [Assistant overview](https://www.bigpanda.io/ai-powered-incident-management-assistant/)
-- [Doc](https://docs.bigpanda.io)  
-- [Blog](https://www.bigpanda.io/blog/)
+## Official sources
+
+1. [Official source 1](https://docs.bigpanda.io/en/install-ai-incident-assistant)
+2. [Official source 2](https://docs.bigpanda.io/en/use-the-ai-incident-assistant-web-app)
+3. [Official source 3](https://docs.bigpanda.io/en/biggy-agent-in-the-adr-console)
+
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
+
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

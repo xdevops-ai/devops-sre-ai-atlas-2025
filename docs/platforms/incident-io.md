@@ -1,38 +1,40 @@
 ---
 layout: default
-title: incident.io (AI SRE)
+title: "incident.io (AI SRE)"
 parent: Platform Directory
+permalink: /platforms/incident-io/
 ---
 
 # incident.io (AI SRE)
 
-**Activities**: Y/H | **Diagnostics**: P/M | **Provisioning**: N/L
-**Event ontology**: N/L | **Observability**: N/L | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Slack/Teams-first incident rooms; web app.  
-**What it actually does —** Coordinates incidents, drafts updates and post-mortems automatically, and suggests next steps based on similar incidents.  
-**Data / telemetry —** Incident timelines, chat transcripts, status pages.  
-**Interoperability —** Ties into paging/issue trackers/CMDB via integrations.  
-**Deployment model —** SaaS.  
-**Notes —** Orchestrator for humans-in-the-loop; pair with observability for evidence.
+## Identity and availability
 
-**UKM Snapshots:**  
-incident KB Y/M
+incident.io Investigations, paid Pro/Enterprise add-on
 
-**UAM Snapshots:**  
-timeline Y/H, comms Y/H, overall high
+## Capability mapping
 
-**UDM Snapshots:**  
-suggestions P/M
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
-**UOM Snapshots:**  
-N/L
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | operational context |
+| UAM — Activities | response coordination |
+| UDM — Diagnostics | parallel evidence-backed investigations |
+| UOM — Observability | integrated telemetry |
+| UEOM — Events / ontology | incident relationships |
+| UPM — Provisioning | Not verified |
 
-**UEOM Snapshots:**  
-N/L
+## Scope and limitations
 
-**UPM Snapshots:**  
-N/L
+Separate incident workflow automation from production write remediation.
 
-**Latest updates —** AI SRE & auto-postmortems.  
-**Links —** [AI Platform](https://incident.io/ai-platform), [Product](https://incident.io/), [Post-mortem hub](https://incident.io/hubs/post-mortem)
+## Official sources
+
+1. [Official source 1](https://incident.io/investigations)
+2. [Official source 2](https://incident.io/blog/what-is-a-software-reliability-platform)
+
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
+
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

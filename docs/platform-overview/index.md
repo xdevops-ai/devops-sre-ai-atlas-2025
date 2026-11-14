@@ -1,7 +1,11 @@
+---
 layout: default
 title: Platform Overview
 nav_order: 3
 permalink: /platform-overview/
+---
+
+> **Historical overview.** This long-form analysis predates the 14 November 2026 review. Use the [current Platform Directory]({{ "/platforms/" | relative_url }}) and [capability evidence matrix]({{ "/capabilities/" | relative_url }}) for updated identities, availability and sources.
 
 
 # 📋 DevOps & SRE AI Platforms — 2025 Atlas (Updated January 6, 2026)

@@ -1,50 +1,40 @@
 ---
 layout: default
-title: Cisco Splunk AI Agents
+title: "Cisco Splunk AI Agents"
 parent: Platform Directory
+permalink: /platforms/cisco-splunk-ai-agents/
 ---
 
 # Cisco Splunk AI Agents
 
-**Activities**: Y/H | **Diagnostics**: Y/H | **Provisioning**: N/L  <br>
-**Event ontology**: Y/H | **Observability**: Y/H | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Low-code actions in Splunk Observability and Security products.  
-**What it actually does —** AI agents assist with telemetry collection, alert configuration, anomaly detection, root-cause analysis, and provide fix recommendations.  
-**Data / telemetry —** OpenTelemetry signals and Splunk Common Information Model (CIM).  
-**Interoperability —** Broad ecosystem integrations across Cisco and Splunk products.  
-**Deployment model —** Offered as part of Splunk Cloud and Splunk Observability Cloud.  
-**Notes —** Focuses on remediation via playbooks and integrations rather than direct infrastructure apply.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/M, overall high  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/M; Overall high
+Splunk AI Assistant in Observability Cloud, documented; A2A select customers only 2026-11-12
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Capture & Sessionization: Y/H; Evidence Policy & Verification: Y/H; Cisco+Splunk’s agentic AI works under strict data policies
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | service context |
+| UAM — Activities | query+chart tools |
+| UDM — Diagnostics | natural-language diagnosis |
+| UOM — Observability | native APM/infra/logs |
+| UEOM — Events / ontology | alert context |
+| UPM — Provisioning | Not verified |
 
-**UDM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Detection & Alerting: Y/H; Root Cause Analysis & Correlation: Y/H; This is a core strength
+## Scope and limitations
 
+Separate observability from Cisco SOC/security claims. English only documented; realm limitations.
 
-**UOM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Instrumentation & Ingest: Y/H; Cisco’s platform (integrated with Splunk) ingests a broad range of telemetry; Normalization & Enrichment: Y/H; Ingested data is normalized through Splunk’s Common Information Model, and Cis
+## Official sources
 
+1. [Official source 1](https://help.splunk.com/en/splunk-observability-cloud/splunk-ai-assistant/ai-assistant-in-observability-cloud)
+2. [Official source 2](https://help.splunk.com/en/splunk-observability-cloud/release-notes/november-2026)
 
-**UEOM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest N/L, index N/L, retrieval N/L, governance N/L, overall low  <br>
-**Note:** Coverage — Ingest N/L; Index N/L; Retrieval N/L; Governance N/L; Overall low
-
-
-**Latest updates —** Cisco unveils agentic AI for Splunk Observability & SOC at .conf (Sep 9, 2025).
-**Links —** [Official Site](https://www.splunk.com/en_us/solutions/splunk-artificial-intelligence.html), [Docs](https://investor.cisco.com/news/news-details/2025/Cisco-Supercharges-Observability-with-Agentic-AI-for-Real-Time-Business-Insights/default.aspx), [Blog](https://www.splunk.com/en_us/newsroom/press-releases/2025/cisco-elevates-the-soc-with-agentic-ai-for-faster-threat-response-and-reduced-complexity.html)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

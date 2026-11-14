@@ -1,50 +1,39 @@
 ---
 layout: default
-title: Azure AI Agent Service Foundry
+title: "Microsoft Foundry Agent Service"
 parent: Platform Directory
+permalink: /platforms/azure-ai-agent-service-foundry/
 ---
 
-# Azure AI Agent Service Foundry
+# Microsoft Foundry Agent Service
 
-**Activities**: Y/M | **Diagnostics**: N/L | **Provisioning**: P/L  <br>
-**Event ontology**: P/M | **Observability**: Y/M | **Confidence**: Medium‑High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Azure AI Foundry service and open‑source Agent Framework SDK, with a visual workflow editor and CLI.  
-**What it actually does —** Provides an enterprise framework to build, deploy and manage multi‑agent systems with guardrails; orchestrates stateful agent workflows; integrates tools via OpenAPI and the Model Context Protocol (MCP); supports evaluation and AgentOps monitoring.  
-**Data / telemetry —** Agent conversation logs, tool invocations, OpenTelemetry traces, governance events and metrics.  
-**Interoperability —** Over 1 400 Azure Logic Apps as tools; supports external frameworks such as LangChain and LangGraph; connectors to Microsoft 365 Copilot and other APIs.  
-**Deployment model —** Runs as Azure AI Foundry in the cloud with a containerised agent runtime; the SDK is open‑source for local development and cloud deployment.  
-**Notes —** Focused on agent workflow orchestration and governance rather than direct human‑facing operations.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest Y/M, index P/M, retrieval Y/M, governance Y/H, overall medium  <br>
-**Note:** Coverage — Ingest Y/M; Index P/M; Retrieval Y/M; Governance Y/H; Overall medium
+Microsoft Foundry Agent Service; managed platform, optimizer Preview
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | search+tools |
+| UAM — Activities | managed agent runtime |
+| UDM — Diagnostics | custom |
+| UOM — Observability | agent tracing/evals |
+| UEOM — Events / ontology | custom |
+| UPM — Provisioning | agent hosting only |
 
-**UDM Snapshots:**   
-ingest N/L, index N/L, retrieval N/L, governance N/L, overall low  <br>
-**Note:** Coverage — Ingest N/L; Index N/L; Retrieval N/L; Governance N/L; Overall low
+## Scope and limitations
 
+Update name and redirected docs, do not equate agent observability with infrastructure UOM.
 
-**UOM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
+## Official sources
 
+1. [Official source 1](https://learn.microsoft.com/en-us/azure/foundry/agents/overview)
 
-**UEOM Snapshots:**   
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
-
-
-**Latest updates —** Azure AI Agent Service overview updated for Foundry (2025).
-**Links —** [Official Site](https://azure.microsoft.com/en-us/products/ai-foundry/agent-service), [Docs](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview), [Blog](https://azure.microsoft.com/en-us/blog/)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

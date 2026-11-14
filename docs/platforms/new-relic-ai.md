@@ -1,50 +1,40 @@
 ---
 layout: default
-title: New Relic AI
+title: "New Relic Autopilot"
 parent: Platform Directory
+permalink: /platforms/new-relic-ai/
 ---
 
-# New Relic AI
+# New Relic Autopilot
 
-**Activities**: P/L | **Diagnostics**: Y/M | **Provisioning**: N/L  <br>
-**Event ontology**: Y/M | **Observability**: Y/H | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Web chatbot inside New Relic One; integrated via CodeStream and mobile apps.  
-**What it actually does —** Enables anyone to query telemetry in plain English; summarizes health; explains anomalies; generates NRQL queries and dashboards; recommends fixes; guides instrumentation and alerting; analyzes deploy impact before and after changes.  
-**Data / telemetry —** Unified metrics, events, logs and traces, plus deploy/change events and UX data.  
-**Interoperability —** OpenAI GPT with New Relic data context; integration with CodeStream; ties into alerting workflows.  
-**Deployment model —** New Relic SaaS.  
-**Notes —** Advisory only (no direct apply); RBAC enforced; some regulated accounts unsupported.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+New Relic Autopilot, formerly SRE Agent, GA announcement 2026-07-21
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | runbooks+retrospectives |
+| UAM — Activities | investigation tasks |
+| UDM — Diagnostics | RCA+recommendations |
+| UOM — Observability | native telemetry |
+| UEOM — Events / ontology | incident context |
+| UPM — Provisioning | Not verified |
 
-**UDM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+## Scope and limitations
 
+Rename/add current Autopilot scope; recommendations do not prove autonomous remediation.
 
-**UOM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
+## Official sources
 
+1. [Official source 1](https://docs.newrelic.com/whats-new/2026/07/whats-new-07-21-autopilot/)
+2. [Official source 2](https://docs.newrelic.com/docs/agentic-ai/autopilot/overview/)
 
-**UEOM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest N/L, index N/L, retrieval N/L, governance N/L, overall low  <br>
-**Note:** Coverage — Ingest N/L; Index N/L; Retrieval N/L; Governance N/L; Overall low
-
-
-**Latest updates —** New Relic NOW+ 2025 unveils 20+ AI capabilities (Feb 25, 2025).
-**Links —** [Official Site](https://newrelic.com/platform/new-relic-ai), [Docs](https://docs.newrelic.com/whats-new/2025/02/whats-new-02-25-new-relic-now-product-announcements/), [Blog](https://newrelic.com/blog/nerdlog/new-relic-now-2025-innovation-roundup)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

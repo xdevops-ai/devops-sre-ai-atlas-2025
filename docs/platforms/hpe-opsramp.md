@@ -1,38 +1,39 @@
 ---
 layout: default
-title: HPE OpsRamp
+title: "HPE OpsRamp"
 parent: Platform Directory
+permalink: /platforms/hpe-opsramp/
 ---
 
 # HPE OpsRamp
 
-**Activities**: Y/M | **Diagnostics**: Y/M | **Provisioning**: P/L  <br>
-**Event ontology**: P/M | **Observability**: Y/M | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** ITOM console with AIOps, automation and discovery.  
-**What it actually does —** Detects anomalies, correlates events, orchestrates incident response, and automates routine ops across hybrid estates.  
-**Data / telemetry —** Hybrid IT monitoring and topology.  
-**Interoperability —** HPE GreenLake Intelligence agent mesh and integrations.  
-**Deployment model —** SaaS.  
-**Notes —** Strong ITOM base; infra apply typically via automation hooks.
+## Identity and availability
 
-**UKM Snapshots:**  
-KB P/M
+HPE OpsRamp / OpsPilot; release 2026.10-U1 updated 2026-11-10
 
-**UAM Snapshots:**  
-workflows Y/M
+## Capability mapping
 
-**UDM Snapshots:**  
-event analytics Y/M
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
-**UOM Snapshots:**  
-hybrid signals Y/M
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | conversation context |
+| UAM — Activities | alert policy management+automation |
+| UDM — Diagnostics | operational troubleshooting |
+| UOM — Observability | native monitoring+logs |
+| UEOM — Events / ontology | service maps+alerts |
+| UPM — Provisioning | Not verified |
 
-**UEOM Snapshots:**  
-topology P/M
+## Scope and limitations
 
-**UPM Snapshots:**  
-runbooks P/L
+Current release includes MCP extension and policy management; do not equate all Early Access sidebar features with GA.
 
-**Latest updates —** Agentic-AI messaging in GreenLake (2025).  
-**Links —** [OpsRamp](https://www.opsramp.com/), [HPE page](https://www.hpe.com/asia_pac/en/opsramp.html), [AI-powered analytics](https://www.opsramp.com/solutions/incident-management/)
+## Official sources
+
+1. [Official source 1](https://docs.opsramp.com/support/release-notes/2026-releases/platform-2026/platform-2026-10-u1/)
+
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
+
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

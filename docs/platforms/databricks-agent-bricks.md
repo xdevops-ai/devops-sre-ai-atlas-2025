@@ -1,50 +1,39 @@
 ---
 layout: default
-title: Databricks Agent Bricks
+title: "Databricks Agent Bricks"
 parent: Platform Directory
+permalink: /platforms/databricks-agent-bricks/
 ---
 
 # Databricks Agent Bricks
 
-**Activities**: Y/M | **Diagnostics**: P/L | **Provisioning**: P/L  <br>
-**Event ontology**: Y/M | **Observability**: P/M | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Workspace UI and APIs powered by Mosaic AI and MLflow.  
-**What it actually does —** Auto-optimizes agents on enterprise data with evaluation and guardrails; stores traces in the Lakehouse and MLflow.  
-**Data / telemetry —** Traces, evaluation datasets, and cost/quality metrics.  
-**Interoperability —** Connectors running within the Databricks environment.  
-**Deployment model —** Runs in your Databricks workspace.  
-**Notes —** Focuses on evaluation and quality; not intended for infrastructure operations.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+Agent Bricks developer platform; docs updated 2026-11-12
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | search+memory |
+| UAM — Activities | durable runtime+sandbox |
+| UDM — Diagnostics | custom |
+| UOM — Observability | MLflow agent tracing |
+| UEOM — Events / ontology | custom |
+| UPM — Provisioning | agent runtime hosting |
 
-**UDM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+## Scope and limitations
 
+Old URL redirects to /agents. No out-of-box SRE equivalence.
 
-**UOM Snapshots:**   
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+## Official sources
 
+1. [Official source 1](https://docs.databricks.com/aws/en/agents)
 
-**UEOM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
-
-
-**Latest updates —** Agent Bricks docs launched for AWS/Azure (Sep 5, 2025).
-**Links —** [Official Site](https://www.databricks.com/product/artificial-intelligence/agent-bricks), [Docs](https://docs.databricks.com/aws/en/generative-ai/agent-bricks/), [Blog](https://learn.microsoft.com/en-us/azure/databricks/generative-ai/agent-bricks/)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

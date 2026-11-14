@@ -1,50 +1,41 @@
 ---
 layout: default
-title: Opsera Hummingbird
+title: "Opsera Hummingbird"
 parent: Platform Directory
+permalink: /platforms/opsera-hummingbird/
 ---
 
 # Opsera Hummingbird
 
-**Activities**: Y/M | **Diagnostics**: Y/M | **Provisioning**: P/L  <br>
-**Event ontology**: P/M | **Observability**: Y/M | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Low-code dashboards and unified insights.  
-**What it actually does —** Aggregates CI/CD and SCM data to produce DORA and DevEx metrics; provides AI insights and recommendations.  
-**Data / telemetry —** CI pipelines, source control events, release events; analytics on AI code assistant adoption.  
-**Interoperability —** Connectors to integrate with CI/CD, SCM and other tools; actions triggered via integrations.  
-**Deployment model —** SaaS.  
-**Notes —** Does not perform provisioning directly; relies on integrations for infrastructure changes.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest Y/M, index P/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Ingestion & Validation: Y/M; Normalization & Enrichment: Y/M; Opsera normalizes disparate tool data into a common model
+Opsera Hummingbird / Unified Insights, commercial page; 2025-10-23 reasoning-agent release
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | toolchain context |
+| UAM — Activities | pipeline automation |
+| UDM — Diagnostics | pipeline failure explanation |
+| UOM — Observability | SDLC metrics, not APM |
+| UEOM — Events / ontology | toolchain relationships |
+| UPM — Provisioning | workflows/integrations |
 
-**UDM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+## Scope and limitations
 
+Distinguish conversational analytics from autonomous incident remediation.
 
-**UOM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+## Official sources
 
+1. [Official source 1](https://opsera.ai/unified-insights)
+2. [Official source 2](https://opsera.ai/platform/)
+3. [Official source 3](https://opsera.ai/newsroom/opsera-unveils-next-generation-ai-powered-devops-platform-with-hummingbird-ai-reasoning-agents-insights-in-a-box-and-github-mcp-integration/)
 
-**UEOM Snapshots:**   
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
-
-
-**Latest updates —** Opsera raises $20M; Hummingbird AI agents highlighted (Apr 2, 2025).
-**Links —** [Official Site](https://opsera.ai/platform/hummingbird-ai/), [Docs](https://opsera.ai/newsroom/opsera-raises-20m-to-drive-ai-powered-devops-platform-innovation-accelerating-ai-agent-adoption-and-developer-efficiency/), [Blog](https://www.prnewswire.com/news-releases/opsera-raises-20m-to-drive-ai-powered-devops-platform-innovation-accelerating-ai-agent-adoption-and-developer-efficiency-302417777.html)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

@@ -7,6 +7,9 @@ nav_order: 10
 permalink: /capabilities/baselines/ukm/ratings/
 ---
 
+> Historical assessment: scores below were not revalidated in the November 2026 review. See the [current evidence matrix]({{ "/capabilities/" | relative_url }}).
+
+
 > This page is **illustrative** and may reference vendors for comparison. The baseline itself remains **vendor‑neutral**.
 
 

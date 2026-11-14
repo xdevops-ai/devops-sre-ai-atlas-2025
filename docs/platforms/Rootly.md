@@ -1,67 +1,41 @@
 ---
 layout: default
-title: Rootly — Incident Response Automation
+title: "Rootly — Incident Response Automation"
 parent: Platform Directory
+permalink: /platforms/Rootly/
 ---
 
 # Rootly — Incident Response Automation
 
-**Activities**: Y/H | **Diagnostics**: Y/M | **Provisioning**: N/L  
-**Event ontology**: P/M | **Observability**: Y/M | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Slack- and Teams-first incident management platform with chatbot commands, workflows, and a web console; includes a codeless automation engine and mobile support.  
-**What it actually does —** Automates the full incident lifecycle: creates incident channels, assigns roles, captures timelines and communications, correlates alerts with recent changes, generates real-time summaries, orchestrates response workflows, and auto-generates post-incident reviews.  
-**Data / telemetry —** Incident context and communications (Slack/Teams messages, call transcripts, timelines), alert metadata from monitoring tools, on-call schedules, CI/CD and repository change events. Raw metrics/logs remain in source observability systems and are referenced contextually.  
-**Interoperability —** Deep Slack integration plus support for Microsoft Teams; 100+ integrations including Datadog, New Relic, Grafana, GitHub, GitLab, Jira, ServiceNow, PagerDuty, Statuspage, and CI/CD tools. Provides APIs and an open-source MCP server for IDE and agent integrations.  
-**Deployment model —** SaaS (cloud-hosted); optional self-hosted extensions such as MCP connectors.  
-**Notes —** Strong human-in-the-loop automation and AI-assisted incident management; focuses on coordination and learning rather than direct infrastructure changes.
+## Identity and availability
 
----
+Rootly AI SRE + incident platform; documented, MCP GA
 
-## 🧠 UKM Snapshots
-ingest Y/M, index Y/M, retrieval Y/M, governance P/M, overall medium  
+## Capability mapping
 
-**Note:** Stores structured incident knowledge, summaries, and postmortems; limited general-purpose enterprise knowledge management.
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
----
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | incident evidence/history |
+| UAM — Activities | incident workflows |
+| UDM — Diagnostics | AI investigation |
+| UOM — Observability | integrated telemetry |
+| UEOM — Events / ontology | alerts+incident context |
+| UPM — Provisioning | Not verified |
 
-## ⚙️ UAM Snapshots
-ingest Y/H, index Y/M, retrieval Y/M, governance P/M, overall high  
+## Scope and limitations
 
-**Note:** Rich activity timelines, role assignments, approvals, and audit trails across chat and integrated tools.
+Existing file, not new vendor.
 
----
+## Official sources
 
-## 🔍 UDM Snapshots
-ingest Y/M, index Y/M, retrieval Y/M, governance P/M, overall medium  
+1. [Official source 1](https://rootly.com/ai-sre)
+2. [Official source 2](https://rootly.com/changelog/rootly-mcp-server-is-ga)
+3. [Official source 3](https://rootly.com/changelog/investigate-page-and-catch-up-without-leaving-microsoft-teams)
 
-**Note:** Diagnostics rely on correlated alerts and change context; no causal graph-based RCA.
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
----
-
-## 👁️ UOM Snapshots
-ingest Y/M, index P/M, retrieval Y/M, governance P/M, overall medium  
-
-**Note:** Observability data is consumed from upstream tools; Rootly focuses on contextual navigation and summaries.
-
----
-
-## 🧬 UEOM Snapshots
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  
-
-**Note:** Incident-centric ontology linking alerts, responders, services, and changes.
-
----
-
-## 🚀 UPM Snapshots
-ingest N/L, index N/L, retrieval N/L, governance N/L, overall low  
-
-**Note:** No direct provisioning or rollback; remediation is executed via external automation or runbooks.
-
----
-
-**Latest updates —** Expanded AI SRE features and open-source MCP server for IDE integrations (2024–2025).  
-**Links —**  
-- [Official](https://rootly.com)  
-- [Docs](https://docs.rootly.com)  
-- [GitHub](https://github.com/rootly-ai)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

@@ -1,50 +1,39 @@
 ---
 layout: default
-title: Azure Copilot Agent Mode
+title: "GitHub Copilot in VS Code (legacy Azure label)"
 parent: Platform Directory
+permalink: /platforms/azure-copilot-agent-mode/
 ---
 
-# Azure Copilot Agent Mode
+# GitHub Copilot in VS Code (legacy Azure label)
 
-**Activities**: Y/M | **Diagnostics**: P/M | **Provisioning**: Y/M  <br>
-**Event ontology**: P/L | **Observability**: P/L | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** VS Code extension (Copilot for Azure) with chat ("Ask") and Agent Mode.  
-**What it actually does —** Natural-language operations over Azure: decomposes requests into tasks, generates or modifies Bicep, runs Azure CLI/azd commands, checks resource health, and deploys under RBAC with confirmation gates.  
-**Data / telemetry —** Azure Resource Graph, resource configurations, health APIs.  
-**Interoperability —** Azure CLI/SDK and Azure Developer CLI; Azure RBAC.  
-**Deployment model —** Client-side VS Code extension backed by your Azure subscription with a cloud backend.  
-**Notes —** Enterprise-ready guardrails: explicit confirmation before changes, execution history logs, respect for tenant boundaries.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest P/L, index P/L, retrieval P/M, governance Y/M, overall medium-low  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/M; Governance Y/M; Overall medium-low
+Identity error: source describes GitHub Copilot/AI in VS Code, NOT Azure Copilot
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | repo memory |
+| UAM — Activities | tools+terminal |
+| UDM — Diagnostics | code assistance |
+| UOM — Observability | Not verified |
+| UEOM — Events / ontology | Not verified |
+| UPM — Provisioning | custom tools only |
 
-**UDM Snapshots:**   
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+## Scope and limitations
 
+Relabel IDE agent or source actual Azure Copilot separately.
 
-**UOM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+## Official sources
 
+1. [Official source 1](https://code.visualstudio.com/docs/chat/chat-overview)
 
-**UEOM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium-high  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium-high
-
-
-**Latest updates —** Agent Mode docs refreshed for Visual Studio 2022 (Sep 22, 2025).
-**Links —** [Official Site](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode), [Docs](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-agent-mode?view=vs-2022), [Blog](https://code.visualstudio.com/blogs/)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

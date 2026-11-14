@@ -1,38 +1,40 @@
 ---
 layout: default
-title: Dell APEX AIOps (Moogsoft)
+title: "Dell APEX AIOps (Moogsoft)"
 parent: Platform Directory
+permalink: /platforms/dell-apex-aiops/
 ---
 
 # Dell APEX AIOps (Moogsoft)
 
-**Activities**: P/M | **Diagnostics**: Y/M | **Provisioning**: N/L  <br>
-**Event ontology**: P/M | **Observability**: P/M | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Incident management console with correlation views.  
-**What it actually does —** Reduces alert noise, clusters incidents, and guides triage within APEX AIOps.  
-**Data / telemetry —** Event ingest from multiple monitoring sources.  
-**Interoperability —** Integrations with Dell ecosystem and third-party tools.  
-**Deployment model —** SaaS.  
-**Notes —** Inherited Moogsoft engines; execution typically via runbooks.
+## Identity and availability
 
-**UKM Snapshots:**  
-KB P/L, overall low-medium
+Dell AIOps / APEX AIOps incident management, commercial service documents
 
-**UAM Snapshots:**  
-timeline P/M, overall medium
+## Capability mapping
 
-**UDM Snapshots:**  
-correlation Y/M, RCA P/M, overall medium
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
-**UOM Snapshots:**  
-ingest P/M, enrichment P/L, overall low-medium
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | Not verified |
+| UAM — Activities | incident management |
+| UDM — Diagnostics | incident analysis scope |
+| UOM — Observability | application observability module |
+| UEOM — Events / ontology | incident correlation lineage |
+| UPM — Provisioning | Not verified |
 
-**UEOM Snapshots:**  
-basic topology P/L
+## Scope and limitations
 
-**UPM Snapshots:**  
-apply N/L
+Same lineage as Moogsoft; avoid two independent competitor counts.
 
-**Latest updates —** Moogsoft brand folded into APEX AIOps (2025).  
-**Links —** [APEX AIOps](https://www.dell.com/en-us/shop/dell-aiops/sl/aiops), [APEX Incident Mgmt docs](https://docs.moogsoft.com/moogsoft-cloud/en/index-en.html)
+## Official sources
+
+1. [Official source 1](https://www.dell.com/en-us/legal/lp/apex-ai-ops)
+2. [Official source 2](https://www.dell.com/en-us/legal/lp/cloud-and-hosting-services)
+
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
+
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

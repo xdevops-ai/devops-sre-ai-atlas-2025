@@ -1,38 +1,40 @@
 ---
 layout: default
-title: HashiCorp Terraform MCP + Project Infragraph
+title: "HashiCorp Terraform MCP + Project Infragraph"
 parent: Platform Directory
+permalink: /platforms/hashicorp-terraform-mcp-infragraph/
 ---
 
 # HashiCorp Terraform MCP + Project Infragraph
 
-**Activities**: P/M | **Diagnostics**: N/L | **Provisioning**: Y/M  <br>
-**Event ontology**: Y/M | **Observability**: N/L | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** MCP servers exposing safe IaC actions to agents; Terraform Cloud/CLI.  
-**What it actually does —** Lets AI agents plan/apply Terraform with policy/audit via MCP; Infragraph unifies resource graph context for safer changes.  
-**Data / telemetry —** Terraform state/plan; resource graph.  
-**Interoperability —** MCP standard; Terraform Registry and providers.  
-**Deployment model —** Open-source MCP server + HCP/Terraform Cloud.  
-**Notes —** Pair with an observability brain for diagnostics.
+## Identity and availability
 
-**UKM Snapshots:**  
-run history P/M
+Terraform MCP server; reviewed launch explicitly experimental 2025-07-16; Infragraph current status unverified
 
-**UAM Snapshots:**  
-audit trail Y/M (VCS/TF Cloud)
+## Capability mapping
 
-**UDM Snapshots:**  
-N/L
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
-**UOM Snapshots:**  
-N/L
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | registry context |
+| UAM — Activities | MCP tool interface |
+| UDM — Diagnostics | Not verified |
+| UOM — Observability | Not verified |
+| UEOM — Events / ontology | Infragraph unverified |
+| UPM — Provisioning | Terraform workflow assistance |
 
-**UEOM Snapshots:**  
-resource graph Y/M
+## Scope and limitations
 
-**UPM Snapshots:**  
-plan/apply Y/M, rollback via IaC patterns
+Do not merge experimental MCP and Infragraph into a universally shipped autonomous platform.
 
-**Latest updates —** Terraform MCP Server released (May–Jul 2025).  
-**Links —** [Blog](https://www.hashicorp.com/en/blog/build-secure-ai-driven-workflows-with-new-terraform-and-vault-mcp-servers), [GitHub](https://github.com/hashicorp/terraform-mcp-server)
+## Official sources
+
+1. [Official source 1](https://www.hashicorp.com/en/blog/build-secure-ai-driven-workflows-with-new-terraform-and-vault-mcp-servers)
+2. [Official source 2](https://github.com/hashicorp/terraform-mcp-server)
+
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
+
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

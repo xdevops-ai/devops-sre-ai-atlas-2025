@@ -1,50 +1,40 @@
 ---
 layout: default
-title: Datadog Bits AI & AI Agents
+title: "Datadog Bits Investigation"
 parent: Platform Directory
+permalink: /platforms/datadog-bits-ai/
 ---
 
-# Datadog Bits AI & AI Agents
+# Datadog Bits Investigation
 
-**Activities**: Y/H | **Diagnostics**: Y/H | **Provisioning**: P/L  <br>
-**Event ontology**: Y/M | **Observability**: Y/H | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Integrated into Datadog SaaS platform (no‑code UX in dashboards/incident console).  
-**What it actually does —** Generative AIOps assistant + role‑specific agents (SRE/Dev/Sec). Investigates alerts/incidents with parallel, hypothesis‑driven RCA; groups related alerts; produces real‑time incident summaries & suggested next steps; drafts post‑mortems; Dev agent can open PRs.  
-**Data / telemetry —** Datadog’s unified telemetry (metrics, logs, traces, events) + service topology & runbooks.  
-**Interoperability —** Slack/Teams, PagerDuty/On‑Call, Jira/ServiceNow; GitHub for PR‑based fixes.  
-**Deployment model —** Datadog SaaS (some agents LA/preview in 2025).  
-**Notes —** Human‑in‑the‑loop with optional auto‑run of safe remediations; approvals for complex actions.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
+Bits Investigation, documented; API maturity needs endpoint-specific check
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Capture & Sessionization: Y/H; Evidence Policy & Verification: P/M
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | investigation context |
+| UAM — Activities | investigation execution |
+| UDM — Diagnostics | production investigation |
+| UOM — Observability | native telemetry |
+| UEOM — Events / ontology | monitor+incident context |
+| UPM — Provisioning | Not verified |
 
-**UDM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Proactive Detection & Noise Reduction: Y/H; Automated Triage & Root Cause Analysis: Y/H; Bits AI is essentially an on-call engineer that works at machine speed
+## Scope and limitations
 
+Naming evolved from Bits AI SRE. Current API page differs from older preview-labelled cached pages; do not assert blanket API GA.
 
-**UOM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
+## Official sources
 
+1. [Official source 1](https://docs.datadoghq.com/bits_ai/bits_investigation/)
+2. [Official source 2](https://docs.datadoghq.com/api/latest/bits-ai/)
 
-**UEOM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall medium
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
-
-
-**Latest updates —** Datadog unveils new domain‑specific AI agents at DASH (Jun 10, 2025).
-**Links —** [Official Site](https://www.datadoghq.com/product/platform/bits-ai/), [Docs](https://docs.datadoghq.com/bits_ai/), [Blog](https://investors.datadoghq.com/news-releases/news-release-details/datadog-unveils-latest-ai-agents-rapidly-resolve-application)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

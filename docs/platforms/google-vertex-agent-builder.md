@@ -1,50 +1,39 @@
 ---
 layout: default
-title: Google Vertex Agent Builder
+title: "Gemini Enterprise Agent Platform (formerly Vertex Agent Builder)"
 parent: Platform Directory
+permalink: /platforms/google-vertex-agent-builder/
 ---
 
-# Google Vertex Agent Builder
+# Gemini Enterprise Agent Platform (formerly Vertex Agent Builder)
 
-**Activities**: P/L | **Diagnostics**: P/L | **Provisioning**: P/L  <br>
-**Event ontology**: P/L | **Observability**: Y/M | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** No‑code console (Dialogflow CX lineage) and Agent Design Kit (ADK).  
-**What it actually does —** Enables multi‑agent conversational experiences and analytics; agents act via webhooks and Google Cloud services.  
-**Data / telemetry —** Conversation analytics and evaluation results.  
-**Interoperability —** Webhooks; Vertex AI Search; Agent Garden sample agents.  
-**Deployment model —** Google Cloud.  
-**Notes —** Infrastructure changes require external services; the Jules coding agent is a separate product.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest P/L, index P/L, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Ingestion & Validation: N/L; Normalization & Enrichment: P/L
+Former link now redirects to Gemini enterprise agent platform; platform foundation
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | grounded data |
+| UAM — Activities | agent framework |
+| UDM — Diagnostics | custom |
+| UOM — Observability | model+agent monitoring |
+| UEOM — Events / ontology | custom |
+| UPM — Provisioning | agent deployment only |
 
-**UDM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
-**Note:** Based Troubleshooting: P/L; Knowledge Base Answers: P/L; One strength of Dialogflow (Gen App Builder) is integration with knowledge bases and FAQs
+## Scope and limitations
 
+Preserve legacy name/redirect and separate from Cloud Assist operational product.
 
-**UOM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall medium  <br>
-**Note:** Instrumentation & Ingest: N/L; Google’s Gen App Builder (Dialogflow CX-based) doesn’t ingest telemetry data by default; Normalization & Enrichment: N/L; Out of the box, there’s no observability data to normalize
+## Official sources
 
+1. [Official source 1](https://cloud.google.com/products/gemini-enterprise-agent-platform)
 
-**UEOM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low
-
-
-**Latest updates —** “Get started with Vertex AI Agent Builder” guide updated (Sep 19, 2025).
-**Links —** [Official Site](https://cloud.google.com/products/agent-builder), [Docs](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-builder/overview), [Blog](https://cloud.google.com/blog/products/ai-machine-learning/get-started-with-vertex-ai-agent-builder)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

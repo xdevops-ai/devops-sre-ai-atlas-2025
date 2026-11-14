@@ -1,50 +1,39 @@
 ---
 layout: default
-title: Salesforce Agentforce OpsAI
+title: "Salesforce Agentforce"
 parent: Platform Directory
+permalink: /platforms/salesforce-agentforce-opsai/
 ---
 
-# Salesforce Agentforce OpsAI
+# Salesforce Agentforce
 
-**Activities**: Y/M | **Diagnostics**: Y/H | **Provisioning**: Y/M  <br>
-**Event ontology**: Y/H | **Observability**: Y/M | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Low-code Agent Studio plus Apex, with a Command Center dashboard and MCP support.  
-**What it actually does —** Uses Data Cloud to ingest and search incidents; orchestrates incident and operations flows; triggers actions and integrations via flows and partner connectors; provides agent metrics in Command Center.  
-**Data / telemetry —** Topics and events from Data Cloud and Command Center metrics.  
-**Interoperability —** Integrates with MCP, MuleSoft, Salesforce Flows and partner tools.  
-**Deployment model —** Runs on the Salesforce Cloud.  
-**Notes —** OpsAI is positioned as part of Agentforce for cross-team workflows and approvals.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall High  <br>
-**Note:** Ingestion & Validation: Y/H; Normalization & Enrichment: Y/H; Agentforce classifies and enriches incoming data via an ontology of “Topics” and associated “Actions
+Salesforce Agentforce; exact product name OpsAI NOT verified
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall Medium-High  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall Medium-High
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | Salesforce context |
+| UAM — Activities | business+IT service actions |
+| UDM — Diagnostics | ticket support |
+| UOM — Observability | agent optimization not infra APM |
+| UEOM — Events / ontology | customer/workflow context |
+| UPM — Provisioning | Not verified |
 
-**UDM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall High  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall High
+## Scope and limitations
 
+Rename to verified product and adjacent category. Partner press releases not proof of infrastructure SRE.
 
-**UOM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall Medium-High  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall Medium-High
+## Official sources
 
+1. [Official source 1](https://www.salesforce.com/agentforce/)
 
-**UEOM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall High  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall High
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest Y/M, index Y/M, retrieval Y/M, governance Y/M, overall Medium-High  <br>
-**Note:** Coverage — Ingest Y/M; Index Y/M; Retrieval Y/M; Governance Y/M; Overall Medium-High
-
-
-**Latest updates —** Dreamforce: Agentforce 360; OpenAI & Anthropic partnerships expanded (Oct 14, 2025).
-**Links —** [Official Site](https://www.salesforce.com/agentforce/), [Docs](https://www.salesforce.com/news/press-releases/2025/10/14/openai-partnership-expansion-announcement/), [Blog](https://www.salesforce.com/news/press-releases/2025/10/14/anthropic-regulated-industries-partnership-expansion-announcement/)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

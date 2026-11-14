@@ -1,67 +1,41 @@
 ---
 layout: default
-title: Kagent (Solo.io)
+title: "kagent — legacy duplicate page"
 parent: Platform Directory
+permalink: /platforms/kagent-solo-io/
 ---
 
-# Kagent — Kubernetes Agent Framework (Solo.io)
+# kagent — legacy duplicate page
 
-**Activities**: Y/M | **Diagnostics**: Y/H | **Provisioning**: Y/M  
-**Event ontology**: P/M | **Observability**: Y/H | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Kubernetes-native, open-source agent framework deployed in-cluster using CRDs and controllers; optional UI and CLI for agent management.  
-**What it actually does —** Runs AI-powered agents inside Kubernetes clusters to diagnose issues, inspect live state, execute remediation actions, and orchestrate operational workflows using tools such as kubectl, Helm, Argo, and Prometheus queries.  
-**Data / telemetry —** Live Kubernetes API objects, cluster events, pod logs, and metrics retrieved on demand from Prometheus/Grafana and other in-cluster observability tools.  
-**Interoperability —** Strong cloud-native integration via Kubernetes APIs; supports MCP (Model Context Protocol) for tool access and A2A patterns for agent-to-agent communication; integrates with Prometheus, Grafana, Istio, Argo CD, Helm, and external LLM providers.  
-**Deployment model —** Self-hosted, runs entirely inside Kubernetes clusters; open-source (CNCF Sandbox project).  
-**Notes —** Focused on Kubernetes and platform engineering use cases; governance, approvals, and RBAC rely on Kubernetes-native controls and external policy engines rather than a built-in ITSM layer.
+## Identity and availability
 
----
+Duplicate kagent file
 
-## 🧠 UKM Snapshots
-ingest Y/M, index P/M, retrieval Y/M, governance P/L, overall medium  
+## Capability mapping
 
-**Note:** Knowledge derived from live cluster state, configuration, and retrieved documentation; no centralized long-term enterprise knowledge base by default.
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
----
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | same as soloio-kagent |
+| UAM — Activities | same |
+| UDM — Diagnostics | same |
+| UOM — Observability | same |
+| UEOM — Events / ontology | same |
+| UPM — Provisioning | same |
 
-## ⚙️ UAM Snapshots
-ingest Y/M, index Y/M, retrieval Y/M, governance P/M, overall medium-high  
+## Scope and limitations
 
-**Note:** Captures agent actions, tool invocations, and remediation steps as structured activity flows; replay and approval depend on surrounding platform controls.
+Merge or canonical alias, preserve existing links rather than count twice.
 
----
+## Official sources
 
-## 🔍 UDM Snapshots
-ingest Y/H, index Y/M, retrieval Y/M, governance Y/M, overall high  
+1. [Official source 1](https://kagent.dev/)
 
-**Note:** Strong Kubernetes-centric diagnostics using live queries, logs, events, and dependency inspection; RCA is evidence-driven but scoped to cluster context.
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
----
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})
 
-## 👁️ UOM Snapshots
-ingest Y/H, index Y/M, retrieval Y/H, governance Y/M, overall high  
-
-**Note:** Leverages existing observability stacks (Prometheus, Grafana, logs) with deep contextual navigation rather than storing telemetry itself.
-
----
-
-## 🧬 UEOM Snapshots
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  
-
-**Note:** Entity model centers on Kubernetes primitives (clusters, namespaces, pods, services, workloads) and their relationships.
-
----
-
-## 🚀 UPM Snapshots
-ingest Y/M, index Y/M, retrieval Y/M, governance P/M, overall medium-high  
-
-**Note:** Supports controlled execution of kubectl, Helm, and Argo-based changes; rollback and safety depend on underlying Kubernetes and GitOps tooling.
-
----
-
-**Latest updates —** Accepted into CNCF Sandbox; rapid community growth and expanded MCP-based tool integrations (2024–2025).  
-**Links —**  
-- https://kagent.dev  
-- https://docs.kagent.dev  
-- https://github.com/kagent-dev/kagent
+This legacy URL is retained. Use the [canonical kagent record]({{ "/platforms/soloio-kagent/" | relative_url }}); do not count both pages as separate platforms.

@@ -1,50 +1,41 @@
 ---
 layout: default
-title: Dynatrace Davis AI
+title: "Dynatrace Intelligence and Assist"
 parent: Platform Directory
+permalink: /platforms/dynatrace-davis-ai/
 ---
 
-# Dynatrace Davis AI
+# Dynatrace Intelligence and Assist
 
-**Activities**: Y/H | **Diagnostics**: Y/H | **Provisioning**: N/L  <br>
-**Event ontology**: Y/H | **Observability**: Y/H | **Confidence**: High
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Low-code workflows and Davis apps.  
-**What it actually does —** Automatic anomaly detection and causal root cause analysis; correlates into "Davis problems" with evidence.  
-**Data / telemetry —** Full-stack APM/Infrastructure/Logs/RUM in Grail; uses DQL.  
-**Interoperability —** Integrations and workflows.  
-**Deployment model —** Dynatrace SaaS.  
-**Notes —** Remediation guided or via workflows; direct infra apply is limited.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/M, overall high  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/M; Overall high
+Dynatrace Intelligence + Dynatrace Assist; CoPilot Chat GA documented in SaaS 1.308
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | shared guides |
+| UAM — Activities | agentic queries+workflow integration |
+| UDM — Diagnostics | troubleshooting |
+| UOM — Observability | native telemetry |
+| UEOM — Events / ontology | contextual topology |
+| UPM — Provisioning | Not verified |
 
-**UDM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Continuous Detection & Smart Alerting: Y/H; Automatic Root Cause Analysis: Y/H; This is where Davis truly shines
+## Scope and limitations
 
+Replace 2025 survey as main product evidence.
 
-**UOM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Instrumentation & Ingest: Y/H; Dynatrace’s OneAgent automatically instruments hosts, processes, containers, and applications; Normalization & Enrichment: Y/H; All telemetry is fed into Dynatrace’s unified Smartscape mode
+## Official sources
 
+1. [Official source 1](https://docs.dynatrace.com/docs/dynatrace-intelligence/agentic-and-generative-ai/agentic-and-generative-ai-getting-started)
+2. [Official source 2](https://docs.dynatrace.com/docs/dynatrace-intelligence/agentic-and-generative-ai/chat-with-dynatrace-assist)
+3. [Official source 3](https://docs.dynatrace.com/docs/whats-new/saas/sprint-308)
 
-**UEOM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest N/L, index N/L, retrieval N/L, governance N/L, overall low  <br>
-**Note:** Coverage — Ingest N/L; Index N/L; Retrieval N/L; Governance N/L; Overall low
-
-
-**Latest updates —** “State of Observability 2025” report and Davis docs updated (Oct 7, 2025).
-**Links —** [Official Site](https://www.dynatrace.com/news/press-release/state-of-observability-2025/), [Docs](https://docs.dynatrace.com/docs/discover-dynatrace/references/semantic-dictionary/model/davis), [Blog](https://www.dynatrace.com/news/blog/state-of-observability-2025-ai-trust-roi/)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

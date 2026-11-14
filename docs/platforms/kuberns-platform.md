@@ -1,50 +1,39 @@
 ---
 layout: default
-title: Kuberns Platform
+title: "Kuberns Platform"
 parent: Platform Directory
+permalink: /platforms/kuberns-platform/
 ---
 
 # Kuberns Platform
 
-**Activities**: P/M | **Diagnostics**: P/M | **Provisioning**: Y/H  <br>
-**Event ontology**: P/L | **Observability**: P/M | **Confidence**: Low
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Low-code PaaS UI with "one-click deploy".  
-**What it actually does —** Deploys and scales applications; claims AI-assisted cost and performance optimisation.  
-**Data / telemetry —** Basic platform metrics.  
-**Interoperability —** Not well documented.  
-**Deployment model —** Managed PaaS.  
-**Notes —** Limited third-party validation; treat as tentative.
+## Identity and availability
 
-**UKM Snapshots:** 
-ingest P/L, index N/L, retrieval P/L, governance P/L, overall low  <br>
-**Note:** Coverage — Ingest P/L; Index N/L; Retrieval P/L; Governance P/L; Overall low
+Kuberns commercial AI-cloud PaaS offered
 
+## Capability mapping
 
-**UAM Snapshots:**   
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | Not verified |
+| UAM — Activities | deployment automation claimed |
+| UDM — Diagnostics | Not verified |
+| UOM — Observability | monitoring claimed |
+| UEOM — Events / ontology | Not verified |
+| UPM — Provisioning | deployment+scaling claimed |
 
-**UDM Snapshots:**   
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+## Scope and limitations
 
+Source is marketing page, not independent test or GA contract. Do not reuse 90% faster / savings claims.
 
-**UOM Snapshots:**   
-ingest P/M, index P/M, retrieval P/M, governance P/M, overall medium  <br>
-**Note:** Coverage — Ingest P/M; Index P/M; Retrieval P/M; Governance P/M; Overall medium
+## Official sources
 
+1. [Official source 1](https://kuberns.com/)
 
-**UEOM Snapshots:**   
-ingest P/L, index P/L, retrieval P/L, governance P/L, overall low-medium  <br>
-**Note:** Coverage — Ingest P/L; Index P/L; Retrieval P/L; Governance P/L; Overall low-medium
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
 
-
-**UPM Snapshots:**   
-ingest Y/H, index Y/H, retrieval Y/H, governance Y/H, overall high  <br>
-**Note:** Coverage — Ingest Y/H; Index Y/H; Retrieval Y/H; Governance Y/H; Overall high
-
-
-**Latest updates —** Kuberns posts new guides and blog updates (Oct 7–14, 2025).
-**Links —** [Official Site](https://kuberns.com/), [Docs](https://docs.kuberns.com/), [Blog](https://kuberns.com/blogs)
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

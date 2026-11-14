@@ -1,38 +1,39 @@
 ---
 layout: default
-title: Harness AI (incl. Harness MCP Server)
+title: "Harness AI (incl. Harness MCP Server)"
 parent: Platform Directory
+permalink: /platforms/harness-ai/
 ---
 
 # Harness AI (incl. Harness MCP Server)
 
-**Activities**: Y/M | **Diagnostics**: P/M | **Provisioning**: Y/M  <br>
-**Event ontology**: N/L | **Observability**: P/L | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** SDLC console/CLI; AI DevOps Agent; MCP server.  
-**What it actually does —** Multi-agent assist across CI/CD/security/FinOps; generates/edits pipelines and exposes platform data to external AI via MCP.  
-**Data / telemetry —** Pipelines/builds/tests/releases; FinOps.  
-**Interoperability —** MCP, APIs, VCS/CI.  
-**Deployment model —** SaaS/self-hosted components.  
-**Notes —** Focused on SDLC; pair with observability for production RCA.
+## Identity and availability
 
-**UKM Snapshots:**  
-project/run context P/M
+Harness Autonomous SDLC Platform; current commercial product page, per-agent GA not established
 
-**UAM Snapshots:**  
-audit Y/M
+## Capability mapping
 
-**UDM Snapshots:**  
-job failure hints P/M
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
-**UOM Snapshots:**  
-N/L
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | SDLC graph+memory |
+| UAM — Activities | delivery worker agents |
+| UDM — Diagnostics | failure investigation |
+| UOM — Observability | delivery+cost signals |
+| UEOM — Events / ontology | pipeline/deployment graph |
+| UPM — Provisioning | IaC/deployments |
 
-**UEOM Snapshots:**  
-N/L
+## Scope and limitations
 
-**UPM Snapshots:**  
-deploy/rollback Y/M
+Old Harness AI URL redirects. Separate marketed module capability from verified GA.
 
-**Latest updates —** MCP server announced May 29, 2025.  
-**Links —** [Harness AI](https://www.harness.io/products/harness-ai), [MCP blog](https://www.harness.io/blog/mcp-announcement), [MCP GitHub](https://github.com/harness/mcp-server)
+## Official sources
+
+1. [Official source 1](https://www.harness.io/products/platform)
+
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
+
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})

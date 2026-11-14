@@ -5,187 +5,99 @@ nav_order: 5
 permalink: /capabilities/
 ---
 
-This file summarizes capability maturity across **UKM, UAM, UDM, UOM, UEOM, UPM** using the Atlas token set and a normalized 0–4 scale.
+# Capability Framework
 
-## Legend
+**Reviewed 14 November 2026.** The six existing Atlas axes are retained. Current descriptions replace unsupported precision: no numerical score or composite ranking is assigned from a vendor page alone.
 
-| Token | Level |
-| --- | ---: |
-| Y/H | 4 |
-| Y/M | 3 |
-| P/M | 2 |
-| P/L | 1 |
-| N/L | 0 |
+## Six complementary questions
 
-## Capability Definitions
+| Axis | What to establish |
+| --- | --- |
+| UKM — Knowledge | What context is retained, retrieved and governed? |
+| UAM — Activities | What tasks can be executed, with whose authority and audit trail? |
+| UDM — Diagnostics | What evidence supports investigation, diagnosis and verification? |
+| UOM — Observability | Is telemetry native, integrated, or only agent tracing? |
+| UEOM — Events / ontology | Are there event relationships and topology, or a documented governed ontology? |
+| UPM — Provisioning | Can it plan, validate, apply and verify infrastructure changes, or only generate artifacts? |
 
-**UKM — Knowledge Management.** *A vendor‑neutral baseline describing how platforms **ingest, normalize, index, retrieve, and govern** organizational knowledge.*
+## Evidence rules
 
-**UAM — Activities Management.** *A vendor‑neutral framework describing how intelligent platforms **capture, sanitize, enrich, index, retrieve, replay, summarize, and govern** human/tool activity.* This version aligns the **Activities** capability in the Atlas with a **0–4 maturity scale** and tightens acceptance criteria, KPIs, and lint rules.
+- Documented product surface, availability announcement, preview and vendor claim are different evidence classes.
+- **Not verified** is not a zero or a claim of absence.
+- Framework extensibility is not a shipped operational capability.
+- Telemetry integration is not a native observability backend; agent tracing is not infrastructure monitoring.
+- An incident relationship graph is not proof of a general governed ontology.
+- Suggested fixes, a PR, and autonomous production writes are distinct. Licensing, approvals and deployment scope matter.
+- No customer savings, correctness or speed claim is treated as independently tested.
 
-**UDM — Diagnostics Management.** *A vendor‑neutral baseline describing how intelligent Ops/Observability systems **detect, enrich, correlate, explain (RCA), and recommend/remediate** incidents — with verifiable evidence.*
+## Current evidence matrix
 
-**UOM — Observability Management.** *A vendor‑neutral baseline describing how platforms **collect, normalize, store, explore, alert, correlate, and govern** observability data (metrics, logs, traces, events, profiles).*
+Each linked record contains its official sources, feature availability and limits. Descriptions are editorial mappings, not implementation equivalence with XDevOps.
 
-**UEOM — Event/Ontology Management.** *A vendor‑neutral baseline describing how platforms **model, validate, materialize, retrieve, and govern** event & topology knowledge as a graph.*
-
-**UPM — Provisioning Management.** *A vendor‑neutral baseline describing how platforms **plan, validate, execute, verify, and audit** provisioning & change operations.*
-
----
-
-## Capability Matrix — Tokens
-
-| Platform                                | UKM | UAM | UDM | UOM | UEOM | UPM |
+| Platform | UKM | UAM | UDM | UOM | UEOM | UPM |
 | --- | --- | --- | --- | --- | --- | --- |
-| Atlassian Rovo Dev                      | Y/M | Y/M | Y/M | P/L | P/L | P/L |
-| AWS Strands SDK                         | P/M | P/L | P/M | P/M | P/L | Y/M |
-| Cisco Splunk AI Agents                  | Y/H | Y/H | Y/H | Y/H | Y/H | N/L |
-| Databricks Agent Bricks                 | Y/M | Y/M | P/L | P/M | Y/M | P/L |
-| Datadog Bits AI & Agents                | Y/M | Y/H | Y/H | Y/H | Y/M | P/L |
-| Dataiku AI Agents                       | Y/M | Y/M | P/M | Y/M | Y/M | P/L |
-| DuploCloud AI Help Desk                 | Y/M | Y/M | Y/H | Y/M | P/M | Y/H |
-| Dynatrace Davis AI                      | Y/H | Y/H | Y/H | Y/H | Y/H | N/L |
-| Elastic AI Assistant                    | Y/M | P/M | P/M | Y/M | P/M | N/L |
-| GitHub Copilot Coding Agent             | Y/M | P/M | P/M | P/M | N/L | P/L |
-| Google Vertex AI Agent Builder          | P/M | P/L | P/L | Y/M | P/L | P/L |
-| IBM AskIAM                              | Y/M | Y/M | Y/M | P/L | P/M | Y/H |
-| JFrog Fly (Agentic Repo)                | Y/M | Y/M | P/M | P/M | Y/M | P/L |
-| Kagent (Solo.io)                        | Y/M | Y/M | Y/H | Y/H | P/M | Y/M |
-| Kuberns Platform                        | P/L | P/M | P/M | P/M | P/L | Y/H |
-| Microsoft Azure Agent Service (Foundry) | Y/M | Y/M | N/L | Y/M | P/M | P/L |
-| Microsoft Azure Copilot (Agent Mode)    | P/M | Y/M | P/M | P/L | P/L | Y/M |
-| New Relic AI                            | Y/M | P/L | Y/M | Y/H | Y/M | N/L |
-| Opsera Hummingbird                      | Y/M | Y/M | Y/M | Y/M | P/M | P/L |
-| PagerDuty AIOps                         | Y/M | Y/M | Y/M | P/L | P/M | P/L |
-| Qovery AI Migration Agent               | P/L | P/L | P/L | P/L | N/L | Y/H |
-| Salesforce Agentforce (OpsAI)           | Y/H | Y/M | Y/H | Y/M | Y/H | Y/M |
-| ServiceNow AI Agent Orchestrator        | Y/H | Y/H | Y/H | Y/M | Y/M | Y/M |
-| Snowflake Cortex Agents                 | Y/M | Y/M | P/L | P/L | Y/H | P/L |
-| Termius — Gloria                        | N/L | P/M | P/M | P/M | N/L | P/M |
-| Zencoder AI Agents                      | P/M | Y/M | Y/M | P/L | N/L | P/L |
+| [Atlassian Rovo Dev]({{ "/platforms/atlassian-rovo-dev/" | relative_url }}) | Teamwork Graph | code+PR tasks | build/code troubleshooting | Not verified | work-item context | Not verified |
+| [AWS DevOps Agent]({{ "/platforms/aws-devops-agent/" | relative_url }}) | runbooks, history and app relationships | SRE tasks through configured integrations and skills | operational investigations | observability integrations | cross-signal and deployment correlation | general provisioning not verified |
+| [AWS Strands SDK]({{ "/platforms/aws-strands-sdk/" | relative_url }}) | memory framework | tool execution framework | custom | agent tracing | custom | deployment of agents only |
+| [BigPanda AI Incident Assistant]({{ "/platforms/bigpanda-ai-incident-assistant/" | relative_url }}) | knowledge+post-incident analysis | collaboration workflows | investigation | integrated infrastructure signals | ADR correlation context | Not verified |
+| [BMC Helix AIOps (ServiceOps)]({{ "/platforms/bmc-helix-aiops/" | relative_url }}) | Not verified | integration automation documented | service health context | OTel ingestion documented | service model+events | Not verified |
+| [Ciroos]({{ "/platforms/ciroos/" | relative_url }}) | persistent graph memory | collaboration; actuator scope unverified | cross-domain investigation | connected signals | signal normalization, correlation and temporal topology graph | not verified |
+| [Cisco Splunk AI Agents]({{ "/platforms/cisco-splunk-ai-agents/" | relative_url }}) | service context | query+chart tools | natural-language diagnosis | native APM/infra/logs | alert context | Not verified |
+| [Cleric]({{ "/platforms/cleric/" | relative_url }}) | retained infrastructure context | fix PRs and issues; writes opt-in | alert investigation and change verification | integrations and production verification | alert grouping; general ontology unverified | not verified |
+| [Databricks Agent Bricks]({{ "/platforms/databricks-agent-bricks/" | relative_url }}) | search+memory | durable runtime+sandbox | custom | MLflow agent tracing | custom | agent runtime hosting |
+| [Datadog Bits Investigation]({{ "/platforms/datadog-bits-ai/" | relative_url }}) | investigation context | investigation execution | production investigation | native telemetry | monitor+incident context | Not verified |
+| [Dataiku AI Agents]({{ "/platforms/dataiku-ai-agents/" | relative_url }}) | data+tools | custom tools | custom | agent evaluation, not infra monitoring | custom | agent deployment only |
+| [Dell APEX AIOps (Moogsoft)]({{ "/platforms/dell-apex-aiops/" | relative_url }}) | Not verified | incident management | incident analysis scope | application observability module | incident correlation lineage | Not verified |
+| [DuploCloud AI Help Desk]({{ "/platforms/duplocloud-ai-help-desk/" | relative_url }}) | ticket context/history | supervised production commands | task investigation | Not verified | ticket relationships only | platform tasks, scope-dependent |
+| [Dynatrace Intelligence and Assist]({{ "/platforms/dynatrace-davis-ai/" | relative_url }}) | shared guides | agentic queries+workflow integration | troubleshooting | native telemetry | contextual topology | Not verified |
+| [Elastic Agent Builder and legacy AI Assistant]({{ "/platforms/elastic-ai-assistant/" | relative_url }}) | legacy knowledge base, successor gaps | workflow integration | investigation skills preview | native telemetry | service map context | Not verified |
+| [Firefly (Agentic Cloud Automation)]({{ "/platforms/firefly-agentic-cloud-automation/" | relative_url }}) | cloud system-of-record | drift+recovery workflows | misconfiguration investigation | inventory+drift, not full APM | dependency graph | IaC generation+recovery |
+| [Gemini Cloud Assist (formerly Duet)]({{ "/platforms/google-duet-ai-ops/" | relative_url }}) | operational memory/context | guided tools | investigations with access restrictions | GCP signals | topology+alert clustering | IaC generation |
+| [Gemini Enterprise Agent Platform (formerly Vertex Agent Builder)]({{ "/platforms/google-vertex-agent-builder/" | relative_url }}) | grounded data | agent framework | custom | model+agent monitoring | custom | agent deployment only |
+| [GitHub Copilot Coding Agent]({{ "/platforms/github-copilot-coding-agent/" | relative_url }}) | repo context | code+PR automation | code debugging | Not verified | issue+PR context | code output, not managed infra |
+| [GitHub Copilot in VS Code (legacy Azure label)]({{ "/platforms/azure-copilot-agent-mode/" | relative_url }}) | repo memory | tools+terminal | code assistance | Not verified | Not verified | custom tools only |
+| [GitLab Duo]({{ "/platforms/gitlab-duo/" | relative_url }}) | repo context | SDLC agents | code/pipeline assistance | Not verified | SDLC context | CI-driven, not generic |
+| [Grafana Assistant]({{ "/platforms/grafana-assistant/" | relative_url }}) | skills and runbook context | triggered investigations; code-fix sandboxes preview | multi-step investigations | native Grafana Cloud telemetry and visualization | Watchers and incident triggers; generic ontology unverified | not verified |
+| [Harness AI (incl. Harness MCP Server)]({{ "/platforms/harness-ai/" | relative_url }}) | SDLC graph+memory | delivery worker agents | failure investigation | delivery+cost signals | pipeline/deployment graph | IaC/deployments |
+| [HashiCorp Terraform MCP + Project Infragraph]({{ "/platforms/hashicorp-terraform-mcp-infragraph/" | relative_url }}) | registry context | MCP tool interface | Not verified | Not verified | Infragraph unverified | Terraform workflow assistance |
+| [HPE OpsRamp]({{ "/platforms/hpe-opsramp/" | relative_url }}) | conversation context | alert policy management+automation | operational troubleshooting | native monitoring+logs | service maps+alerts | Not verified |
+| [IBM AskIAM]({{ "/platforms/ibm-askiam/" | relative_url }}) | IAM knowledge | access requests+approvals | identity intelligence | Not verified | identity relationships | user provisioning only |
+| [IBM Instana + Turbonomic + watsonx]({{ "/platforms/ibm-instana-turbonomic-watsonx/" | relative_url }}) | contextual insights | optimization actions | intelligent investigation | native Instana telemetry | application entities | resource optimization, not general provisioning |
+| [incident.io (AI SRE)]({{ "/platforms/incident-io/" | relative_url }}) | operational context | response coordination | parallel evidence-backed investigations | integrated telemetry | incident relationships | Not verified |
+| [JFrog Fly transition to JFrog Platform]({{ "/platforms/jfrog-fly-agentic-repo/" | relative_url }}) | package context | release workflows | Not verified | Not verified | artifact metadata | artifact delivery, not infra provisioning |
+| [Kagent (Solo.io)]({{ "/platforms/soloio-kagent/" | relative_url }}) | custom | Kubernetes agent orchestration | tool-dependent | agent/runtime context | custom | agent deployment |
+| [Komodor / Klaudia]({{ "/platforms/komodor-klaudia/" | relative_url }}) | persistent memory and knowledge graphs | built-in and custom governed workflows | Kubernetes investigations | operational integrations and optimization | Alert Intelligence and context | broad infrastructure provisioning not verified |
+| [Kuberns Platform]({{ "/platforms/kuberns-platform/" | relative_url }}) | Not verified | deployment automation claimed | Not verified | monitoring claimed | Not verified | deployment+scaling claimed |
+| [Kubiya — ChatOps + Workflow Execution]({{ "/platforms/kubiya/" | relative_url }}) | Context Graph | governed workflows | tool-dependent | integrated | graph, ontology scope unproven | infrastructure workflows |
+| [LogicMonitor Edwin AI]({{ "/platforms/logicmonitor-aiops/" | relative_url }}) | private/public knowledge agents | action groups | AI investigations | native+integrated telemetry | normalized events+correlation | Not verified |
+| [Microsoft Azure SRE Agent]({{ "/platforms/microsoft-azure-sre-agent/" | relative_url }}) | retained context | schedules+governed automation | investigations | Azure+partner signals | deployment correlation | permitted CLI scope, not universal |
+| [Microsoft Foundry Agent Service]({{ "/platforms/azure-ai-agent-service-foundry/" | relative_url }}) | search+tools | managed agent runtime | custom | agent tracing/evals | custom | agent hosting only |
+| [NeuBird AI]({{ "/platforms/neubird-ai/" | relative_url }}) | project instructions and history | investigation initiation and status; infrastructure writes unverified | incident investigation | cloud and monitoring integrations | incident history; generic ontology unverified | not verified |
+| [New Relic Autopilot]({{ "/platforms/new-relic-ai/" | relative_url }}) | runbooks+retrospectives | investigation tasks | RCA+recommendations | native telemetry | incident context | Not verified |
+| [Opsera Hummingbird]({{ "/platforms/opsera-hummingbird/" | relative_url }}) | toolchain context | pipeline automation | pipeline failure explanation | SDLC metrics, not APM | toolchain relationships | workflows/integrations |
+| [PagerDuty AIOps]({{ "/platforms/pagerduty-aiops/" | relative_url }}) | connector/skill context | workflows | investigation | integrated logs+metrics | event correlation | Not verified |
+| [Qovery Migration Agent]({{ "/platforms/qovery-migration-agent/" | relative_url }}) | provider app context | file-generation workflow | manifest validation | Not verified | Not verified | Terraform+Dockerfile generation |
+| [Resolve AI]({{ "/platforms/resolve-ai/" | relative_url }}) | production memory | governed operational tasks | multi-agent production investigation | integrated evidence | triage and contextual relationships; generic ontology unverified | generic provisioning not verified |
+| [Robusta / HolmesGPT]({{ "/platforms/robusta-holmesgpt/" | relative_url }}) | investigation history and context | investigation tools; dangerous calls approval-gated | incident investigation | integrated telemetry; not a full replacement backend | alert timelines; general ontology unverified | not verified |
+| [Rootly — Incident Response Automation]({{ "/platforms/Rootly/" | relative_url }}) | incident evidence/history | incident workflows | AI investigation | integrated telemetry | alerts+incident context | Not verified |
+| [Salesforce Agentforce]({{ "/platforms/salesforce-agentforce-opsai/" | relative_url }}) | Salesforce context | business+IT service actions | ticket support | agent optimization not infra APM | customer/workflow context | Not verified |
+| [Servicenow AI Agent Orchestrator]({{ "/platforms/servicenow-ai-agent-orchestrator/" | relative_url }}) | enterprise context | workflow automation | IT-specific agents scope-dependent | ITOM separate module | CMDB context separate | workflow-dependent |
+| [Snowflake Cortex Agents]({{ "/platforms/snowflake-cortex-agents/" | relative_url }}) | enterprise data/retrieval | tool+code execution | custom | agent monitoring | custom | agent runtime only |
+| [Snyk — DevSecOps Automation]({{ "/platforms/snyk/" | relative_url }}) | vulnerability knowledge | fix PR workflows | security analysis | security findings not APM | dependency relationships | IaC scanning not provisioning |
+| [Termius — Gloria]({{ "/platforms/termius-gloria/" | relative_url }}) | Not verified | Not verified | Not verified | Not verified | Not verified | Not verified |
+| [Traversal]({{ "/platforms/traversal/" | relative_url }}) | Knowledge Bank | remediation execution unverified: source conflict | causal investigation positioning | integrated observability | live entities, dependencies and alert correlation | not verified |
+| [xMatters — Operations Automation]({{ "/platforms/xMatters/" | relative_url }}) | workflow context | deterministic incident automation | Not verified | integrations | alert-triggered flows | custom integration-dependent |
+| [Zencoder AI Agents]({{ "/platforms/zencoder-ai-agents/" | relative_url }}) | codebase context | code/test/review agents | code verification | Not verified | Not verified | Not verified |
 
-## Capability Matrix — Levels (0–4) + Composite
+## Baselines and history
 
-| Platform                                | UKM | UAM | UDM | UOM | UEOM | UPM | Composite (0–4) |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Atlassian Rovo Dev                      | 3 | 3 | 3 | 1 | 1 | 1 | 2.00 |
-| AWS Strands SDK                         | 2 | 1 | 2 | 2 | 1 | 3 | 1.83 |
-| Cisco Splunk AI Agents                  | 4 | 4 | 4 | 4 | 4 | 0 | 3.33 |
-| Databricks Agent Bricks                 | 3 | 3 | 1 | 2 | 3 | 1 | 2.17 |
-| Datadog Bits AI & Agents                | 3 | 4 | 4 | 4 | 3 | 1 | 3.17 |
-| Dataiku AI Agents                       | 3 | 3 | 2 | 3 | 3 | 1 | 2.50 |
-| DuploCloud AI Help Desk                 | 3 | 3 | 4 | 3 | 2 | 4 | 3.17 |
-| Dynatrace Davis AI                      | 4 | 4 | 4 | 4 | 4 | 0 | 3.33 |
-| Elastic AI Assistant                    | 3 | 2 | 2 | 3 | 2 | 0 | 2.00 |
-| GitHub Copilot Coding Agent             | 3 | 2 | 2 | 2 | 0 | 1 | 1.67 |
-| Google Vertex AI Agent Builder          | 2 | 1 | 1 | 3 | 1 | 1 | 1.50 |
-| IBM AskIAM                              | 3 | 3 | 3 | 1 | 2 | 4 | 2.67 |
-| JFrog Fly (Agentic Repo)                | 3 | 3 | 2 | 2 | 3 | 1 | 2.33 |
-| Kagent (Solo.io)                        | 3 | 3 | 4 | 4 | 2 | 3 | 3.17 |
-| Kuberns Platform                        | 1 | 2 | 2 | 2 | 1 | 4 | 2.00 |
-| Microsoft Azure Agent Service (Foundry) | 3 | 3 | 0 | 3 | 2 | 1 | 2.00 |
-| Microsoft Azure Copilot (Agent Mode)    | 2 | 3 | 2 | 1 | 1 | 3 | 2.00 |
-| New Relic AI                            | 3 | 1 | 3 | 4 | 3 | 0 | 2.33 |
-| Opsera Hummingbird                      | 3 | 3 | 3 | 3 | 2 | 1 | 2.50 |
-| PagerDuty AIOps                         | 3 | 3 | 3 | 1 | 2 | 1 | 2.17 |
-| Qovery AI Migration Agent               | 1 | 1 | 1 | 1 | 0 | 4 | 1.33 |
-| Salesforce Agentforce (OpsAI)           | 4 | 3 | 4 | 3 | 4 | 3 | 3.50 |
-| ServiceNow AI Agent Orchestrator        | 4 | 4 | 4 | 3 | 3 | 3 | 3.50 |
-| Snowflake Cortex Agents                 | 3 | 3 | 1 | 1 | 4 | 1 | 2.17 |
-| Termius — Gloria                        | 0 | 2 | 2 | 2 | 0 | 2 | 1.33 |
-| Zencoder AI Agents                      | 2 | 3 | 3 | 1 | 0 | 1 | 1.67 |
+The existing baselines remain useful acceptance checklists. They are not proof that any vendor currently meets each criterion.
 
-## Leaders by Capability (Top 5)
+- [UKM baseline]({{ "/capabilities/baselines/ukm/" | relative_url }})
+- [UAM baseline]({{ "/capabilities/baselines/uam/" | relative_url }})
+- [UDM baseline]({{ "/capabilities/baselines/udm/" | relative_url }})
+- [UOM baseline]({{ "/capabilities/baselines/uom/" | relative_url }})
+- [UEOM baseline]({{ "/capabilities/baselines/ueom/" | relative_url }})
+- [UPM baseline]({{ "/capabilities/baselines/upm/" | relative_url }})
 
-### UKM
-
-| Platform | UKM |
-| --- | ---: |
-| Cisco Splunk AI Agents | 4 |
-| ServiceNow AI Agent Orchestrator | 4 |
-| Salesforce Agentforce (OpsAI) | 4 |
-| Dynatrace Davis AI | 4 |
-| Atlassian Rovo Dev | 3 |
-
-### UAM
-
-| Platform | UAM |
-| --- | ---: |
-| Cisco Splunk AI Agents | 4 |
-| Datadog Bits AI & Agents | 4 |
-| ServiceNow AI Agent Orchestrator | 4 |
-| Dynatrace Davis AI | 4 |
-| Atlassian Rovo Dev | 3 |
-
-### UDM
-
-| Platform | UDM |
-| --- | ---: |
-| Kagent (Solo.io) | 4 |
-| Cisco Splunk AI Agents | 4 |
-| ServiceNow AI Agent Orchestrator | 4 |
-| Datadog Bits AI & Agents | 4 |
-| Salesforce Agentforce (OpsAI) | 4 |
-
-### UOM
-
-| Platform | UOM |
-| --- | ---: |
-| Kagent (Solo.io) | 4 |
-| Cisco Splunk AI Agents | 4 |
-| Datadog Bits AI & Agents | 4 |
-| New Relic AI | 4 |
-| Dynatrace Davis AI | 4 |
-
-### UEOM
-
-| Platform | UEOM |
-| --- | ---: |
-| Salesforce Agentforce (OpsAI) | 4 |
-| Cisco Splunk AI Agents | 4 |
-| Dynatrace Davis AI | 4 |
-| Snowflake Cortex Agents | 4 |
-| Databricks Agent Bricks | 3 |
-
-### UPM
-
-| Platform | UPM |
-| --- | ---: |
-| Kuberns Platform | 4 |
-| DuploCloud AI Help Desk | 4 |
-| Qovery AI Migration Agent | 4 |
-| IBM AskIAM | 4 |
-| Kagent (Solo.io) | 3 |
-
-### Composite (Avg of 6)
-
-| Platform | Composite Avg (0–4) |
-| --- | ---: |
-| ServiceNow AI Agent Orchestrator | 3.5 |
-| Salesforce Agentforce (OpsAI) | 3.5 |
-| Cisco Splunk AI Agents | 3.33 |
-| Dynatrace Davis AI | 3.33 |
-| Kagent (Solo.io) | 3.17 |
-
----
-
-## Notes & Gates Applied
-
-- **Evidence gates** from each baseline apply: missing exports/permalinks/citations/approvals cap scores at Level 2–3 as defined in UPM/UDM/UOM/UKM/UEOM baselines.
-- **Cross‑signal gate (UOM):** lack of metrics↔logs/traces drill‑downs caps **UOM ≤ 2**.
-- **Rollback gate (UPM):** no executed rollback evidence caps **UPM ≤ 3**.
-- **Graph gate (UEOM):** no SHACL or named‑graph tenancy caps **UEOM ≤ 2**.
-- **Governance gate (UKM/UOM):** no visibility/tenant enforcement caps **≤ 2–3** as specified.
-
-### Baselines Referenced
-
-Use these pages for the full acceptance criteria, evidence gates, and examples for each capability:
-
-- **UKM** — [UKM Baseline (v2)]({{ '/capabilities/baselines/ukm/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/ukm-ratings/' | relative_url }})
-- **UAM** — [UAM Baseline (v2)]({{ '/capabilities/baselines/uam/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/uam-ratings/' | relative_url }})
-- **UDM** — [UDM Baseline (v2)]({{ '/capabilities/baselines/udm/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/udm-ratings/' | relative_url }})
-- **UOM** — [UOM Baseline (v2)]({{ '/capabilities/baselines/uom/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/uom-ratings/' | relative_url }})
-- **UEOM** — [UEOM Baseline (v2)]({{ '/capabilities/baselines/ueom/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/ueom-ratings/' | relative_url }})
-- **UPM** — [UPM Baseline (v2)]({{ '/capabilities/baselines/upm/' | relative_url }}) · [Ratings & Notes]({{ '/capabilities/baselines/upm-ratings/' | relative_url }})
-
-Use these categories as a lens when reviewing platforms in the [Platform Directory]({{ '/platforms/' | relative_url }}) and [Platform Overview]({{ '/platform-overview/' | relative_url }}).
+[Historical scores]({{ "/capabilities/historical-scores/" | relative_url }}) are preserved for traceability but have not been revalidated. Legacy ratings pages and long-form comparisons are historical background, not the current evidence layer.

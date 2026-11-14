@@ -8,6 +8,9 @@ permalink: /capabilities/baselines/udm/rating-example/
 last_updated: 2025-10-12T12:28:58Z
 ---
 
+> Historical assessment: scores below were not revalidated in the November 2026 review. See the [current evidence matrix]({{ "/capabilities/" | relative_url }}).
+
+
 # ✅ UDM Rating Example (v2)
 
 This page shows a **concrete, vendor‑neutral example** of how to rate a platform against the **Universal Diagnostic Model (UDM) v2** and compute the **Overall UDM Level (0–4)**.

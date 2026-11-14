@@ -1,9 +1,10 @@
 # Jekyll / GitHub Pages configuration for the DevOps & SRE AI Atlas
 
+# To extend the edition, update the year range in title and seo.name; keep repository/URL unchanged.
 # --------------------
 # Site metadata
 # --------------------
-title: "DevOps & SRE AI Platforms — 2025 & 2026 Atlas"
+title: "DevOps SRE AI Atlas 2025–2026"
 description: "A vendor-neutral, community-driven wiki about DevOps/SRE AI platforms"
 url: "https://xdevops-ai.github.io"          # org/user site URL
 baseurl: "/devops-sre-ai-atlas-2025"         # repo name for project pages
@@ -81,7 +82,7 @@ exclude:
 # SEO defaults
 # --------------------
 seo:
-  name: "DevOps & SRE AI Platforms — 2025 & 2026 Atlas"
+  name: "DevOps SRE AI Atlas 2025–2026"
   type: "Website"
 
 # --------------------

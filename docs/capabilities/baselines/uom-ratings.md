@@ -7,6 +7,9 @@ permalink: /capabilities/baselines/uom/rating-example/
 last_updated: 2025-10-12T12:46:23Z
 ---
 
+> Historical assessment: scores below were not revalidated in the November 2026 review. See the [current evidence matrix]({{ "/capabilities/" | relative_url }}).
+
+
 # 📊 UOM Rating Example (v2)
 
 Use this page as a template to score a platform against **UOM v2**.  

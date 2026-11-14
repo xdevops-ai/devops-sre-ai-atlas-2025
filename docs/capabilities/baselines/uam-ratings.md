@@ -8,6 +8,9 @@ permalink: /capabilities/baselines/uam/rating-example/
 last_updated: 2025-10-12T00:00:00Z
 ---
 
+> Historical assessment: scores below were not revalidated in the November 2026 review. See the [current evidence matrix]({{ "/capabilities/" | relative_url }}).
+
+
 # ✅ UAM Rating Example (v2)
 
 This page shows a **concrete, vendor‑neutral example** of how to rate a platform against the **Universal Activity Model (UAM) v2** and compute the **Overall Activity Maturity (0–4)**.

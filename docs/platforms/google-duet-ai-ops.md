@@ -1,38 +1,40 @@
 ---
 layout: default
-title: Google Cloud Duet AI for Operations
+title: "Gemini Cloud Assist (formerly Duet)"
 parent: Platform Directory
+permalink: /platforms/google-duet-ai-ops/
 ---
 
-# Google Cloud Duet AI for Operations
+# Gemini Cloud Assist (formerly Duet)
 
-**Activities**: P/L | **Diagnostics**: P/M | **Provisioning**: N/L  <br>
-**Event ontology**: N/L | **Observability**: Y/M | **Confidence**: Medium
+**Evidence reviewed: 14 November 2026.** Official documentation/announcements; no independent runtime test.
 
-**Build style / interface —** Cloud Console assistants.  
-**What it actually does —** Summarizes logs, explains errors, and assists troubleshooting inside Cloud Logging/operations workflow.  
-**Data / telemetry —** Cloud Logging/Monitoring.  
-**Interoperability —** Native to GCP.  
-**Deployment model —** Managed service in GCP.  
-**Notes —** Advisory; no direct infra apply.
+## Identity and availability
 
-**UKM Snapshots:**  
-N/L
+Gemini Cloud Assist (formerly Duet); Preview
 
-**UAM Snapshots:**  
-basic activity P/L
+## Capability mapping
 
-**UDM Snapshots:**  
-log summarization P/M, error explain P/M, overall medium
+Descriptions map product evidence to the Atlas framework, not numerical maturity scores. **Not verified does not mean absent.** Integration with telemetry is not equivalent to a native observability backend; correlation is not proof of a generic ontology.
 
-**UOM Snapshots:**  
-GCP ops signals Y/M
+| Atlas capability | Reviewed evidence |
+| --- | --- |
+| UKM — Knowledge | operational memory/context |
+| UAM — Activities | guided tools |
+| UDM — Diagnostics | investigations with access restrictions |
+| UOM — Observability | GCP signals |
+| UEOM — Events / ontology | topology+alert clustering |
+| UPM — Provisioning | IaC generation |
 
-**UEOM Snapshots:**  
-N/L
+## Scope and limitations
 
-**UPM Snapshots:**  
-N/L
+Since 2026-04-10 investigations require Premium Support or account-team access.
 
-**Latest updates —** GA for log summarization noted in ops releases; branding updates (Duet→Gemini).  
-**Links —** [Blog](https://cloud.google.com/blog/products/ai-machine-learning/how-duet-ai-speeds-up-development-and-operations)
+## Official sources
+
+1. [Official source 1](https://docs.cloud.google.com/cloud-assist/overview)
+2. [Official source 2](https://docs.cloud.google.com/cloud-assist/investigations)
+
+Undated source pages use the review date above, not an inferred release date. Vendor performance claims are not independent benchmarks.
+
+[Platform Directory]({{ "/platforms/" | relative_url }}) · [Capability Framework]({{ "/capabilities/" | relative_url }})
